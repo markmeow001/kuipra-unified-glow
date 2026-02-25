@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "首頁",
+    "about": "關於我們",
+    "services": "服務項目",
+    "projects": "專案作品",
+    "team": "團隊成員",
+    "contact": "聯絡我們",
+    "language": "En"
+  },
+  "hero": {
+    "title": "以策略溝通驅動企業成長",
+    "subtitle": "我們協助品牌建立清晰、有信心的溝通，實現連結與成長。",
+    "cta": "立即開始",
+    "stats": {
+      "clients": "500+",
+      "clientsLabel": "滿意客戶",
+      "projects": "1200+",
+      "projectsLabel": "完成專案",
+      "years": "15+",
+      "yearsLabel": "年經驗",
+      "awards": "30+",
+      "awardsLabel": "獲獎數"
+    }
+  },
+  "services": {
+    "sectionTitle": "服務項目",
+    "sectionSubtitle": "為您的企業量身打造專業解決方案"
+  },
+  "about": {
+    "sectionTitle": "關於我們",
+    "description": "KUIPRA 傳播顧問是一間全方位策略傳播公司，致力於協助企業與組織建立有意義的受眾連結。憑藉超過 15 年的豐富經驗，我們為客戶帶來真正有影響力的成果。",
+    "cta": "了解更多"
+  },
+  "timeline": {
+    "sectionTitle": "精選服務流程",
+    "sectionSubtitle": "我們交付卓越成果的成熟流程",
+    "steps": {
+      "step1Title": "探索與研究",
+      "step1Desc": "我們從深入了解您的品牌、受眾和目標開始，進行全面的研究與分析。",
+      "step2Title": "策略制定",
+      "step2Desc": "我們的團隊根據您的商業目標，量身打造溝通策略。",
+      "step3Title": "創意執行",
+      "step3Desc": "我們以引人入勝的內容、設計和多管道行銷活動，將策略化為行動。",
+      "step4Title": "成效衡量與優化",
+      "step4Desc": "我們追蹤績效、分析成果，並持續優化以達到最大影響力。"
+    }
+  },
+  "banner": {
+    "title": "準備好轉變您的溝通策略了嗎？",
+    "subtitle": "與我們合作，釋放品牌的全部潛力。",
+    "cta": "立即聯繫我們"
+  },
+  "team": {
+    "sectionTitle": "團隊成員",
+    "sectionSubtitle": "認識我們成功背後的專家團隊"
+  },
+  "projects": {
+    "sectionTitle": "專案作品",
+    "sectionSubtitle": "精選作品集"
+  },
+  "clients": {
+    "sectionTitle": "合作客戶",
+    "sectionSubtitle": "獲得領先企業的信賴"
+  },
+  "contact": {
+    "sectionTitle": "聯絡我們",
+    "address": "台灣台北市溝通大道 123 號",
+    "phone": "+886 2 1234 5678",
+    "email": "info@kuipra.com"
+  },
+  "footer": {
+    "copyright": "© 2024 KUIPRA 傳播顧問。版權所有。",
+    "quickLinks": "快速連結",
+    "contactInfo": "聯絡資訊"
+  }
+}
