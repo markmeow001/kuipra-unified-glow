@@ -1,36 +1,57 @@
 import { useTranslation } from "react-i18next";
+import { Eye, FileText, Film, BarChart3, Layers } from "lucide-react";
 
 const Timeline = () => {
   const { t } = useTranslation();
 
   const steps = [
-    { num: "01", title: t("timeline.steps.step1Title"), desc: t("timeline.steps.step1Desc") },
-    { num: "02", title: t("timeline.steps.step2Title"), desc: t("timeline.steps.step2Desc") },
-    { num: "03", title: t("timeline.steps.step3Title"), desc: t("timeline.steps.step3Desc") },
-    { num: "04", title: t("timeline.steps.step4Title"), desc: t("timeline.steps.step4Desc") },
+    { icon: Eye, title: t("timeline.step1"), desc: t("timeline.step1Desc") },
+    { icon: FileText, title: t("timeline.step2"), desc: t("timeline.step2Desc") },
+    { icon: Film, title: t("timeline.step3"), desc: t("timeline.step3Desc") },
+    { icon: BarChart3, title: t("timeline.step4"), desc: t("timeline.step4Desc") },
+    { icon: Layers, title: t("timeline.step5"), desc: t("timeline.step5Desc") },
   ];
 
   return (
-    <section className="bg-background py-20">
+    <section className="bg-primary text-primary-foreground py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-3">{t("timeline.sectionTitle")}</h2>
-          <p className="text-muted-foreground">{t("timeline.sectionSubtitle")}</p>
-        </div>
-        <div className="max-w-2xl mx-auto relative">
-          {/* Vertical line */}
-          <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-orange/30" />
-          {steps.map((step, i) => (
-            <div key={i} className="relative flex items-start gap-6 mb-12 last:mb-0">
-              <div className="relative z-10 w-12 h-12 rounded-full bg-orange text-orange-foreground flex items-center justify-center font-extrabold text-sm shrink-0">
-                {step.num}
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          {/* Left side - title + steps */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide mb-2">
+              {t("timeline.sectionTitle")}
+            </h2>
+            <p className="text-xl md:text-2xl font-extrabold uppercase tracking-wide text-orange mb-10">
+              {t("timeline.sectionSubtitle")}
+            </p>
+
+            <div className="space-y-6">
+              {steps.map((step, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-orange/20 flex items-center justify-center shrink-0 mt-0.5">
+                    <step.icon className="text-orange" size={20} />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold uppercase tracking-wide mb-1">{step.title}</h3>
+                    <p className="text-xs text-primary-foreground/60 leading-relaxed">{step.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right side - KUIPRA logo */}
+          <div className="flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-5xl md:text-7xl font-extrabold tracking-[0.2em] mb-2">
+                <span className="text-orange">K</span>UIPR
+                <span className="text-orange">A</span>
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">{step.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{step.desc}</p>
+              <div className="text-sm md:text-base tracking-[0.5em] uppercase text-primary-foreground/60 font-medium">
+                Communications
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

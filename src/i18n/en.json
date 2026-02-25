@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About Us",
+    "about": "About",
     "services": "Services",
     "projects": "Projects",
     "team": "Team",
@@ -9,62 +9,74 @@
     "language": "中文"
   },
   "hero": {
-    "title": "Empowering Businesses Through Strategic Communication",
-    "subtitle": "We help brands connect, communicate, and grow with clarity and confidence.",
+    "line1": "BEYOND THE FRONTIER,",
+    "line2": "WE DISCOVER YOUR",
+    "line3": "BRAND'S BRILLIANCE",
+    "subtitle": "Navigating your brand through the complexities of the modern market with strategic communication solutions.",
     "cta": "Get Started",
+    "cardTitle": "STRATEGIC INNOVATION:",
+    "cardSubtitle": "BRIDGE BRILLIANCE, YOUR BRAND, DEFINED.",
     "stats": {
-      "clients": "500+",
-      "clientsLabel": "Happy Clients",
-      "projects": "1200+",
-      "projectsLabel": "Projects Completed",
-      "years": "15+",
-      "yearsLabel": "Years Experience",
-      "awards": "30+",
-      "awardsLabel": "Awards Won"
+      "s1": "85%",
+      "s1Label": "CLIENT RETENTION RATE",
+      "s2": "15+",
+      "s2Label": "YEARS OF EXPERIENCE",
+      "s3": "200+",
+      "s3Label": "SUCCESSFUL PROJECTS",
+      "s4": "10X",
+      "s4Label": "AVERAGE ROI GROWTH"
     }
   },
   "services": {
-    "sectionTitle": "Our Services",
-    "sectionSubtitle": "Professional solutions tailored to your business needs"
+    "sectionTitle": "THE BRAND UNIVERSE:",
+    "sectionSubtitle": "A FULL-SPECTRUM ECOSYSTEM",
+    "s1": "SOCIAL MEDIA MANAGEMENT",
+    "s1Desc": "Comprehensive social media strategy and content management across all platforms.",
+    "s2": "CONTENT CREATION",
+    "s2Desc": "High-quality content production including copywriting, design, and multimedia.",
+    "s3": "BRAND STRATEGY & PERSONAL BRANDING",
+    "s3Desc": "Strategic brand positioning and personal brand development for executives.",
+    "s4": "PUBLIC RELATIONS & COMMUNICATIONS",
+    "s4Desc": "Media relations, press releases, and crisis communication management."
   },
   "about": {
-    "sectionTitle": "About Us",
+    "sectionTitle": "ABOUT US",
     "description": "KUIPRA Communications is a full-service strategic communications firm dedicated to helping organizations build meaningful connections with their audiences. With over 15 years of experience, we deliver results that matter.",
     "cta": "Learn More"
   },
   "timeline": {
-    "sectionTitle": "Featured Service",
-    "sectionSubtitle": "Our proven process for delivering exceptional results",
-    "steps": {
-      "step1Title": "Discovery & Research",
-      "step1Desc": "We begin by understanding your brand, audience, and goals through in-depth research and analysis.",
-      "step2Title": "Strategy Development",
-      "step2Desc": "Our team crafts a tailored communication strategy aligned with your business objectives.",
-      "step3Title": "Creative Execution",
-      "step3Desc": "We bring your strategy to life with compelling content, design, and multi-channel campaigns.",
-      "step4Title": "Measurement & Optimization",
-      "step4Desc": "We track performance, analyze results, and continuously optimize for maximum impact."
-    }
+    "sectionTitle": "FEATURED SERVICE:",
+    "sectionSubtitle": "COMPREHENSIVE BRAND GROWTH SOLUTION",
+    "step1": "VISUAL IDENTITY & BRAND DESIGN",
+    "step1Desc": "Creating distinctive visual elements that define your brand's personality.",
+    "step2": "HIGH-QUALITY EDITORIAL CONTENT",
+    "step2Desc": "Professional content creation that engages and converts your audience.",
+    "step3": "PRODUCTION EXPERTISE",
+    "step3Desc": "End-to-end production capabilities for all media formats.",
+    "step4": "STRATEGIC DATA & COMPETITOR ANALYSIS",
+    "step4Desc": "Data-driven insights and competitive intelligence for informed decisions.",
+    "step5": "FULL CHANNEL MANAGEMENT",
+    "step5Desc": "Integrated management across all communication channels."
   },
   "banner": {
-    "title": "Ready to Transform Your Communication Strategy?",
-    "subtitle": "Partner with us to unlock your brand's full potential.",
+    "title": "STRATEGIC ARCHITECTURE:",
+    "subtitle": "SOLUTIONS FOR EXPONENTIAL GROWTH",
     "cta": "Contact Us Today"
   },
   "team": {
-    "sectionTitle": "Our Team",
-    "sectionSubtitle": "Meet the experts behind our success"
+    "sectionTitle": "THE TEAM DRIVING STRATEGY",
+    "sectionSubtitle": "INNOVATION AND GROWTH"
   },
   "projects": {
-    "sectionTitle": "Our Projects",
+    "sectionTitle": "PROJECTS",
     "sectionSubtitle": "Selected work from our portfolio"
   },
   "clients": {
-    "sectionTitle": "Our Clients",
+    "sectionTitle": "OUR CLIENTS",
     "sectionSubtitle": "Trusted by leading organizations"
   },
   "contact": {
-    "sectionTitle": "Contact Us",
+    "sectionTitle": "CONTACT US",
     "address": "123 Communication Ave, Taipei, Taiwan",
     "phone": "+886 2 1234 5678",
     "email": "info@kuipra.com"
