@@ -13,9 +13,9 @@ interface Project {
 }
 
 const placeholderProjects: Project[] = [
-  { id: "1", client_name: "TechCorp", tags: ["PR", "Digital"], title_en: "Brand Relaunch Campaign", title_zh: "品牌重塑活動", description_en: "Complete brand overhaul and multi-channel launch strategy.", description_zh: "全面品牌重塑與多管道上市策略。", image_url: "" },
-  { id: "2", client_name: "GreenEnergy Co.", tags: ["Content", "Strategy"], title_en: "Sustainability Report", title_zh: "永續發展報告", description_en: "Annual sustainability report design and distribution.", description_zh: "年度永續發展報告設計與發行。", image_url: "" },
-  { id: "3", client_name: "FinanceHub", tags: ["PR", "Media"], title_en: "Crisis Communication", title_zh: "危機溝通", description_en: "Rapid response crisis management and media relations.", description_zh: "快速危機管理與媒體關係應對。", image_url: "" },
+  { id: "1", client_name: "TAIPEI POST", tags: ["PR", "Digital"], title_en: "Brand Identity & Digital Presence", title_zh: "品牌識別與數位佈局", description_en: "Complete brand strategy overhaul and multi-channel digital presence establishment for leading media organization.", description_zh: "為領先媒體機構進行全面品牌策略重塑與多管道數位佈局建立。", image_url: "" },
+  { id: "2", client_name: "MH", tags: ["Content", "Strategy"], title_en: "Corporate Rebranding", title_zh: "企業品牌重塑", description_en: "Strategic corporate rebranding including visual identity, messaging framework, and stakeholder communications.", description_zh: "策略性企業品牌重塑，包含視覺識別、訊息框架及利害關係人溝通。", image_url: "" },
+  { id: "3", client_name: "CRAFT BREW CO.", tags: ["PR", "Social"], title_en: "Product Launch Campaign", title_zh: "產品上市活動", description_en: "Integrated marketing campaign for new product line launch with social media activation and PR outreach.", description_zh: "新產品線上市整合行銷活動，結合社群媒體啟動與公關推廣。", image_url: "" },
 ];
 
 interface Props {
@@ -26,42 +26,51 @@ interface Props {
 const Projects = ({ projects, loading }: Props) => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language as "en" | "zh";
-  const data = projects ?? placeholderProjects;
+  const data = projects && projects.length > 0 ? projects : placeholderProjects;
 
   return (
     <section id="projects" className="bg-background py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-3">{t("projects.sectionTitle")}</h2>
-          <p className="text-muted-foreground">{t("projects.sectionSubtitle")}</p>
-        </div>
-        <div className="space-y-6">
+        {/* Large title */}
+        <h2 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground/10 uppercase tracking-wide text-center mb-12">
+          {t("projects.sectionTitle")}
+        </h2>
+
+        <div className="space-y-8">
           {loading
             ? Array.from({ length: 3 }).map((_, i) => (
-                <Skeleton key={i} className="h-24 rounded-lg" />
+                <Skeleton key={i} className="h-32 rounded-lg" />
               ))
             : data.map((p) => (
                 <div
                   key={p.id}
-                  className="border border-border rounded-lg p-6 hover:border-orange transition-colors flex flex-col sm:flex-row sm:items-center gap-4"
+                  className="grid md:grid-cols-[200px_1fr] gap-6 items-start border-b border-border pb-8 last:border-b-0"
                 >
-                  <div className="flex-1">
-                    <h3 className="text-lg font-bold text-foreground">
+                  {/* Left - client name with orange badge */}
+                  <div>
+                    <div className="flex flex-wrap gap-2 mb-2">
+                      {p.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="bg-orange text-orange-foreground text-[10px] font-bold px-2 py-0.5 rounded uppercase"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="text-lg font-extrabold text-foreground uppercase tracking-wide">
+                      {p.client_name}
+                    </div>
+                  </div>
+
+                  {/* Right - description */}
+                  <div>
+                    <h3 className="text-base font-bold text-foreground mb-2">
                       {lang === "zh" ? p.title_zh : p.title_en}
                     </h3>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      {p.client_name} — {lang === "zh" ? p.description_zh : p.description_en}
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {lang === "zh" ? p.description_zh : p.description_en}
                     </p>
-                  </div>
-                  <div className="flex gap-2 flex-wrap">
-                    {p.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="bg-orange text-orange-foreground text-xs font-semibold px-3 py-1 rounded-full"
-                      >
-                        {tag}
-                      </span>
-                    ))}
                   </div>
                 </div>
               ))}

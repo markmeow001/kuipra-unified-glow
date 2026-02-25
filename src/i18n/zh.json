@@ -1,31 +1,43 @@
 {
   "nav": {
     "home": "首頁",
-    "about": "關於我們",
-    "services": "服務項目",
-    "projects": "專案作品",
-    "team": "團隊成員",
-    "contact": "聯絡我們",
+    "about": "關於",
+    "services": "服務",
+    "projects": "案例",
+    "team": "團隊",
+    "contact": "聯絡",
     "language": "En"
   },
   "hero": {
-    "title": "以策略溝通驅動企業成長",
-    "subtitle": "我們協助品牌建立清晰、有信心的溝通，實現連結與成長。",
+    "line1": "在競爭激烈的市場",
+    "line2": "挖掘您未被發現的光芒",
+    "line3": "",
+    "subtitle": "在數位與整合行銷顧問的世界中，我們以打造充滿影響力的品牌策略為使命。",
     "cta": "立即開始",
+    "cardTitle": "在數位與整合行銷顧問的",
+    "cardSubtitle": "廣袤宇宙中尋找閃耀的獨特力量",
     "stats": {
-      "clients": "500+",
-      "clientsLabel": "滿意客戶",
-      "projects": "1200+",
-      "projectsLabel": "完成專案",
-      "years": "15+",
-      "yearsLabel": "年經驗",
-      "awards": "30+",
-      "awardsLabel": "獲獎數"
+      "s1": "85%",
+      "s1Label": "客戶留存率",
+      "s2": "15+",
+      "s2Label": "年的經驗",
+      "s3": "200+",
+      "s3Label": "成功專案",
+      "s4": "10X",
+      "s4Label": "平均 ROI 成長"
     }
   },
   "services": {
-    "sectionTitle": "服務項目",
-    "sectionSubtitle": "為您的企業量身打造專業解決方案"
+    "sectionTitle": "品牌星空：",
+    "sectionSubtitle": "全方位整合傳播生態",
+    "s1": "社群經營管理",
+    "s1Desc": "全面的社群媒體策略與內容管理，涵蓋所有平台。",
+    "s2": "傳達內容創作",
+    "s2Desc": "高品質內容產出，包含文案撰寫、設計及多媒體製作。",
+    "s3": "品牌策略及個人品牌塑造",
+    "s3Desc": "策略性品牌定位與企業高階主管個人品牌建立。",
+    "s4": "公共關係與企業傳播與溝通",
+    "s4Desc": "媒體關係、新聞稿撰寫及危機溝通管理。"
   },
   "about": {
     "sectionTitle": "關於我們",
@@ -33,38 +45,38 @@
     "cta": "了解更多"
   },
   "timeline": {
-    "sectionTitle": "精選服務流程",
-    "sectionSubtitle": "我們交付卓越成果的成熟流程",
-    "steps": {
-      "step1Title": "探索與研究",
-      "step1Desc": "我們從深入了解您的品牌、受眾和目標開始，進行全面的研究與分析。",
-      "step2Title": "策略制定",
-      "step2Desc": "我們的團隊根據您的商業目標，量身打造溝通策略。",
-      "step3Title": "創意執行",
-      "step3Desc": "我們以引人入勝的內容、設計和多管道行銷活動，將策略化為行動。",
-      "step4Title": "成效衡量與優化",
-      "step4Desc": "我們追蹤績效、分析成果，並持續優化以達到最大影響力。"
-    }
+    "sectionTitle": "主打服務：",
+    "sectionSubtitle": "全方位品牌成長方案",
+    "step1": "品牌識別與形象設計",
+    "step1Desc": "打造獨特的視覺元素，定義品牌個性。",
+    "step2": "高品質的編輯內容",
+    "step2Desc": "專業內容創作，吸引並轉化受眾。",
+    "step3": "製作專業能力",
+    "step3Desc": "端到端的媒體格式製作能力。",
+    "step4": "策略性數據與競品分析",
+    "step4Desc": "數據驅動的洞察與競爭情報，為決策提供依據。",
+    "step5": "全渠道管理",
+    "step5Desc": "整合所有傳播渠道的管理。"
   },
   "banner": {
-    "title": "準備好轉變您的溝通策略了嗎？",
-    "subtitle": "與我們合作，釋放品牌的全部潛力。",
+    "title": "投資市場：駕馭成長的軟性實力",
+    "subtitle": "",
     "cta": "立即聯繫我們"
   },
   "team": {
-    "sectionTitle": "團隊成員",
-    "sectionSubtitle": "認識我們成功背後的專家團隊"
+    "sectionTitle": "引領策略",
+    "sectionSubtitle": "創新與成長的核心團隊"
   },
   "projects": {
-    "sectionTitle": "專案作品",
+    "sectionTitle": "成功案例",
     "sectionSubtitle": "精選作品集"
   },
   "clients": {
-    "sectionTitle": "合作客戶",
+    "sectionTitle": "合作夥伴們",
     "sectionSubtitle": "獲得領先企業的信賴"
   },
   "contact": {
-    "sectionTitle": "聯絡我們",
+    "sectionTitle": "聯絡資訊",
     "address": "台灣台北市溝通大道 123 號",
     "phone": "+886 2 1234 5678",
     "email": "info@kuipra.com"
