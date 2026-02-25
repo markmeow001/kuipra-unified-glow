@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "team": "Team",
+    "contact": "Contact",
+    "language": "中文"
+  },
+  "hero": {
+    "title": "Empowering Businesses Through Strategic Communication",
+    "subtitle": "We help brands connect, communicate, and grow with clarity and confidence.",
+    "cta": "Get Started",
+    "stats": {
+      "clients": "500+",
+      "clientsLabel": "Happy Clients",
+      "projects": "1200+",
+      "projectsLabel": "Projects Completed",
+      "years": "15+",
+      "yearsLabel": "Years Experience",
+      "awards": "30+",
+      "awardsLabel": "Awards Won"
+    }
+  },
+  "services": {
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "Professional solutions tailored to your business needs"
+  },
+  "about": {
+    "sectionTitle": "About Us",
+    "description": "KUIPRA Communications is a full-service strategic communications firm dedicated to helping organizations build meaningful connections with their audiences. With over 15 years of experience, we deliver results that matter.",
+    "cta": "Learn More"
+  },
+  "timeline": {
+    "sectionTitle": "Featured Service",
+    "sectionSubtitle": "Our proven process for delivering exceptional results",
+    "steps": {
+      "step1Title": "Discovery & Research",
+      "step1Desc": "We begin by understanding your brand, audience, and goals through in-depth research and analysis.",
+      "step2Title": "Strategy Development",
+      "step2Desc": "Our team crafts a tailored communication strategy aligned with your business objectives.",
+      "step3Title": "Creative Execution",
+      "step3Desc": "We bring your strategy to life with compelling content, design, and multi-channel campaigns.",
+      "step4Title": "Measurement & Optimization",
+      "step4Desc": "We track performance, analyze results, and continuously optimize for maximum impact."
+    }
+  },
+  "banner": {
+    "title": "Ready to Transform Your Communication Strategy?",
+    "subtitle": "Partner with us to unlock your brand's full potential.",
+    "cta": "Contact Us Today"
+  },
+  "team": {
+    "sectionTitle": "Our Team",
+    "sectionSubtitle": "Meet the experts behind our success"
+  },
+  "projects": {
+    "sectionTitle": "Our Projects",
+    "sectionSubtitle": "Selected work from our portfolio"
+  },
+  "clients": {
+    "sectionTitle": "Our Clients",
+    "sectionSubtitle": "Trusted by leading organizations"
+  },
+  "contact": {
+    "sectionTitle": "Contact Us",
+    "address": "123 Communication Ave, Taipei, Taiwan",
+    "phone": "+886 2 1234 5678",
+    "email": "info@kuipra.com"
+  },
+  "footer": {
+    "copyright": "© 2024 KUIPRA Communications. All rights reserved.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info"
+  }
+}
