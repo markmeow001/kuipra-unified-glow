@@ -21,8 +21,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary text-primary-foreground shadow-lg">
-      <div className="container mx-auto flex items-center justify-between py-4 px-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white text-primary shadow-sm border-b border-gray-100">
+      <div className="container mx-auto flex items-center justify-between py-3 px-4">
         {/* Logo */}
         <button onClick={() => scrollTo("hero")} className="flex items-center">
           <img src={kuipraLogo} alt="Kuipra Communications" className="h-10" />
@@ -34,20 +34,20 @@ const Navbar = () => {
             <button
               key={key}
               onClick={() => scrollTo(sectionIds[i])}
-              className="text-sm font-medium hover:text-orange transition-colors"
+              className="text-sm font-medium text-primary hover:text-orange transition-colors"
             >
               {t(`nav.${key}`)}
             </button>
           ))}
           <button
             onClick={toggleLang}
-            className="text-sm font-medium border border-orange px-3 py-1 rounded hover:bg-orange hover:text-orange-foreground transition-colors"
+            className="text-sm font-medium text-primary hover:text-orange transition-colors"
           >
             {t("nav.language")}
           </button>
           <Button
             onClick={() => scrollTo("contact")}
-            className="bg-orange text-orange-foreground hover:bg-orange/90 transition-colors"
+            className="bg-orange text-orange-foreground hover:bg-orange/90 transition-colors rounded-full px-6"
           >
             {t("nav.contact")}
           </Button>
@@ -61,12 +61,12 @@ const Navbar = () => {
 
       {/* Mobile nav */}
       {open && (
-        <div className="md:hidden bg-primary border-t border-primary-foreground/10 pb-4 px-4 flex flex-col gap-3">
+        <div className="md:hidden bg-white border-t border-gray-100 pb-4 px-4 flex flex-col gap-3">
           {navKeys.map((key, i) => (
             <button
               key={key}
               onClick={() => scrollTo(sectionIds[i])}
-              className="text-sm font-medium py-2 hover:text-orange transition-colors text-left"
+              className="text-sm font-medium py-2 text-primary hover:text-orange transition-colors text-left"
             >
               {t(`nav.${key}`)}
             </button>
@@ -74,13 +74,13 @@ const Navbar = () => {
           <div className="flex gap-2 pt-2">
             <button
               onClick={toggleLang}
-              className="text-sm font-medium border border-orange px-3 py-1 rounded hover:bg-orange hover:text-orange-foreground transition-colors"
+              className="text-sm font-medium text-primary hover:text-orange transition-colors px-3 py-1"
             >
               {t("nav.language")}
             </button>
             <Button
               onClick={() => scrollTo("contact")}
-              className="bg-orange text-orange-foreground hover:bg-orange/90 transition-colors"
+              className="bg-orange text-orange-foreground hover:bg-orange/90 transition-colors rounded-full px-6"
             >
               {t("nav.contact")}
             </Button>
