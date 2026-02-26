@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import kuipraLogo from "@/assets/kuipra-logo.png";
 
 const navKeys = ["home", "about", "services", "projects", "team", "contact"] as const;
 const sectionIds = ["hero", "about", "services", "projects", "team", "contact"];
@@ -23,8 +24,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary text-primary-foreground shadow-lg">
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         {/* Logo */}
-        <button onClick={() => scrollTo("hero")} className="text-2xl font-extrabold tracking-widest">
-          <span className="text-orange">K</span>UIPRA
+        <button onClick={() => scrollTo("hero")} className="flex items-center">
+          <img src={kuipraLogo} alt="Kuipra Communications" className="h-10" />
         </button>
 
         {/* Desktop nav */}
