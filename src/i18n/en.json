@@ -28,16 +28,16 @@
     }
   },
   "services": {
-    "sectionTitle": "THE BRAND UNIVERSE:",
-    "sectionSubtitle": "A FULL-SPECTRUM ECOSYSTEM",
+    "sectionTitle": "OUR SERVICES",
+    "sectionSubtitle": "THE BRAND UNIVERSE:\nA FULL-SPECTRUM ECOSYSTEM",
     "s1": "SOCIAL MEDIA MANAGEMENT",
-    "s1Desc": "Comprehensive social media strategy and content management across all platforms.",
+    "s1Desc": "We Create And Manage Social Media Strategies To Engage Audiences And Drive Growth Across All Platforms. Our Approach Ensures Your Brand Maintains A Consistent And Impactful Presence Within The Digital Landscape.",
     "s2": "CONTENT CREATION",
-    "s2Desc": "High-quality content production including copywriting, design, and multimedia.",
+    "s2Desc": "We Produce Original Written, Visual, And Video Content That Brings Your Brand Story To Life. By Blending Creativity With Strategic Intent, We Connect Your Message With Your Audience Through Compelling Storytelling.",
     "s3": "BRAND STRATEGY & PERSONAL BRANDING",
-    "s3Desc": "Strategic brand positioning and personal brand development for executives.",
+    "s3Desc": "We Help Individuals And Businesses Define Their Brand Identity And Refine Their Messaging. Our Goal Is To Elevate Your Presence And Ensure Your Personal Or Corporate Brand Stands Out With Clarity And Authority.",
     "s4": "PUBLIC RELATIONS & COMMUNICATIONS",
-    "s4Desc": "Media relations, press releases, and crisis communication management."
+    "s4Desc": "We Handle Media Outreach And Strategic Communications To Enhance Brand Visibility And Reputation. Our Team Leverages Industry Connections To Secure Meaningful Coverage And Manage Your Public Narrative Effectively."
   },
   "about": {
     "sectionTitle": "ABOUT US",
