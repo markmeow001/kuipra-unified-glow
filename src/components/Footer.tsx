@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import kuipraLogo from "@/assets/kuipra-logo.png";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -10,8 +11,8 @@ const Footer = () => {
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
         <div>
-          <div className="text-2xl font-extrabold tracking-widest mb-4">
-            <span className="text-orange">K</span>UIPRA
+          <div className="mb-4">
+            <img src={kuipraLogo} alt="Kuipra Communications" className="h-10 brightness-0 invert" />
           </div>
           <p className="text-primary-foreground/60 text-sm">{t("footer.copyright")}</p>
         </div>

@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Eye, FileText, Film, BarChart3, Layers } from "lucide-react";
+import kuipraLogo from "@/assets/kuipra-logo.png";
 
 const Timeline = () => {
   const { t } = useTranslation();
@@ -42,15 +43,7 @@ const Timeline = () => {
 
           {/* Right side - KUIPRA logo */}
           <div className="flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-5xl md:text-7xl font-extrabold tracking-[0.2em] mb-2">
-                <span className="text-orange">K</span>UIPR
-                <span className="text-orange">A</span>
-              </div>
-              <div className="text-sm md:text-base tracking-[0.5em] uppercase text-primary-foreground/60 font-medium">
-                Communications
-              </div>
-            </div>
+            <img src={kuipraLogo} alt="Kuipra Communications" className="h-24 md:h-32 brightness-0 invert" />
           </div>
         </div>
       </div>
