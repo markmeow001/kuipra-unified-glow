@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import heroImg from "@/assets/kuipra-hero.png";
+import statImg from "@/assets/kuipra-stat01.png";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -13,60 +15,74 @@ const HeroSection = () => {
   return (
     <section id="hero" className="bg-primary text-primary-foreground pt-24 pb-0 relative overflow-hidden">
       <div className="container mx-auto px-4">
-        {/* Main hero content */}
-        <div className="grid md:grid-cols-2 gap-8 items-start pt-8 pb-12">
-          <div className="flex flex-col justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight uppercase mb-6">
-              {t("hero.line1")}
-              <br />
-              {t("hero.line2")}
-              {t("hero.line3") && (
-                <>
-                  <br />
-                  {t("hero.line3")}
-                </>
-              )}
-            </h1>
-            <p className="text-sm md:text-base text-primary-foreground/70 mb-8 max-w-md leading-relaxed">
-              {t("hero.subtitle")}
-            </p>
-            <div>
-              <button
-                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-orange text-orange-foreground px-8 py-3 rounded font-semibold hover:bg-orange/90 transition-colors text-sm uppercase tracking-wider"
-              >
-                {t("hero.cta")}
-              </button>
-            </div>
-          </div>
+        {/* Title & subtitle */}
+        <div className="pt-8 pb-10 max-w-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight uppercase mb-6">
+            {t("hero.line1")}
+            <br />
+            {t("hero.line2")}
+            {t("hero.line3") && (
+              <>
+                <br />
+                {t("hero.line3")}
+              </>
+            )}
+          </h1>
+          <p className="text-sm md:text-base text-primary-foreground/70 leading-relaxed max-w-md">
+            {t("hero.subtitle")}
+          </p>
+        </div>
 
-          {/* Right side - image with overlay card */}
-          <div className="relative">
+        {/* Hero image - full width */}
+        <div className="relative mx-auto max-w-4xl">
+          <img
+            src={heroImg}
+            alt="Kuipra team workspace"
+            className="rounded-lg w-full object-cover aspect-[16/7]"
+          />
+        </div>
+
+        {/* Vertical connector line */}
+        <div className="flex justify-center py-4">
+          <div className="w-px h-16 bg-primary-foreground/30" />
+        </div>
+
+        {/* Strategic section - image left, text right */}
+        <div className="grid md:grid-cols-2 gap-8 items-center pb-8 max-w-4xl mx-auto">
+          <div className="flex justify-center">
             <img
-              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80"
-              alt="Business communication"
-              className="rounded-lg w-full object-cover aspect-[4/3]"
+              src={statImg}
+              alt="Brand Growth Trajectory"
+              className="rounded-lg w-full max-w-sm object-contain"
             />
-            {/* Overlay card at bottom */}
-            <div className="absolute bottom-4 left-4 right-4 bg-primary/90 backdrop-blur-sm rounded-lg p-4 border border-primary-foreground/10">
-              <p className="text-orange font-bold text-sm uppercase">{t("hero.cardTitle")}</p>
-              <p className="text-primary-foreground/80 text-xs mt-1">{t("hero.cardSubtitle")}</p>
-            </div>
+          </div>
+          <div>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase leading-tight mb-4">
+              {t("hero.strategicTitle")}
+            </h2>
+            <p className="text-sm md:text-base text-primary-foreground/70 leading-relaxed">
+              {t("hero.strategicSubtitle")}
+            </p>
           </div>
         </div>
 
-        {/* Stats bar - orange */}
-        <div className="grid grid-cols-2 md:grid-cols-4 -mx-4">
-          {stats.map((stat, i) => (
-            <div
-              key={i}
-              className="bg-orange text-orange-foreground py-6 px-4 text-center border-r border-orange-foreground/10 last:border-r-0"
-            >
-              <div className="text-3xl md:text-4xl font-extrabold">{stat.value}</div>
-              <div className="text-[10px] font-semibold uppercase tracking-wider mt-1 opacity-90">{stat.label}</div>
-            </div>
-          ))}
+        {/* Vertical connector line */}
+        <div className="flex justify-center pb-4">
+          <div className="w-px h-16 bg-primary-foreground/30" />
         </div>
+      </div>
+
+      {/* Stats bar - orange, full width */}
+      <div className="grid grid-cols-2 md:grid-cols-4">
+        {stats.map((stat, i) => (
+          <div
+            key={i}
+            className="bg-orange text-orange-foreground py-6 px-6 border-r border-orange-foreground/10 last:border-r-0"
+          >
+            <div className="text-3xl md:text-4xl font-extrabold">{stat.value}</div>
+            <div className="text-xs font-semibold uppercase tracking-wider mt-1 opacity-90">{stat.label}</div>
+          </div>
+        ))}
       </div>
     </section>
   );
