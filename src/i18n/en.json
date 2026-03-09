@@ -49,16 +49,17 @@
   "timeline": {
     "sectionTitle": "FEATURED SERVICE:",
     "sectionSubtitle": "COMPREHENSIVE BRAND GROWTH SOLUTION",
-    "step1": "VISUAL IDENTITY & BRAND DESIGN",
-    "step1Desc": "Creating distinctive visual elements that define your brand's personality.",
-    "step2": "HIGH-QUALITY EDITORIAL CONTENT",
-    "step2Desc": "Professional content creation that engages and converts your audience.",
-    "step3": "PRODUCTION EXPERTISE",
-    "step3Desc": "End-to-end production capabilities for all media formats.",
-    "step4": "STRATEGIC DATA & COMPETITOR ANALYSIS",
-    "step4Desc": "Data-driven insights and competitive intelligence for informed decisions.",
+    "description": "This Comprehensive Solution Is Designed For Brands Seeking Exceptional Growth And A Professional Digital Presence. We Integrate Visual Identity Establishment, Strategic Content Creation, And Data-Driven Optimization To Help Clients Build A Unique And Irreplaceable Position In The Digital Ecosystem.",
+    "step1": "VISUAL IDENTITY & POSITIONING",
+    "step1Desc": "We Define Your Brand Aesthetic In The First Month And Provide A Visual Standards Guide To Ensure High-End Brand Recognition And Credibility.",
+    "step2": "HIGH-QUALITY ORIGINAL CONTENT",
+    "step2Desc": "By Blending Market Trends With Core Brand Values, We Produce Video And Graphic Content That Drives Both Audience Reach And Deep Conversion.",
+    "step3": "PROFESSIONAL CONTENT CAPTURE",
+    "step3Desc": "Through Scheduled On-Site Filming And Asset Collection, We Ensure Your Brand Content Remains Fresh And Maintains A Premium Visual Standard.",
+    "step4": "STRATEGIC DATA ALIGNMENT",
+    "step4Desc": "We Provide Weekly Digital Check-Ins And Monthly Strategic Meetings To Review Performance And Refine The Content Direction With Precision.",
     "step5": "FULL CHANNEL MANAGEMENT",
-    "step5Desc": "Integrated management across all communication channels."
+    "step5Desc": "Our Team Handles Content Scheduling And Publishing Across Platforms To Maintain High Levels Of Activity And Professional Brand Image."
   },
   "banner": {
     "title": "STRATEGIC ARCHITECTURE:",
