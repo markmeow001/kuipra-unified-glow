@@ -4,8 +4,8 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import kuipraLogo from "@/assets/kuipra-logo.png";
 
-const navKeys = ["home", "about", "services", "projects", "team", "contact"] as const;
-const sectionIds = ["hero", "about", "services", "projects", "team", "contact"];
+const navKeys = ["services", "about", "projects", "team", "contact"] as const;
+const sectionIds = ["services", "about", "projects", "team", "contact"];
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -49,7 +49,7 @@ const Navbar = () => {
             onClick={() => scrollTo("contact")}
             className="bg-orange text-orange-foreground hover:bg-orange/90 transition-colors rounded-full px-6"
           >
-            {t("nav.contact")}
+            {t("nav.getInTouch")}
           </Button>
         </div>
 
@@ -82,7 +82,7 @@ const Navbar = () => {
               onClick={() => scrollTo("contact")}
               className="bg-orange text-orange-foreground hover:bg-orange/90 transition-colors rounded-full px-6"
             >
-              {t("nav.contact")}
+              {t("nav.getInTouch")}
             </Button>
           </div>
         </div>
