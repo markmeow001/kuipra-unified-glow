@@ -1,5 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { Skeleton } from "@/components/ui/skeleton";
+import teamCharlene from "@/assets/team-charlene.png";
+import teamRobert from "@/assets/team-robert.png";
+import teamAlen from "@/assets/team-alen.png";
+import teamJosh from "@/assets/team-josh.png";
 
 interface TeamMember {
   id: string;
