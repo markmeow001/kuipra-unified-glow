@@ -12,10 +12,10 @@ interface TeamMember {
 }
 
 const placeholderTeam: TeamMember[] = [
-  { id: "1", name: "Chairman Wang", role_en: "Chairman", role_zh: "董事長", description_en: "Brand strategy visionary", description_zh: "品牌策略遠見者", image_url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
-  { id: "2", name: "Robert Du", role_en: "Vice Chairman", role_zh: "副董事長", description_en: "Operations & growth expert", description_zh: "營運成長專家", image_url: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
-  { id: "3", name: "Alex Tseng", role_en: "Creative Director", role_zh: "創意總監", description_en: "Award-winning creative leader", description_zh: "屢獲殊榮的創意領袖", image_url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" },
-  { id: "4", name: "Ariel Huang", role_en: "PR Director", role_zh: "公關總監", description_en: "Media relations specialist", description_zh: "媒體關係專家", image_url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" },
+  { id: "1", name: "Charlene Ling", role_en: "Principal Consultant", role_zh: "首席顧問", description_en: "An award-nominated media professional with over a decade of experience, Charlene served eight years as a News Producer leading coverage for major Canadian and U.S. elections, along with special features exploring cultural and social issues.\n\nAt Kuipra Communications, she leverages journalistic rigor and strategic storytelling to extract core brand values and transform them into high-impact digital narratives. By bridging professional integrity with modern social media, she ensures brands build a powerful, resonant, and lasting presence in the digital ecosystem.", description_zh: "一位獲獎提名的媒體專業人士，擁有超過十年的經驗。Charlene 曾擔任新聞製作人八年，領導加拿大和美國重大選舉的報導，並製作探索文化和社會議題的專題報導。\n\n在 Kuipra，她運用新聞嚴謹性和策略性敘事，提煉核心品牌價值並將其轉化為高影響力的數位敘事。", image_url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" },
+  { id: "2", name: "Robert Chu", role_en: "Principal Creative Strategist", role_zh: "首席創意策略師", description_en: "A veteran photojournalist with 20+ years in Canadian media, Robert has covered landmark events like the 2010 Winter Olympics and earned a Certificate of Recognition from the Premier of British Columbia.\n\nAt Kuipra, he bridges classical cinematography with advanced AI (Sora, Veo 3, Kling) to craft immersive, soul-driven content. By merging traditional visual craftsmanship with cutting-edge innovation, Robert redefines the boundaries of digital storytelling for the modern era.", description_zh: "一位擁有 20 多年加拿大媒體經驗的資深攝影記者，Robert 報導過 2010 年冬季奧運會等重大事件，並獲得不列顛哥倫比亞省省長頒發的表彰證書。\n\n在 Kuipra，他將古典電影攝影與先進 AI 結合，重新定義數位敘事的邊界。", image_url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
+  { id: "3", name: "Alen Yang", role_en: "Marketing Director", role_zh: "行銷總監", description_en: "Alen leverages strategic marketing operations and immersive event design to extract core brand visions and transform them into experiential activations. By bridging creative storytelling with logistical execution, he ensures brands build a powerful, engaging, and memorable presence in the market.\n\nWith designer's eye and proficiency, Alen doesn't just oversee campaigns, he shapes their visual identity. He ensures that every physical and digital touchpoint is crafted with aesthetic precision, elevating the overall brand experience through intuitive, elegant, and user-centric design.", description_zh: "Alen 運用策略性行銷營運和沉浸式活動設計，提煉核心品牌願景並將其轉化為體驗式活動。\n\n憑藉設計師的眼光和專業能力，Alen 不僅監督活動，更塑造品牌的視覺識別。", image_url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" },
+  { id: "4", name: "Josh Hung", role_en: "Visual Director", role_zh: "視覺總監", description_en: "An award-nominated media professional with over a decade of experience, Charlene served eight years as a News Producer leading coverage for major Canadian and U.S. elections.\n\nAt Kuipra Communications, she leverages journalistic rigor and strategic storytelling to extract core brand values and transform them into high-impact digital narratives. By bridging professional integrity with modern social media, she ensures brands build a powerful, resonant, and lasting presence in the digital ecosystem.", description_zh: "一位獲獎提名的媒體專業人士，擁有超過十年的經驗。\n\n在 Kuipra，她運用新聞嚴謹性和策略性敘事，確保品牌在數位生態系中建立強大、共鳴且持久的存在。", image_url: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
 ];
 
 interface Props {
@@ -30,43 +30,57 @@ const Team = ({ members, loading }: Props) => {
 
   return (
     <section id="team" className="bg-primary text-primary-foreground py-20">
-      <div className="container mx-auto px-4">
-        {/* KUIPRA logo bar */}
-        <div className="flex items-center justify-center mb-12">
-          <div className="text-center">
-            <div className="text-3xl font-extrabold tracking-[0.15em] mb-1">
-              <span className="text-orange">K</span>UIPR<span className="text-orange">A</span>
-            </div>
-            <div className="text-[10px] tracking-[0.4em] uppercase text-primary-foreground/50">Communications</div>
-          </div>
+      <div className="mx-4 md:mx-8 px-4">
+        {/* Vertical line */}
+        <div className="flex justify-center mb-8">
+          <div className="w-px h-16 bg-primary-foreground/20" />
         </div>
 
+        {/* Title */}
         <div className="text-center mb-14">
-          <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase tracking-wide leading-tight">
             {t("team.sectionTitle")}
-          </h2>
-          <p className="text-xl md:text-2xl font-extrabold uppercase tracking-wide text-orange">
+            <br />
             {t("team.sectionSubtitle")}
-          </p>
+          </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Team grid - 2x2 */}
+        <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {loading
             ? Array.from({ length: 4 }).map((_, i) => (
-                <Skeleton key={i} className="h-72 rounded-lg bg-primary-foreground/10" />
+                <Skeleton key={i} className="h-96 rounded-xl bg-primary-foreground/10" />
               ))
             : data.map((m) => (
-                <div key={m.id} className="bg-orange rounded-lg overflow-hidden hover:scale-[1.02] transition-transform group">
-                  <div className="relative h-48 overflow-hidden">
-                    <img src={m.image_url} alt={m.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                <div key={m.id} className="bg-orange rounded-xl overflow-hidden text-orange-foreground">
+                  {/* Header: name+role left, photo right */}
+                  <div className="flex items-start justify-between p-6 pb-4">
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-extrabold leading-tight">{m.name}</h3>
+                      <p className="text-sm font-medium opacity-90 mt-1">
+                        {lang === "zh" ? m.role_zh : m.role_en}
+                      </p>
+                    </div>
+                    <img
+                      src={m.image_url}
+                      alt={m.name}
+                      className="w-20 h-20 md:w-24 md:h-24 rounded-lg object-cover shrink-0 ml-4"
+                    />
                   </div>
-                  <div className="p-4 text-orange-foreground">
-                    <h3 className="font-bold text-base">{m.name}</h3>
-                    <p className="text-sm font-medium opacity-90">{lang === "zh" ? m.role_zh : m.role_en}</p>
-                    <p className="text-xs mt-1 opacity-80">{lang === "zh" ? m.description_zh : m.description_en}</p>
+                  {/* Description */}
+                  <div className="px-6 pb-6">
+                    <p className="text-xs md:text-sm opacity-85 leading-relaxed whitespace-pre-line">
+                      {lang === "zh" ? m.description_zh : m.description_en}
+                    </p>
                   </div>
                 </div>
               ))}
+        </div>
+
+        {/* Vertical lines at bottom */}
+        <div className="flex justify-center mt-12 gap-[50%]">
+          <div className="w-px h-16 bg-primary-foreground/20" />
+          <div className="w-px h-16 bg-primary-foreground/20" />
         </div>
       </div>
     </section>
