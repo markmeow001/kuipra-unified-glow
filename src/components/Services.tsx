@@ -58,16 +58,16 @@ const Services = ({ services, loading }: Props) => {
   return (
     <section id="services" className="bg-background py-20">
       <div className="container mx-auto px-4">
-        {/* Vertical line from hero */}
-        <div className="flex justify-center mb-8">
-          <div className="w-px h-12 bg-foreground/20" />
+        {/* Vertical line from hero - left aligned */}
+        <div className="mb-8">
+          <div className="w-px h-16 bg-foreground/20 ml-0" />
         </div>
 
         <div className="mb-14">
           <p className="text-sm uppercase tracking-[0.3em] text-foreground/50 mb-2">
             {t("services.sectionTitle")}
           </p>
-          <h2 className="text-2xl md:text-3xl font-extrabold text-foreground uppercase tracking-wide leading-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground uppercase tracking-wide leading-tight whitespace-pre-line">
             {t("services.sectionSubtitle")}
           </h2>
         </div>
