@@ -4,9 +4,10 @@
     "about": "About",
     "services": "Services",
     "projects": "Projects",
-    "team": "Team",
+    "team": "Our Team",
     "contact": "Contact",
-    "language": "中文"
+    "language": "中文/ENG",
+    "getInTouch": "Get in touch"
   },
   "hero": {
     "line1": "BEYOND THE FRONTIER,",

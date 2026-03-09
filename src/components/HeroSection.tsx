@@ -13,7 +13,8 @@ const HeroSection = () => {
   ];
 
   return (
-    <section id="hero" className="bg-primary text-primary-foreground pt-24 pb-0 relative overflow-hidden">
+    <section id="hero" className="pt-24 pb-0 relative">
+      <div className="mx-4 md:mx-8 bg-primary text-primary-foreground rounded-2xl relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Title & subtitle */}
         <div className="pt-8 pb-10 max-w-2xl">
@@ -73,7 +74,7 @@ const HeroSection = () => {
       </div>
 
       {/* Stats bar - orange, full width */}
-      <div className="grid grid-cols-2 md:grid-cols-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 rounded-b-2xl overflow-hidden">
         {stats.map((stat, i) => (
           <div
             key={i}
@@ -83,6 +84,7 @@ const HeroSection = () => {
             <div className="text-xs font-semibold uppercase tracking-wider mt-1 opacity-90">{stat.label}</div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
