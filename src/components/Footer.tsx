@@ -1,43 +1,104 @@
 import { useTranslation } from "react-i18next";
+import { Facebook, Twitter, Linkedin, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import kuipraLogo from "@/assets/kuipra-logo.png";
 
 const Footer = () => {
   const { t } = useTranslation();
 
-  const links = ["home", "about", "services", "projects", "team", "contact"] as const;
-  const sectionIds = ["hero", "about", "services", "projects", "team", "contact"];
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const pages = [
+    { label: t("nav.about"), id: "about" },
+    { label: t("nav.services"), id: "services" },
+    { label: t("nav.team"), id: "team" },
+    { label: t("nav.projects"), id: "projects" },
+    { label: t("nav.contact"), id: "contact" },
+  ];
+
+  const services = [
+    t("services.s1"),
+    t("services.s2"),
+    t("services.s3"),
+    t("services.s4"),
+  ];
 
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
-      <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
-        <div>
-          <div className="mb-4">
-            <img src={kuipraLogo} alt="Kuipra Communications" className="h-10 brightness-0 invert" />
+    <footer className="bg-primary text-primary-foreground">
+      <div className="mx-4 md:mx-8 px-4 py-16">
+        <div className="grid md:grid-cols-4 gap-10">
+          {/* Column 1: Logo + description + social */}
+          <div>
+            <img src={kuipraLogo} alt="Kuipra Communications" className="h-10 brightness-0 invert mb-6" />
+            <p className="text-primary-foreground/60 text-xs leading-relaxed mb-6">
+              {t("footer.description")}
+            </p>
+            <div className="flex gap-3">
+              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
+                <a key={i} href="#" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-orange transition-colors">
+                  <Icon size={14} className="text-primary-foreground" />
+                </a>
+              ))}
+            </div>
           </div>
-          <p className="text-primary-foreground/60 text-sm">{t("footer.copyright")}</p>
-        </div>
-        <div>
-          <h4 className="font-bold mb-3 text-orange">{t("footer.quickLinks")}</h4>
-          <ul className="space-y-2">
-            {links.map((key, i) => (
-              <li key={key}>
-                <button
-                  onClick={() => document.getElementById(sectionIds[i])?.scrollIntoView({ behavior: "smooth" })}
-                  className="text-sm text-primary-foreground/70 hover:text-orange transition-colors"
-                >
-                  {t(`nav.${key}`)}
-                </button>
+
+          {/* Column 2: Pages */}
+          <div>
+            <h4 className="font-bold text-sm mb-4">Pages</h4>
+            <ul className="space-y-2">
+              {pages.map((page) => (
+                <li key={page.id}>
+                  <button
+                    onClick={() => scrollTo(page.id)}
+                    className="text-xs text-primary-foreground/60 hover:text-orange transition-colors"
+                  >
+                    {page.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3: Service */}
+          <div>
+            <h4 className="font-bold text-sm mb-4">Service</h4>
+            <ul className="space-y-2">
+              {services.map((s, i) => (
+                <li key={i} className="text-xs text-primary-foreground/60 leading-relaxed">
+                  {s}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4: Contact */}
+          <div>
+            <h4 className="font-bold text-sm mb-4">Contact</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-2">
+                <Phone size={14} className="text-primary-foreground/60 shrink-0 mt-0.5" />
+                <span className="text-xs text-primary-foreground/60">{t("contact.phone")}</span>
               </li>
-            ))}
-          </ul>
+              <li className="flex items-start gap-2">
+                <Mail size={14} className="text-primary-foreground/60 shrink-0 mt-0.5" />
+                <span className="text-xs text-primary-foreground/60">{t("contact.email")}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin size={14} className="text-primary-foreground/60 shrink-0 mt-0.5" />
+                <span className="text-xs text-primary-foreground/60">{t("contact.address")}</span>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h4 className="font-bold mb-3 text-orange">{t("footer.contactInfo")}</h4>
-          <ul className="space-y-2 text-sm text-primary-foreground/70">
-            <li>{t("contact.address")}</li>
-            <li>{t("contact.phone")}</li>
-            <li>{t("contact.email")}</li>
-          </ul>
+      </div>
+
+      {/* Copyright bar */}
+      <div className="border-t border-primary-foreground/10">
+        <div className="mx-4 md:mx-8 px-4 py-6">
+          <p className="text-xs text-primary-foreground/40 text-center">
+            {t("footer.copyright")}
+          </p>
         </div>
       </div>
     </footer>
