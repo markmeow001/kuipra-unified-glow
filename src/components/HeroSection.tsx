@@ -15,9 +15,9 @@ const HeroSection = () => {
   return (
     <section id="hero" className="pt-24 pb-0 relative">
       <div className="mx-4 md:mx-8 bg-primary text-primary-foreground rounded-2xl relative overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="max-w-4xl mx-auto px-4">
         {/* Title & subtitle */}
-        <div className="pt-8 pb-10 max-w-2xl">
+        <div className="pt-8 pb-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight uppercase mb-6">
             {t("hero.line1")}
             <br />
@@ -34,8 +34,8 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* Hero image - full width */}
-        <div className="relative mx-auto max-w-4xl">
+        {/* Hero image - full width, aligned with title */}
+        <div className="relative">
           <img
             src={heroImg}
             alt="Kuipra team workspace"
