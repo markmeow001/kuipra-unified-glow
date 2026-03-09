@@ -79,14 +79,15 @@
     "sectionSubtitle": "獲得領先企業的信賴"
   },
   "contact": {
-    "sectionTitle": "聯絡資訊",
-    "address": "台灣台北市溝通大道 123 號",
-    "phone": "+886 2 1234 5678",
-    "email": "info@kuipra.com"
+    "sectionTitle": "聯絡我們",
+    "address": "3F 1045 Howe Street Vancouver",
+    "phone": "672-964-1888",
+    "email": "Charlene.Ling@Kuipra.Ca"
   },
   "footer": {
-    "copyright": "© 2024 KUIPRA 傳播顧問。版權所有。",
-    "quickLinks": "快速連結",
-    "contactInfo": "聯絡資訊"
+    "copyright": "2026 Kuipra Communications",
+    "description": "靈感源自柯伊伯帶——一個充滿隱藏世界與無限可能的遙遠前沿，Kuipra Communications 深信每個品牌都有一個等待被發掘的獨特故事。",
+    "quickLinks": "頁面",
+    "contactInfo": "聯絡"
   }
 }
