@@ -57,7 +57,7 @@ const Services = ({ services, loading }: Props) => {
 
   return (
     <section id="services" className="bg-background py-20">
-      <div className="container mx-auto px-4">
+      <div className="mx-4 md:mx-8 px-4">
         {/* Vertical line from hero - left aligned */}
         <div className="mb-8">
           <div className="w-px h-16 bg-foreground/20 ml-0" />
