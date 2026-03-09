@@ -13,9 +13,46 @@ interface Project {
 }
 
 const placeholderProjects: Project[] = [
-  { id: "1", client_name: "TAIPEI POST", tags: ["PR", "Digital"], title_en: "Brand Identity & Digital Presence", title_zh: "品牌識別與數位佈局", description_en: "Complete brand strategy overhaul and multi-channel digital presence establishment for leading media organization.", description_zh: "為領先媒體機構進行全面品牌策略重塑與多管道數位佈局建立。", image_url: "" },
-  { id: "2", client_name: "MH", tags: ["Content", "Strategy"], title_en: "Corporate Rebranding", title_zh: "企業品牌重塑", description_en: "Strategic corporate rebranding including visual identity, messaging framework, and stakeholder communications.", description_zh: "策略性企業品牌重塑，包含視覺識別、訊息框架及利害關係人溝通。", image_url: "" },
-  { id: "3", client_name: "CRAFT BREW CO.", tags: ["PR", "Social"], title_en: "Product Launch Campaign", title_zh: "產品上市活動", description_en: "Integrated marketing campaign for new product line launch with social media activation and PR outreach.", description_zh: "新產品線上市整合行銷活動，結合社群媒體啟動與公關推廣。", image_url: "" },
+  {
+    id: "1",
+    client_name: "Level Best Concrete Lifting Ltd.",
+    tags: ["Influencer Outreach", "Management", "Content Creation", "RedNote"],
+    title_en: "RedNote",
+    title_zh: "小紅書",
+    description_en: "Communicating the exact nature of their engineering work was a primary challenge for Level Best Concrete Lifting. Through strategic social media management, professional copywriting, and original video content, we translated complex technical processes into clear, compelling narratives. This approach allowed platform audiences to truly grasp the value of their work, establishing deep professional trust while expanding the brand's visibility and impact within the target market.",
+    description_zh: "傳達其工程作業的精確本質是 Level Best Concrete Lifting 的首要挑戰。透過策略性社群媒體管理、專業文案撰寫和原創影片內容，我們將複雜的技術流程轉譯為清晰、引人入勝的敘事。",
+    image_url: "",
+  },
+  {
+    id: "2",
+    client_name: "The Maggie Huang Team",
+    tags: ["Content Creation", "Management", "Email Campaign", "Webinars"],
+    title_en: "INSTAGRAM",
+    title_zh: "INSTAGRAM",
+    description_en: "We provide comprehensive, high-end copywriting and brand messaging services tailored specifically for The Maggie Huang Team. Our primary focus is translating and condensing lengthy luxury real estate listings into elegant, highly readable narratives that highlight exclusivity and investment value. Beyond property descriptions, we curate a sophisticated, top-producer brand voice across all marketing materials. This includes crafting engaging social media posts, designing impactful slogans for visual assets, and writing refined introductions for premier Manhattan restaurants. Ultimately, our services ensure the team is positioned not just as real estate experts, but as true insiders of the luxury New York lifestyle.",
+    description_zh: "我們為 The Maggie Huang Team 提供全面的高端文案撰寫和品牌訊息服務。我們的主要重點是將冗長的豪華房地產列表翻譯和精煉為優雅、高度可讀的敘事。",
+    image_url: "",
+  },
+  {
+    id: "3",
+    client_name: "",
+    tags: ["Influencer Outreach", "Management", "Content Creation"],
+    title_en: "LINK",
+    title_zh: "LINK",
+    description_en: "Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muväning, och pesask vyfisat. Viktiga poddradio har un mad och inde. Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muväning, och pesask vyfisat. Viktiga poddradio har un mad och inde.",
+    description_zh: "Lorem ipsum 佔位文字。",
+    image_url: "",
+  },
+  {
+    id: "4",
+    client_name: "Funtasy Production",
+    tags: ["Influencer Outreach", "Management", "Content Creation", "EVENT PLANNING"],
+    title_en: "INSTAGRAM",
+    title_zh: "INSTAGRAM",
+    description_en: "Funtasy Production: Amplifying Impact through Strategic Collaboration\n\nWorking with Vancouver-based Funtasy Production, we facilitate monthly strategic alignment to synchronize event timelines and content production. By deploying high-synergy influencer partnerships, we amplify their creative initiatives to maximize visibility for both the brand and its corporate partners. This integrated approach has delivered exponential growth across social media, OOH advertising, consistently exceeding performance benchmarks and creating a powerful win-win ecosystem.",
+    description_zh: "Funtasy Production：透過策略性合作放大影響力\n\n與溫哥華 Funtasy Production 合作，我們促進每月策略對齊以同步活動時程與內容製作。",
+    image_url: "",
+  },
 ];
 
 interface Props {
@@ -30,47 +67,69 @@ const Projects = ({ projects, loading }: Props) => {
 
   return (
     <section id="projects" className="bg-background py-20">
-      <div className="container mx-auto px-4">
-        {/* Large title */}
-        <h2 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground/10 uppercase tracking-wide text-center mb-12">
+      <div className="mx-4 md:mx-8 px-4">
+        {/* Large outlined title */}
+        <h2
+          className="text-5xl md:text-7xl lg:text-[8rem] font-extrabold uppercase tracking-wide text-center mb-16"
+          style={{
+            WebkitTextStroke: "2px hsl(var(--foreground) / 0.15)",
+            color: "transparent",
+          }}
+        >
           {t("projects.sectionTitle")}
         </h2>
 
-        <div className="space-y-8">
+        {/* Project list */}
+        <div className="max-w-4xl mx-auto">
           {loading
             ? Array.from({ length: 3 }).map((_, i) => (
-                <Skeleton key={i} className="h-32 rounded-lg" />
+                <Skeleton key={i} className="h-48 rounded-lg mb-8" />
               ))
             : data.map((p) => (
-                <div
-                  key={p.id}
-                  className="grid md:grid-cols-[200px_1fr] gap-6 items-start border-b border-border pb-8 last:border-b-0"
-                >
-                  {/* Left - client name with orange badge */}
-                  <div>
-                    <div className="flex flex-wrap gap-2 mb-2">
-                      {p.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="bg-orange text-orange-foreground text-[10px] font-bold px-2 py-0.5 rounded uppercase"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="text-lg font-extrabold text-foreground uppercase tracking-wide">
-                      {p.client_name}
-                    </div>
+                <div key={p.id} className="mb-12">
+                  {/* Vertical line */}
+                  <div className="flex justify-center mb-6">
+                    <div className="w-px h-12 bg-foreground/15" />
                   </div>
 
-                  {/* Right - description */}
-                  <div>
-                    <h3 className="text-base font-bold text-foreground mb-2">
-                      {lang === "zh" ? p.title_zh : p.title_en}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {lang === "zh" ? p.description_zh : p.description_en}
-                    </p>
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-6 justify-center">
+                    {p.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="bg-orange text-orange-foreground text-xs font-semibold px-4 py-1.5 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Content: logo left, text right */}
+                  <div className="grid md:grid-cols-[180px_1fr] gap-8 items-start">
+                    {/* Client logo / name */}
+                    <div className="flex items-start justify-center md:justify-start">
+                      {p.image_url ? (
+                        <img
+                          src={p.image_url}
+                          alt={p.client_name}
+                          className="max-h-20 object-contain"
+                        />
+                      ) : p.client_name ? (
+                        <div className="text-lg font-extrabold text-foreground uppercase leading-tight">
+                          {p.client_name}
+                        </div>
+                      ) : null}
+                    </div>
+
+                    {/* Description + platform */}
+                    <div>
+                      <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line mb-4">
+                        {lang === "zh" ? p.description_zh : p.description_en}
+                      </p>
+                      <p className="text-sm font-bold text-foreground uppercase tracking-wider">
+                        {lang === "zh" ? p.title_zh : p.title_en}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
