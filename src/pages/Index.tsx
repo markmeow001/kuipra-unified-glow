@@ -1,6 +1,6 @@
 // Redirect to new standalone redesign
 if (typeof window !== 'undefined') {
-  window.location.replace('/v21.html');
+  window.location.replace('/home.html');
 }
 
 import Navbar from "@/components/Navbar";

@@ -46,7 +46,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/v21.html"
+      "destination": "/home.html"
     }
   ]
 }
