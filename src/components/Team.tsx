@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Skeleton } from "@/components/ui/skeleton";
-import teamCharlene from "@/assets/team-charlene.png";
-import teamRobert from "@/assets/team-robert.png";
-import teamAlen from "@/assets/team-alen.png";
-import teamJosh from "@/assets/team-josh.png";
+// Using real team photos from public/team/
+const teamCharlene = "/team/charlene.png";
+const teamRobert = "/team/robert.png";
+const teamAlen = "/team/alen.png";
+const teamJosh = "/team/josh.png";
 
 interface TeamMember {
   id: string;
