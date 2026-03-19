@@ -1491,15 +1491,15 @@
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
   // Formspree AJAX submit
-  document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
+  async function handleFormSubmit() {
+    const form = document.getElementById('contactForm');
     const btn = document.getElementById('submitBtn');
     btn.disabled = true;
     btn.textContent = currentLang === 'zh' ? '送出中...' : 'Sending...';
     try {
       const res = await fetch('https://formspree.io/f/xojkrblw', {
         method: 'POST',
-        body: new FormData(this),
+        body: new FormData(form),
         headers: { 'Accept': 'application/json' }
       });
       if (res.ok) {
@@ -1522,7 +1522,7 @@
       btn.textContent = currentLang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →';
       alert(currentLang === 'zh' ? '送出失敗，請直接 email 至 Charlene.Ling@Kuipra.Ca' : 'Submission failed. Please email Charlene.Ling@Kuipra.Ca directly.');
     }
-  });
+  }
 
 </script>
 
@@ -1539,7 +1539,7 @@
       <p data-en="We'll be in touch within 24 hours." data-zh="我們將在 24 小時內與您聯絡。">We'll be in touch within 24 hours.</p>
     </div>
 
-    <form class="modal-form" id="contactForm">
+    <form class="modal-form" id="contactForm" onsubmit="return false;">
       <div class="modal-row">
         <div class="modal-field">
           <label for="cf-name" data-en="YOUR NAME" data-zh="您的姓名">YOUR NAME</label>
@@ -1569,7 +1569,7 @@
         <label for="cf-message" data-en="MESSAGE" data-zh="訊息內容">MESSAGE</label>
         <textarea id="cf-message" name="message" required placeholder="Tell us about your brand and goals..."></textarea>
       </div>
-      <button type="submit" class="modal-submit" id="submitBtn" data-en="SEND MESSAGE →" data-zh="送出訊息 →">SEND MESSAGE →</button>
+      <button type="button" class="modal-submit" id="submitBtn" onclick="handleFormSubmit()" data-en="SEND MESSAGE →" data-zh="送出訊息 →">SEND MESSAGE →</button>
     </form>
   </div>
 </div>
