@@ -12,12 +12,12 @@ const Contact = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-0 rounded-xl overflow-hidden">
           {/* Left - Google Maps embed */}
-          <div className="h-72 md:h-auto min-h-[320px]">
+          <div className="h-64 md:h-auto md:min-h-[320px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.5!2d-123.121!3d49.283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDE2JzU4LjgiTiAxMjPCsDA3JzE2LjAiVw!5e0!3m2!1sen!2sca!4v1!5m2!1sen!2sca"
               width="100%"
               height="100%"
-              style={{ border: 0 }}
+              style={{ border: 0, display: "block" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
