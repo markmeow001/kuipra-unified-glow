@@ -1,4 +1,9 @@
 {
+  "redirects": [
+    { "source": "/login", "destination": "/", "permanent": false },
+    { "source": "/reset-password", "destination": "/", "permanent": false },
+    { "source": "/admin", "destination": "/", "permanent": false }
+  ],
   "headers": [
     {
       "source": "/(.*)",
