@@ -53,13 +53,27 @@ const Navbar = () => {
           </Button>
         </div>
 
-        {/* Mobile menu button */}
-        <button className="md:hidden" onClick={() => setOpen(!open)}>
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile: language + CTA always visible + hamburger */}
+        <div className="md:hidden flex items-center gap-2">
+          <button
+            onClick={toggleLang}
+            className="text-xs font-medium text-primary hover:text-orange transition-colors border border-gray-200 rounded-full px-2 py-1"
+          >
+            {t("nav.language")}
+          </button>
+          <Button
+            onClick={() => scrollTo("contact")}
+            className="bg-orange text-orange-foreground hover:bg-orange/90 transition-colors rounded-full px-3 py-1 text-xs h-auto"
+          >
+            {t("nav.getInTouch")}
+          </Button>
+          <button onClick={() => setOpen(!open)}>
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile nav */}
+      {/* Mobile nav dropdown - nav links only */}
       {open && (
         <div className="md:hidden bg-white border-t border-gray-100 pb-4 px-4 flex flex-col gap-3">
           {navKeys.map((key, i) => (
@@ -71,20 +85,6 @@ const Navbar = () => {
               {t(`nav.${key}`)}
             </button>
           ))}
-          <div className="flex gap-2 pt-2">
-            <button
-              onClick={toggleLang}
-              className="text-sm font-medium text-primary hover:text-orange transition-colors px-3 py-1"
-            >
-              {t("nav.language")}
-            </button>
-            <Button
-              onClick={() => scrollTo("contact")}
-              className="bg-orange text-orange-foreground hover:bg-orange/90 transition-colors rounded-full px-6"
-            >
-              {t("nav.getInTouch")}
-            </Button>
-          </div>
         </div>
       )}
     </nav>
