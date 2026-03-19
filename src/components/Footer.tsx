@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Facebook, Twitter, Linkedin, Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import kuipraLogo from "@/assets/kuipra-logo.png";
 
 const Footer = () => {
@@ -24,6 +24,11 @@ const Footer = () => {
     t("services.s4"),
   ];
 
+  const socialLinks = [
+    { Icon: Facebook, href: "https://www.facebook.com/kuipra", label: "Facebook" },
+    { Icon: Instagram, href: "https://www.instagram.com/kuipra_communications/", label: "Instagram" },
+  ];
+
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="mx-4 md:mx-8 px-4 py-16">
@@ -35,8 +40,15 @@ const Footer = () => {
               {t("footer.description")}
             </p>
             <div className="flex gap-3">
-              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
-                <a key={i} href="#" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-orange transition-colors">
+              {socialLinks.map(({ Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-orange transition-colors"
+                >
                   <Icon size={14} className="text-primary-foreground" />
                 </a>
               ))}

@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Skeleton } from "@/components/ui/skeleton";
 
 interface Project {
+  link_url?: string;
   id: string;
   client_name: string;
   tags: string[];
@@ -27,8 +28,9 @@ const placeholderProjects: Project[] = [
     id: "2",
     client_name: "The Maggie Huang Team",
     tags: ["Content Creation", "Management", "Email Campaign", "Webinars"],
-    title_en: "INSTAGRAM",
-    title_zh: "INSTAGRAM",
+    title_en: "Instagram",
+    link_url: "https://www.instagram.com/kuipra_communications/",
+    title_zh: "Instagram",
     description_en: "We provide comprehensive, high-end copywriting and brand messaging services tailored specifically for The Maggie Huang Team. Our primary focus is translating and condensing lengthy luxury real estate listings into elegant, highly readable narratives that highlight exclusivity and investment value. Beyond property descriptions, we curate a sophisticated, top-producer brand voice across all marketing materials. This includes crafting engaging social media posts, designing impactful slogans for visual assets, and writing refined introductions for premier Manhattan restaurants. Ultimately, our services ensure the team is positioned not just as real estate experts, but as true insiders of the luxury New York lifestyle.",
     description_zh: "我們為 The Maggie Huang Team 提供全面的高端文案撰寫和品牌訊息服務。我們的主要重點是將冗長的豪華房地產列表翻譯和精煉為優雅、高度可讀的敘事。",
     image_url: "",
@@ -37,8 +39,8 @@ const placeholderProjects: Project[] = [
     id: "3",
     client_name: "",
     tags: ["Influencer Outreach", "Management", "Content Creation"],
-    title_en: "LINK",
-    title_zh: "LINK",
+    title_en: "Link",
+    title_zh: "Link",
     description_en: "Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muväning, och pesask vyfisat. Viktiga poddradio har un mad och inde. Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muväning, och pesask vyfisat. Viktiga poddradio har un mad och inde.",
     description_zh: "Lorem ipsum 佔位文字。",
     image_url: "",
@@ -47,8 +49,9 @@ const placeholderProjects: Project[] = [
     id: "4",
     client_name: "Funtasy Production",
     tags: ["Influencer Outreach", "Management", "Content Creation", "EVENT PLANNING"],
-    title_en: "INSTAGRAM",
-    title_zh: "INSTAGRAM",
+    title_en: "Instagram",
+    link_url: "https://www.instagram.com/kuipra_communications/",
+    title_zh: "Instagram",
     description_en: "Funtasy Production: Amplifying Impact through Strategic Collaboration\n\nWorking with Vancouver-based Funtasy Production, we facilitate monthly strategic alignment to synchronize event timelines and content production. By deploying high-synergy influencer partnerships, we amplify their creative initiatives to maximize visibility for both the brand and its corporate partners. This integrated approach has delivered exponential growth across social media, OOH advertising, consistently exceeding performance benchmarks and creating a powerful win-win ecosystem.",
     description_zh: "Funtasy Production：透過策略性合作放大影響力\n\n與溫哥華 Funtasy Production 合作，我們促進每月策略對齊以同步活動時程與內容製作。",
     image_url: "",
@@ -126,9 +129,22 @@ const Projects = ({ projects, loading }: Props) => {
                       <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line mb-4">
                         {lang === "zh" ? p.description_zh : p.description_en}
                       </p>
-                      <p className="text-sm font-bold text-foreground uppercase tracking-wider">
-                        {lang === "zh" ? p.title_zh : p.title_en}
-                      </p>
+                      {(lang === "zh" ? p.title_zh : p.title_en) && (
+                        p.link_url ? (
+                          <a
+                            href={p.link_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-sm font-bold text-orange uppercase tracking-wider hover:underline"
+                          >
+                            {lang === "zh" ? p.title_zh : p.title_en} ↗
+                          </a>
+                        ) : (
+                          <p className="text-sm font-bold text-foreground uppercase tracking-wider">
+                            {lang === "zh" ? p.title_zh : p.title_en}
+                          </p>
+                        )
+                      )}
                     </div>
                   </div>
                 </div>
