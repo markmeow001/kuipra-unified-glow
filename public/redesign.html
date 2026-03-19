@@ -281,12 +281,7 @@
     font-size: clamp(38px, 4vw, 56px); font-weight: 700;
     line-height: 1.1; letter-spacing: -0.02em; color: var(--ink);
   }
-  .project-card {
-    display: grid; grid-template-columns: 280px 1fr;
-    gap: 0; border-top: 1px solid var(--rule);
-    padding: 56px 0;
-  }
-  .project-card:last-child { border-bottom: 1px solid var(--rule); }
+  /* .project-card grid removed — using .project-img-card instead */
   .project-meta { padding-right: 48px; }
   .project-client {
     font-family: 'Playfair Display', serif;
@@ -457,8 +452,7 @@
     #process, #projects, #services, #team { padding: 80px 24px; }
     .process-step { grid-template-columns: 60px 1fr; }
     .step-desc { grid-column: 2; }
-    .project-card { grid-template-columns: 1fr; gap: 24px; }
-    .project-body { border-left: none; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 24px; }
+
     .team-grid { grid-template-columns: 1fr 1fr; }
     .team-card { border-right: 1px solid var(--rule-light); border-bottom: 1px solid var(--rule-light); }
     .team-card:nth-child(2n) { border-right: none; }
