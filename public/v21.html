@@ -686,6 +686,25 @@
     }
     .projects-headline { font-size: clamp(32px, 8vw, 46px); }
     .project-img-card { isolation: isolate; z-index: 0; width: 100%; max-width: 100%; box-sizing: border-box; }
+    /* Mobile: stack image above text */
+    .project-img-card { display: flex !important; flex-direction: column !important; position: static !important; overflow: visible !important; }
+    .project-img-card img { width: 100% !important; height: auto !important; display: block !important; filter: brightness(0.75) !important; border-radius: 2px; }
+    .project-img-overlay {
+      position: static !important;
+      inset: unset !important;
+      background: var(--ink) !important;
+      padding: 20px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+    .project-overlay-content { max-width: 100% !important; width: 100% !important; }
+    .project-overlay-content .project-client { font-size: 18px !important; margin-bottom: 8px !important; }
+    .project-overlay-content .project-tags { margin-bottom: 10px !important; }
+    .project-overlay-content .project-body { font-size: 13px !important; -webkit-line-clamp: 3 !important; margin-bottom: 12px !important; }
+    .project-overlay-content .project-link { font-size: 12px !important; }
+    /* Hide KUIPRA × CASE STUDY label on mobile */
+    .project-label { display: none; }
     .project-img-overlay { padding: 28px 20px; }
     .project-overlay-content { max-width: 100%; width: 100%; }
     .project-overlay-content .project-client { font-size: 20px !important; }
