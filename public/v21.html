@@ -685,26 +685,39 @@
       margin-bottom: 40px;
     }
     .projects-headline { font-size: clamp(32px, 8vw, 46px); }
-    .project-img-card { isolation: isolate; z-index: 0; width: 100%; max-width: 100%; box-sizing: border-box; }
-    /* Mobile: stack image above text */
-    .project-img-card { display: flex !important; flex-direction: column !important; position: static !important; overflow: visible !important; }
-    .project-img-card img { width: 100% !important; height: auto !important; display: block !important; filter: brightness(0.75) !important; border-radius: 2px; }
+    /* ── Selected Work mobile ── */
+    .project-img-card {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      position: relative !important;
+      overflow: hidden !important;
+      isolation: isolate;
+    }
+    .project-img-card img {
+      display: block !important;
+      width: 100% !important;
+      height: auto !important;
+      filter: brightness(0.55) !important;
+      object-fit: unset !important;
+    }
     .project-img-overlay {
-      position: static !important;
-      inset: unset !important;
-      background: var(--ink) !important;
-      padding: 20px !important;
+      position: absolute !important;
+      inset: 0 !important;
+      background: rgba(8,18,32,0.55) !important;
       display: flex !important;
       flex-direction: column !important;
+      justify-content: flex-end !important;
       align-items: flex-start !important;
+      padding: 20px !important;
     }
     .project-overlay-content { max-width: 100% !important; width: 100% !important; }
-    .project-overlay-content .project-client { font-size: 18px !important; margin-bottom: 8px !important; }
+    .project-overlay-content .project-client { font-size: 17px !important; margin-bottom: 8px !important; line-height: 1.2 !important; }
     .project-overlay-content .project-tags { margin-bottom: 10px !important; }
-    .project-overlay-content .project-body { font-size: 13px !important; -webkit-line-clamp: 3 !important; margin-bottom: 12px !important; }
-    .project-overlay-content .project-link { font-size: 12px !important; }
-    /* Hide KUIPRA × CASE STUDY label on mobile */
-    .project-label { display: none; }
+    .project-overlay-content .project-body { font-size: 13px !important; -webkit-line-clamp: 2 !important; margin-bottom: 10px !important; color: rgba(255,255,255,0.9) !important; }
+    .project-overlay-content .tag { font-size: 10px !important; padding: 3px 7px !important; }
+    .project-overlay-content .project-link { font-size: 11px !important; }
+    .project-label { font-size: 10px !important; }
     .project-img-overlay { padding: 28px 20px; }
     .project-overlay-content { max-width: 100%; width: 100%; }
     .project-overlay-content .project-client { font-size: 20px !important; }
