@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Title & Description -->
+    <title>Kuipra Communications | Brand Strategy & Digital Marketing Agency Vancouver</title>
+    <meta name="description" content="Kuipra Communications is a Vancouver-based brand strategy and digital marketing agency. We specialize in PR, content creation, social media management, and brand storytelling for businesses across Canada and beyond." />
+
+    <!-- Canonical & Locale -->
+    <link rel="canonical" href="https://kuipra.ca/" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="Kuipra Communications" />
+    <meta name="copyright" content="Kuipra Communications 2026" />
+
+    <!-- Geo / Local SEO -->
+    <meta name="geo.region" content="CA-BC" />
+    <meta name="geo.placename" content="Vancouver, British Columbia" />
+    <meta name="geo.position" content="49.283;-123.121" />
+    <meta name="ICBM" content="49.283, -123.121" />
+
+    <!-- Keywords -->
+    <meta name="keywords" content="brand strategy Vancouver, digital marketing agency Vancouver, PR agency Canada, content marketing Vancouver, social media management BC, brand consulting, public relations Vancouver, brand storytelling, Kuipra Communications, marketing agency British Columbia" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0A1628" />
+    <meta name="msapplication-TileColor" content="#0A1628" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kuipra.ca/" />
+    <meta property="og:title" content="Kuipra Communications | Brand Strategy & Digital Marketing Agency Vancouver" />
+    <meta property="og:description" content="Explorers and amplifiers of brand stories. Kuipra Communications transforms your brand's essence into impactful narratives through strategic PR, content creation, and digital marketing." />
+    <meta property="og:image" content="https://kuipra.ca/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Kuipra Communications" />
+    <meta property="og:locale" content="en_CA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://kuipra.ca/" />
+    <meta name="twitter:title" content="Kuipra Communications | Brand Strategy & Digital Marketing Vancouver" />
+    <meta name="twitter:description" content="Vancouver-based brand strategy agency. We discover and amplify your brand's brilliance through storytelling, PR, and digital strategy." />
+    <meta name="twitter:image" content="https://kuipra.ca/og-image.jpg" />
+
+    <!-- Schema.org: Organization + MarketingAgency -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MarketingAgency",
+      "name": "Kuipra Communications",
+      "alternateName": "Kuipra",
+      "url": "https://kuipra.ca",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kuipra.ca/android-chrome-512x512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://kuipra.ca/og-image.jpg",
+      "description": "Kuipra Communications is a Vancouver-based brand strategy and digital marketing agency specializing in PR, content creation, social media management, and brand storytelling.",
+      "foundingDate": "2024",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3F 1045 Howe Street",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "postalCode": "V6Z 1P6",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.283,
+        "longitude": -123.121
+      },
+      "telephone": "+1-672-964-1888",
+      "email": "Charlene.Ling@Kuipra.Ca",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Vancouver"
+        },
+        {
+          "@type": "Country",
+          "name": "Canada"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/kuipra",
+        "https://www.instagram.com/kuipra_communications/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Marketing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Social Media Management",
+              "description": "Strategic social media management to engage audiences and drive growth across all platforms."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Content Creation",
+              "description": "Original written, visual, and video content that brings your brand story to life."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Brand Strategy & Personal Branding",
+              "description": "Expert guidance to define brand identity and ensure your brand stands out with clarity and authority."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Public Relations & Communications",
+              "description": "Strategic PR campaigns and media outreach to enhance brand visibility and reputation."
+            }
+          }
+        ]
+      },
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Charlene Ling",
+          "jobTitle": "Principal Consultant",
+          "worksFor": { "@type": "Organization", "name": "Kuipra Communications" }
+        },
+        {
+          "@type": "Person",
+          "name": "Robert Chu",
+          "jobTitle": "Principal Creative Strategist",
+          "worksFor": { "@type": "Organization", "name": "Kuipra Communications" }
+        },
+        {
+          "@type": "Person",
+          "name": "Alen Yang",
+          "jobTitle": "Marketing Director",
+          "worksFor": { "@type": "Organization", "name": "Kuipra Communications" }
+        },
+        {
+          "@type": "Person",
+          "name": "Josh Hung",
+          "jobTitle": "Visual Lead & Creative Producer",
+          "worksFor": { "@type": "Organization", "name": "Kuipra Communications" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Schema.org: FAQ (for AI search / Google SGE) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What services does Kuipra Communications offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kuipra Communications offers social media management, content creation, brand strategy and personal branding, and public relations and communications services. We serve businesses across Vancouver, British Columbia, and Canada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Kuipra Communications located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kuipra Communications is located at 3F 1045 Howe Street, Vancouver, BC, Canada. We serve clients across Canada and internationally."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What industries does Kuipra Communications work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kuipra Communications has strategically navigated 15+ industries including real estate, entertainment, events, and professional services. We specialize in both personal and corporate brand storytelling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact Kuipra Communications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can reach Kuipra Communications by phone at 672-964-1888, by email at Charlene.Ling@Kuipra.Ca, or visit us at 3F 1045 Howe Street, Vancouver, BC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Kuipra Communications different from other marketing agencies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kuipra Communications combines journalistic rigor, strategic storytelling, and cutting-edge AI content production (including Sora, Veo 3, and Kling) to craft immersive brand narratives. Our team has 20+ years of Canadian media experience and has delivered 85% average engagement growth for clients within 6 months."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Schema.org: WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Kuipra Communications",
+      "url": "https://kuipra.ca",
+      "description": "Vancouver-based brand strategy and digital marketing agency",
+      "inLanguage": ["en-CA", "zh-TW"]
+    }
+    </script>
+
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,234 +1,1611 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuipra Communications</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <!-- Primary Title & Description -->
-    <title>Kuipra Communications | Brand Strategy & Digital Marketing Agency Vancouver</title>
-    <meta name="description" content="Kuipra Communications is a Vancouver-based brand strategy and digital marketing agency. We specialize in PR, content creation, social media management, and brand storytelling for businesses across Canada and beyond." />
+  :root {
+    --ink: #0d0d0d;
+    --ink-soft: #3a3a3a;
+    --ink-faint: #888;
+    --paper: #f7f5f0;
+    --paper-pure: #ffffff;
+    --deep: #0a1628;
+    --deep-mid: #112240;
+    --orange: #e85d26;
+    --orange-soft: rgba(232, 93, 38, 0.12);
+    --rule: rgba(13,13,13,0.1);
+    --rule-light: rgba(255,255,255,0.12);
+  }
 
-    <!-- Canonical & Locale -->
-    <link rel="canonical" href="https://kuipra.ca/" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="author" content="Kuipra Communications" />
-    <meta name="copyright" content="Kuipra Communications 2026" />
+  html { scroll-behavior: smooth; }
 
-    <!-- Geo / Local SEO -->
-    <meta name="geo.region" content="CA-BC" />
-    <meta name="geo.placename" content="Vancouver, British Columbia" />
-    <meta name="geo.position" content="49.283;-123.121" />
-    <meta name="ICBM" content="49.283, -123.121" />
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    width: 100%;
+    position: relative;
+  }
 
-    <!-- Keywords -->
-    <meta name="keywords" content="brand strategy Vancouver, digital marketing agency Vancouver, PR agency Canada, content marketing Vancouver, social media management BC, brand consulting, public relations Vancouver, brand storytelling, Kuipra Communications, marketing agency British Columbia" />
+  /* ── NAV ─────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px;
+    height: 72px;
+    background: rgba(247,245,240,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .nav-logo img {
+    height: 38px;
+    width: auto;
+    display: block;
+  }
+  .nav-links { display: flex; align-items: center; gap: 36px; }
+  .nav-links a {
+    font-size: 17px; font-weight: 400; letter-spacing: 0.03em;
+    color: var(--ink-soft); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-cta {
+    font-size: 16px; font-weight: 500;
+    letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--paper) !important;
+    background: var(--ink);
+    padding: 10px 24px; border-radius: 2px;
+    text-decoration: none;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--orange) !important; color: var(--paper) !important; }
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#0A1628" />
-    <meta name="msapplication-TileColor" content="#0A1628" />
+  /* ── HERO ────────────────────────────────────── */
+  #hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 0 48px 80px;
+    position: relative;
+    background: var(--paper);
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .hero-bg-text {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(120px, 18vw, 280px);
+    font-weight: 900;
+    color: rgba(13,13,13,0.04);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.03em;
+  }
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 16px; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--orange);
+    margin-bottom: 24px;
+    opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
+  }
+  .hero-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(52px, 7vw, 108px);
+    font-weight: 700;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 900px;
+    opacity: 0; animation: fadeUp 0.9s 0.35s forwards;
+  }
+  .hero-headline em {
+    font-style: italic; color: var(--orange);
+  }
+  .hero-bottom {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-top: 64px;
+    opacity: 0; animation: fadeUp 0.8s 0.55s forwards;
+  }
+  .hero-sub {
+    font-size: 20px; font-weight: 300; line-height: 1.7;
+    color: var(--ink-soft); max-width: 440px;
+  }
+  .hero-stats {
+    display: flex; gap: 48px; align-items: flex-end;
+  }
+  .stat-item { text-align: right; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px; font-weight: 700;
+    line-height: 1; color: var(--ink);
+    display: block;
+  }
+  .stat-label {
+    font-size: 15px; color: var(--ink-faint);
+    letter-spacing: 0.05em; margin-top: 4px;
+    display: block; max-width: 120px; text-align: right;
+  }
+  .hero-rule {
+    width: 100%; height: 1px;
+    background: var(--rule); margin-top: 64px;
+    opacity: 0; animation: fadeIn 1s 0.8s forwards;
+  }
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kuipra.ca/" />
-    <meta property="og:title" content="Kuipra Communications | Brand Strategy & Digital Marketing Agency Vancouver" />
-    <meta property="og:description" content="Explorers and amplifiers of brand stories. Kuipra Communications transforms your brand's essence into impactful narratives through strategic PR, content creation, and digital marketing." />
-    <meta property="og:image" content="https://kuipra.ca/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="Kuipra Communications" />
-    <meta property="og:locale" content="en_CA" />
+  /* ── MARQUEE ─────────────────────────────────── */
+  .marquee-wrap {
+    background: var(--ink); padding: 18px 0;
+    overflow: hidden !important; display: flex;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  .marquee-track {
+    display: flex; gap: 0;
+    animation: marquee 22s linear infinite;
+    white-space: nowrap;
+  }
+  .marquee-item {
+    font-family: 'DM Mono', monospace;
+    font-size: 14px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: rgba(255,255,255,0.35);
+    padding: 0 32px;
+    flex-shrink: 0;
+  }
+  .marquee-item span { color: var(--orange); margin: 0 8px; }
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://kuipra.ca/" />
-    <meta name="twitter:title" content="Kuipra Communications | Brand Strategy & Digital Marketing Vancouver" />
-    <meta name="twitter:description" content="Vancouver-based brand strategy agency. We discover and amplify your brand's brilliance through storytelling, PR, and digital strategy." />
-    <meta name="twitter:image" content="https://kuipra.ca/og-image.jpg" />
+  /* ── SERVICES ────────────────────────────────── */
+  #services { background: var(--paper); padding: 120px 48px; }
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 14px; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--orange);
+    margin-bottom: 64px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .section-label::after {
+    content: ''; flex: 1; height: 1px; background: var(--rule); max-width: 80px;
+  }
+  .services-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 0; border-top: 1px solid var(--rule);
+  }
+  .service-item {
+    padding: 56px 48px 56px 0;
+    border-bottom: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    display: flex; gap: 32px;
+    transition: background 0.3s;
+    cursor: default;
+  }
+  .service-item:nth-child(even) { padding: 56px 0 56px 48px; border-right: none; }
+  .service-item:hover { background: rgba(232,93,38,0.03); }
+  .service-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 15px; color: var(--orange);
+    letter-spacing: 0.1em; flex-shrink: 0; padding-top: 6px;
+  }
+  .service-content { flex: 1; }
+  .service-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700;
+    color: var(--ink); margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .service-desc { font-size: 18px; line-height: 1.75; color: var(--ink-soft); font-weight: 300; }
 
-    <!-- Schema.org: Organization + MarketingAgency -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MarketingAgency",
-      "name": "Kuipra Communications",
-      "alternateName": "Kuipra",
-      "url": "https://kuipra.ca",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://kuipra.ca/android-chrome-512x512.png",
-        "width": 512,
-        "height": 512
-      },
-      "image": "https://kuipra.ca/og-image.jpg",
-      "description": "Kuipra Communications is a Vancouver-based brand strategy and digital marketing agency specializing in PR, content creation, social media management, and brand storytelling.",
-      "foundingDate": "2024",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "3F 1045 Howe Street",
-        "addressLocality": "Vancouver",
-        "addressRegion": "BC",
-        "postalCode": "V6Z 1P6",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 49.283,
-        "longitude": -123.121
-      },
-      "telephone": "+1-672-964-1888",
-      "email": "Charlene.Ling@Kuipra.Ca",
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Vancouver"
-        },
-        {
-          "@type": "Country",
-          "name": "Canada"
-        }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/kuipra",
-        "https://www.instagram.com/kuipra_communications/"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Marketing Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Social Media Management",
-              "description": "Strategic social media management to engage audiences and drive growth across all platforms."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Content Creation",
-              "description": "Original written, visual, and video content that brings your brand story to life."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Brand Strategy & Personal Branding",
-              "description": "Expert guidance to define brand identity and ensure your brand stands out with clarity and authority."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Public Relations & Communications",
-              "description": "Strategic PR campaigns and media outreach to enhance brand visibility and reputation."
-            }
-          }
-        ]
-      },
-      "employee": [
-        {
-          "@type": "Person",
-          "name": "Charlene Ling",
-          "jobTitle": "Principal Consultant",
-          "worksFor": { "@type": "Organization", "name": "Kuipra Communications" }
-        },
-        {
-          "@type": "Person",
-          "name": "Robert Chu",
-          "jobTitle": "Principal Creative Strategist",
-          "worksFor": { "@type": "Organization", "name": "Kuipra Communications" }
-        },
-        {
-          "@type": "Person",
-          "name": "Alen Yang",
-          "jobTitle": "Marketing Director",
-          "worksFor": { "@type": "Organization", "name": "Kuipra Communications" }
-        },
-        {
-          "@type": "Person",
-          "name": "Josh Hung",
-          "jobTitle": "Visual Lead & Creative Producer",
-          "worksFor": { "@type": "Organization", "name": "Kuipra Communications" }
-        }
-      ]
+  /* ── ABOUT ───────────────────────────────────── */
+  #about {
+    background: var(--deep);
+    padding: 120px 48px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+  .about-left { }
+  .about-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 15px; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--orange);
+    margin-bottom: 48px;
+  }
+  .about-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 58px); font-weight: 700;
+    line-height: 1.1; letter-spacing: -0.02em;
+    color: white; margin-bottom: 40px;
+  }
+  .about-headline em { font-style: italic; color: rgba(255,255,255,0.45); }
+  .about-cta {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-size: 15px; letter-spacing: 0.08em;
+    text-transform: uppercase; font-weight: 500;
+    color: var(--orange); text-decoration: none;
+    border-bottom: 1px solid var(--orange);
+    padding-bottom: 4px;
+    transition: gap 0.2s;
+  }
+  .about-cta:hover { gap: 20px; }
+  .about-right { }
+  .about-body {
+    font-size: 20px; line-height: 1.8; color: rgba(255,255,255,0.55);
+    font-weight: 300; margin-bottom: 40px;
+  }
+  .about-body strong { color: rgba(255,255,255,0.85); font-weight: 400; }
+  .about-divider {
+    width: 40px; height: 1px;
+    background: var(--orange); margin-bottom: 40px;
+  }
+
+  /* ── PROCESS ─────────────────────────────────── */
+  #process { background: var(--paper-pure); padding: 120px 48px; }
+  .process-header {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+    margin-bottom: 96px; align-items: end;
+  }
+  .process-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 56px); font-weight: 700;
+    line-height: 1.1; letter-spacing: -0.02em; color: var(--ink);
+  }
+  .process-desc { font-size: 20px; line-height: 1.7; color: var(--ink-soft); font-weight: 300; }
+  .process-steps { display: flex; flex-direction: column; }
+  .process-step {
+    display: grid; grid-template-columns: 80px 1fr 1fr;
+    gap: 40px; align-items: start;
+    padding: 40px 0; border-top: 1px solid var(--rule);
+    transition: background 0.2s;
+  }
+  .process-step:last-child { border-bottom: 1px solid var(--rule); }
+  .step-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 15px; color: var(--orange);
+    letter-spacing: 0.1em; padding-top: 4px;
+  }
+  .step-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; font-weight: 700; color: var(--ink);
+  }
+  .step-desc { font-size: 18px; line-height: 1.75; color: var(--ink-soft); font-weight: 300; }
+
+  /* ── PROJECTS ────────────────────────────────── */
+  #projects { background: var(--paper); padding: 120px 48px; }
+  .projects-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 40px;
+  }
+  .projects-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 56px); font-weight: 700;
+    line-height: 1.1; letter-spacing: -0.02em; color: var(--ink);
+  }
+  /* .project-card grid removed — using .project-img-card instead */
+  .project-meta { padding-right: 48px; }
+  .project-client {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700;
+    color: var(--ink); margin-bottom: 16px; line-height: 1.2;
+  }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .tag {
+    font-size: 13px; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--ink-faint);
+    border: 1px solid var(--rule); padding: 4px 10px; border-radius: 1px;
+  }
+  .project-link {
+    font-size: 15px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--orange);
+    text-decoration: none; font-weight: 500;
+    display: inline-flex; align-items: center; gap: 8px;
+    border-bottom: 1px solid var(--orange);
+    padding-bottom: 2px; transition: gap 0.2s;
+  }
+  .project-link:hover { gap: 14px; }
+  .project-body {
+    font-size: 18px; line-height: 1.8; color: var(--ink-soft);
+    font-weight: 300; padding-left: 48px;
+    border-left: 1px solid var(--rule);
+  }
+
+  /* ── TEAM ────────────────────────────────────────── */
+  #team {
+    background: var(--deep);
+    padding: 120px 48px;
+  }
+  .team-header { margin-bottom: 80px; }
+  .team-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: white;
+    max-width: 600px;
+  }
+  .team-headline em { font-style: italic; color: rgba(255,255,255,0.35); }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--rule-light);
+  }
+  .team-card {
+    padding: 40px 32px;
+    border-right: 1px solid var(--rule-light);
+    border-bottom: 1px solid var(--rule-light);
+  }
+  .team-card:nth-child(4n) { border-right: none; }
+
+  .team-photo {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    filter: grayscale(15%);
+    transition: filter 0.4s ease;
+  }
+  .team-card:hover .team-photo { filter: grayscale(0); }
+
+  .team-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .team-role {
+    font-size: 13px;
+    color: var(--orange);
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+  }
+  .team-bio-wrap { }
+  .team-bio-preview {
+    font-size: 14px;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+    margin: 0 0 14px 0;
+  }
+  .team-bio-full {
+    display: none;
+    font-size: 14px;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+    margin: 0 0 14px 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .team-bio-full.open { display: block; }
+
+  button.team-toggle {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--orange);
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+  button.team-toggle:hover { opacity: 1; }
+  .toggle-arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-style: normal;
+  }
+  button.team-toggle.open .toggle-arrow { transform: rotate(180deg); }
+
+  /* ── CTA BAND ────────────────────────────────── */
+  #cta {
+    background: var(--orange);
+    padding: 100px 48px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .cta-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 4vw, 60px); font-weight: 700;
+    line-height: 1.1; letter-spacing: -0.02em;
+    color: white; max-width: 600px;
+  }
+  .cta-headline em { font-style: italic; opacity: 0.6; }
+  .cta-btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: white; color: var(--orange);
+    font-size: 16px; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; padding: 20px 40px;
+    text-decoration: none; border-radius: 2px;
+    transition: all 0.2s; flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .cta-btn:hover { background: var(--ink); color: white; gap: 20px; }
+
+  /* ── FOOTER ──────────────────────────────────── */
+  footer {
+    background: var(--ink); padding: 72px 48px 40px;
+  }
+  .footer-top {
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px; margin-bottom: 64px;
+    padding-bottom: 64px; border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer-logo img {
+    height: 32px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+  }
+  .footer-tagline { font-size: 17px; color: rgba(255,255,255,0.35); line-height: 1.7; font-weight: 300; margin-bottom: 32px; }
+  .footer-socials { display: flex; gap: 16px; }
+  .footer-social {
+    font-family: 'DM Mono', monospace;
+    font-size: 14px; letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.35); text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .footer-social:hover { color: var(--orange); }
+  .footer-col h5 {
+    font-size: 14px; letter-spacing: 0.10em;
+    text-transform: uppercase; color: rgba(255,255,255,0.25);
+    margin-bottom: 20px; font-family: 'DM Mono', monospace;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 12px; }
+  .footer-col a, .footer-col span {
+    font-size: 17px; color: rgba(255,255,255,0.5);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .footer-col a:hover { color: white; }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-copy { font-size: 15px; color: rgba(255,255,255,0.2); }
+
+  /* ── ANIMATIONS ──────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .reveal {
+    opacity: 0; transform: translateY(32px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ──────────────────────────────── */
+
+  /* ── HAMBURGER MENU ──────────────────────────── */
+  .nav-mobile-right { display: none; }
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .nav-mobile-menu {
+    display: none;
+    position: fixed;
+    top: 60px; left: 0; right: 0;
+    background: rgba(247,245,240,0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 20px 32px;
+    z-index: 99;
+    flex-direction: column;
+    gap: 0;
+  }
+  .nav-mobile-menu.open { display: flex; }
+  .nav-mobile-menu a {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+    display: block;
+    letter-spacing: 0.02em;
+  }
+  .nav-mobile-menu a:last-child { border-bottom: none; }
+  .nav-mobile-cta {
+    margin-top: 20px;
+    display: block !important;
+    text-align: center;
+    background: var(--ink) !important;
+    color: var(--paper) !important;
+    padding: 14px 24px !important;
+    border-radius: 2px;
+    font-size: 14px !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: none !important;
+  }
+  .nav-mobile-cta:hover { background: var(--orange) !important; }
+
+  /* ═══════════════════════════════════════════════
+     MOBILE — max-width: 768px
+  ═══════════════════════════════════════════════ */
+  @media (max-width: 768px) {
+
+    /* ── NAV ── */
+    nav {
+      padding: 0 16px;
+      height: 60px;
     }
-    </script>
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .nav-mobile-right {
+      display: flex !important;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
+      margin-right: 12px;
+    }
+    .nav-mobile-cta-inline {
+      font-size: 12px !important;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--paper) !important;
+      background: var(--ink) !important;
+      padding: 8px 14px !important;
+      border-radius: 2px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-lang-toggle {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--ink-soft);
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      white-space: nowrap;
+    }
 
-    <!-- Schema.org: FAQ (for AI search / Google SGE) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What services does Kuipra Communications offer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Kuipra Communications offers social media management, content creation, brand strategy and personal branding, and public relations and communications services. We serve businesses across Vancouver, British Columbia, and Canada."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where is Kuipra Communications located?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Kuipra Communications is located at 3F 1045 Howe Street, Vancouver, BC, Canada. We serve clients across Canada and internationally."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What industries does Kuipra Communications work with?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Kuipra Communications has strategically navigated 15+ industries including real estate, entertainment, events, and professional services. We specialize in both personal and corporate brand storytelling."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How can I contact Kuipra Communications?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You can reach Kuipra Communications by phone at 672-964-1888, by email at Charlene.Ling@Kuipra.Ca, or visit us at 3F 1045 Howe Street, Vancouver, BC."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What makes Kuipra Communications different from other marketing agencies?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Kuipra Communications combines journalistic rigor, strategic storytelling, and cutting-edge AI content production (including Sora, Veo 3, and Kling) to craft immersive brand narratives. Our team has 20+ years of Canadian media experience and has delivered 85% average engagement growth for clients within 6 months."
-          }
+    /* ── HERO ── */
+    #hero {
+      min-height: auto;
+      padding: 80px 20px 48px;
+    }
+    .hero-bg-text { display: none; }
+    .hero-eyebrow { font-size: 12px; margin-bottom: 16px; }
+    .hero-headline { font-size: clamp(38px, 10vw, 56px); }
+    .hero-bottom {
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .hero-sub { font-size: 17px; max-width: 100%; }
+    .hero-stats { display: none; }
+    .hero-rule { margin-top: 40px; }
+
+    /* ── MARQUEE ── */
+    .marquee-item { font-size: 12px; padding: 0 20px; }
+
+    /* ── SERVICES ── */
+    #services { padding: 72px 20px; }
+    .section-label { margin-bottom: 40px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service-item,
+    .service-item:nth-child(even) {
+      padding: 36px 0;
+      border-right: none;
+    }
+
+    /* ── ABOUT ── */
+    #about {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 72px 20px;
+    }
+    .about-headline { font-size: clamp(32px, 8vw, 46px); }
+    .about-body { font-size: 17px; }
+
+    /* ── PROCESS ── */
+    #process { padding: 72px 20px; }
+    .process-header {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .process-headline { font-size: clamp(30px, 8vw, 44px); }
+    .process-desc { font-size: 17px; }
+    .process-step {
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      padding: 28px 0;
+    }
+    .step-title { font-size: 18px; }
+    .step-desc {
+      grid-column: 2;
+      font-size: 15px;
+    }
+
+    /* ── PROJECTS ── */
+    #projects { padding: 48px 20px; overflow-x: hidden; }
+    .projects-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .projects-headline { font-size: clamp(32px, 8vw, 46px); }
+    .project-img-card { height: 340px; isolation: isolate; z-index: 0; width: 100%; max-width: 100%; box-sizing: border-box; }
+    .project-img-overlay { padding: 28px 20px; }
+    .project-overlay-content { max-width: 100%; width: 100%; }
+    .project-overlay-content .project-client { font-size: 20px !important; }
+    .project-overlay-content .project-body { font-size: 14px !important; -webkit-line-clamp: 3 !important; color: rgba(255,255,255,0.92) !important; }
+    .project-overlay-content .tag { font-size: 11px !important; }
+    .project-overlay-content .project-client { font-size: 22px; }
+    .project-overlay-content .project-body { font-size: 14px; -webkit-line-clamp: 2; }
+
+    /* ── TEAM ── */
+    #team { padding: 72px 20px; }
+    .team-header { margin-bottom: 48px; }
+    .team-headline { font-size: clamp(30px, 8vw, 44px); }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .team-card {
+      padding: 24px 16px;
+      border-right: 1px solid var(--rule-light);
+      border-bottom: 1px solid var(--rule-light);
+    }
+    .team-card:nth-child(2n) { border-right: none; }
+    .team-card:nth-child(n+3) { border-bottom: none; }
+    .team-photo { height: 320px; }
+    .team-name { font-size: 16px; }
+    .team-role { font-size: 12px; }
+    .team-bio-preview,
+    .team-bio-full { font-size: 13px; }
+    button.team-toggle { font-size: 10px; }
+
+    /* ── CTA ── */
+    #cta {
+      flex-direction: column;
+      gap: 32px;
+      align-items: flex-start;
+      padding: 72px 20px;
+      overflow: hidden;
+    }
+    .cta-btn { width: 100%; justify-content: center; box-sizing: border-box; }
+    .cta-headline { font-size: clamp(30px, 8vw, 46px); }
+    .cta-btn { font-size: 14px; padding: 16px 28px; }
+
+    /* ── FOOTER ── */
+    footer { padding: 56px 20px 32px; }
+    .footer-top {
+      grid-template-columns: 1fr 1fr;
+      gap: 28px 20px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+    }
+    .footer-top > div:first-child { grid-column: 1 / -1; }
+    .footer-logo img { height: 28px; }
+    .footer-tagline { font-size: 14px; }
+    .footer-col a, .footer-col span { font-size: 14px; }
+    .footer-bottom { flex-direction: column; gap: 8px; }
+
+    /* Prevent any section from causing overflow */
+    section, footer, nav {
+      max-width: 100%;
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+    * { box-sizing: border-box; }
+  }
+
+  /* ── Extra small phones ── */
+  @media (max-width: 480px) {
+    .team-grid { grid-template-columns: 1fr; }
+    .team-card:nth-child(n) { border-right: none; }
+    .team-card:last-child { border-bottom: none; }
+    .team-photo { height: 320px; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .footer-top > div:first-child { grid-column: 1 / -1; }
+  }
+
+
+  .project-img-card {
+    position: relative !important;
+    display: block !important;
+    overflow: hidden !important;
+    height: 480px;
+    margin-bottom: 3px;
+    cursor: default;
+    isolation: isolate;
+  }
+  .project-img-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 2 !important;
+    background: rgba(8, 18, 32, 0.82);
+    display: flex !important;
+    align-items: flex-end;
+    padding: 32px 24px;
+  }
+
+  /* ═══════════════════════════════════════════
+     MOBILE RESPONSIVE  ≤ 768px
+  ═══════════════════════════════════════════ */
+  @media (max-width: 768px) {
+
+    /* ── NAV ──────────────────────────────── */
+    nav {
+      padding: 0 20px;
+      height: 64px;
+    }
+    .nav-logo img { height: 30px; }
+    .nav-links { display: none; }
+
+    /* ── HERO ─────────────────────────────── */
+    #hero {
+      min-height: 85vh;
+      padding: 0 20px 48px;
+    }
+    .hero-bg-text { font-size: 22vw; opacity: 0.5; }
+    .hero-eyebrow { font-size: 11px; margin-bottom: 16px; }
+    .hero-headline { font-size: clamp(40px, 11vw, 64px); }
+    .hero-bottom {
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .hero-sub { font-size: 16px; max-width: 100%; }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      width: 100%;
+      border-top: 1px solid var(--rule);
+      padding-top: 24px;
+    }
+    .stat-item { text-align: left; }
+    .stat-num { font-size: 28px; }
+    .stat-label { font-size: 11px; text-align: left; max-width: 100%; }
+
+    /* ── MARQUEE ──────────────────────────── */
+    .marquee-item { font-size: 12px; padding: 0 20px; }
+
+    /* ── SERVICES ─────────────────────────── */
+    #services { padding: 64px 20px; }
+    .section-label { margin-bottom: 40px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service-item,
+    .service-item:nth-child(even) {
+      padding: 32px 0;
+      border-right: none;
+    }
+    .service-title { font-size: 20px; }
+    .service-desc { font-size: 16px; }
+
+    /* ── ABOUT ────────────────────────────── */
+    #about {
+      grid-template-columns: 1fr;
+      padding: 64px 20px;
+      gap: 40px;
+    }
+    .about-headline { font-size: clamp(32px, 8vw, 48px); }
+    .about-body { font-size: 16px; }
+
+    /* ── PROCESS ──────────────────────────── */
+    #process { padding: 64px 20px; }
+    .process-header {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .process-headline { font-size: clamp(30px, 7vw, 44px); }
+    .process-step {
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      padding: 28px 0;
+    }
+    .step-title { font-size: 18px; }
+    .step-desc {
+      grid-column: 2;
+      font-size: 15px;
+    }
+
+    /* ── PROJECTS ─────────────────────────── */
+    #projects { padding: 64px 20px; }
+    .projects-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+    .projects-headline { font-size: clamp(32px, 8vw, 48px); }
+    .project-img-card { height: 360px; }
+    .project-img-overlay { padding: 28px 20px; }
+    .project-overlay-content .project-client { font-size: 22px; }
+    .project-overlay-content .project-body { font-size: 14px; }
+
+    /* ── TEAM ─────────────────────────────── */
+    #team { padding: 64px 20px; }
+    .team-headline { font-size: clamp(30px, 7vw, 44px); }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .team-card {
+      padding: 24px 16px;
+      border-right: 1px solid var(--rule-light);
+      border-bottom: 1px solid var(--rule-light);
+    }
+    .team-card:nth-child(2n) { border-right: none; }
+    .team-card:nth-child(n+3) { border-top: none; }
+    .team-photo { height: 320px; }
+    .team-name { font-size: 16px; }
+    .team-role { font-size: 12px; }
+    .team-bio-preview { font-size: 13px; }
+
+    /* ── CTA ──────────────────────────────── */
+    #cta {
+      flex-direction: column;
+      padding: 64px 20px;
+      gap: 32px;
+      align-items: flex-start;
+    }
+    .cta-headline { font-size: clamp(30px, 7vw, 48px); }
+    .cta-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 18px 32px;
+      font-size: 14px;
+    }
+
+    /* ── FOOTER ───────────────────────────── */
+    footer { padding: 48px 20px 32px; }
+    .footer-top {
+      grid-template-columns: 1fr 1fr;
+      gap: 28px 20px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+    }
+    .footer-top > div:first-child { grid-column: 1 / -1; }
+    .footer-top > div:first-child { grid-column: 1 / -1; }
+    .footer-logo img { height: 28px; }
+    .footer-col a, .footer-col span { font-size: 14px; }
+    .footer-bottom { flex-direction: column; gap: 8px; }
+    .footer-copy { font-size: 12px; }
+  }
+
+  /* ── VERY SMALL ≤ 480px ───────────────── */
+  @media (max-width: 480px) {
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .stat-item:last-child { grid-column: 1 / -1; padding-top: 16px; border-top: 1px solid var(--rule); }
+    .team-grid { grid-template-columns: 1fr; }
+    .team-card:nth-child(2n) { border-right: 1px solid var(--rule-light); }
+    .team-photo { height: 320px; }
+    .project-img-card { height: 300px; }
+  }
+
+
+
+
+  .project-img-card img { filter: brightness(0.25) !important; object-fit: cover !important; object-position: center center !important; }
+  /* Force all overlay text white */
+  .project-img-overlay * { color: #ffffff !important; }
+  .project-img-overlay .project-client { color: #ffffff !important; font-family: 'Playfair Display', serif !important; font-size: 28px !important; font-weight: 700 !important; margin-bottom: 10px !important; line-height: 1.2 !important; }
+  .project-img-overlay .tag { color: rgba(255,255,255,0.85) !important; border-color: rgba(255,255,255,0.4) !important; font-size: 11px !important; background: rgba(0,0,0,0.3) !important; }
+  .project-img-overlay .project-body { color: rgba(255,255,255,0.9) !important; font-size: 15px !important; line-height: 1.6 !important; margin-bottom: 16px !important; }
+  .project-img-overlay .project-link { color: var(--orange) !important; border-bottom-color: var(--orange) !important; font-size: 13px !important; font-weight: 500 !important; }
+
+  /* ── Contact Modal ─────────────────────────────────────────── */
+  .modal-overlay {
+    display: none;
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(8,18,32,0.85);
+    backdrop-filter: blur(6px);
+    align-items: center; justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-box {
+    background: var(--paper);
+    width: min(560px, 92vw);
+    padding: 48px 44px;
+    position: relative;
+    border-radius: 2px;
+  }
+  .modal-close {
+    position: absolute; top: 20px; right: 24px;
+    font-size: 24px; line-height: 1;
+    background: none; border: none; cursor: pointer;
+    color: var(--ink-soft); font-family: 'DM Sans', sans-serif;
+  }
+  .modal-close:hover { color: var(--ink); }
+  .modal-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--orange);
+    margin-bottom: 20px;
+  }
+  .modal-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 700; color: var(--ink);
+    margin-bottom: 32px; line-height: 1.2;
+  }
+  .modal-form { display: flex; flex-direction: column; gap: 16px; }
+  .modal-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .modal-field { display: flex; flex-direction: column; gap: 6px; }
+  .modal-field label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-soft);
+  }
+  .modal-field input,
+  .modal-field textarea,
+  .modal-field select {
+    background: transparent;
+    border: none; border-bottom: 1px solid var(--rule);
+    padding: 10px 0; font-family: 'DM Sans', sans-serif;
+    font-size: 15px; color: var(--ink);
+    outline: none; transition: border-color 0.2s;
+    width: 100%;
+  }
+  .modal-field input:focus,
+  .modal-field textarea:focus,
+  .modal-field select:focus { border-bottom-color: var(--orange); }
+  .modal-field textarea { resize: none; height: 90px; }
+  .modal-submit {
+    margin-top: 8px;
+    background: var(--ink); color: var(--paper);
+    border: none; padding: 16px 36px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px; letter-spacing: 0.1em;
+    text-transform: uppercase; cursor: pointer;
+    align-self: flex-start; transition: background 0.2s;
+  }
+  .modal-submit:hover { background: var(--orange); }
+  .modal-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+  .modal-success {
+    display: none; text-align: center;
+    padding: 32px 0;
+  }
+  .modal-success.show { display: block; }
+  .modal-success-icon { font-size: 48px; margin-bottom: 16px; }
+  .modal-success h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; margin-bottom: 8px;
+  }
+  .modal-success p { color: var(--ink-soft); font-size: 15px; }
+  @media (max-width: 600px) {
+    .modal-box { padding: 36px 24px; }
+    .modal-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <!-- ================================================================
+    TODO: CONTACT FORM (Formspree)
+    ================================================================
+    Replace all mailto: links with a proper contact form using Formspree.
+    Steps:
+    1. Sign up at https://formspree.io (free plan: 50 submissions/month)
+    2. Create a new form, get the endpoint URL (e.g. https://formspree.io/f/XXXXXXXX)
+    3. Add this form to a new #contact section:
+
+    <section id="contact" ...>
+      <form action="https://formspree.io/f/XXXXXXXX" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="company" placeholder="Company (optional)">
+        <textarea name="message" placeholder="Tell us about your project" required></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+    4. Remove mailto: links from nav-cta, about-cta, and cta-btn
+    5. Point those links to href="#contact" instead
+    ================================================================ -->
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo"><img src="/kuipra-logo.png" alt="Kuipra Communications"></a>
+  <div class="nav-links">
+    <a href="#services" data-en="Services" data-zh="服務">Services</a>
+    <a href="#about" data-en="About" data-zh="關於">About</a>
+    <a href="#projects" data-en="Work" data-zh="案例">Work</a>
+    <a href="#team" data-en="Team" data-zh="我們的團隊">Team</a>
+    <button class="lang-toggle-desktop" onclick="toggleLang(this)" style="font-family:'DM Mono',monospace;font-size:13px;letter-spacing:0.08em;color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:0;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">中文</button>
+    <a href="#" onclick="openModal();return false;" class="nav-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
+  </div>
+  <div class="nav-mobile-right">
+    <span class="nav-lang-toggle" onclick="toggleLang(this)" style="cursor:pointer;">中文</span>
+    <a href="#" onclick="openModal();closeMenu();return false;" class="nav-mobile-cta-inline" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()" data-en="Services" data-zh="服務">Services</a>
+  <a href="#about" onclick="closeMenu()" data-en="About" data-zh="關於">About</a>
+  <a href="#projects" onclick="closeMenu()" data-en="Work" data-zh="案例">Work</a>
+  <a href="#team" onclick="closeMenu()" data-en="Team" data-zh="我們的團隊">Team</a>
+  <a href="mailto:Charlene.Ling@Kuipra.Ca?subject=Hello%20Kuipra%20—%20Let%27s%20Talk" class="nav-mobile-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-text">KUIPRA</div>
+  <div class="hero-eyebrow" data-en="Brand Strategy · Vancouver" data-zh="品牌策略 · 溫哥華">Brand Strategy · Vancouver</div>
+  <h1 class="hero-headline">
+    <span data-en="We discover your" data-zh="在競爭激烈的市場">We discover your</span><br><em data-en="brand's brilliance" data-zh="挖掘您未被發現的光芒">brand's brilliance</em>
+  </h1>
+  <div class="hero-bottom">
+    <p class="hero-sub" data-en="Explorers and amplifiers of brand stories. We transform your essence into narratives that resonate across the digital world." data-zh="品牌故事的探索者與放大者。透過深度敘事與策略性內容，我們將您的品牌精髓轉化為在數位世界中引起共鳴的影響力敘事。">Explorers and amplifiers of brand stories. We transform your essence into narratives that resonate across the digital world.</p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">85%</span>
+        <span class="stat-label" data-en="Engagement growth in 6 months" data-zh="6 個月內平均互動成長">Engagement growth in 6 months</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">15+</span>
+        <span class="stat-label" data-en="Industries navigated" data-zh="策略導航的產業領域">Industries navigated</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">200+</span>
+        <span class="stat-label" data-en="Content assets yearly" data-zh="年度高端原創內容資產">Content assets yearly</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-rule"></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Social Media Management <span>×</span></span>
+    <span class="marquee-item">Brand Strategy <span>×</span></span>
+    <span class="marquee-item">Content Creation <span>×</span></span>
+    <span class="marquee-item">Public Relations <span>×</span></span>
+    <span class="marquee-item">AI-Enhanced Production <span>×</span></span>
+    <span class="marquee-item">Visual Storytelling <span>×</span></span>
+    <span class="marquee-item">Personal Branding <span>×</span></span>
+    <span class="marquee-item">Social Media Management <span>×</span></span>
+    <span class="marquee-item">Brand Strategy <span>×</span></span>
+    <span class="marquee-item">Content Creation <span>×</span></span>
+    <span class="marquee-item">Public Relations <span>×</span></span>
+    <span class="marquee-item">AI-Enhanced Production <span>×</span></span>
+    <span class="marquee-item">Visual Storytelling <span>×</span></span>
+    <span class="marquee-item">Personal Branding <span>×</span></span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label reveal" data-en="Our Services" data-zh="我們的服務">Our Services</div>
+  <div class="services-grid">
+    <div class="service-item reveal">
+      <span class="service-num">01</span>
+      <div class="service-content">
+        <h3 class="service-title" data-en="Social Media Management" data-zh="社群經營管理">Social Media Management</h3>
+        <p class="service-desc" data-en="Strategic content and community management that builds consistent, impactful brand presence across all platforms." data-zh="全面的社群媒體策略與內容管理，涵蓋所有平台。">Strategic content and community management that builds consistent, impactful brand presence across all platforms.</p>
+      </div>
+    </div>
+    <div class="service-item reveal">
+      <span class="service-num">02</span>
+      <div class="service-content">
+        <h3 class="service-title" data-en="Content Creation" data-zh="傳達內容創作">Content Creation</h3>
+        <p class="service-desc" data-en="Original written, visual, and video content — blending creativity with strategic intent to connect your brand with its audience." data-zh="高品質內容產出，包含文案撰寫、設計及多媒體製作。">Original written, visual, and video content — blending creativity with strategic intent to connect your brand with its audience.</p>
+      </div>
+    </div>
+    <div class="service-item reveal">
+      <span class="service-num">03</span>
+      <div class="service-content">
+        <h3 class="service-title" data-en="Brand Strategy & Personal Branding" data-zh="品牌策略及個人品牌塑造">Brand Strategy & Personal Branding</h3>
+        <p class="service-desc" data-en="Define your identity, refine your message, and stand out with clarity and authority in a crowded digital landscape." data-zh="策略性品牌定位與企業高階主管個人品牌建立。">Define your identity, refine your message, and stand out with clarity and authority in a crowded digital landscape.</p>
+      </div>
+    </div>
+    <div class="service-item reveal">
+      <span class="service-num">04</span>
+      <div class="service-content">
+        <h3 class="service-title" data-en="Public Relations & Communications" data-zh="公共關係與企業傳播與溝通">Public Relations & Communications</h3>
+        <p class="service-desc" data-en="Strategic media outreach and communications to enhance visibility, shape your public narrative, and secure meaningful coverage." data-zh="媒體關係、新聞稿撰寫及危機溝通管理。">Strategic media outreach and communications to enhance visibility, shape your public narrative, and secure meaningful coverage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-left reveal">
+    <div class="about-label" data-en="About Kuipra" data-zh="關於我們">About Kuipra</div>
+    <h2 class="about-headline"><span data-en="Every brand has a story" data-zh="每個品牌都有一個故事">Every brand has a story</span><br><em data-en="waiting to be found" data-zh="等待被發掘的獨特故事">waiting to be found</em></h2>
+    <a href="mailto:Charlene.Ling@Kuipra.Ca?subject=Hello%20Kuipra%20—%20Let%27s%20Talk" class="about-cta" data-en="Work with us →" data-zh="聯繫我們 →">Work with us →</a>
+  </div>
+  <div class="about-right reveal">
+    <div class="about-divider"></div>
+    <p class="about-body">
+      <span data-en="Inspired by the Kuiper Belt — a distant frontier of " data-zh="靈感源自柯伊伯帶——一個充滿">Inspired by the Kuiper Belt — a distant frontier of </span><strong data-en="hidden worlds and limitless possibilities" data-zh="隱藏世界與無限可能的遙遠前沿">hidden worlds and limitless possibilities</strong><span data-en=" — we were founded on the belief that every brand has a unique story waiting to be discovered." data-zh="，Kuipra Communications 深信每個品牌都有一個等待被發掘的獨特故事。"> — we were founded on the belief that every brand has a unique story waiting to be discovered.</span>
+    </p>
+    <p class="about-body">
+      <span data-en="We serve as both explorers and amplifiers. Through strategic social media, original content, and PR, we transform complex brand identities into compelling narratives that " data-zh="我們同時扮演探索者與放大者。透過策略性社群媒體、原創內容及公關，我們將複雜的品牌識別轉化為引人入勝的敘事，在數位時代與受眾">We serve as both explorers and amplifiers. Through strategic social media, original content, and PR, we transform complex brand identities into compelling narratives that </span><strong data-en="resonate deeply in the digital age" data-zh="產生深刻共鳴">resonate deeply in the digital age</strong><span data-en="." data-zh="。">.</span>
+    </p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="process-header">
+    <div class="reveal">
+      <div class="section-label" style="margin-bottom:24px;" data-en="Featured Service" data-zh="主打服務">Featured Service</div>
+      <h2 class="process-headline"><span data-en="Comprehensive Brand Growth Solution" data-zh="全方位品牌成長方案">Comprehensive Brand Growth Solution</span></h2>
+    </div>
+    <p class="process-desc reveal"><span data-en="A complete growth program for brands seeking exceptional digital presence — from visual identity to full-channel management." data-zh="此全方位方案專為追求卓越成長與專業數位形象的品牌而設計。">A complete growth program for brands seeking exceptional digital presence — from visual identity to full-channel management.</span></p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <span class="step-num">01</span>
+      <h3 class="step-title" data-en="Visual Identity & Positioning" data-zh="視覺識別與品牌定位">Visual Identity & Positioning</h3>
+      <p class="step-desc" data-en="Define your brand aesthetic and establish a visual standards guide for high-end recognition and credibility." data-zh="我們在第一個月定義您的品牌美學，並提供視覺標準指南，確保高端品牌辨識度與公信力。">Define your brand aesthetic and establish a visual standards guide for high-end recognition and credibility.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-num">02</span>
+      <h3 class="step-title" data-en="High-Quality Original Content" data-zh="高品質原創內容">High-Quality Original Content</h3>
+      <p class="step-desc" data-en="Video and graphic content blending market trends with core brand values — driving reach and conversion." data-zh="融合市場趨勢與核心品牌價值，我們製作影片與圖像內容，同時驅動受眾觸及與深度轉化。">Video and graphic content blending market trends with core brand values — driving reach and conversion.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-num">03</span>
+      <h3 class="step-title" data-en="Professional Content Capture" data-zh="專業內容拍攝">Professional Content Capture</h3>
+      <p class="step-desc" data-en="Scheduled on-site filming and asset collection to keep your brand content fresh and visually premium." data-zh="透過定期的實地拍攝與素材採集，確保您的品牌內容常保新鮮並維持高端視覺水準。">Scheduled on-site filming and asset collection to keep your brand content fresh and visually premium.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-num">04</span>
+      <h3 class="step-title" data-en="Strategic Data Alignment" data-zh="策略性數據對齊">Strategic Data Alignment</h3>
+      <p class="step-desc" data-en="Weekly check-ins and monthly reviews to refine content direction with precision and data-driven clarity." data-zh="我們提供每週數位檢核與每月策略會議，精準檢視表現並優化內容方向。">Weekly check-ins and monthly reviews to refine content direction with precision and data-driven clarity.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-num">05</span>
+      <h3 class="step-title" data-en="Full Channel Management" data-zh="全渠道管理">Full Channel Management</h3>
+      <p class="step-desc" data-en="End-to-end scheduling and publishing across platforms to maintain consistent activity and professional brand image." data-zh="我們的團隊負責跨平台的內容排程與發布，維持高活躍度與專業品牌形象。">End-to-end scheduling and publishing across platforms to maintain consistent activity and professional brand image.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header reveal">
+    <h2 class="projects-headline" data-en="Selected Work" data-zh="成功案例">Selected Work</h2>
+    <div class="section-label" style="margin-bottom:0;">Three case studies</div>
+  </div>
+  <!-- Project 1: Level Best -->
+  <div class="project-img-card reveal" style="position:relative;overflow:hidden;display:block;width:100%;max-width:100%;box-sizing:border-box;">
+    <img src="/case-levelbest.jpg" alt="Level Best Concrete Lifting case study">
+    <div class="project-img-overlay" style="position:absolute;inset:0;z-index:2;">
+      <div class="project-overlay-content">
+        <div class="project-client" data-en="Level Best Concrete Lifting Ltd." data-zh="Level Best 混凝土提升公司">Level Best Concrete Lifting Ltd.</div>
+        <div class="project-tags">
+          <span class="tag">Social Media</span>
+          <span class="tag">Content Creation</span>
+          <span class="tag">RedNote</span>
+        </div>
+        <p class="project-body"><span data-en="Translated complex engineering processes into compelling digital narratives — establishing deep professional trust while expanding brand visibility across platforms." data-zh="將複雜的技術流程轉譯為清晰、引人入勝的敘事，建立深厚的專業信任並拓展品牌能見度。">Translated complex engineering processes into compelling digital narratives — establishing deep professional trust while expanding brand visibility across platforms.</span></p>
+        <span class="project-link">View on RedNote ↗</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2: Maggie Huang -->
+  <div class="project-img-card reveal" style="position:relative;overflow:hidden;display:block;width:100%;max-width:100%;box-sizing:border-box;">
+    <img src="/case-maggie.jpg" alt="The Maggie Huang Team case study">
+    <div class="project-img-overlay" style="position:absolute;inset:0;z-index:2;">
+      <div class="project-overlay-content">
+        <div class="project-client" data-en="The Maggie Huang Team" data-zh="Maggie Huang 團隊">The Maggie Huang Team</div>
+        <div class="project-tags">
+          <span class="tag">Copywriting</span>
+          <span class="tag">Email Campaign</span>
+          <span class="tag">Webinars</span>
+        </div>
+        <p class="project-body">Elevated a luxury NYC real estate team with high-end brand messaging — condensing lengthy property listings into elegant narratives that command attention and trust.</p>
+        <a href="https://www.instagram.com/themaggiehuangteam/" class="project-link" target="_blank">Instagram ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3: Funtasy -->
+  <div class="project-img-card reveal" style="position:relative;overflow:hidden;display:block;width:100%;max-width:100%;box-sizing:border-box;">
+    <img src="/case-funtasy.jpg" alt="Funtasy Production case study">
+    <div class="project-img-overlay" style="position:absolute;inset:0;z-index:2;">
+      <div class="project-overlay-content">
+        <div class="project-client" data-en="Funtasy Production" data-zh="Funtasy Production 凡塔西製作">Funtasy Production</div>
+        <div class="project-tags">
+          <span class="tag">Influencer Outreach</span>
+          <span class="tag">Event Planning</span>
+          <span class="tag">OOH</span>
+        </div>
+        <p class="project-body"><span data-en="Monthly strategic alignment for Vancouver's leading event production company — deploying high-synergy influencer partnerships for exponential growth across social media and OOH." data-zh="與溫哥華頂尖活動製作公司進行每月策略對齊，透過高效網紅合作夥伴關係，實現社群媒體和戶外廣告的指數級成長。">Monthly strategic alignment for Vancouver's leading event production company — deploying high-synergy influencer partnerships for exponential growth across social media and OOH.</span></p>
+        <a href="https://www.instagram.com/funtasyproductionyvr/" class="project-link" target="_blank">Instagram ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="team-header">
+    <div class="about-label" data-en="Our Team" data-zh="引領策略">Our Team</div>
+    <h2 class="team-headline"><span data-en="The people behind" data-zh="引領策略，創新與成長的">The people behind</span><br><em data-en="the stories" data-zh="核心團隊">the stories</em></h2>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <img class="team-photo" src="/team/charlene.png" alt="Charlene Ling" loading="lazy">
+      <div class="team-name">Charlene Ling</div>
+      <div class="team-role" data-en="Principal Consultant" data-zh="首席顧問">Principal Consultant</div>
+      <div class="team-bio-wrap">
+        <p class="team-bio-preview" data-en="An award-nominated media professional with over a decade of experience, Charlene served eight years as a News Producer leading coverage for major Canadian and U.S. elections." data-zh="一位獲獎提名的媒體專業人士，擁有超過十年的經驗。Charlene 曾擔任新聞製作人八年，領導加拿大和美國重大選舉的報導，並製作探索文化和社會議題的專題報導。">An award-nominated media professional with over a decade of experience, Charlene served eight years as a News Producer leading coverage for major Canadian and U.S. elections.</p>
+        <div class="team-bio-full" data-en="At Kuipra Communications, she leverages journalistic rigor and strategic storytelling to extract core brand values and transform them into high-impact digital narratives. By bridging professional integrity with modern social media, she ensures brands build a powerful, resonant, and lasting presence in the digital ecosystem." data-zh="在 Kuipra，她運用新聞嚴謹性和策略性敘事，提煉核心品牌價值並將其轉化為高影響力的數位敘事。透過將專業操守與現代社群媒體橋接，她確保品牌在數位生態系中建立強大、深入人心且持久的形象。">At Kuipra Communications, she leverages journalistic rigor and strategic storytelling to extract core brand values and transform them into high-impact digital narratives. By bridging professional integrity with modern social media, she ensures brands build a powerful, resonant, and lasting presence in the digital ecosystem.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)"><span data-en="READ MORE" data-zh="閱讀更多">READ MORE</span> <span class="toggle-arrow">↓</span></button>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-photo" src="/team/robert.png" alt="Robert Chu" loading="lazy">
+      <div class="team-name">Robert Chu</div>
+      <div class="team-role" data-en="Principal Creative Strategist" data-zh="首席創意策略師">Principal Creative Strategist</div>
+      <div class="team-bio-wrap">
+        <p class="team-bio-preview" data-en="A veteran photojournalist with 20+ years in Canadian media, Robert has covered landmark events like the 2010 Winter Olympics and earned a Certificate of Recognition from the Premier of British Columbia." data-zh="一位擁有 20 多年加拿大媒體經驗的資深攝影記者，Robert 報導過 2010 年冬季奧運會等重大事件，並獲得不列顛哥倫比亞省省長頒發的表彰證書。">A veteran photojournalist with 20+ years in Canadian media, Robert has covered landmark events like the 2010 Winter Olympics and earned a Certificate of Recognition from the Premier of British Columbia.</p>
+        <div class="team-bio-full" data-en="At Kuipra, he bridges classical cinematography with advanced AI (Sora, Veo 3, Kling) to craft immersive, soul-driven content. By merging traditional visual craftsmanship with cutting-edge innovation, Robert redefines the boundaries of digital storytelling for the modern era." data-zh="在 Kuipra，他將古典電影攝影與先進 AI（Sora、Veo 3、Kling）結合，打造沉浸式、有靈魂的內容。透過融合傳統視覺工藝與尖端創新，Robert 重新定義現代數位敘事的邊界。">At Kuipra, he bridges classical cinematography with advanced AI (Sora, Veo 3, Kling) to craft immersive, soul-driven content. By merging traditional visual craftsmanship with cutting-edge innovation, Robert redefines the boundaries of digital storytelling for the modern era.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)"><span data-en="READ MORE" data-zh="閱讀更多">READ MORE</span> <span class="toggle-arrow">↓</span></button>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-photo" src="/team/alen.png" alt="Alen Yang" loading="lazy">
+      <div class="team-name">Alen Yang</div>
+      <div class="team-role" data-en="Marketing Director" data-zh="行銷總監">Marketing Director</div>
+      <div class="team-bio-wrap">
+        <p class="team-bio-preview" data-en="Alen leverages strategic marketing operations and immersive event design to extract core brand visions and transform them into experiential activations." data-zh="Alen 運用策略性行銷營運和沉浸式活動設計，提煉核心品牌願景並將其轉化為體驗式活動。">Alen leverages strategic marketing operations and immersive event design to extract core brand visions and transform them into experiential activations.</p>
+        <div class="team-bio-full" data-en="By bridging creative storytelling with logistical execution, he ensures brands build a powerful, engaging, and memorable presence in the market. With designer's eye and proficiency, Alen shapes their visual identity — ensuring every physical and digital touchpoint is crafted with aesthetic precision and user-centric design." data-zh="憑藉設計師的眼光和專業能力，Alen 不僅監督活動，更塑造品牌的視覺識別。確保每個實體和數位接觸點都以美學精確性和以使用者為中心的設計打造，提升整體品牌體驗。">By bridging creative storytelling with logistical execution, he ensures brands build a powerful, engaging, and memorable presence in the market. With designer's eye and proficiency, Alen shapes their visual identity — ensuring every physical and digital touchpoint is crafted with aesthetic precision and user-centric design.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)"><span data-en="READ MORE" data-zh="閱讀更多">READ MORE</span> <span class="toggle-arrow">↓</span></button>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-photo" src="/team/josh.png" alt="Josh Hung" loading="lazy">
+      <div class="team-name">Josh Hung</div>
+      <div class="team-role" data-en="Visual Lead & Creative Producer" data-zh="視覺總監 / 創意製片">Visual Lead & Creative Producer</div>
+      <div class="team-bio-wrap">
+        <p class="team-bio-preview" data-en="With a Master's degree in Graphic Arts and over a decade of industry expertise in visual storytelling, Josh brings a holistic approach to every project at Kuipra." data-zh="Josh 擁有視覺藝術碩士學位與十逾年影視經驗。他深諳「鏡頭為語、剪輯為魂」的敘事哲學，將傳統攝影技術與現代 AI 工作流深度結合。">With a Master's degree in Graphic Arts and over a decade of industry expertise in visual storytelling, Josh brings a holistic approach to every project at Kuipra.</p>
+        <div class="team-bio-full" data-en="His craft spans the entire creative lifecycle — from precise cinematography on-site to high-end post-production. Operating under the philosophy that 'cinematography is the language, while editing is the soul,' Josh integrates traditional cinematic techniques with modern AI-enhanced workflows. As a co-founder, he delivers a unified vision that resonates with the diverse and dynamic audience of the Pacific Northwest." data-zh="在 Kuipra，他主導從現場捕捉到高端後製的完整流程，為品牌提煉核心願景並將其轉化為具備高感染力的視覺作品。作為共同創辦人，Josh 致力於為太平洋西北地區多元活躍的受眾提供具統一視野的品牌故事。">His craft spans the entire creative lifecycle — from precise cinematography on-site to high-end post-production. Operating under the philosophy that 'cinematography is the language, while editing is the soul,' Josh integrates traditional cinematic techniques with modern AI-enhanced workflows. As a co-founder, he delivers a unified vision that resonates with the diverse and dynamic audience of the Pacific Northwest.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)"><span data-en="READ MORE" data-zh="閱讀更多">READ MORE</span> <span class="toggle-arrow">↓</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section id="cta">
+  <h2 class="cta-headline reveal">
+    <span data-en="Ready to discover your" data-zh="準備好探索您">Ready to discover your</span><br><em data-en="brand's brilliance?" data-zh="品牌的光芒了嗎？">brand's brilliance?</em>
+  </h2>
+  <a href="mailto:Charlene.Ling@Kuipra.Ca?subject=Hello%20Kuipra%20—%20Let%27s%20Talk&body=Hi%20Charlene%2C%0A%0AI%27d%20love%20to%20learn%20more%20about%20Kuipra%27s%20services.%0A%0A" class="cta-btn reveal">
+    Start the conversation →
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <a href="#" class="footer-logo"><img src="/kuipra-logo.png" alt="Kuipra Communications"></a>
+      <p class="footer-tagline" data-en="Explorers and amplifiers of brand stories. Vancouver, BC." data-zh="品牌故事的探索者與放大者。溫哥華，BC。">Explorers and amplifiers of brand stories. Vancouver, BC.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/kuipra" class="footer-social" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/kuipra_communications/" class="footer-social" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5 data-en="Navigate" data-zh="頁面">Navigate</h5>
+      <ul>
+        <li><a href="#services" data-en="Services" data-zh="服務">Services</a></li>
+        <li><a href="#about" data-en="About" data-zh="關於">About</a></li>
+        <li><a href="#projects" data-en="Work" data-zh="案例">Work</a></li>
+        <li><a href="#team" data-en="Team" data-zh="我們的團隊">Team</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-en="Services" data-zh="服務">Services</h5>
+      <ul>
+        <li><span data-en="Social Media" data-zh="社群媒體">Social Media</span></li>
+        <li><span data-en="Content Creation" data-zh="內容創作">Content Creation</span></li>
+        <li><span data-en="Brand Strategy" data-zh="品牌策略">Brand Strategy</span></li>
+        <li><span data-en="Public Relations" data-zh="公共關係">Public Relations</span></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-en="Contact" data-zh="聯絡">Contact</h5>
+      <ul>
+        <li><a href="tel:6729641888">672-964-1888</a></li>
+        <li><a href="mailto:Charlene.Ling@Kuipra.Ca">Charlene.Ling@Kuipra.Ca</a></li>
+        <li><span>Greater Vancouver, BC</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy" data-en="© 2026 Kuipra Communications. All rights reserved." data-zh="© 2026 Kuipra Communications。版權所有。">© 2026 Kuipra Communications. All rights reserved.</span>
+    <span class="footer-copy">kuipra.ca</span>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // Nav background on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.background = window.scrollY > 60
+      ? 'rgba(247,245,240,0.98)' : 'rgba(247,245,240,0.92)';
+  });
+
+  // Team bio toggle — preview ALWAYS visible, full toggles below it
+  function toggleTeamBio(btn) {
+    const wrap = btn.closest('.team-bio-wrap');
+    const full = wrap.querySelector('.team-bio-full');
+    const isOpen = full.classList.contains('open');
+    if (isOpen) {
+      full.classList.remove('open');
+      btn.classList.remove('open');
+      btn.querySelector('.toggle-arrow').textContent = '↓';
+    } else {
+      full.classList.add('open');
+      btn.classList.add('open');
+      btn.querySelector('.toggle-arrow').textContent = '↑';
+    }
+  }
+
+  // ── Language toggle ────────────────────────────────────────────
+  let currentLang = 'en';
+
+  function setLang(lang) {
+    currentLang = lang;
+
+    // Update all data-en/data-zh elements
+    document.querySelectorAll('[data-en]').forEach(el => {
+      const text = lang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+      if (text === null || text === '') return;
+      // Only swap text if no child elements (leaf nodes)
+      if (el.children.length === 0) {
+        el.textContent = text;
+      }
+    });
+
+    // Update lang toggle buttons
+    document.querySelectorAll('.nav-lang-toggle, .lang-toggle-desktop').forEach(btn => {
+      btn.textContent = lang === 'zh' ? 'ENG' : '中文';
+    });
+
+    // Update html lang attribute
+    document.documentElement.lang = lang === 'zh' ? 'zh-TW' : 'en';
+
+    // Update Read more button spans (special case)
+    document.querySelectorAll('.team-toggle').forEach(btn => {
+      const textSpan = btn.querySelector('[data-en]');
+      if (textSpan) {
+        textSpan.textContent = lang === 'zh' ? '閱讀更多' : 'READ MORE';
+      }
+    });
+
+    // Update modal content if modal elements exist
+    document.querySelectorAll('#contactModal [data-en]').forEach(el => {
+      const text = lang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+      if (text !== null && text !== '' && el.children.length === 0) {
+        // Don't overwrite input values
+        if (!['INPUT','TEXTAREA'].includes(el.tagName)) {
+          el.textContent = text;
         }
-      ]
+      }
+    });
+    // Update placeholders
+    const placeholders = {
+      en: { name: 'e.g. Jane Smith', email: 'hello@company.com', company: 'Your company name', message: 'Tell us about your brand and goals...' },
+      zh: { name: '例：王小明', email: 'hello@company.com', company: '您的公司名稱', message: '告訴我們您的品牌與目標...' }
+    };
+    const p = placeholders[lang];
+    const cfName = document.getElementById('cf-name');
+    const cfEmail = document.getElementById('cf-email');
+    const cfCompany = document.getElementById('cf-company');
+    const cfMsg = document.getElementById('cf-message');
+    if (cfName) cfName.placeholder = p.name;
+    if (cfEmail) cfEmail.placeholder = p.email;
+    if (cfCompany) cfCompany.placeholder = p.company;
+    if (cfMsg) cfMsg.placeholder = p.message;
+    // Update select options
+    document.querySelectorAll('#cf-service option[data-en]').forEach(opt => {
+      const t = lang === 'zh' ? opt.getAttribute('data-zh') : opt.getAttribute('data-en');
+      if (t) opt.textContent = t;
+    });
+    // Update submit button
+    const submitBtn = document.getElementById('submitBtn');
+    if (submitBtn) submitBtn.textContent = lang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →';
+  }
+
+  function toggleLang(btn) {
+    const newLang = currentLang === 'en' ? 'zh' : 'en';
+    setLang(newLang);
+  }
+
+  // Hamburger menu
+  function toggleMenu(btn) {
+    btn.classList.toggle('open');
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.body.style.overflow = btn.classList.contains('open') ? 'hidden' : '';
+  }
+  function closeMenu() {
+    const btn = document.querySelector('.nav-hamburger');
+    const menu = document.getElementById('mobileMenu');
+    btn.classList.remove('open');
+    menu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Team bio toggle
+  // NOTE: toggleTeamBio is defined earlier in this script — no duplicate needed
+
+  // ── Contact Modal ──────────────────────────────────────────────
+  function openModal() {
+    document.getElementById('contactModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    // Apply current language to modal
+    if (currentLang === 'zh') {
+      document.querySelectorAll('#contactModal [data-zh]').forEach(el => {
+        const zh = el.getAttribute('data-zh');
+        if (zh && el.children.length === 0) el.textContent = zh;
+      });
     }
-    </script>
+  }
+  function closeModal() {
+    document.getElementById('contactModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function handleOverlayClick(e) {
+    if (e.target === document.getElementById('contactModal')) closeModal();
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-    <!-- Schema.org: WebSite with SearchAction -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Kuipra Communications",
-      "url": "https://kuipra.ca",
-      "description": "Vancouver-based brand strategy and digital marketing agency",
-      "inLanguage": ["en-CA", "zh-TW"]
+  // Formspree AJAX submit
+  async function handleFormSubmit() {
+    const form = document.getElementById('contactForm');
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = currentLang === 'zh' ? '送出中...' : 'Sending...';
+    try {
+      const res = await fetch('https://formspree.io/f/xojkrblw', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('modalSuccess').classList.add('show');
+        if (currentLang === 'zh') {
+          document.querySelectorAll('#modalSuccess [data-zh]').forEach(el => {
+            const zh = el.getAttribute('data-zh');
+            if (zh && el.children.length === 0) el.textContent = zh;
+          });
+        }
+        setTimeout(() => { closeModal(); document.getElementById('contactForm').style.display = ''; document.getElementById('contactForm').reset(); document.getElementById('modalSuccess').classList.remove('show'); btn.disabled = false; btn.textContent = currentLang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →'; }, 3000);
+      } else {
+        btn.disabled = false;
+        btn.textContent = currentLang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →';
+        alert(currentLang === 'zh' ? '送出失敗，請直接 email 至 Charlene.Ling@Kuipra.Ca' : 'Submission failed. Please email Charlene.Ling@Kuipra.Ca directly.');
+      }
+    } catch(err) {
+      btn.disabled = false;
+      btn.textContent = currentLang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →';
+      alert(currentLang === 'zh' ? '送出失敗，請直接 email 至 Charlene.Ling@Kuipra.Ca' : 'Submission failed. Please email Charlene.Ling@Kuipra.Ca directly.');
     }
-    </script>
+  }
 
-  </head>
+</script>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!-- Contact Modal -->
+<div class="modal-overlay" id="contactModal" onclick="handleOverlayClick(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
+    <div class="modal-label" data-en="GET IN TOUCH" data-zh="聯繫我們">GET IN TOUCH</div>
+    <h2 class="modal-headline" data-en="Let's discover your brand's brilliance." data-zh="讓我們一起探索您品牌的光芒。">Let's discover your brand's brilliance.</h2>
+
+    <div class="modal-success" id="modalSuccess">
+      <div class="modal-success-icon">✓</div>
+      <h3 data-en="Message sent!" data-zh="訊息已送出！">Message sent!</h3>
+      <p data-en="We'll be in touch within 24 hours." data-zh="我們將在 24 小時內與您聯絡。">We'll be in touch within 24 hours.</p>
+    </div>
+
+    <form class="modal-form" id="contactForm" onsubmit="return false;">
+      <div class="modal-row">
+        <div class="modal-field">
+          <label for="cf-name" data-en="YOUR NAME" data-zh="您的姓名">YOUR NAME</label>
+          <input type="text" id="cf-name" name="name" required placeholder="e.g. Jane Smith">
+        </div>
+        <div class="modal-field">
+          <label for="cf-email" data-en="EMAIL ADDRESS" data-zh="電子郵件">EMAIL ADDRESS</label>
+          <input type="email" id="cf-email" name="email" required placeholder="hello@company.com">
+        </div>
+      </div>
+      <div class="modal-field">
+        <label for="cf-company" data-en="COMPANY / BRAND (OPTIONAL)" data-zh="公司 / 品牌（選填）">COMPANY / BRAND (OPTIONAL)</label>
+        <input type="text" id="cf-company" name="company" placeholder="Your company name">
+      </div>
+      <div class="modal-field">
+        <label for="cf-service" data-en="INTERESTED IN" data-zh="感興趣的服務">INTERESTED IN</label>
+        <select id="cf-service" name="service">
+          <option value="" data-en="Select a service..." data-zh="選擇服務...">Select a service...</option>
+          <option value="Social Media Management" data-en="Social Media Management" data-zh="社群經營管理">Social Media Management</option>
+          <option value="Content Creation" data-en="Content Creation" data-zh="傳達內容創作">Content Creation</option>
+          <option value="Brand Strategy" data-en="Brand Strategy & Personal Branding" data-zh="品牌策略及個人品牌塑造">Brand Strategy & Personal Branding</option>
+          <option value="Public Relations" data-en="Public Relations & Communications" data-zh="公共關係與企業傳播">Public Relations & Communications</option>
+          <option value="Full Package" data-en="Full Growth Package" data-zh="全方位品牌成長方案">Full Growth Package</option>
+        </select>
+      </div>
+      <div class="modal-field">
+        <label for="cf-message" data-en="MESSAGE" data-zh="訊息內容">MESSAGE</label>
+        <textarea id="cf-message" name="message" required placeholder="Tell us about your brand and goals..."></textarea>
+      </div>
+      <button type="button" class="modal-submit" id="submitBtn" onclick="handleFormSubmit()" data-en="SEND MESSAGE →" data-zh="送出訊息 →">SEND MESSAGE →</button>
+    </form>
+  </div>
+</div>
+
+</body>
 </html>
