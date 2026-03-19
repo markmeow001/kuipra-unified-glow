@@ -1445,6 +1445,39 @@
         textSpan.textContent = lang === 'zh' ? '閱讀更多' : 'READ MORE';
       }
     });
+
+    // Update modal content if modal elements exist
+    document.querySelectorAll('#contactModal [data-en]').forEach(el => {
+      const text = lang === 'zh' ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+      if (text !== null && text !== '' && el.children.length === 0) {
+        // Don't overwrite input values
+        if (!['INPUT','TEXTAREA'].includes(el.tagName)) {
+          el.textContent = text;
+        }
+      }
+    });
+    // Update placeholders
+    const placeholders = {
+      en: { name: 'e.g. Jane Smith', email: 'hello@company.com', company: 'Your company name', message: 'Tell us about your brand and goals...' },
+      zh: { name: '例：王小明', email: 'hello@company.com', company: '您的公司名稱', message: '告訴我們您的品牌與目標...' }
+    };
+    const p = placeholders[lang];
+    const cfName = document.getElementById('cf-name');
+    const cfEmail = document.getElementById('cf-email');
+    const cfCompany = document.getElementById('cf-company');
+    const cfMsg = document.getElementById('cf-message');
+    if (cfName) cfName.placeholder = p.name;
+    if (cfEmail) cfEmail.placeholder = p.email;
+    if (cfCompany) cfCompany.placeholder = p.company;
+    if (cfMsg) cfMsg.placeholder = p.message;
+    // Update select options
+    document.querySelectorAll('#cf-service option[data-en]').forEach(opt => {
+      const t = lang === 'zh' ? opt.getAttribute('data-zh') : opt.getAttribute('data-en');
+      if (t) opt.textContent = t;
+    });
+    // Update submit button
+    const submitBtn = document.getElementById('submitBtn');
+    if (submitBtn) submitBtn.textContent = lang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →';
   }
 
   function toggleLang(btn) {
