@@ -1319,6 +1319,79 @@
     .modal-box { padding: 36px 24px; }
     .modal-row { grid-template-columns: 1fr; }
   }
+
+  /* ══════════════════════════════════════════
+     MOBILE PROJECT CARDS — FINAL OVERRIDE
+     Image top + dark text block below
+     Must come AFTER all desktop CSS
+  ══════════════════════════════════════════ */
+  @media (max-width: 768px) {
+    #projects .project-img-card {
+      display: flex !important;
+      flex-direction: column !important;
+      position: relative !important;
+      overflow: visible !important;
+      height: auto !important;
+    }
+    #projects .project-img-card img {
+      position: static !important;
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9 !important;
+      object-fit: cover !important;
+      filter: brightness(0.7) !important;
+      display: block !important;
+    }
+    #projects .project-img-overlay {
+      position: static !important;
+      inset: unset !important;
+      width: 100% !important;
+      background: #0a1628 !important;
+      padding: 20px !important;
+      display: block !important;
+      box-sizing: border-box !important;
+    }
+    #projects .project-label { display: none !important; }
+    #projects .project-client {
+      font-size: 18px !important;
+      font-weight: 700 !important;
+      color: #ffffff !important;
+      margin-bottom: 10px !important;
+      line-height: 1.2 !important;
+    }
+    #projects .project-tags {
+      margin-bottom: 12px !important;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+    }
+    #projects .tag {
+      font-size: 10px !important;
+      padding: 3px 8px !important;
+      color: rgba(255,255,255,0.85) !important;
+      border-color: rgba(255,255,255,0.3) !important;
+    }
+    #projects .project-body {
+      font-size: 13px !important;
+      line-height: 1.6 !important;
+      color: rgba(255,255,255,0.8) !important;
+      margin-bottom: 14px !important;
+      display: block !important;
+      text-indent: 0 !important;
+      padding-left: 0 !important;
+      overflow: visible !important;
+      -webkit-line-clamp: unset !important;
+    }
+    #projects .project-body span {
+      display: inline !important;
+    }
+    #projects .project-link {
+      font-size: 11px !important;
+      color: #e85d26 !important;
+      letter-spacing: 0.08em !important;
+    }
+  }
+
 </style>
 </head>
 <body>
