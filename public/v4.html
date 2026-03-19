@@ -501,6 +501,70 @@
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
   /* ── RESPONSIVE ──────────────────────────────── */
+
+  /* ── HAMBURGER MENU ──────────────────────────── */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .nav-mobile-menu {
+    display: none;
+    position: fixed;
+    top: 60px; left: 0; right: 0;
+    background: rgba(247,245,240,0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 20px 32px;
+    z-index: 99;
+    flex-direction: column;
+    gap: 0;
+  }
+  .nav-mobile-menu.open { display: flex; }
+  .nav-mobile-menu a {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+    display: block;
+    letter-spacing: 0.02em;
+  }
+  .nav-mobile-menu a:last-child { border-bottom: none; }
+  .nav-mobile-cta {
+    margin-top: 20px;
+    display: block !important;
+    text-align: center;
+    background: var(--ink) !important;
+    color: var(--paper) !important;
+    padding: 14px 24px !important;
+    border-radius: 2px;
+    font-size: 14px !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: none !important;
+  }
+  .nav-mobile-cta:hover { background: var(--orange) !important; }
+
   /* ═══════════════════════════════════════════════
      MOBILE — max-width: 768px
   ═══════════════════════════════════════════════ */
@@ -512,6 +576,7 @@
       height: 60px;
     }
     .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
 
     /* ── HERO ── */
     #hero {
@@ -620,10 +685,11 @@
     footer { padding: 56px 20px 32px; }
     .footer-top {
       grid-template-columns: 1fr 1fr;
-      gap: 32px;
+      gap: 28px 20px;
       margin-bottom: 40px;
       padding-bottom: 40px;
     }
+    .footer-top > div:first-child { grid-column: 1 / -1; }
     .footer-logo img { height: 28px; }
     .footer-tagline { font-size: 14px; }
     .footer-col a, .footer-col span { font-size: 14px; }
@@ -636,7 +702,8 @@
     .team-card:nth-child(n) { border-right: none; }
     .team-card:last-child { border-bottom: none; }
     .team-photo { height: 200px; }
-    .footer-top { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .footer-top > div:first-child { grid-column: 1 / -1; }
   }
 
 
@@ -658,6 +725,162 @@
     align-items: flex-end;
     padding: 48px 56px;
   }
+
+  /* ═══════════════════════════════════════════
+     MOBILE RESPONSIVE  ≤ 768px
+  ═══════════════════════════════════════════ */
+  @media (max-width: 768px) {
+
+    /* ── NAV ──────────────────────────────── */
+    nav {
+      padding: 0 20px;
+      height: 64px;
+    }
+    .nav-logo img { height: 30px; }
+    .nav-links { display: none; }
+
+    /* ── HERO ─────────────────────────────── */
+    #hero {
+      min-height: 85vh;
+      padding: 0 20px 48px;
+    }
+    .hero-bg-text { font-size: 22vw; opacity: 0.5; }
+    .hero-eyebrow { font-size: 11px; margin-bottom: 16px; }
+    .hero-headline { font-size: clamp(40px, 11vw, 64px); }
+    .hero-bottom {
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .hero-sub { font-size: 16px; max-width: 100%; }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      width: 100%;
+      border-top: 1px solid var(--rule);
+      padding-top: 24px;
+    }
+    .stat-item { text-align: left; }
+    .stat-num { font-size: 28px; }
+    .stat-label { font-size: 11px; text-align: left; max-width: 100%; }
+
+    /* ── MARQUEE ──────────────────────────── */
+    .marquee-item { font-size: 12px; padding: 0 20px; }
+
+    /* ── SERVICES ─────────────────────────── */
+    #services { padding: 64px 20px; }
+    .section-label { margin-bottom: 40px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service-item,
+    .service-item:nth-child(even) {
+      padding: 32px 0;
+      border-right: none;
+    }
+    .service-title { font-size: 20px; }
+    .service-desc { font-size: 16px; }
+
+    /* ── ABOUT ────────────────────────────── */
+    #about {
+      grid-template-columns: 1fr;
+      padding: 64px 20px;
+      gap: 40px;
+    }
+    .about-headline { font-size: clamp(32px, 8vw, 48px); }
+    .about-body { font-size: 16px; }
+
+    /* ── PROCESS ──────────────────────────── */
+    #process { padding: 64px 20px; }
+    .process-header {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .process-headline { font-size: clamp(30px, 7vw, 44px); }
+    .process-step {
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      padding: 28px 0;
+    }
+    .step-title { font-size: 18px; }
+    .step-desc {
+      grid-column: 2;
+      font-size: 15px;
+    }
+
+    /* ── PROJECTS ─────────────────────────── */
+    #projects { padding: 64px 20px; }
+    .projects-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 40px;
+    }
+    .projects-headline { font-size: clamp(32px, 8vw, 48px); }
+    .project-img-card { height: 300px; }
+    .project-img-overlay { padding: 28px 24px; }
+    .project-overlay-content .project-client { font-size: 22px; }
+    .project-overlay-content .project-body { font-size: 14px; }
+
+    /* ── TEAM ─────────────────────────────── */
+    #team { padding: 64px 20px; }
+    .team-headline { font-size: clamp(30px, 7vw, 44px); }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .team-card {
+      padding: 24px 16px;
+      border-right: 1px solid var(--rule-light);
+      border-bottom: 1px solid var(--rule-light);
+    }
+    .team-card:nth-child(2n) { border-right: none; }
+    .team-card:nth-child(n+3) { border-top: none; }
+    .team-photo { height: 140px; }
+    .team-name { font-size: 16px; }
+    .team-role { font-size: 12px; }
+    .team-bio-preview { font-size: 13px; }
+
+    /* ── CTA ──────────────────────────────── */
+    #cta {
+      flex-direction: column;
+      padding: 64px 20px;
+      gap: 32px;
+      align-items: flex-start;
+    }
+    .cta-headline { font-size: clamp(30px, 7vw, 48px); }
+    .cta-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 18px 32px;
+      font-size: 14px;
+    }
+
+    /* ── FOOTER ───────────────────────────── */
+    footer { padding: 48px 20px 32px; }
+    .footer-top {
+      grid-template-columns: 1fr 1fr;
+      gap: 28px 20px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+    }
+    .footer-top > div:first-child { grid-column: 1 / -1; }
+    .footer-top > div:first-child { grid-column: 1 / -1; }
+    .footer-logo img { height: 28px; }
+    .footer-col a, .footer-col span { font-size: 14px; }
+    .footer-bottom { flex-direction: column; gap: 8px; }
+    .footer-copy { font-size: 12px; }
+  }
+
+  /* ── VERY SMALL ≤ 480px ───────────────── */
+  @media (max-width: 480px) {
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .stat-item:last-child { grid-column: 1 / -1; padding-top: 16px; border-top: 1px solid var(--rule); }
+    .team-grid { grid-template-columns: 1fr; }
+    .team-card:nth-child(2n) { border-right: 1px solid var(--rule-light); }
+    .team-photo { height: 200px; }
+    .project-img-card { height: 260px; }
+  }
+
+
+
 </style>
 </head>
 <body>
@@ -694,7 +917,17 @@
     <a href="#team">Team</a>
     <a href="mailto:Charlene.Ling@Kuipra.Ca?subject=Hello%20Kuipra%20—%20Let%27s%20Talk" class="nav-cta">Get in touch</a>
   </div>
+  <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="nav-mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#projects" onclick="closeMenu()">Work</a>
+  <a href="#team" onclick="closeMenu()">Team</a>
+  <a href="mailto:Charlene.Ling@Kuipra.Ca?subject=Hello%20Kuipra%20—%20Let%27s%20Talk" class="nav-mobile-cta">Get in touch</a>
+</div>
 
 <!-- HERO -->
 <section id="hero">
@@ -1020,6 +1253,20 @@
       ? 'rgba(247,245,240,0.98)' : 'rgba(247,245,240,0.92)';
   });
 
+  // Hamburger menu
+  function toggleMenu(btn) {
+    btn.classList.toggle('open');
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.body.style.overflow = btn.classList.contains('open') ? 'hidden' : '';
+  }
+  function closeMenu() {
+    const btn = document.querySelector('.nav-hamburger');
+    const menu = document.getElementById('mobileMenu');
+    btn.classList.remove('open');
+    menu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
   // Team bio toggle
   function toggleTeamBio(btn) {
     const wrap = btn.closest('.team-bio-wrap');
@@ -1042,157 +1289,4 @@
   }
 </script>
 </body>
-</html>  /* ═══════════════════════════════════════════
-     MOBILE RESPONSIVE  ≤ 768px
-  ═══════════════════════════════════════════ */
-  @media (max-width: 768px) {
-
-    /* ── NAV ──────────────────────────────── */
-    nav {
-      padding: 0 20px;
-      height: 64px;
-    }
-    .nav-logo img { height: 30px; }
-    .nav-links { display: none; }
-
-    /* ── HERO ─────────────────────────────── */
-    #hero {
-      min-height: 85vh;
-      padding: 0 20px 48px;
-    }
-    .hero-bg-text { font-size: 22vw; opacity: 0.5; }
-    .hero-eyebrow { font-size: 11px; margin-bottom: 16px; }
-    .hero-headline { font-size: clamp(40px, 11vw, 64px); }
-    .hero-bottom {
-      flex-direction: column;
-      gap: 32px;
-      margin-top: 32px;
-    }
-    .hero-sub { font-size: 16px; max-width: 100%; }
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0;
-      width: 100%;
-      border-top: 1px solid var(--rule);
-      padding-top: 24px;
-    }
-    .stat-item { text-align: left; }
-    .stat-num { font-size: 28px; }
-    .stat-label { font-size: 11px; text-align: left; max-width: 100%; }
-
-    /* ── MARQUEE ──────────────────────────── */
-    .marquee-item { font-size: 12px; padding: 0 20px; }
-
-    /* ── SERVICES ─────────────────────────── */
-    #services { padding: 64px 20px; }
-    .section-label { margin-bottom: 40px; }
-    .services-grid { grid-template-columns: 1fr; }
-    .service-item,
-    .service-item:nth-child(even) {
-      padding: 32px 0;
-      border-right: none;
-    }
-    .service-title { font-size: 20px; }
-    .service-desc { font-size: 16px; }
-
-    /* ── ABOUT ────────────────────────────── */
-    #about {
-      grid-template-columns: 1fr;
-      padding: 64px 20px;
-      gap: 40px;
-    }
-    .about-headline { font-size: clamp(32px, 8vw, 48px); }
-    .about-body { font-size: 16px; }
-
-    /* ── PROCESS ──────────────────────────── */
-    #process { padding: 64px 20px; }
-    .process-header {
-      grid-template-columns: 1fr;
-      gap: 24px;
-      margin-bottom: 48px;
-    }
-    .process-headline { font-size: clamp(30px, 7vw, 44px); }
-    .process-step {
-      grid-template-columns: 48px 1fr;
-      gap: 16px;
-      padding: 28px 0;
-    }
-    .step-title { font-size: 18px; }
-    .step-desc {
-      grid-column: 2;
-      font-size: 15px;
-    }
-
-    /* ── PROJECTS ─────────────────────────── */
-    #projects { padding: 64px 20px; }
-    .projects-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 8px;
-      margin-bottom: 40px;
-    }
-    .projects-headline { font-size: clamp(32px, 8vw, 48px); }
-    .project-img-card { height: 300px; }
-    .project-img-overlay { padding: 28px 24px; }
-    .project-overlay-content .project-client { font-size: 22px; }
-    .project-overlay-content .project-body { font-size: 14px; }
-
-    /* ── TEAM ─────────────────────────────── */
-    #team { padding: 64px 20px; }
-    .team-headline { font-size: clamp(30px, 7vw, 44px); }
-    .team-grid { grid-template-columns: 1fr 1fr; }
-    .team-card {
-      padding: 24px 16px;
-      border-right: 1px solid var(--rule-light);
-      border-bottom: 1px solid var(--rule-light);
-    }
-    .team-card:nth-child(2n) { border-right: none; }
-    .team-card:nth-child(n+3) { border-top: none; }
-    .team-photo { height: 140px; }
-    .team-name { font-size: 16px; }
-    .team-role { font-size: 12px; }
-    .team-bio-preview { font-size: 13px; }
-
-    /* ── CTA ──────────────────────────────── */
-    #cta {
-      flex-direction: column;
-      padding: 64px 20px;
-      gap: 32px;
-      align-items: flex-start;
-    }
-    .cta-headline { font-size: clamp(30px, 7vw, 48px); }
-    .cta-btn {
-      width: 100%;
-      justify-content: center;
-      padding: 18px 32px;
-      font-size: 14px;
-    }
-
-    /* ── FOOTER ───────────────────────────── */
-    footer { padding: 48px 20px 32px; }
-    .footer-top {
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      margin-bottom: 40px;
-      padding-bottom: 40px;
-    }
-    .footer-top > div:first-child { grid-column: 1 / -1; }
-    .footer-logo img { height: 28px; }
-    .footer-col a, .footer-col span { font-size: 14px; }
-    .footer-bottom { flex-direction: column; gap: 8px; }
-    .footer-copy { font-size: 12px; }
-  }
-
-  /* ── VERY SMALL ≤ 480px ───────────────── */
-  @media (max-width: 480px) {
-    .hero-stats { grid-template-columns: 1fr 1fr; }
-    .stat-item:last-child { grid-column: 1 / -1; padding-top: 16px; border-top: 1px solid var(--rule); }
-    .team-grid { grid-template-columns: 1fr; }
-    .team-card:nth-child(2n) { border-right: 1px solid var(--rule-light); }
-    .team-photo { height: 200px; }
-    .project-img-card { height: 260px; }
-  }
-
-
-</style>
+</html>
