@@ -915,43 +915,72 @@
       margin-bottom: 40px;
     }
     .projects-headline { font-size: clamp(32px, 8vw, 46px); }
-    /* ── Selected Work mobile ── */
+    /* ── Selected Work mobile: image top, text block below ── */
     .project-img-card {
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
-      position: relative !important;
-      isolation: isolate;
-      overflow: hidden !important;
-      aspect-ratio: 16 / 9 !important;
-      height: auto !important;
-    }
-    .project-img-card img {
-      position: absolute !important;
-      top: 0 !important; left: 0 !important;
       width: 100% !important;
-      height: 100% !important;
-      object-fit: cover !important;
-      filter: brightness(0.55) !important;
-    }
-    .project-img-overlay {
-      position: absolute !important;
-      inset: 0 !important;
-      background: rgba(8,18,32,0.45) !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
       display: flex !important;
       flex-direction: column !important;
-      justify-content: flex-end !important;
-      align-items: flex-start !important;
-      padding: 24px 20px !important;
+      position: relative !important;
+      overflow: visible !important;
+      aspect-ratio: unset !important;
+      height: auto !important;
+      margin-bottom: 4px !important;
     }
-    .project-overlay-content { max-width: 100% !important; width: 100% !important; }
-    .project-overlay-content .project-client { font-size: 17px !important; margin-bottom: 8px !important; line-height: 1.2 !important; }
-    .project-overlay-content .project-tags { margin-bottom: 8px !important; }
-    .project-overlay-content .project-body { font-size: 13px !important; -webkit-line-clamp: 2 !important; margin-bottom: 10px !important; color: rgba(255,255,255,0.9) !important; }
-    .project-overlay-content .tag { font-size: 10px !important; padding: 3px 7px !important; }
-    .project-overlay-content .project-link { font-size: 11px !important; }
-    .project-img-card .project-label { display: none !important; }
-    .project-overlay-content .project-body { text-indent: 0 !important; padding-left: 0 !important; }
+    .project-img-card img {
+      position: static !important;
+      width: 100% !important;
+      height: auto !important;
+      display: block !important;
+      object-fit: unset !important;
+      filter: brightness(0.7) !important;
+      aspect-ratio: 16 / 9 !important;
+      object-fit: cover !important;
+    }
+    .project-img-overlay {
+      position: static !important;
+      inset: unset !important;
+      background: var(--deep) !important;
+      display: block !important;
+      padding: 20px 20px 24px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .project-label { display: none !important; }
+    .project-overlay-content { width: 100% !important; max-width: 100% !important; }
+    .project-overlay-content .project-client {
+      font-size: 18px !important;
+      font-weight: 700 !important;
+      color: white !important;
+      margin-bottom: 10px !important;
+      line-height: 1.2 !important;
+      display: block !important;
+    }
+    .project-overlay-content .project-tags {
+      margin-bottom: 12px !important;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+    }
+    .project-overlay-content .tag {
+      font-size: 10px !important;
+      padding: 3px 8px !important;
+    }
+    .project-overlay-content .project-body {
+      font-size: 13px !important;
+      line-height: 1.6 !important;
+      color: rgba(255,255,255,0.8) !important;
+      margin-bottom: 14px !important;
+      text-indent: 0 !important;
+      padding-left: 0 !important;
+      display: block !important;
+      -webkit-line-clamp: unset !important;
+    }
+    .project-overlay-content .project-link {
+      font-size: 11px !important;
+      letter-spacing: 0.08em !important;
+    }
     .project-img-overlay { padding: 28px 20px; }
     .project-overlay-content { max-width: 100%; width: 100%; }
     .project-overlay-content .project-client { font-size: 20px !important; }
