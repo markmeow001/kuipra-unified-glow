@@ -59,7 +59,7 @@ const Timeline = () => {
                           <h3 className="text-base md:text-lg font-extrabold uppercase tracking-wide mb-2 leading-tight">
                             {step.title}
                           </h3>
-                          <p className="text-xs md:text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
+                          <p className="text-sm md:text-base text-primary-foreground/60 leading-relaxed max-w-xs">
                             {step.desc}
                           </p>
                         </div>
@@ -83,7 +83,7 @@ const Timeline = () => {
                           <h3 className="text-base md:text-lg font-extrabold uppercase tracking-wide mb-2 leading-tight">
                             {step.title}
                           </h3>
-                          <p className="text-xs md:text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
+                          <p className="text-sm md:text-base text-primary-foreground/60 leading-relaxed max-w-xs">
                             {step.desc}
                           </p>
                         </div>

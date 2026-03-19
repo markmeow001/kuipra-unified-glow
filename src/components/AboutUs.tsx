@@ -21,10 +21,10 @@ const AboutUs = () => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground uppercase tracking-wide mb-8">
               {t("about.sectionTitle")}
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6 text-sm md:text-base">
+            <p className="text-muted-foreground leading-relaxed mb-6 text-base">
               {t("about.description")}
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-10 text-sm md:text-base">
+            <p className="text-muted-foreground leading-relaxed mb-10 text-base">
               {t("about.description2")}
             </p>
             <button

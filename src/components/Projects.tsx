@@ -126,7 +126,7 @@ const Projects = ({ projects, loading }: Props) => {
 
                     {/* Description + platform */}
                     <div>
-                      <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line mb-4">
+                      <p className="text-base text-muted-foreground leading-relaxed whitespace-pre-line mb-4">
                         {lang === "zh" ? p.description_zh : p.description_en}
                       </p>
                       {(lang === "zh" ? p.title_zh : p.title_en) && (

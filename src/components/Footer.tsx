@@ -36,7 +36,7 @@ const Footer = () => {
           {/* Column 1: Logo + description + social */}
           <div>
             <img src={kuipraLogo} alt="Kuipra Communications" className="h-10 brightness-0 invert mb-6" />
-            <p className="text-primary-foreground/60 text-xs leading-relaxed mb-6">
+            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
               {t("footer.description")}
             </p>
             <div className="flex gap-3">
@@ -63,7 +63,7 @@ const Footer = () => {
                 <li key={page.id}>
                   <button
                     onClick={() => scrollTo(page.id)}
-                    className="text-xs text-primary-foreground/60 hover:text-orange transition-colors"
+                    className="text-sm text-primary-foreground/60 hover:text-orange transition-colors"
                   >
                     {page.label}
                   </button>
@@ -77,7 +77,7 @@ const Footer = () => {
             <h4 className="font-bold text-sm mb-4">Service</h4>
             <ul className="space-y-2">
               {services.map((s, i) => (
-                <li key={i} className="text-xs text-primary-foreground/60 leading-relaxed">
+                <li key={i} className="text-sm text-primary-foreground/60 leading-relaxed">
                   {s}
                 </li>
               ))}
@@ -90,15 +90,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Phone size={14} className="text-primary-foreground/60 shrink-0 mt-0.5" />
-                <span className="text-xs text-primary-foreground/60">{t("contact.phone")}</span>
+                <span className="text-sm text-primary-foreground/60">{t("contact.phone")}</span>
               </li>
               <li className="flex items-start gap-2">
                 <Mail size={14} className="text-primary-foreground/60 shrink-0 mt-0.5" />
-                <span className="text-xs text-primary-foreground/60">{t("contact.email")}</span>
+                <span className="text-sm text-primary-foreground/60">{t("contact.email")}</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={14} className="text-primary-foreground/60 shrink-0 mt-0.5" />
-                <span className="text-xs text-primary-foreground/60">{t("contact.address")}</span>
+                <span className="text-sm text-primary-foreground/60">{t("contact.address")}</span>
               </li>
             </ul>
           </div>
@@ -108,7 +108,7 @@ const Footer = () => {
       {/* Copyright bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="mx-4 md:mx-8 px-4 py-6">
-          <p className="text-xs text-primary-foreground/40 text-center">
+          <p className="text-sm text-primary-foreground/40 text-center">
             {t("footer.copyright")}
           </p>
         </div>

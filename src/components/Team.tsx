@@ -74,7 +74,7 @@ const Team = ({ members, loading }: Props) => {
                   </div>
                   {/* Description */}
                   <div className="px-6 pb-6">
-                    <p className="text-xs md:text-sm opacity-85 leading-relaxed whitespace-pre-line">
+                    <p className="text-sm md:text-base opacity-85 leading-relaxed whitespace-pre-line">
                       {lang === "zh" ? m.description_zh : m.description_en}
                     </p>
                   </div>

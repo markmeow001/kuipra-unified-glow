@@ -49,7 +49,7 @@ const Services = ({ services, loading }: Props) => {
       <h3 className="text-lg md:text-xl font-extrabold mb-3 uppercase tracking-wide leading-tight">
         {title}
       </h3>
-      <p className="text-primary-foreground/70 text-sm leading-relaxed">
+      <p className="text-primary-foreground/70 text-base leading-relaxed">
         {description}
       </p>
     </div>
