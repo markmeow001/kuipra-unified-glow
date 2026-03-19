@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import bannerBg from "@/assets/banner-bg.jpg";
 
 const Banner = () => {
   const { t } = useTranslation();
@@ -7,8 +8,7 @@ const Banner = () => {
     <section
       className="relative bg-cover bg-center bg-no-repeat py-32"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1600&q=80')",
+        backgroundImage: `url('${bannerBg}')`,
       }}
     >
       <div className="absolute inset-0 bg-primary/70" />
