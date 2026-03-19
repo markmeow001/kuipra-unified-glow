@@ -1,3 +1,8 @@
+// Redirect to new standalone redesign
+if (typeof window !== 'undefined') {
+  window.location.replace('/v21.html');
+}
+
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import Services from "@/components/Services";
