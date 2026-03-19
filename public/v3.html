@@ -313,94 +313,103 @@
   }
 
   /* ── TEAM ────────────────────────────────────────── */
-  #team { background: var(--deep); padding: 120px 48px; }
+  #team {
+    background: var(--deep);
+    padding: 120px 48px;
+  }
   .team-header { margin-bottom: 80px; }
   .team-headline {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(38px, 4vw, 56px); font-weight: 700;
-    line-height: 1.1; letter-spacing: -0.02em; color: white;
+    font-size: clamp(38px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: white;
     max-width: 600px;
   }
   .team-headline em { font-style: italic; color: rgba(255,255,255,0.35); }
+
   .team-grid {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     border-top: 1px solid var(--rule-light);
   }
   .team-card {
-    display: block !important;
     padding: 40px 32px;
     border-right: 1px solid var(--rule-light);
     border-bottom: 1px solid var(--rule-light);
   }
   .team-card:nth-child(4n) { border-right: none; }
+
   .team-photo {
-    display: block !important;
-    width: 100% !important;
-    height: 180px !important;
-    border-radius: 2px !important;
-    object-fit: cover !important;
-    object-position: top center !important;
-    margin-bottom: 20px !important;
-    filter: grayscale(15%) !important;
-    transition: filter 0.4s ease !important;
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    filter: grayscale(15%);
+    transition: filter 0.4s ease;
   }
-  .team-card:hover .team-photo { filter: grayscale(0) !important; }
+  .team-card:hover .team-photo { filter: grayscale(0); }
+
   .team-name {
-    font-family: 'Playfair Display', serif !important;
-    font-size: 20px !important; font-weight: 700 !important;
-    color: white !important; margin-bottom: 4px !important;
-    line-height: 1.2 !important; display: block !important;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+    line-height: 1.2;
   }
   .team-role {
-    font-size: 13px !important; color: var(--orange) !important;
-    letter-spacing: 0.05em !important; margin-bottom: 16px !important;
-    display: block !important;
+    font-size: 13px;
+    color: var(--orange);
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
   }
-  .team-bio-wrap { display: block !important; }
+  .team-bio-wrap { }
   .team-bio-preview {
-    display: block !important;
-    font-size: 14px !important; line-height: 1.75 !important;
-    color: rgba(255,255,255,0.5) !important; font-weight: 300 !important;
+    font-size: 14px;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+    margin: 0 0 14px 0;
   }
-  .team-bio-preview.hidden { display: none !important; }
+  .team-bio-preview.hidden { display: none; }
   .team-bio-full {
-    display: none !important;
-    font-size: 14px !important; line-height: 1.75 !important;
-    color: rgba(255,255,255,0.5) !important; font-weight: 300 !important;
-    margin-top: 12px !important;
-    padding-top: 12px !important;
-    border-top: 1px solid rgba(255,255,255,0.08) !important;
-    white-space: pre-line !important;
+    display: none;
+    font-size: 14px;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+    margin: 0 0 14px 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.08);
   }
-  .team-bio-full.open { display: block !important; }
-  .team-toggle {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-    margin-top: 14px !important;
-    font-family: 'DM Mono', monospace !important;
-    font-size: 11px !important;
-    letter-spacing: 0.15em !important;
-    text-transform: uppercase !important;
-    color: var(--orange) !important;
-    cursor: pointer !important;
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
-    opacity: 0.85 !important;
-    transition: opacity 0.2s !important;
-    outline: none !important;
-    -webkit-appearance: none !important;
-    appearance: none !important;
+  .team-bio-full.open { display: block; }
+
+  button.team-toggle {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--orange);
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s;
   }
-  .team-toggle:hover { opacity: 1 !important; }
+  button.team-toggle:hover { opacity: 1; }
   .toggle-arrow {
-    display: inline-block !important;
-    transition: transform 0.3s ease !important;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-style: normal;
   }
-  .team-toggle.open .toggle-arrow { transform: rotate(180deg) !important; }
+  button.team-toggle.open .toggle-arrow { transform: rotate(180deg); }
 
   /* ── CTA BAND ────────────────────────────────── */
   #cta {
@@ -814,68 +823,52 @@
 
 <!-- TEAM -->
 <section id="team">
-  <div class="team-header reveal">
-    <div class="about-label" style="margin-bottom:24px;">Our Team</div>
+  <div class="team-header">
+    <div class="about-label">Our Team</div>
     <h2 class="team-headline">The people behind<br><em>the stories</em></h2>
   </div>
   <div class="team-grid">
-    <div class="team-card reveal">
-      <img class="team-photo" src="/team/charlene.png" alt="Charlene Ling">
+    <div class="team-card">
+      <img class="team-photo" src="/team/charlene.png" alt="Charlene Ling" loading="lazy">
       <div class="team-name">Charlene Ling</div>
       <div class="team-role">Principal Consultant</div>
       <div class="team-bio-wrap">
-        <span class="team-bio-preview">An award-nominated media professional with over a decade of experience, leading news coverage for major Canadian and U.S. elections.</span>
-        <div class="team-bio-full">An award-nominated media professional with over a decade of experience, Charlene served eight years as a News Producer leading coverage for major Canadian and U.S. elections, along with special features exploring cultural and social issues.
-
-At Kuipra Communications, she leverages journalistic rigor and strategic storytelling to extract core brand values and transform them into high-impact digital narratives. By bridging professional integrity with modern social media, she ensures brands build a powerful, resonant, and lasting presence in the digital ecosystem.</div>
-        <button class="team-toggle" onclick="toggleTeamBio(this)">
-          Read more <span class="toggle-arrow">↓</span>
-        </button>
+        <p class="team-bio-preview">An award-nominated media professional with over a decade of experience, Charlene served eight years as a News Producer leading coverage for major Canadian and U.S. elections.</p>
+        <div class="team-bio-full">At Kuipra Communications, she leverages journalistic rigor and strategic storytelling to extract core brand values and transform them into high-impact digital narratives. By bridging professional integrity with modern social media, she ensures brands build a powerful, resonant, and lasting presence in the digital ecosystem.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)">READ MORE <span class="toggle-arrow">↓</span></button>
       </div>
     </div>
-    <div class="team-card reveal">
-      <img class="team-photo" src="/team/robert.png" alt="Robert Chu">
+    <div class="team-card">
+      <img class="team-photo" src="/team/robert.png" alt="Robert Chu" loading="lazy">
       <div class="team-name">Robert Chu</div>
       <div class="team-role">Principal Creative Strategist</div>
       <div class="team-bio-wrap">
-        <span class="team-bio-preview">A veteran photojournalist with 20+ years in Canadian media, covering landmark events like the 2010 Winter Olympics.</span>
-        <div class="team-bio-full">A veteran photojournalist with 20+ years in Canadian media, Robert has covered landmark events like the 2010 Winter Olympics and earned a Certificate of Recognition from the Premier of British Columbia.
-
-At Kuipra, he bridges classical cinematography with advanced AI (Sora, Veo 3, Kling) to craft immersive, soul-driven content. By merging traditional visual craftsmanship with cutting-edge innovation, Robert redefines the boundaries of digital storytelling for the modern era.</div>
-        <button class="team-toggle" onclick="toggleTeamBio(this)">
-          Read more <span class="toggle-arrow">↓</span>
-        </button>
+        <p class="team-bio-preview">A veteran photojournalist with 20+ years in Canadian media, Robert has covered landmark events like the 2010 Winter Olympics and earned a Certificate of Recognition from the Premier of British Columbia.</p>
+        <div class="team-bio-full">At Kuipra, he bridges classical cinematography with advanced AI (Sora, Veo 3, Kling) to craft immersive, soul-driven content. By merging traditional visual craftsmanship with cutting-edge innovation, Robert redefines the boundaries of digital storytelling for the modern era.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)">READ MORE <span class="toggle-arrow">↓</span></button>
       </div>
     </div>
-    <div class="team-card reveal">
-      <img class="team-photo" src="/team/alen.png" alt="Alen Yang">
+    <div class="team-card">
+      <img class="team-photo" src="/team/alen.png" alt="Alen Yang" loading="lazy">
       <div class="team-name">Alen Yang</div>
       <div class="team-role">Marketing Director</div>
       <div class="team-bio-wrap">
-        <span class="team-bio-preview">Alen leverages strategic marketing operations and immersive event design to transform brand visions into experiential activations.</span>
-        <div class="team-bio-full">Alen leverages strategic marketing operations and immersive event design to extract core brand visions and transform them into experiential activations. By bridging creative storytelling with logistical execution, he ensures brands build a powerful, engaging, and memorable presence in the market.
-
-With designer's eye and proficiency, Alen doesn't just oversee campaigns, he shapes their visual identity. He ensures that every physical and digital touchpoint is crafted with aesthetic precision, elevating the overall brand experience through intuitive, elegant, and user-centric design.</div>
-        <button class="team-toggle" onclick="toggleTeamBio(this)">
-          Read more <span class="toggle-arrow">↓</span>
-        </button>
+        <p class="team-bio-preview">Alen leverages strategic marketing operations and immersive event design to extract core brand visions and transform them into experiential activations.</p>
+        <div class="team-bio-full">By bridging creative storytelling with logistical execution, he ensures brands build a powerful, engaging, and memorable presence in the market. With designer's eye and proficiency, Alen shapes their visual identity — ensuring every physical and digital touchpoint is crafted with aesthetic precision and user-centric design.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)">READ MORE <span class="toggle-arrow">↓</span></button>
       </div>
     </div>
-    <div class="team-card reveal">
-      <img class="team-photo" src="/team/josh.png" alt="Josh Hung">
+    <div class="team-card">
+      <img class="team-photo" src="/team/josh.png" alt="Josh Hung" loading="lazy">
       <div class="team-name">Josh Hung</div>
       <div class="team-role">Visual Lead & Creative Producer</div>
       <div class="team-bio-wrap">
-        <span class="team-bio-preview">With a Master's in Graphic Arts and a decade of visual storytelling expertise, Josh spans the full creative lifecycle from cinematography to post-production.</span>
-        <div class="team-bio-full">With a Master's degree in Graphic Arts and over a decade of industry expertise in visual storytelling, Josh brings a holistic approach to every project at Kuipra. His craft spans the entire creative lifecycle — from precise cinematography on-site to high-end post-production.
-
-Operating under the philosophy that 'cinematography is the language, while editing is the soul,' Josh masterfully orchestrates light and narrative flow. By seamlessly integrating traditional cinematic techniques with modern AI-enhanced workflows, he ensures that every brand story is not only visually stunning but strategically impactful. As a co-founder, Josh is dedicated to delivering a unified vision that resonates with the diverse and dynamic audience of the Pacific Northwest.</div>
-        <button class="team-toggle" onclick="toggleTeamBio(this)">
-          Read more <span class="toggle-arrow">↓</span>
-        </button>
+        <p class="team-bio-preview">With a Master's degree in Graphic Arts and over a decade of industry expertise in visual storytelling, Josh brings a holistic approach to every project at Kuipra.</p>
+        <div class="team-bio-full">His craft spans the entire creative lifecycle — from precise cinematography on-site to high-end post-production. Operating under the philosophy that 'cinematography is the language, while editing is the soul,' Josh integrates traditional cinematic techniques with modern AI-enhanced workflows. As a co-founder, he delivers a unified vision that resonates with the diverse and dynamic audience of the Pacific Northwest.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)">READ MORE <span class="toggle-arrow">↓</span></button>
       </div>
     </div>
-  </div>  </div>
+  </div>
 </section>
 
 <!-- CTA BAND -->
