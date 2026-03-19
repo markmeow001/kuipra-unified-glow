@@ -463,6 +463,7 @@
     .team-grid { grid-template-columns: 1fr 1fr; }
     .team-card { border-right: 1px solid var(--rule-light); border-bottom: 1px solid var(--rule-light); }
     .team-card:nth-child(2n) { border-right: none; }
+    .team-photo { height: 160px; }
     #cta { flex-direction: column; gap: 40px; align-items: flex-start; padding: 72px 24px; }
     .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; padding: 0 24px; }
     footer { padding: 60px 24px 32px; }
@@ -530,6 +531,28 @@
 </style>
 </head>
 <body>
+  <!-- ================================================================
+    TODO: CONTACT FORM (Formspree)
+    ================================================================
+    Replace all mailto: links with a proper contact form using Formspree.
+    Steps:
+    1. Sign up at https://formspree.io (free plan: 50 submissions/month)
+    2. Create a new form, get the endpoint URL (e.g. https://formspree.io/f/XXXXXXXX)
+    3. Add this form to a new #contact section:
+
+    <section id="contact" ...>
+      <form action="https://formspree.io/f/XXXXXXXX" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="company" placeholder="Company (optional)">
+        <textarea name="message" placeholder="Tell us about your project" required></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+    4. Remove mailto: links from nav-cta, about-cta, and cta-btn
+    5. Point those links to href="#contact" instead
+    ================================================================ -->
 
 <!-- NAV -->
 <nav>
@@ -754,25 +777,45 @@
       <img class="team-photo" src="/team/charlene.png" alt="Charlene Ling">
       <div class="team-name">Charlene Ling</div>
       <div class="team-role">Principal Consultant</div>
-      <p class="team-bio">Award-nominated media professional with 10+ years leading news coverage for major Canadian and U.S. elections. Bridges journalistic rigor with strategic digital storytelling.</p>
+      <div class="team-bio-wrap">
+        <p class="team-bio clamped">An award-nominated media professional with over a decade of experience, Charlene served eight years as a News Producer leading coverage for major Canadian and U.S. elections, along with special features exploring cultural and social issues.
+
+At Kuipra Communications, she leverages journalistic rigor and strategic storytelling to extract core brand values and transform them into high-impact digital narratives. By bridging professional integrity with modern social media, she ensures brands build a powerful, resonant, and lasting presence in the digital ecosystem.</p>
+        <button class="team-read-more" onclick="toggleBio(this)">Read more ↓</button>
+      </div>
     </div>
     <div class="team-card reveal">
       <img class="team-photo" src="/team/robert.png" alt="Robert Chu">
       <div class="team-name">Robert Chu</div>
       <div class="team-role">Principal Creative Strategist</div>
-      <p class="team-bio">Veteran photojournalist with 20+ years in Canadian media, including the 2010 Winter Olympics. Bridges classical cinematography with advanced AI production (Sora, Veo 3, Kling).</p>
+      <div class="team-bio-wrap">
+        <p class="team-bio clamped">A veteran photojournalist with 20+ years in Canadian media, Robert has covered landmark events like the 2010 Winter Olympics and earned a Certificate of Recognition from the Premier of British Columbia.
+
+At Kuipra, he bridges classical cinematography with advanced AI (Sora, Veo 3, Kling) to craft immersive, soul-driven content. By merging traditional visual craftsmanship with cutting-edge innovation, Robert redefines the boundaries of digital storytelling for the modern era.</p>
+        <button class="team-read-more" onclick="toggleBio(this)">Read more ↓</button>
+      </div>
     </div>
     <div class="team-card reveal">
       <img class="team-photo" src="/team/alen.png" alt="Alen Yang">
       <div class="team-name">Alen Yang</div>
       <div class="team-role">Marketing Director</div>
-      <p class="team-bio">Strategic marketing operations and immersive event design. Shapes brand visual identity with designer's precision across every physical and digital touchpoint.</p>
+      <div class="team-bio-wrap">
+        <p class="team-bio clamped">Alen leverages strategic marketing operations and immersive event design to extract core brand visions and transform them into experiential activations. By bridging creative storytelling with logistical execution, he ensures brands build a powerful, engaging, and memorable presence in the market.
+
+With a designer's eye and proficiency, Alen doesn't just oversee campaigns — he shapes their visual identity, ensuring every physical and digital touchpoint is crafted with aesthetic precision and user-centric design.</p>
+        <button class="team-read-more" onclick="toggleBio(this)">Read more ↓</button>
+      </div>
     </div>
     <div class="team-card reveal">
       <img class="team-photo" src="/team/josh.png" alt="Josh Hung">
       <div class="team-name">Josh Hung</div>
       <div class="team-role">Visual Lead & Creative Producer</div>
-      <p class="team-bio">Master's in Graphic Arts. Operates under the philosophy: "cinematography is the language, editing is the soul." Integrates traditional cinematic craft with AI-enhanced workflows.</p>
+      <div class="team-bio-wrap">
+        <p class="team-bio clamped">With a Master's degree in Graphic Arts and over a decade of industry expertise in visual storytelling, Josh brings a holistic approach to every project at Kuipra. His craft spans the entire creative lifecycle — from precise cinematography on-site to high-end post-production.
+
+Operating under the philosophy that "cinematography is the language, while editing is the soul," Josh masterfully orchestrates light and narrative flow, integrating traditional cinematic techniques with modern AI-enhanced workflows to ensure every brand story is visually stunning and strategically impactful.</p>
+        <button class="team-read-more" onclick="toggleBio(this)">Read more ↓</button>
+      </div>
     </div>
   </div>
 </section>
@@ -850,6 +893,21 @@
     nav.style.background = window.scrollY > 60
       ? 'rgba(247,245,240,0.98)' : 'rgba(247,245,240,0.92)';
   });
+
+  // Team Read More toggle
+  function toggleBio(btn) {
+    const bio = btn.previousElementSibling;
+    const isExpanded = bio.classList.contains('expanded');
+    if (isExpanded) {
+      bio.classList.remove('expanded');
+      bio.classList.add('clamped');
+      btn.textContent = 'Read more ↓';
+    } else {
+      bio.classList.remove('clamped');
+      bio.classList.add('expanded');
+      btn.textContent = 'Show less ↑';
+    }
+  }
 </script>
 </body>
 </html>
