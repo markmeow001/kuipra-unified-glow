@@ -70,7 +70,7 @@ const Projects = ({ projects, loading }: Props) => {
       <div className="mx-4 md:mx-8 px-4">
         {/* Large outlined title */}
         <h2
-          className="text-5xl md:text-7xl lg:text-[8rem] font-extrabold tracking-wide text-center mb-16"
+          className="text-5xl md:text-7xl lg:text-[8rem] font-extrabold uppercase tracking-wide text-center mb-16"
           style={{
             WebkitTextStroke: "2px hsl(var(--foreground) / 0.15)",
             color: "transparent",
@@ -115,7 +115,7 @@ const Projects = ({ projects, loading }: Props) => {
                           className="max-h-20 object-contain"
                         />
                       ) : p.client_name ? (
-                        <div className="text-lg font-extrabold text-foreground leading-tight">
+                        <div className="text-lg font-extrabold text-foreground uppercase leading-tight">
                           {p.client_name}
                         </div>
                       ) : null}
@@ -126,7 +126,7 @@ const Projects = ({ projects, loading }: Props) => {
                       <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line mb-4">
                         {lang === "zh" ? p.description_zh : p.description_en}
                       </p>
-                      <p className="text-sm font-bold text-foreground tracking-wider">
+                      <p className="text-sm font-bold text-foreground uppercase tracking-wider">
                         {lang === "zh" ? p.title_zh : p.title_en}
                       </p>
                     </div>

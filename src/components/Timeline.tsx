@@ -23,7 +23,7 @@ const Timeline = () => {
         {/* Header: title left, logo right */}
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
           <div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-wide leading-tight mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase tracking-wide leading-tight mb-6">
               {t("timeline.sectionTitle")}
               <br />
               {t("timeline.sectionSubtitle")}
@@ -56,7 +56,7 @@ const Timeline = () => {
                           <step.icon className="text-orange" size={18} />
                         </div>
                         <div>
-                          <h3 className="text-base md:text-lg font-extrabold tracking-wide mb-2 leading-tight">
+                          <h3 className="text-base md:text-lg font-extrabold uppercase tracking-wide mb-2 leading-tight">
                             {step.title}
                           </h3>
                           <p className="text-xs md:text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
@@ -80,7 +80,7 @@ const Timeline = () => {
                           <step.icon className="text-orange" size={18} />
                         </div>
                         <div>
-                          <h3 className="text-base md:text-lg font-extrabold tracking-wide mb-2 leading-tight">
+                          <h3 className="text-base md:text-lg font-extrabold uppercase tracking-wide mb-2 leading-tight">
                             {step.title}
                           </h3>
                           <p className="text-xs md:text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
