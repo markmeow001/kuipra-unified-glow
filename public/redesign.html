@@ -43,12 +43,15 @@
     border-bottom: 1px solid var(--rule);
   }
   .nav-logo {
-    font-family: 'DM Mono', monospace;
-    font-size: 17px;
-    letter-spacing: 0.10em;
-    text-transform: uppercase;
-    color: var(--ink);
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    flex-shrink: 0;
+  }
+  .nav-logo img {
+    height: 38px;
+    width: auto;
+    display: block;
   }
   .nav-links { display: flex; align-items: center; gap: 36px; }
   .nav-links a {
@@ -387,10 +390,14 @@
     padding-bottom: 64px; border-bottom: 1px solid rgba(255,255,255,0.08);
   }
   .footer-logo {
-    font-family: 'DM Mono', monospace;
-    font-size: 17px; letter-spacing: 0.10em;
-    text-transform: uppercase; color: white;
-    margin-bottom: 20px; display: block;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer-logo img {
+    height: 32px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
   }
   .footer-tagline { font-size: 17px; color: rgba(255,255,255,0.35); line-height: 1.7; font-weight: 300; margin-bottom: 32px; }
   .footer-socials { display: flex; gap: 16px; }
@@ -526,7 +533,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Kuipra</a>
+  <a href="#" class="nav-logo"><img src="/kuipra-logo.png" alt="Kuipra Communications"></a>
   <div class="nav-links">
     <a href="#services">Services</a>
     <a href="#about">About</a>
@@ -784,7 +791,7 @@
 <footer>
   <div class="footer-top">
     <div>
-      <span class="footer-logo">Kuipra Communications</span>
+      <a href="#" class="footer-logo"><img src="/kuipra-logo.png" alt="Kuipra Communications"></a>
       <p class="footer-tagline">Explorers and amplifiers of brand stories. Vancouver, BC.</p>
       <div class="footer-socials">
         <a href="https://www.facebook.com/kuipra" class="footer-social" target="_blank">Facebook</a>
