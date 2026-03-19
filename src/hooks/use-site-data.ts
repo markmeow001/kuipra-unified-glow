@@ -1,42 +1,36 @@
 import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/integrations/supabase/client";
+
+// All data is served statically — no Supabase dependency
+// When Supabase is re-enabled in future, replace queryFn with actual API calls
 
 export const useServices = () =>
   useQuery({
     queryKey: ["services"],
-    queryFn: async () => {
-      const { data, error } = await supabase.from("services").select("*").order("sort_order");
-      if (error) throw error;
-      return data;
-    },
+    queryFn: async (): Promise<null> => null,
+    staleTime: Infinity,
+    retry: false,
   });
 
 export const useTeamMembers = () =>
   useQuery({
     queryKey: ["team_members"],
-    queryFn: async () => {
-      const { data, error } = await supabase.from("team_members").select("*").order("sort_order");
-      if (error) throw error;
-      return data;
-    },
+    queryFn: async (): Promise<null> => null,
+    staleTime: Infinity,
+    retry: false,
   });
 
 export const useProjects = () =>
   useQuery({
     queryKey: ["projects"],
-    queryFn: async () => {
-      const { data, error } = await supabase.from("projects").select("*").order("sort_order");
-      if (error) throw error;
-      return data;
-    },
+    queryFn: async (): Promise<null> => null,
+    staleTime: Infinity,
+    retry: false,
   });
 
 export const useSiteContent = () =>
   useQuery({
     queryKey: ["site_content"],
-    queryFn: async () => {
-      const { data, error } = await supabase.from("site_content").select("*");
-      if (error) throw error;
-      return data;
-    },
+    queryFn: async (): Promise<null> => null,
+    staleTime: Infinity,
+    retry: false,
   });
