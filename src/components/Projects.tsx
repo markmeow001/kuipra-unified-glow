@@ -37,16 +37,6 @@ const placeholderProjects: Project[] = [
   },
   {
     id: "3",
-    client_name: "",
-    tags: ["Influencer Outreach", "Management", "Content Creation"],
-    title_en: "Link",
-    title_zh: "Link",
-    description_en: "Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muväning, och pesask vyfisat. Viktiga poddradio har un mad och inde. Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muväning, och pesask vyfisat. Viktiga poddradio har un mad och inde.",
-    description_zh: "Lorem ipsum 佔位文字。",
-    image_url: "",
-  },
-  {
-    id: "4",
     client_name: "Funtasy Production",
     tags: ["Influencer Outreach", "Management", "Content Creation", "EVENT PLANNING"],
     title_en: "Instagram",
