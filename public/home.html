@@ -691,20 +691,23 @@
       max-width: 100%;
       box-sizing: border-box;
       position: relative !important;
-      overflow: hidden !important;
       isolation: isolate;
+      overflow: hidden !important;
+      aspect-ratio: 2.84 / 1 !important;
+      height: auto !important;
     }
     .project-img-card img {
-      display: block !important;
+      position: absolute !important;
+      top: 0 !important; left: 0 !important;
       width: 100% !important;
-      height: auto !important;
+      height: 100% !important;
+      object-fit: cover !important;
       filter: brightness(0.55) !important;
-      object-fit: unset !important;
     }
     .project-img-overlay {
       position: absolute !important;
       inset: 0 !important;
-      background: rgba(8,18,32,0.55) !important;
+      background: rgba(8,18,32,0.45) !important;
       display: flex !important;
       flex-direction: column !important;
       justify-content: flex-end !important;
@@ -713,11 +716,10 @@
     }
     .project-overlay-content { max-width: 100% !important; width: 100% !important; }
     .project-overlay-content .project-client { font-size: 17px !important; margin-bottom: 8px !important; line-height: 1.2 !important; }
-    .project-overlay-content .project-tags { margin-bottom: 10px !important; }
+    .project-overlay-content .project-tags { margin-bottom: 8px !important; }
     .project-overlay-content .project-body { font-size: 13px !important; -webkit-line-clamp: 2 !important; margin-bottom: 10px !important; color: rgba(255,255,255,0.9) !important; }
     .project-overlay-content .tag { font-size: 10px !important; padding: 3px 7px !important; }
     .project-overlay-content .project-link { font-size: 11px !important; }
-    .project-label { font-size: 10px !important; }
     .project-img-overlay { padding: 28px 20px; }
     .project-overlay-content { max-width: 100%; width: 100%; }
     .project-overlay-content .project-client { font-size: 20px !important; }
