@@ -941,6 +941,90 @@
   .project-img-overlay .tag { color: rgba(255,255,255,0.85) !important; border-color: rgba(255,255,255,0.4) !important; font-size: 11px !important; background: rgba(0,0,0,0.3) !important; }
   .project-img-overlay .project-body { color: rgba(255,255,255,0.9) !important; font-size: 15px !important; line-height: 1.6 !important; margin-bottom: 16px !important; }
   .project-img-overlay .project-link { color: var(--orange) !important; border-bottom-color: var(--orange) !important; font-size: 13px !important; font-weight: 500 !important; }
+
+  /* ── Contact Modal ─────────────────────────────────────────── */
+  .modal-overlay {
+    display: none;
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(8,18,32,0.85);
+    backdrop-filter: blur(6px);
+    align-items: center; justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-box {
+    background: var(--paper);
+    width: min(560px, 92vw);
+    padding: 48px 44px;
+    position: relative;
+    border-radius: 2px;
+  }
+  .modal-close {
+    position: absolute; top: 20px; right: 24px;
+    font-size: 24px; line-height: 1;
+    background: none; border: none; cursor: pointer;
+    color: var(--ink-soft); font-family: 'DM Sans', sans-serif;
+  }
+  .modal-close:hover { color: var(--ink); }
+  .modal-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--orange);
+    margin-bottom: 20px;
+  }
+  .modal-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 700; color: var(--ink);
+    margin-bottom: 32px; line-height: 1.2;
+  }
+  .modal-form { display: flex; flex-direction: column; gap: 16px; }
+  .modal-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .modal-field { display: flex; flex-direction: column; gap: 6px; }
+  .modal-field label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--ink-soft);
+  }
+  .modal-field input,
+  .modal-field textarea,
+  .modal-field select {
+    background: transparent;
+    border: none; border-bottom: 1px solid var(--rule);
+    padding: 10px 0; font-family: 'DM Sans', sans-serif;
+    font-size: 15px; color: var(--ink);
+    outline: none; transition: border-color 0.2s;
+    width: 100%;
+  }
+  .modal-field input:focus,
+  .modal-field textarea:focus,
+  .modal-field select:focus { border-bottom-color: var(--orange); }
+  .modal-field textarea { resize: none; height: 90px; }
+  .modal-submit {
+    margin-top: 8px;
+    background: var(--ink); color: var(--paper);
+    border: none; padding: 16px 36px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px; letter-spacing: 0.1em;
+    text-transform: uppercase; cursor: pointer;
+    align-self: flex-start; transition: background 0.2s;
+  }
+  .modal-submit:hover { background: var(--orange); }
+  .modal-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+  .modal-success {
+    display: none; text-align: center;
+    padding: 32px 0;
+  }
+  .modal-success.show { display: block; }
+  .modal-success-icon { font-size: 48px; margin-bottom: 16px; }
+  .modal-success h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; margin-bottom: 8px;
+  }
+  .modal-success p { color: var(--ink-soft); font-size: 15px; }
+  @media (max-width: 600px) {
+    .modal-box { padding: 36px 24px; }
+    .modal-row { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -976,11 +1060,11 @@
     <a href="#projects" data-en="Work" data-zh="案例">Work</a>
     <a href="#team" data-en="Team" data-zh="我們的團隊">Team</a>
     <button class="lang-toggle-desktop" onclick="toggleLang(this)" style="font-family:'DM Mono',monospace;font-size:13px;letter-spacing:0.08em;color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:0;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">中文</button>
-    <a href="mailto:Charlene.Ling@Kuipra.Ca?subject=Hello%20Kuipra%20—%20Let%27s%20Talk" class="nav-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
+    <a href="#" onclick="openModal();return false;" class="nav-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
   </div>
   <div class="nav-mobile-right">
     <span class="nav-lang-toggle" onclick="toggleLang(this)" style="cursor:pointer;">中文</span>
-    <a href="mailto:Charlene.Ling@Kuipra.Ca?subject=Hello%20Kuipra" class="nav-mobile-cta-inline" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
+    <a href="#" onclick="openModal();closeMenu();return false;" class="nav-mobile-cta-inline" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
   </div>
   <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -1384,6 +1468,111 @@
 
   // Team bio toggle
   // NOTE: toggleTeamBio is defined earlier in this script — no duplicate needed
+
+  // ── Contact Modal ──────────────────────────────────────────────
+  function openModal() {
+    document.getElementById('contactModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    // Apply current language to modal
+    if (currentLang === 'zh') {
+      document.querySelectorAll('#contactModal [data-zh]').forEach(el => {
+        const zh = el.getAttribute('data-zh');
+        if (zh && el.children.length === 0) el.textContent = zh;
+      });
+    }
+  }
+  function closeModal() {
+    document.getElementById('contactModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function handleOverlayClick(e) {
+    if (e.target === document.getElementById('contactModal')) closeModal();
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // Formspree AJAX submit
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = currentLang === 'zh' ? '送出中...' : 'Sending...';
+    try {
+      const res = await fetch('https://formspree.io/f/xojkrblw', {
+        method: 'POST',
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('modalSuccess').classList.add('show');
+        if (currentLang === 'zh') {
+          document.querySelectorAll('#modalSuccess [data-zh]').forEach(el => {
+            const zh = el.getAttribute('data-zh');
+            if (zh && el.children.length === 0) el.textContent = zh;
+          });
+        }
+        setTimeout(() => { closeModal(); document.getElementById('contactForm').style.display = ''; document.getElementById('contactForm').reset(); document.getElementById('modalSuccess').classList.remove('show'); btn.disabled = false; btn.textContent = currentLang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →'; }, 3000);
+      } else {
+        btn.disabled = false;
+        btn.textContent = currentLang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →';
+        alert(currentLang === 'zh' ? '送出失敗，請直接 email 至 Charlene.Ling@Kuipra.Ca' : 'Submission failed. Please email Charlene.Ling@Kuipra.Ca directly.');
+      }
+    } catch(err) {
+      btn.disabled = false;
+      btn.textContent = currentLang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →';
+      alert(currentLang === 'zh' ? '送出失敗，請直接 email 至 Charlene.Ling@Kuipra.Ca' : 'Submission failed. Please email Charlene.Ling@Kuipra.Ca directly.');
+    }
+  });
+
 </script>
+
+<!-- Contact Modal -->
+<div class="modal-overlay" id="contactModal" onclick="handleOverlayClick(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
+    <div class="modal-label" data-en="GET IN TOUCH" data-zh="聯繫我們">GET IN TOUCH</div>
+    <h2 class="modal-headline" data-en="Let's discover your brand's brilliance." data-zh="讓我們一起探索您品牌的光芒。">Let's discover your brand's brilliance.</h2>
+
+    <div class="modal-success" id="modalSuccess">
+      <div class="modal-success-icon">✓</div>
+      <h3 data-en="Message sent!" data-zh="訊息已送出！">Message sent!</h3>
+      <p data-en="We'll be in touch within 24 hours." data-zh="我們將在 24 小時內與您聯絡。">We'll be in touch within 24 hours.</p>
+    </div>
+
+    <form class="modal-form" id="contactForm" action="https://formspree.io/f/xojkrblw" method="POST">
+      <div class="modal-row">
+        <div class="modal-field">
+          <label for="cf-name" data-en="YOUR NAME" data-zh="您的姓名">YOUR NAME</label>
+          <input type="text" id="cf-name" name="name" required placeholder="e.g. Jane Smith">
+        </div>
+        <div class="modal-field">
+          <label for="cf-email" data-en="EMAIL ADDRESS" data-zh="電子郵件">EMAIL ADDRESS</label>
+          <input type="email" id="cf-email" name="email" required placeholder="hello@company.com">
+        </div>
+      </div>
+      <div class="modal-field">
+        <label for="cf-company" data-en="COMPANY / BRAND (OPTIONAL)" data-zh="公司 / 品牌（選填）">COMPANY / BRAND (OPTIONAL)</label>
+        <input type="text" id="cf-company" name="company" placeholder="Your company name">
+      </div>
+      <div class="modal-field">
+        <label for="cf-service" data-en="INTERESTED IN" data-zh="感興趣的服務">INTERESTED IN</label>
+        <select id="cf-service" name="service">
+          <option value="" data-en="Select a service..." data-zh="選擇服務...">Select a service...</option>
+          <option value="Social Media Management" data-en="Social Media Management" data-zh="社群經營管理">Social Media Management</option>
+          <option value="Content Creation" data-en="Content Creation" data-zh="傳達內容創作">Content Creation</option>
+          <option value="Brand Strategy" data-en="Brand Strategy & Personal Branding" data-zh="品牌策略及個人品牌塑造">Brand Strategy & Personal Branding</option>
+          <option value="Public Relations" data-en="Public Relations & Communications" data-zh="公共關係與企業傳播">Public Relations & Communications</option>
+          <option value="Full Package" data-en="Full Growth Package" data-zh="全方位品牌成長方案">Full Growth Package</option>
+        </select>
+      </div>
+      <div class="modal-field">
+        <label for="cf-message" data-en="MESSAGE" data-zh="訊息內容">MESSAGE</label>
+        <textarea id="cf-message" name="message" required placeholder="Tell us about your brand and goals..."></textarea>
+      </div>
+      <button type="submit" class="modal-submit" id="submitBtn" data-en="SEND MESSAGE →" data-zh="送出訊息 →">SEND MESSAGE →</button>
+    </form>
+  </div>
+</div>
+
 </body>
 </html>
