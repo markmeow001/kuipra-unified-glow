@@ -1,7 +1,4 @@
-// Redirect to new standalone redesign
-if (typeof window !== 'undefined') {
-  window.location.replace('/home.html');
-}
+// Design is served via vercel.json rewrite — no redirect needed
 
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
