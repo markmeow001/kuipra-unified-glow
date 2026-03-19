@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuipra Communications</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ink: #0d0d0d;
+    --ink-soft: #3a3a3a;
+    --ink-faint: #888;
+    --paper: #f7f5f0;
+    --paper-pure: #ffffff;
+    --deep: #0a1628;
+    --deep-mid: #112240;
+    --orange: #e85d26;
+    --orange-soft: rgba(232, 93, 38, 0.12);
+    --rule: rgba(13,13,13,0.1);
+    --rule-light: rgba(255,255,255,0.12);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ─────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px;
+    height: 72px;
+    background: rgba(247,245,240,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav-logo {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .nav-links { display: flex; align-items: center; gap: 36px; }
+  .nav-links a {
+    font-size: 13px; font-weight: 400; letter-spacing: 0.05em;
+    color: var(--ink-soft); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-cta {
+    font-size: 12px; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--paper) !important;
+    background: var(--ink);
+    padding: 10px 24px; border-radius: 2px;
+    text-decoration: none;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--orange) !important; color: var(--paper) !important; }
+
+  /* ── HERO ────────────────────────────────────── */
+  #hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 0 48px 80px;
+    position: relative;
+    background: var(--paper);
+    overflow: hidden;
+  }
+  .hero-bg-text {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(120px, 18vw, 280px);
+    font-weight: 900;
+    color: rgba(13,13,13,0.04);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.03em;
+  }
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--orange);
+    margin-bottom: 24px;
+    opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
+  }
+  .hero-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(52px, 7vw, 108px);
+    font-weight: 700;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    max-width: 900px;
+    opacity: 0; animation: fadeUp 0.9s 0.35s forwards;
+  }
+  .hero-headline em {
+    font-style: italic; color: var(--orange);
+  }
+  .hero-bottom {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-top: 64px;
+    opacity: 0; animation: fadeUp 0.8s 0.55s forwards;
+  }
+  .hero-sub {
+    font-size: 16px; font-weight: 300; line-height: 1.7;
+    color: var(--ink-soft); max-width: 440px;
+  }
+  .hero-stats {
+    display: flex; gap: 48px; align-items: flex-end;
+  }
+  .stat-item { text-align: right; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px; font-weight: 700;
+    line-height: 1; color: var(--ink);
+    display: block;
+  }
+  .stat-label {
+    font-size: 11px; color: var(--ink-faint);
+    letter-spacing: 0.05em; margin-top: 4px;
+    display: block; max-width: 120px; text-align: right;
+  }
+  .hero-rule {
+    width: 100%; height: 1px;
+    background: var(--rule); margin-top: 64px;
+    opacity: 0; animation: fadeIn 1s 0.8s forwards;
+  }
+
+  /* ── MARQUEE ─────────────────────────────────── */
+  .marquee-wrap {
+    background: var(--ink); padding: 18px 0;
+    overflow: hidden; display: flex;
+  }
+  .marquee-track {
+    display: flex; gap: 0;
+    animation: marquee 22s linear infinite;
+    white-space: nowrap;
+  }
+  .marquee-item {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; letter-spacing: 0.15em;
+    text-transform: uppercase; color: rgba(255,255,255,0.35);
+    padding: 0 32px;
+    flex-shrink: 0;
+  }
+  .marquee-item span { color: var(--orange); margin: 0 8px; }
+
+  /* ── SERVICES ────────────────────────────────── */
+  #services { background: var(--paper); padding: 120px 48px; }
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--orange);
+    margin-bottom: 64px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .section-label::after {
+    content: ''; flex: 1; height: 1px; background: var(--rule); max-width: 80px;
+  }
+  .services-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 0; border-top: 1px solid var(--rule);
+  }
+  .service-item {
+    padding: 56px 48px 56px 0;
+    border-bottom: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    display: flex; gap: 32px;
+    transition: background 0.3s;
+    cursor: default;
+  }
+  .service-item:nth-child(even) { padding: 56px 0 56px 48px; border-right: none; }
+  .service-item:hover { background: rgba(232,93,38,0.03); }
+  .service-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; color: var(--orange);
+    letter-spacing: 0.1em; flex-shrink: 0; padding-top: 6px;
+  }
+  .service-content { flex: 1; }
+  .service-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700;
+    color: var(--ink); margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .service-desc { font-size: 15px; line-height: 1.7; color: var(--ink-soft); font-weight: 300; }
+
+  /* ── ABOUT ───────────────────────────────────── */
+  #about {
+    background: var(--deep);
+    padding: 120px 48px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+  .about-left { }
+  .about-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--orange);
+    margin-bottom: 48px;
+  }
+  .about-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 58px); font-weight: 700;
+    line-height: 1.1; letter-spacing: -0.02em;
+    color: white; margin-bottom: 40px;
+  }
+  .about-headline em { font-style: italic; color: rgba(255,255,255,0.45); }
+  .about-cta {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-size: 13px; letter-spacing: 0.1em;
+    text-transform: uppercase; font-weight: 500;
+    color: var(--orange); text-decoration: none;
+    border-bottom: 1px solid var(--orange);
+    padding-bottom: 4px;
+    transition: gap 0.2s;
+  }
+  .about-cta:hover { gap: 20px; }
+  .about-right { }
+  .about-body {
+    font-size: 16px; line-height: 1.8; color: rgba(255,255,255,0.55);
+    font-weight: 300; margin-bottom: 40px;
+  }
+  .about-body strong { color: rgba(255,255,255,0.85); font-weight: 400; }
+  .about-divider {
+    width: 40px; height: 1px;
+    background: var(--orange); margin-bottom: 40px;
+  }
+
+  /* ── PROCESS ─────────────────────────────────── */
+  #process { background: var(--paper-pure); padding: 120px 48px; }
+  .process-header {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+    margin-bottom: 96px; align-items: end;
+  }
+  .process-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 56px); font-weight: 700;
+    line-height: 1.1; letter-spacing: -0.02em; color: var(--ink);
+  }
+  .process-desc { font-size: 16px; line-height: 1.7; color: var(--ink-soft); font-weight: 300; }
+  .process-steps { display: flex; flex-direction: column; }
+  .process-step {
+    display: grid; grid-template-columns: 80px 1fr 1fr;
+    gap: 40px; align-items: start;
+    padding: 40px 0; border-top: 1px solid var(--rule);
+    transition: background 0.2s;
+  }
+  .process-step:last-child { border-bottom: 1px solid var(--rule); }
+  .step-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; color: var(--orange);
+    letter-spacing: 0.1em; padding-top: 4px;
+  }
+  .step-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; font-weight: 700; color: var(--ink);
+  }
+  .step-desc { font-size: 14px; line-height: 1.7; color: var(--ink-soft); font-weight: 300; }
+
+  /* ── PROJECTS ────────────────────────────────── */
+  #projects { background: var(--paper); padding: 120px 48px; }
+  .projects-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 64px;
+  }
+  .projects-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 56px); font-weight: 700;
+    line-height: 1.1; letter-spacing: -0.02em; color: var(--ink);
+  }
+  .project-card {
+    display: grid; grid-template-columns: 280px 1fr;
+    gap: 0; border-top: 1px solid var(--rule);
+    padding: 56px 0;
+  }
+  .project-card:last-child { border-bottom: 1px solid var(--rule); }
+  .project-meta { padding-right: 48px; }
+  .project-client {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700;
+    color: var(--ink); margin-bottom: 16px; line-height: 1.2;
+  }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .tag {
+    font-size: 11px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--ink-faint);
+    border: 1px solid var(--rule); padding: 4px 10px; border-radius: 1px;
+  }
+  .project-link {
+    font-size: 12px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--orange);
+    text-decoration: none; font-weight: 500;
+    display: inline-flex; align-items: center; gap: 8px;
+    border-bottom: 1px solid var(--orange);
+    padding-bottom: 2px; transition: gap 0.2s;
+  }
+  .project-link:hover { gap: 14px; }
+  .project-body {
+    font-size: 15px; line-height: 1.8; color: var(--ink-soft);
+    font-weight: 300; padding-left: 48px;
+    border-left: 1px solid var(--rule);
+  }
+
+  /* ── TEAM ────────────────────────────────────── */
+  #team { background: var(--deep); padding: 120px 48px; }
+  .team-header { margin-bottom: 80px; }
+  .team-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 56px); font-weight: 700;
+    line-height: 1.1; letter-spacing: -0.02em; color: white;
+    max-width: 600px;
+  }
+  .team-headline em { font-style: italic; color: rgba(255,255,255,0.35); }
+  .team-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0; border-top: 1px solid var(--rule-light);
+  }
+  .team-card {
+    padding: 40px 32px;
+    border-right: 1px solid var(--rule-light);
+    border-bottom: 1px solid var(--rule-light);
+  }
+  .team-card:nth-child(4n) { border-right: none; }
+  .team-card:nth-child(n+3) { border-bottom: none; }
+  .team-photo {
+    width: 72px; height: 72px; border-radius: 2px;
+    object-fit: cover; object-position: top;
+    margin-bottom: 24px; filter: grayscale(20%);
+    transition: filter 0.3s;
+  }
+  .team-card:hover .team-photo { filter: grayscale(0); }
+  .team-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; font-weight: 700;
+    color: white; margin-bottom: 4px;
+  }
+  .team-role {
+    font-size: 12px; color: var(--orange);
+    letter-spacing: 0.05em; margin-bottom: 20px;
+  }
+  .team-bio {
+    font-size: 13px; line-height: 1.7;
+    color: rgba(255,255,255,0.45); font-weight: 300;
+    display: -webkit-box; -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+  /* ── CTA BAND ────────────────────────────────── */
+  #cta {
+    background: var(--orange);
+    padding: 100px 48px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .cta-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 4vw, 60px); font-weight: 700;
+    line-height: 1.1; letter-spacing: -0.02em;
+    color: white; max-width: 600px;
+  }
+  .cta-headline em { font-style: italic; opacity: 0.6; }
+  .cta-btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: white; color: var(--orange);
+    font-size: 13px; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 20px 40px;
+    text-decoration: none; border-radius: 2px;
+    transition: all 0.2s; flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .cta-btn:hover { background: var(--ink); color: white; gap: 20px; }
+
+  /* ── FOOTER ──────────────────────────────────── */
+  footer {
+    background: var(--ink); padding: 72px 48px 40px;
+  }
+  .footer-top {
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px; margin-bottom: 64px;
+    padding-bottom: 64px; border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-logo {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px; letter-spacing: 0.15em;
+    text-transform: uppercase; color: white;
+    margin-bottom: 20px; display: block;
+  }
+  .footer-tagline { font-size: 14px; color: rgba(255,255,255,0.35); line-height: 1.7; font-weight: 300; margin-bottom: 32px; }
+  .footer-socials { display: flex; gap: 16px; }
+  .footer-social {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.35); text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .footer-social:hover { color: var(--orange); }
+  .footer-col h5 {
+    font-size: 11px; letter-spacing: 0.15em;
+    text-transform: uppercase; color: rgba(255,255,255,0.25);
+    margin-bottom: 20px; font-family: 'DM Mono', monospace;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 12px; }
+  .footer-col a, .footer-col span {
+    font-size: 14px; color: rgba(255,255,255,0.5);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .footer-col a:hover { color: white; }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.2); }
+
+  /* ── ANIMATIONS ──────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; } to { opacity: 1; }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .reveal {
+    opacity: 0; transform: translateY(32px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ──────────────────────────────── */
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    #hero { padding: 0 24px 60px; }
+    .hero-stats { display: none; }
+    .hero-bottom { flex-direction: column; gap: 32px; }
+    .services-grid, #about, .process-header,
+    .team-grid, #cta { grid-template-columns: 1fr; }
+    .service-item, .service-item:nth-child(even) { padding: 40px 0; border-right: none; }
+    #about { padding: 80px 24px; gap: 48px; }
+    #process, #projects, #services, #team { padding: 80px 24px; }
+    .process-step { grid-template-columns: 60px 1fr; }
+    .step-desc { grid-column: 2; }
+    .project-card { grid-template-columns: 1fr; gap: 24px; }
+    .project-body { border-left: none; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 24px; }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+    .team-card { border-right: 1px solid var(--rule-light); border-bottom: 1px solid var(--rule-light); }
+    .team-card:nth-child(2n) { border-right: none; }
+    #cta { flex-direction: column; gap: 40px; align-items: flex-start; padding: 72px 24px; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; padding: 0 24px; }
+    footer { padding: 60px 24px 32px; }
+    .footer-top { padding: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Kuipra</a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#projects">Work</a>
+    <a href="#team">Team</a>
+    <a href="#cta" class="nav-cta">Get in touch</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-text">KUIPRA</div>
+  <div class="hero-eyebrow">Brand Strategy · Vancouver</div>
+  <h1 class="hero-headline">
+    We discover your<br><em>brand's brilliance</em>
+  </h1>
+  <div class="hero-bottom">
+    <p class="hero-sub">
+      Explorers and amplifiers of brand stories. We transform your essence into narratives that resonate across the digital world.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">85%</span>
+        <span class="stat-label">Engagement growth in 6 months</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">15+</span>
+        <span class="stat-label">Industries navigated</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">200+</span>
+        <span class="stat-label">Content assets yearly</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-rule"></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Social Media Management <span>×</span></span>
+    <span class="marquee-item">Brand Strategy <span>×</span></span>
+    <span class="marquee-item">Content Creation <span>×</span></span>
+    <span class="marquee-item">Public Relations <span>×</span></span>
+    <span class="marquee-item">AI-Enhanced Production <span>×</span></span>
+    <span class="marquee-item">Visual Storytelling <span>×</span></span>
+    <span class="marquee-item">Personal Branding <span>×</span></span>
+    <span class="marquee-item">Social Media Management <span>×</span></span>
+    <span class="marquee-item">Brand Strategy <span>×</span></span>
+    <span class="marquee-item">Content Creation <span>×</span></span>
+    <span class="marquee-item">Public Relations <span>×</span></span>
+    <span class="marquee-item">AI-Enhanced Production <span>×</span></span>
+    <span class="marquee-item">Visual Storytelling <span>×</span></span>
+    <span class="marquee-item">Personal Branding <span>×</span></span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label reveal">Our Services</div>
+  <div class="services-grid">
+    <div class="service-item reveal">
+      <span class="service-num">01</span>
+      <div class="service-content">
+        <h3 class="service-title">Social Media Management</h3>
+        <p class="service-desc">Strategic content and community management that builds consistent, impactful brand presence across all platforms.</p>
+      </div>
+    </div>
+    <div class="service-item reveal">
+      <span class="service-num">02</span>
+      <div class="service-content">
+        <h3 class="service-title">Content Creation</h3>
+        <p class="service-desc">Original written, visual, and video content — blending creativity with strategic intent to connect your brand with its audience.</p>
+      </div>
+    </div>
+    <div class="service-item reveal">
+      <span class="service-num">03</span>
+      <div class="service-content">
+        <h3 class="service-title">Brand Strategy & Personal Branding</h3>
+        <p class="service-desc">Define your identity, refine your message, and stand out with clarity and authority in a crowded digital landscape.</p>
+      </div>
+    </div>
+    <div class="service-item reveal">
+      <span class="service-num">04</span>
+      <div class="service-content">
+        <h3 class="service-title">Public Relations & Communications</h3>
+        <p class="service-desc">Strategic media outreach and communications to enhance visibility, shape your public narrative, and secure meaningful coverage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-left reveal">
+    <div class="about-label">About Kuipra</div>
+    <h2 class="about-headline">
+      Every brand has a story<br><em>waiting to be found</em>
+    </h2>
+    <a href="#cta" class="about-cta">Work with us →</a>
+  </div>
+  <div class="about-right reveal">
+    <div class="about-divider"></div>
+    <p class="about-body">
+      Inspired by the Kuiper Belt — a distant frontier of <strong>hidden worlds and limitless possibilities</strong> — we were founded on the belief that every brand has a unique story waiting to be discovered.
+    </p>
+    <p class="about-body">
+      We serve as both explorers and amplifiers. Through strategic social media, original content, and PR, we transform complex brand identities into compelling narratives that <strong>resonate deeply in the digital age</strong>.
+    </p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="process-header">
+    <div class="reveal">
+      <div class="section-label" style="margin-bottom:24px;">Featured Service</div>
+      <h2 class="process-headline">Comprehensive Brand Growth Solution</h2>
+    </div>
+    <p class="process-desc reveal">A complete growth program for brands seeking exceptional digital presence — from visual identity to full-channel management.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <span class="step-num">01</span>
+      <h3 class="step-title">Visual Identity & Positioning</h3>
+      <p class="step-desc">Define your brand aesthetic and establish a visual standards guide for high-end recognition and credibility.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-num">02</span>
+      <h3 class="step-title">High-Quality Original Content</h3>
+      <p class="step-desc">Video and graphic content blending market trends with core brand values — driving reach and conversion.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-num">03</span>
+      <h3 class="step-title">Professional Content Capture</h3>
+      <p class="step-desc">Scheduled on-site filming and asset collection to keep your brand content fresh and visually premium.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-num">04</span>
+      <h3 class="step-title">Strategic Data Alignment</h3>
+      <p class="step-desc">Weekly check-ins and monthly reviews to refine content direction with precision and data-driven clarity.</p>
+    </div>
+    <div class="process-step reveal">
+      <span class="step-num">05</span>
+      <h3 class="step-title">Full Channel Management</h3>
+      <p class="step-desc">End-to-end scheduling and publishing across platforms to maintain consistent activity and professional brand image.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header reveal">
+    <h2 class="projects-headline">Selected Work</h2>
+    <div class="section-label" style="margin-bottom:0;">Three case studies</div>
+  </div>
+  <div class="project-card reveal">
+    <div class="project-meta">
+      <div class="project-client">Level Best Concrete Lifting</div>
+      <div class="project-tags">
+        <span class="tag">Influencer Outreach</span>
+        <span class="tag">Social Media</span>
+        <span class="tag">RedNote</span>
+      </div>
+      <span class="project-link">RedNote ↗</span>
+    </div>
+    <div class="project-body">
+      Communicating complex engineering work was the core challenge. Through strategic social media, professional copywriting, and original video content, we translated technical processes into clear, compelling narratives — establishing deep professional trust while expanding brand visibility.
+    </div>
+  </div>
+  <div class="project-card reveal">
+    <div class="project-meta">
+      <div class="project-client">The Maggie Huang Team</div>
+      <div class="project-tags">
+        <span class="tag">Content Creation</span>
+        <span class="tag">Email Campaign</span>
+        <span class="tag">Webinars</span>
+      </div>
+      <a href="https://www.instagram.com/kuipra_communications/" class="project-link" target="_blank">Instagram ↗</a>
+    </div>
+    <div class="project-body">
+      High-end copywriting and brand messaging for a luxury real estate team. We condensed lengthy property listings into elegant narratives — crafting a sophisticated brand voice across all marketing materials and positioning the team as true insiders of the luxury New York lifestyle.
+    </div>
+  </div>
+  <div class="project-card reveal">
+    <div class="project-meta">
+      <div class="project-client">Funtasy Production</div>
+      <div class="project-tags">
+        <span class="tag">Influencer Outreach</span>
+        <span class="tag">Event Planning</span>
+        <span class="tag">Content</span>
+      </div>
+      <a href="https://www.instagram.com/kuipra_communications/" class="project-link" target="_blank">Instagram ↗</a>
+    </div>
+    <div class="project-body">
+      Monthly strategic alignment to synchronize event timelines and content production for Vancouver's leading event production company. High-synergy influencer partnerships amplified their initiatives — delivering exponential growth across social media and OOH advertising.
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="team-header reveal">
+    <div class="about-label" style="margin-bottom:24px;">Our Team</div>
+    <h2 class="team-headline">The people behind<br><em>the stories</em></h2>
+  </div>
+  <div class="team-grid">
+    <div class="team-card reveal">
+      <img class="team-photo" src="/team/charlene.png" alt="Charlene Ling">
+      <div class="team-name">Charlene Ling</div>
+      <div class="team-role">Principal Consultant</div>
+      <p class="team-bio">Award-nominated media professional with 10+ years leading news coverage for major Canadian and U.S. elections. Bridges journalistic rigor with strategic digital storytelling.</p>
+    </div>
+    <div class="team-card reveal">
+      <img class="team-photo" src="/team/robert.png" alt="Robert Chu">
+      <div class="team-name">Robert Chu</div>
+      <div class="team-role">Principal Creative Strategist</div>
+      <p class="team-bio">Veteran photojournalist with 20+ years in Canadian media, including the 2010 Winter Olympics. Bridges classical cinematography with advanced AI production (Sora, Veo 3, Kling).</p>
+    </div>
+    <div class="team-card reveal">
+      <img class="team-photo" src="/team/alen.png" alt="Alen Yang">
+      <div class="team-name">Alen Yang</div>
+      <div class="team-role">Marketing Director</div>
+      <p class="team-bio">Strategic marketing operations and immersive event design. Shapes brand visual identity with designer's precision across every physical and digital touchpoint.</p>
+    </div>
+    <div class="team-card reveal">
+      <img class="team-photo" src="/team/josh.png" alt="Josh Hung">
+      <div class="team-name">Josh Hung</div>
+      <div class="team-role">Visual Lead & Creative Producer</div>
+      <p class="team-bio">Master's in Graphic Arts. Operates under the philosophy: "cinematography is the language, editing is the soul." Integrates traditional cinematic craft with AI-enhanced workflows.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section id="cta">
+  <h2 class="cta-headline reveal">
+    Ready to discover your<br><em>brand's brilliance?</em>
+  </h2>
+  <a href="mailto:Charlene.Ling@Kuipra.Ca" class="cta-btn reveal">
+    Start the conversation →
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <span class="footer-logo">Kuipra Communications</span>
+      <p class="footer-tagline">Explorers and amplifiers of brand stories. Vancouver, BC.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/kuipra" class="footer-social" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/kuipra_communications/" class="footer-social" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Navigate</h5>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><span>Social Media</span></li>
+        <li><span>Content Creation</span></li>
+        <li><span>Brand Strategy</span></li>
+        <li><span>Public Relations</span></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:6729641888">672-964-1888</a></li>
+        <li><a href="mailto:Charlene.Ling@Kuipra.Ca">Charlene.Ling@Kuipra.Ca</a></li>
+        <li><span>3F 1045 Howe St, Vancouver</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Kuipra Communications. All rights reserved.</span>
+    <span class="footer-copy">kuipra.ca</span>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // Nav background on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.background = window.scrollY > 60
+      ? 'rgba(247,245,240,0.98)' : 'rgba(247,245,240,0.92)';
+  });
+</script>
+</body>
+</html>
