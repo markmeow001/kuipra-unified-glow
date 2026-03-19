@@ -18,7 +18,7 @@ const AboutUs = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start relative">
           {/* Left: text content */}
           <div className="relative z-10">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground uppercase tracking-wide mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground tracking-wide mb-8">
               {t("about.sectionTitle")}
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6 text-sm md:text-base">

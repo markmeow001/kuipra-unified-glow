@@ -46,7 +46,7 @@ const Services = ({ services, loading }: Props) => {
       <div className="w-12 h-12 rounded-full overflow-hidden mb-6">
         <img src={icon} alt="" className="w-full h-full object-cover" />
       </div>
-      <h3 className="text-lg md:text-xl font-extrabold mb-3 uppercase tracking-wide leading-tight">
+      <h3 className="text-lg md:text-xl font-extrabold mb-3 tracking-wide leading-tight">
         {title}
       </h3>
       <p className="text-primary-foreground/70 text-sm leading-relaxed">
@@ -67,7 +67,7 @@ const Services = ({ services, loading }: Props) => {
           <p className="text-sm uppercase tracking-[0.3em] text-foreground/50 mb-2">
             {t("services.sectionTitle")}
           </p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground uppercase tracking-wide leading-tight whitespace-pre-line">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground tracking-wide leading-tight whitespace-pre-line">
             {t("services.sectionSubtitle")}
           </h2>
         </div>

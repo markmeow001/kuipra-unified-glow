@@ -58,7 +58,7 @@ const HeroSection = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase leading-tight mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight mb-4">
               {t("hero.strategicTitle")}
             </h2>
             <p className="text-sm md:text-base text-primary-foreground/70 leading-relaxed">
@@ -81,7 +81,7 @@ const HeroSection = () => {
             className="bg-orange text-orange-foreground py-6 px-6 border-r border-orange-foreground/10 last:border-r-0"
           >
             <div className="text-3xl md:text-4xl font-extrabold">{stat.value}</div>
-            <div className="text-xs font-semibold uppercase tracking-wider mt-1 opacity-90">{stat.label}</div>
+            <div className="text-xs font-semibold tracking-wider mt-1 opacity-90">{stat.label}</div>
           </div>
         ))}
       </div>

@@ -10,76 +10,76 @@
     "getInTouch": "Get in touch"
   },
   "hero": {
-    "line1": "BEYOND THE FRONTIER,",
-    "line2": "WE DISCOVER YOUR",
-    "line3": "BRAND'S BRILLIANCE",
-    "subtitle": "Explorers And Amplifiers Of Brand Stories. Through Deep Storytelling And Strategic Content, We Transform Your Essence Into Impactful Narratives That Resonate Across The Digital World.",
+    "line1": "Beyond the frontier,",
+    "line2": "we discover your",
+    "line3": "brand's brilliance",
+    "subtitle": "Explorers and amplifiers of brand stories. Through deep storytelling and strategic content, we transform your essence into impactful narratives that resonate across the digital world.",
     "cta": "Get Started",
-    "strategicTitle": "STRATEGIC NAVIGATION. PRECISION IMPACT. YOUR BRAND, DEFINED.",
-    "strategicSubtitle": "Blending Narrative Insight With Digital Strategy, Kuipra Navigates The Digital Landscape To Translate Your Core Values Into Powerful Stories And A Compelling Market Presence.",
+    "strategicTitle": "Strategic navigation. Precision impact. Your brand, defined.",
+    "strategicSubtitle": "Blending narrative insight with digital strategy, Kuipra navigates the digital landscape to translate your core values into powerful stories and a compelling market presence.",
     "stats": {
       "s1": "85%",
-      "s1Label": "Average Engagement Growth In 6 Months",
+      "s1Label": "Average engagement growth in 6 months",
       "s2": "15+",
-      "s2Label": "Industries Strategically Navigated",
+      "s2Label": "Industries strategically navigated",
       "s3": "200+",
-      "s3Label": "High-End Original Content Assets Yearly",
+      "s3Label": "High-end original content assets yearly",
       "s4": "10X",
-      "s4Label": "Amplification In Brand Visibility"
+      "s4Label": "Amplification in brand visibility"
     }
   },
   "services": {
-    "sectionTitle": "OUR SERVICES",
-    "sectionSubtitle": "THE BRAND UNIVERSE:\nA FULL-SPECTRUM ECOSYSTEM",
-    "s1": "SOCIAL MEDIA MANAGEMENT",
-    "s1Desc": "We Create And Manage Social Media Strategies To Engage Audiences And Drive Growth Across All Platforms. Our Approach Ensures Your Brand Maintains A Consistent And Impactful Presence Within The Digital Landscape.",
-    "s2": "CONTENT CREATION",
-    "s2Desc": "We Produce Original Written, Visual, And Video Content That Brings Your Brand Story To Life. By Blending Creativity With Strategic Intent, We Connect Your Message With Your Audience Through Compelling Storytelling.",
-    "s3": "BRAND STRATEGY & PERSONAL BRANDING",
-    "s3Desc": "We Help Individuals And Businesses Define Their Brand Identity And Refine Their Messaging. Our Goal Is To Elevate Your Presence And Ensure Your Personal Or Corporate Brand Stands Out With Clarity And Authority.",
-    "s4": "PUBLIC RELATIONS & COMMUNICATIONS",
-    "s4Desc": "We Handle Media Outreach And Strategic Communications To Enhance Brand Visibility And Reputation. Our Team Leverages Industry Connections To Secure Meaningful Coverage And Manage Your Public Narrative Effectively."
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "The Brand Universe:\nA Full-Spectrum Ecosystem",
+    "s1": "Social Media Management",
+    "s1Desc": "We create and manage social media strategies to engage audiences and drive growth across all platforms. Our approach ensures your brand maintains a consistent and impactful presence within the digital landscape.",
+    "s2": "Content Creation",
+    "s2Desc": "We produce original written, visual, and video content that brings your brand story to life. By blending creativity with strategic intent, we connect your message with your audience through compelling storytelling.",
+    "s3": "Brand Strategy & Personal Branding",
+    "s3Desc": "We help individuals and businesses define their brand identity and refine their messaging. Our goal is to elevate your presence and ensure your personal or corporate brand stands out with clarity and authority.",
+    "s4": "Public Relations & Communications",
+    "s4Desc": "We handle media outreach and strategic communications to enhance brand visibility and reputation. Our team leverages industry connections to secure meaningful coverage and manage your public narrative effectively."
   },
   "about": {
-    "sectionTitle": "ABOUT US",
-    "description": "Inspired By The Kuiper Belt, A Distant Frontier Of Hidden Worlds And Limitless Possibilities, Kuipra Communications Was Founded On The Belief That Every Brand Has A Unique Story Waiting To Be Discovered.",
-    "description2": "We Serve As Both Explorers And Amplifiers For Personal And Corporate Brands. Our Agency Provides Comprehensive Digital Communication Solutions Including Strategic Social Media Management, Original Content Creation, And Strategic Public Relations. We Believe That A Brand's True Power Lies In The Art Of Storytelling. We Specialize In Transforming Complex Brand Identities Into Compelling Narratives That Resonate Deeply With Audiences In The Digital Age. At Kuipra, Our Mission Is To Breathe Life Into Your Brand Through Exquisite Storytelling And Strategic Connection To Drive Lasting Impact And Growth.",
+    "sectionTitle": "About Us",
+    "description": "Inspired by the Kuiper Belt, a distant frontier of hidden worlds and limitless possibilities, Kuipra Communications was founded on the belief that every brand has a unique story waiting to be discovered.",
+    "description2": "We serve as both explorers and amplifiers for personal and corporate brands. Our agency provides comprehensive digital communication solutions including strategic social media management, original content creation, and strategic public relations. We believe that a brand's true power lies in the art of storytelling. We specialize in transforming complex brand identities into compelling narratives that resonate deeply with audiences in the digital age. At Kuipra, our mission is to breathe life into your brand through exquisite storytelling and strategic connection to drive lasting impact and growth.",
     "cta": "Get in touch"
   },
   "timeline": {
-    "sectionTitle": "FEATURED SERVICE:",
-    "sectionSubtitle": "COMPREHENSIVE BRAND GROWTH SOLUTION",
-    "description": "This Comprehensive Solution Is Designed For Brands Seeking Exceptional Growth And A Professional Digital Presence. We Integrate Visual Identity Establishment, Strategic Content Creation, And Data-Driven Optimization To Help Clients Build A Unique And Irreplaceable Position In The Digital Ecosystem.",
-    "step1": "VISUAL IDENTITY & POSITIONING",
-    "step1Desc": "We Define Your Brand Aesthetic In The First Month And Provide A Visual Standards Guide To Ensure High-End Brand Recognition And Credibility.",
-    "step2": "HIGH-QUALITY ORIGINAL CONTENT",
-    "step2Desc": "By Blending Market Trends With Core Brand Values, We Produce Video And Graphic Content That Drives Both Audience Reach And Deep Conversion.",
-    "step3": "PROFESSIONAL CONTENT CAPTURE",
-    "step3Desc": "Through Scheduled On-Site Filming And Asset Collection, We Ensure Your Brand Content Remains Fresh And Maintains A Premium Visual Standard.",
-    "step4": "STRATEGIC DATA ALIGNMENT",
-    "step4Desc": "We Provide Weekly Digital Check-Ins And Monthly Strategic Meetings To Review Performance And Refine The Content Direction With Precision.",
-    "step5": "FULL CHANNEL MANAGEMENT",
-    "step5Desc": "Our Team Handles Content Scheduling And Publishing Across Platforms To Maintain High Levels Of Activity And Professional Brand Image."
+    "sectionTitle": "Featured Service:",
+    "sectionSubtitle": "Comprehensive Brand Growth Solution",
+    "description": "This comprehensive solution is designed for brands seeking exceptional growth and a professional digital presence. We integrate visual identity establishment, strategic content creation, and data-driven optimization to help clients build a unique and irreplaceable position in the digital ecosystem.",
+    "step1": "Visual Identity & Positioning",
+    "step1Desc": "We define your brand aesthetic in the first month and provide a visual standards guide to ensure high-end brand recognition and credibility.",
+    "step2": "High-Quality Original Content",
+    "step2Desc": "By blending market trends with core brand values, we produce video and graphic content that drives both audience reach and deep conversion.",
+    "step3": "Professional Content Capture",
+    "step3Desc": "Through scheduled on-site filming and asset collection, we ensure your brand content remains fresh and maintains a premium visual standard.",
+    "step4": "Strategic Data Alignment",
+    "step4Desc": "We provide weekly digital check-ins and monthly strategic meetings to review performance and refine the content direction with precision.",
+    "step5": "Full Channel Management",
+    "step5Desc": "Our team handles content scheduling and publishing across platforms to maintain high levels of activity and professional brand image."
   },
   "banner": {
-    "title": "STRATEGIC ARCHITECTURE:",
-    "subtitle": "SOLUTIONS FOR EXPONENTIAL GROWTH",
+    "title": "Strategic Architecture:",
+    "subtitle": "Solutions for Exponential Growth",
     "cta": "Contact Us Today"
   },
   "team": {
-    "sectionTitle": "THE TEAM DRIVING STRATEGY",
-    "sectionSubtitle": "INNOVATION AND GROWTH"
+    "sectionTitle": "The Team Driving Strategy",
+    "sectionSubtitle": "Innovation and Growth"
   },
   "projects": {
-    "sectionTitle": "PROJECTS",
+    "sectionTitle": "Projects",
     "sectionSubtitle": "Selected work from our portfolio"
   },
   "clients": {
-    "sectionTitle": "OUR CLIENTS",
+    "sectionTitle": "Our Clients",
     "sectionSubtitle": "Trusted by leading organizations"
   },
   "contact": {
-    "sectionTitle": "CONTACT US",
+    "sectionTitle": "Contact Us",
     "address": "3F 1045 Howe Street Vancouver",
     "phone": "672-964-1888",
     "email": "Charlene.Ling@Kuipra.Ca"

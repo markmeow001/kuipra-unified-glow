@@ -8,7 +8,7 @@ const Clients = () => {
   return (
     <section className="bg-primary text-primary-foreground py-14">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-lg font-bold uppercase tracking-wider mb-8 text-primary-foreground/80">
+        <h2 className="text-center text-lg font-bold tracking-wider mb-8 text-primary-foreground/80">
           {t("clients.sectionTitle")}
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-12">

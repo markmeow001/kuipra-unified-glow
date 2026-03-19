@@ -42,7 +42,7 @@ const Team = ({ members, loading }: Props) => {
 
         {/* Title */}
         <div className="text-center mb-14">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase tracking-wide leading-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-wide leading-tight">
             {t("team.sectionTitle")}
             <br />
             {t("team.sectionSubtitle")}
