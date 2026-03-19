@@ -778,10 +778,13 @@
       <div class="team-name">Charlene Ling</div>
       <div class="team-role">Principal Consultant</div>
       <div class="team-bio-wrap">
-        <p class="team-bio clamped">An award-nominated media professional with over a decade of experience, Charlene served eight years as a News Producer leading coverage for major Canadian and U.S. elections, along with special features exploring cultural and social issues.
+        <span class="team-bio-preview">An award-nominated media professional with over a decade of experience, leading news coverage for major Canadian and U.S. elections.</span>
+        <div class="team-bio-full">An award-nominated media professional with over a decade of experience, Charlene served eight years as a News Producer leading coverage for major Canadian and U.S. elections, along with special features exploring cultural and social issues.
 
-At Kuipra Communications, she leverages journalistic rigor and strategic storytelling to extract core brand values and transform them into high-impact digital narratives. By bridging professional integrity with modern social media, she ensures brands build a powerful, resonant, and lasting presence in the digital ecosystem.</p>
-        <button class="team-read-more" onclick="toggleBio(this)">Read more ↓</button>
+At Kuipra Communications, she leverages journalistic rigor and strategic storytelling to extract core brand values and transform them into high-impact digital narratives. By bridging professional integrity with modern social media, she ensures brands build a powerful, resonant, and lasting presence in the digital ecosystem.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)">
+          Read more <span class="toggle-arrow">↓</span>
+        </button>
       </div>
     </div>
     <div class="team-card reveal">
@@ -789,10 +792,13 @@ At Kuipra Communications, she leverages journalistic rigor and strategic storyte
       <div class="team-name">Robert Chu</div>
       <div class="team-role">Principal Creative Strategist</div>
       <div class="team-bio-wrap">
-        <p class="team-bio clamped">A veteran photojournalist with 20+ years in Canadian media, Robert has covered landmark events like the 2010 Winter Olympics and earned a Certificate of Recognition from the Premier of British Columbia.
+        <span class="team-bio-preview">A veteran photojournalist with 20+ years in Canadian media, covering landmark events like the 2010 Winter Olympics.</span>
+        <div class="team-bio-full">A veteran photojournalist with 20+ years in Canadian media, Robert has covered landmark events like the 2010 Winter Olympics and earned a Certificate of Recognition from the Premier of British Columbia.
 
-At Kuipra, he bridges classical cinematography with advanced AI (Sora, Veo 3, Kling) to craft immersive, soul-driven content. By merging traditional visual craftsmanship with cutting-edge innovation, Robert redefines the boundaries of digital storytelling for the modern era.</p>
-        <button class="team-read-more" onclick="toggleBio(this)">Read more ↓</button>
+At Kuipra, he bridges classical cinematography with advanced AI (Sora, Veo 3, Kling) to craft immersive, soul-driven content. By merging traditional visual craftsmanship with cutting-edge innovation, Robert redefines the boundaries of digital storytelling for the modern era.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)">
+          Read more <span class="toggle-arrow">↓</span>
+        </button>
       </div>
     </div>
     <div class="team-card reveal">
@@ -800,10 +806,13 @@ At Kuipra, he bridges classical cinematography with advanced AI (Sora, Veo 3, Kl
       <div class="team-name">Alen Yang</div>
       <div class="team-role">Marketing Director</div>
       <div class="team-bio-wrap">
-        <p class="team-bio clamped">Alen leverages strategic marketing operations and immersive event design to extract core brand visions and transform them into experiential activations. By bridging creative storytelling with logistical execution, he ensures brands build a powerful, engaging, and memorable presence in the market.
+        <span class="team-bio-preview">Alen leverages strategic marketing operations and immersive event design to transform brand visions into experiential activations.</span>
+        <div class="team-bio-full">Alen leverages strategic marketing operations and immersive event design to extract core brand visions and transform them into experiential activations. By bridging creative storytelling with logistical execution, he ensures brands build a powerful, engaging, and memorable presence in the market.
 
-With a designer's eye and proficiency, Alen doesn't just oversee campaigns — he shapes their visual identity, ensuring every physical and digital touchpoint is crafted with aesthetic precision and user-centric design.</p>
-        <button class="team-read-more" onclick="toggleBio(this)">Read more ↓</button>
+With designer's eye and proficiency, Alen doesn't just oversee campaigns, he shapes their visual identity. He ensures that every physical and digital touchpoint is crafted with aesthetic precision, elevating the overall brand experience through intuitive, elegant, and user-centric design.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)">
+          Read more <span class="toggle-arrow">↓</span>
+        </button>
       </div>
     </div>
     <div class="team-card reveal">
@@ -811,13 +820,16 @@ With a designer's eye and proficiency, Alen doesn't just oversee campaigns — h
       <div class="team-name">Josh Hung</div>
       <div class="team-role">Visual Lead & Creative Producer</div>
       <div class="team-bio-wrap">
-        <p class="team-bio clamped">With a Master's degree in Graphic Arts and over a decade of industry expertise in visual storytelling, Josh brings a holistic approach to every project at Kuipra. His craft spans the entire creative lifecycle — from precise cinematography on-site to high-end post-production.
+        <span class="team-bio-preview">With a Master's in Graphic Arts and a decade of visual storytelling expertise, Josh spans the full creative lifecycle from cinematography to post-production.</span>
+        <div class="team-bio-full">With a Master's degree in Graphic Arts and over a decade of industry expertise in visual storytelling, Josh brings a holistic approach to every project at Kuipra. His craft spans the entire creative lifecycle — from precise cinematography on-site to high-end post-production.
 
-Operating under the philosophy that "cinematography is the language, while editing is the soul," Josh masterfully orchestrates light and narrative flow, integrating traditional cinematic techniques with modern AI-enhanced workflows to ensure every brand story is visually stunning and strategically impactful.</p>
-        <button class="team-read-more" onclick="toggleBio(this)">Read more ↓</button>
+Operating under the philosophy that 'cinematography is the language, while editing is the soul,' Josh masterfully orchestrates light and narrative flow. By seamlessly integrating traditional cinematic techniques with modern AI-enhanced workflows, he ensures that every brand story is not only visually stunning but strategically impactful. As a co-founder, Josh is dedicated to delivering a unified vision that resonates with the diverse and dynamic audience of the Pacific Northwest.</div>
+        <button class="team-toggle" onclick="toggleTeamBio(this)">
+          Read more <span class="toggle-arrow">↓</span>
+        </button>
       </div>
     </div>
-  </div>
+  </div>  </div>
 </section>
 
 <!-- CTA BAND -->
@@ -894,19 +906,16 @@ Operating under the philosophy that "cinematography is the language, while editi
       ? 'rgba(247,245,240,0.98)' : 'rgba(247,245,240,0.92)';
   });
 
-  // Team Read More toggle
-  function toggleBio(btn) {
-    const bio = btn.previousElementSibling;
-    const isExpanded = bio.classList.contains('expanded');
-    if (isExpanded) {
-      bio.classList.remove('expanded');
-      bio.classList.add('clamped');
-      btn.textContent = 'Read more ↓';
-    } else {
-      bio.classList.remove('clamped');
-      bio.classList.add('expanded');
-      btn.textContent = 'Show less ↑';
-    }
+  // Team bio toggle
+  function toggleTeamBio(btn) {
+    const wrap = btn.closest('.team-bio-wrap');
+    const full = wrap.querySelector('.team-bio-full');
+    const isOpen = full.classList.contains('open');
+    full.classList.toggle('open', !isOpen);
+    btn.classList.toggle('open', !isOpen);
+    wrap.querySelector('.team-bio-preview').style.display = isOpen ? 'block' : 'none';
+    const arrow = btn.querySelector('.toggle-arrow');
+    if (!arrow) return;
   }
 </script>
 </body>
