@@ -55,6 +55,10 @@
     {
       "source": "/case-funtasy",
       "destination": "/case-funtasy.html"
+    },
+    {
+      "source": "/case-funtasy-zh",
+      "destination": "/case-funtasy-zh.html"
     }
   ]
 }
