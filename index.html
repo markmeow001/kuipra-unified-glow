@@ -479,15 +479,15 @@
   }
   /* Remove right border on last column (3rd, 6th...) */
   .service-item:nth-child(3n) { border-right: none; padding-right: 0; }
-  /* 5th item spans full width, centred */
+  /* Row 2: item 4 spans 2 cols, item 5 spans 1 col */
+  .service-item:nth-child(4) {
+    grid-column: span 2;
+    border-right: 1px solid var(--rule);
+  }
   .service-item:nth-child(5) {
-    grid-column: 1 / -1;
+    grid-column: span 1;
     border-right: none;
-    padding: 48px 0;
-    max-width: 600px;
-    margin: 0 auto;
-    width: 100%;
-    justify-content: center;
+    padding-left: 40px;
   }
   .service-item:hover { background: rgba(232,93,38,0.03); }
   .service-num {
