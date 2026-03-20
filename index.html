@@ -465,18 +465,30 @@
     content: ''; flex: 1; height: 1px; background: var(--rule); max-width: 80px;
   }
   .services-grid {
-    display: grid; grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0; border-top: 1px solid var(--rule);
   }
   .service-item {
-    padding: 56px 48px 56px 0;
+    padding: 48px 40px 48px 0;
     border-bottom: 1px solid var(--rule);
     border-right: 1px solid var(--rule);
-    display: flex; gap: 32px;
+    display: flex; gap: 28px;
     transition: background 0.3s;
     cursor: default;
   }
-  .service-item:nth-child(even) { padding: 56px 0 56px 48px; border-right: none; }
+  /* Remove right border on last column (3rd, 6th...) */
+  .service-item:nth-child(3n) { border-right: none; padding-right: 0; }
+  /* 5th item spans full width, centred */
+  .service-item:nth-child(5) {
+    grid-column: 1 / -1;
+    border-right: none;
+    padding: 48px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
   .service-item:hover { background: rgba(232,93,38,0.03); }
   .service-num {
     font-family: 'DM Mono', monospace;
@@ -924,6 +936,13 @@
     #services { padding: 72px 20px; }
     .section-label { margin-bottom: 40px; }
     .services-grid { grid-template-columns: 1fr; }
+    .service-item:nth-child(5) {
+      grid-column: auto;
+      max-width: 100%;
+      margin: 0;
+      padding: 28px 0 !important;
+      justify-content: flex-start;
+    }
     .service-item,
     .service-item:nth-child(even) {
       padding: 36px 0;
@@ -1171,6 +1190,13 @@
     #services { padding: 64px 20px; }
     .section-label { margin-bottom: 40px; }
     .services-grid { grid-template-columns: 1fr; }
+    .service-item:nth-child(5) {
+      grid-column: auto;
+      max-width: 100%;
+      margin: 0;
+      padding: 28px 0 !important;
+      justify-content: flex-start;
+    }
     .service-item,
     .service-item:nth-child(even) {
       padding: 32px 0;
@@ -1554,6 +1580,13 @@
       <div class="service-content">
         <h3 class="service-title" data-en="Public Relations & Communications" data-zh="公共關係與企業傳播與溝通">Public Relations & Communications</h3>
         <p class="service-desc" data-en="Strategic media outreach and communications to enhance visibility, shape your public narrative, and secure meaningful coverage." data-zh="媒體關係、新聞稿撰寫及危機溝通管理。">Strategic media outreach and communications to enhance visibility, shape your public narrative, and secure meaningful coverage.</p>
+      </div>
+    </div>
+    <div class="service-item reveal">
+      <span class="service-num">05</span>
+      <div class="service-content">
+        <h3 class="service-title" data-en="Web Design & Development" data-zh="網頁設計與開發">Web Design & Development</h3>
+        <p class="service-desc" data-en="Elegant, high-performance websites that reflect your brand identity — designed to convert visitors into clients and built to grow with your business." data-zh="打造反映品牌個性的高質感網站，兼顧美感與轉換效率，為您的業務持續創造價值。">Elegant, high-performance websites that reflect your brand identity — designed to convert visitors into clients and built to grow with your business.</p>
       </div>
     </div>
   </div>
