@@ -426,30 +426,34 @@
   }
   .services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0; border-top: 1px solid var(--rule);
   }
   .service-item {
-    padding: 48px 40px 48px 0;
+    padding: 56px 48px 56px 0;
     border-bottom: 1px solid var(--rule);
     border-right: 1px solid var(--rule);
-    display: flex; gap: 28px;
+    display: flex; gap: 32px;
     transition: background 0.3s;
     cursor: default;
   }
-  /* Remove right border on last column (3rd, 6th...) */
-  .service-item:nth-child(3n) { border-right: none; padding-right: 0; }
-  /* Row 2: item 4 spans 2 cols, item 5 spans 1 col */
-  .service-item:nth-child(4) {
-    grid-column: span 2;
-    border-right: 1px solid var(--rule);
-  }
+  .service-item:nth-child(even) { padding: 56px 0 56px 48px; border-right: none; }
+  /* 5th item: full width, special styling */
   .service-item:nth-child(5) {
-    grid-column: span 1;
+    grid-column: 1 / -1;
     border-right: none;
-    padding-left: 40px;
+    padding: 56px 48px;
+    background: rgba(232,93,38,0.04);
+    display: flex;
+    align-items: center;
+    gap: 64px;
   }
-  .service-item:hover { background: rgba(232,93,38,0.03); }
+  .service-item:nth-child(5) .service-num {
+    font-size: 48px;
+    opacity: 0.15;
+    padding-top: 0;
+  }
+  .service-item:hover { background: rgba(232,93,38,0.06); }
   .service-num {
     font-family: 'DM Mono', monospace;
     font-size: 15px; color: var(--orange);
@@ -897,11 +901,14 @@
     .section-label { margin-bottom: 40px; }
     .services-grid { grid-template-columns: 1fr; }
     .service-item:nth-child(5) {
-      grid-column: auto;
-      max-width: 100%;
-      margin: 0;
+      grid-column: auto !important;
       padding: 28px 0 !important;
-      justify-content: flex-start;
+      background: none !important;
+      gap: 20px !important;
+    }
+    .service-item:nth-child(5) .service-num {
+      font-size: 15px !important;
+      opacity: 1 !important;
     }
     .service-item,
     .service-item:nth-child(even) {
@@ -1151,11 +1158,14 @@
     .section-label { margin-bottom: 40px; }
     .services-grid { grid-template-columns: 1fr; }
     .service-item:nth-child(5) {
-      grid-column: auto;
-      max-width: 100%;
-      margin: 0;
+      grid-column: auto !important;
       padding: 28px 0 !important;
-      justify-content: flex-start;
+      background: none !important;
+      gap: 20px !important;
+    }
+    .service-item:nth-child(5) .service-num {
+      font-size: 15px !important;
+      opacity: 1 !important;
     }
     .service-item,
     .service-item:nth-child(even) {
@@ -1535,14 +1545,14 @@
         <p class="service-desc" data-en="Define your identity, refine your message, and stand out with clarity and authority in a crowded digital landscape." data-zh="策略性品牌定位與企業高階主管個人品牌建立。">Define your identity, refine your message, and stand out with clarity and authority in a crowded digital landscape.</p>
       </div>
     </div>
-    <div class="service-item reveal" style="grid-column:span 2;">
+    <div class="service-item reveal">
       <span class="service-num">04</span>
       <div class="service-content">
         <h3 class="service-title" data-en="Public Relations & Communications" data-zh="公共關係與企業傳播與溝通">Public Relations & Communications</h3>
         <p class="service-desc" data-en="Strategic media outreach and communications to enhance visibility, shape your public narrative, and secure meaningful coverage." data-zh="媒體關係、新聞稿撰寫及危機溝通管理。">Strategic media outreach and communications to enhance visibility, shape your public narrative, and secure meaningful coverage.</p>
       </div>
     </div>
-    <div class="service-item reveal" style="grid-column:span 1;border-right:none;padding-left:40px;">
+    <div class="service-item reveal">
       <span class="service-num">05</span>
       <div class="service-content">
         <h3 class="service-title" data-en="Web Design & Development" data-zh="網頁設計與開發">Web Design & Development</h3>
