@@ -26,4 +26,4 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-Sitemap: https://kuipra.ca/sitemap.xml
+Sitemap: https://www.kuipra.ca/sitemap-index.xml

@@ -1,0 +1,12 @@
+---
+import BlogIndexPage from '../../../components/BlogIndexPage.astro';
+import { CATEGORY_SLUGS } from '../../../data/categories';
+
+export function getStaticPaths() {
+  return CATEGORY_SLUGS.map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params;
+---
+
+<BlogIndexPage lang="en" category={category} />

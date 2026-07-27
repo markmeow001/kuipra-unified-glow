@@ -1,45 +1,22 @@
 {
   "redirects": [
-    {
-      "source": "/login",
-      "destination": "/",
-      "permanent": false
-    },
-    {
-      "source": "/reset-password",
-      "destination": "/",
-      "permanent": false
-    },
-    {
-      "source": "/admin",
-      "destination": "/",
-      "permanent": false
-    }
+    { "source": "/login", "destination": "/", "permanent": false },
+    { "source": "/reset-password", "destination": "/", "permanent": false },
+    { "source": "/admin", "destination": "/", "permanent": false },
+    { "source": "/home.html", "destination": "/", "permanent": true },
+    { "source": "/redesign.html", "destination": "/", "permanent": true },
+    { "source": "/v:version(\\d+).html", "destination": "/", "permanent": true },
+    { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Permissions-Policy",
-          "value": "camera=(), microphone=(), geolocation=()"
-        },
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=31536000; includeSubDomains"
-        },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" },
         {
           "key": "Content-Security-Policy",
           "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://formspree.io https://api.anthropic.com; frame-ancestors 'none';"
@@ -48,17 +25,7 @@
     }
   ],
   "rewrites": [
-    {
-      "source": "/",
-      "destination": "/home.html"
-    },
-    {
-      "source": "/case-funtasy",
-      "destination": "/case-funtasy.html"
-    },
-    {
-      "source": "/case-funtasy-zh",
-      "destination": "/case-funtasy-zh.html"
-    }
+    { "source": "/case-funtasy", "destination": "/case-funtasy.html" },
+    { "source": "/case-funtasy-zh", "destination": "/case-funtasy-zh.html" }
   ]
 }
