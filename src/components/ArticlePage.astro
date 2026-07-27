@@ -1,0 +1,330 @@
+---
+import { render } from 'astro:content';
+import BlogLayout from '../layouts/BlogLayout.astro';
+import { CATEGORIES } from '../data/categories';
+import {
+  getTranslation,
+  postPath,
+  formatDate,
+  type Post,
+} from '../lib/blog';
+
+interface Props {
+  post: Post;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const lang = post.data.lang;
+const translation = await getTranslation(post);
+
+const path = postPath(post);
+const altPath = translation ? postPath(translation) : undefined;
+const base = lang === 'zh' ? '/zh/blog/' : '/blog/';
+const SITE = 'https://www.kuipra.ca';
+
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.pubDate.toISOString(),
+  dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
+  inLanguage: lang === 'zh' ? 'zh-Hant' : 'en-CA',
+  mainEntityOfPage: SITE + path,
+  ...(post.data.heroImage ? { image: SITE + post.data.heroImage } : {}),
+  keywords: post.data.keywords.join(', '),
+  author: {
+    '@type': 'Organization',
+    name: 'Kuipra Communications',
+    url: SITE,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Kuipra Communications',
+    logo: { '@type': 'ImageObject', url: SITE + '/kuipra-logo.png' },
+  },
+};
+
+const faqLd =
+  post.data.faq.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.data.faq.map(({ q, a }) => ({
+          '@type': 'Question',
+          name: q,
+          acceptedAnswer: { '@type': 'Answer', text: a },
+        })),
+      }
+    : undefined;
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: lang === 'zh' ? '專欄' : 'Journal',
+      item: SITE + base,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: CATEGORIES[post.data.category][lang],
+      item: SITE + `${base}category/${post.data.category}/`,
+    },
+    { '@type': 'ListItem', position: 3, name: post.data.title, item: SITE + path },
+  ],
+};
+
+const jsonLd = [articleLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
+---
+
+<BlogLayout
+  lang={lang}
+  title={`${post.data.title} | Kuipra Journal`}
+  description={post.data.description}
+  path={path}
+  altPath={altPath}
+  ogImage={post.data.heroImage}
+  ogType="article"
+  jsonLd={jsonLd}
+>
+  <article class="journal-wrap article">
+    <header>
+      <p class="crumbs">
+        <a href={base}>{lang === 'zh' ? '專欄' : 'Journal'}</a>
+        <span>/</span>
+        <a href={`${base}category/${post.data.category}/`}>
+          {CATEGORIES[post.data.category][lang]}
+        </a>
+      </p>
+      <h1>{post.data.title}</h1>
+      <p class="article-meta">
+        <span class="journal-eyebrow">
+          {CATEGORIES[post.data.category][lang]}
+        </span>
+        <span>{formatDate(post.data.pubDate, lang)}</span>
+        <span>Kuipra Communications</span>
+      </p>
+    </header>
+
+    {post.data.heroImage && (
+      <img
+        class="hero-img"
+        src={post.data.heroImage}
+        alt={post.data.heroImageAlt ?? post.data.title}
+      />
+    )}
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    {post.data.faq.length > 0 && (
+      <section class="faq">
+        <h2>{lang === 'zh' ? '常見問題' : 'Frequently Asked Questions'}</h2>
+        {post.data.faq.map(({ q, a }) => (
+          <details>
+            <summary>{q}</summary>
+            <p>{a}</p>
+          </details>
+        ))}
+      </section>
+    )}
+
+    <aside class="cta">
+      <p class="journal-eyebrow">
+        {lang === 'zh' ? '與我們合作' : 'Work with us'}
+      </p>
+      <h2>
+        {lang === 'zh'
+          ? '想讓品牌被更多人看見？'
+          : 'Ready to grow your brand in Vancouver?'}
+      </h2>
+      <a
+        href="mailto:Charlene.Ling@Kuipra.Ca?subject=Hello%20Kuipra"
+        class="cta-btn"
+      >
+        {lang === 'zh' ? '聯繫我們' : 'Get in touch'}
+      </a>
+    </aside>
+  </article>
+</BlogLayout>
+
+<style>
+  .article {
+    max-width: 760px;
+    padding-top: 80px;
+  }
+  .crumbs {
+    font-family: var(--mono);
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+    color: var(--ink-faint);
+  }
+  .crumbs a {
+    color: var(--ink-faint);
+    text-decoration: none;
+  }
+  .crumbs a:hover {
+    color: var(--orange);
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: 20px;
+  }
+  .article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-faint);
+    align-items: baseline;
+  }
+  .hero-img {
+    width: 100%;
+    margin-top: 40px;
+    display: block;
+  }
+  .prose {
+    margin-top: 48px;
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    font-weight: 300;
+  }
+  .prose :global(h2) {
+    font-family: var(--serif);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 56px 0 20px;
+    line-height: 1.25;
+  }
+  .prose :global(h3) {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 40px 0 16px;
+  }
+  .prose :global(p) {
+    margin-bottom: 20px;
+  }
+  .prose :global(ul),
+  .prose :global(ol) {
+    margin: 0 0 20px 24px;
+  }
+  .prose :global(li) {
+    margin-bottom: 10px;
+  }
+  .prose :global(a) {
+    color: var(--orange);
+  }
+  .prose :global(strong) {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .prose :global(blockquote) {
+    border-left: 3px solid var(--orange);
+    padding: 8px 0 8px 24px;
+    margin: 32px 0;
+    font-family: var(--serif);
+    font-size: 20px;
+    font-style: italic;
+    color: var(--ink);
+  }
+  .prose :global(img) {
+    max-width: 100%;
+    margin: 32px 0;
+  }
+  .prose :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 15px;
+  }
+  .prose :global(th),
+  .prose :global(td) {
+    border: 1px solid var(--rule);
+    padding: 10px 14px;
+    text-align: left;
+  }
+  .prose :global(th) {
+    background: var(--paper-pure);
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .faq {
+    margin-top: 72px;
+    border-top: 1px solid var(--rule);
+    padding-top: 48px;
+  }
+  .faq h2 {
+    font-family: var(--serif);
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .faq details {
+    border-bottom: 1px solid var(--rule);
+    padding: 18px 0;
+  }
+  .faq summary {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--ink);
+  }
+  .faq p {
+    margin-top: 12px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .cta {
+    margin-top: 80px;
+    background: var(--deep);
+    color: var(--paper);
+    padding: 56px 48px;
+    text-align: center;
+  }
+  .cta h2 {
+    font-family: var(--serif);
+    font-size: 30px;
+    margin: 16px 0 28px;
+  }
+  .cta-btn {
+    display: inline-block;
+    border: 1px solid var(--paper);
+    border-radius: 100px;
+    color: var(--paper);
+    text-decoration: none;
+    padding: 12px 32px;
+    font-size: 15px;
+    transition:
+      background 0.2s,
+      border-color 0.2s;
+  }
+  .cta-btn:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+  }
+  @media (max-width: 768px) {
+    .cta {
+      padding: 40px 24px;
+    }
+  }
+</style>
