@@ -63,7 +63,7 @@ Once this exists, tactical decisions get dramatically easier. Should we be on Ti
 
 The common objection: "We don't have six months for a branding project." Fair — and you don't need it. A focused strategy sprint (stakeholder interviews, competitive audit, positioning, message house) can be done in weeks, not quarters. The deliverable isn't a ceremony; it's a decision-making tool your team uses every day.
 
-At [Kuipra](/#services), every engagement starts there — because we've seen what happens when it doesn't. Our [Funtasy Production case study](/blog/funtasy-event-marketing-case-study/) is a good example: the 340% reach growth came *after* we defined a three-phase event narrative strategy, not from posting harder.
+At [Kuipra](/#services), every engagement starts there — because we've seen what happens when it doesn't. In our client work, the campaigns that outperform are consistently the ones where the narrative strategy was defined *before* the content calendar, not after.
 
 ## The takeaway
 
