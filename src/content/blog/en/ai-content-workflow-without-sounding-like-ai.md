@@ -1,7 +1,7 @@
 ---
 title: "An AI Content Workflow That Doesn't Sound Like AI"
 description: 'AI can draft, but it cannot decide. Here is the five-step workflow we use to publish AI-assisted content with real facts, a human voice, and an actual point of view.'
-pubDate: 2026-08-13
+pubDate: 2026-07-28
 lang: en
 translationKey: ai-content-workflow
 category: ai-marketing

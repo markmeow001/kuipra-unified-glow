@@ -1,7 +1,7 @@
 ---
 title: 'How to Build a Brand Voice Guide Your Team Will Actually Use'
 description: 'Most voice guides die in a drive folder. Here is how to build a one-page brand voice guide — with do/don''t examples — that writers actually follow.'
-pubDate: 2026-08-17
+pubDate: 2026-07-28
 lang: en
 translationKey: brand-voice-guide
 category: brand-strategy

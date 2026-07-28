@@ -1,7 +1,7 @@
 ---
 title: '打造團隊真的會用的品牌語氣指南'
 description: '大多數品牌語氣指南寫完就被遺忘。教你用三軸定位加「要／不要」範例，做出一頁紙、新寫手第一天就能上手的語氣指南。'
-pubDate: 2026-08-17
+pubDate: 2026-07-28
 lang: zh
 translationKey: brand-voice-guide
 category: brand-strategy

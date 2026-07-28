@@ -1,7 +1,7 @@
 ---
 title: '小紅書如何捧紅溫哥華餐廳：爆紅模式拆解'
 description: '小紅書是大溫中文食客的覓食引擎。我們拆解爆紅筆記的結構、從種草到排隊的完整週期，以及餐廳老闆真正能做的事。'
-pubDate: 2026-08-24
+pubDate: 2026-07-28
 lang: zh
 translationKey: red-restaurant-marketing
 category: case-studies

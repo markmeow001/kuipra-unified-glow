@@ -1,7 +1,7 @@
 ---
 title: 'How Xiaohongshu (RED) Makes Vancouver Restaurants Go Viral'
 description: 'Xiaohongshu is the discovery engine for Chinese-speaking diners in Metro Vancouver. We break down the viral pattern — and what restaurant owners can actually do with it.'
-pubDate: 2026-08-24
+pubDate: 2026-07-28
 lang: en
 translationKey: red-restaurant-marketing
 category: case-studies

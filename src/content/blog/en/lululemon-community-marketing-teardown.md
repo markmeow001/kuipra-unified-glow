@@ -1,7 +1,7 @@
 ---
 title: "Teardown: Why lululemon's Community Marketing Works"
 description: 'An outside teardown of the Vancouver-born athleisure giant: how lululemon built evangelists before ads — and five lessons any local business can steal.'
-pubDate: 2026-08-10
+pubDate: 2026-07-28
 lang: en
 translationKey: lululemon-teardown
 category: case-studies

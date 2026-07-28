@@ -1,7 +1,7 @@
 ---
 title: '用 AI 產內容、但不像 AI 寫的工作流'
 description: 'AI 能起草，但不能替你做判斷。這是我們實際在用的五步工作流：讓 AI 提速，同時守住事實、觀點和品牌聲音。'
-pubDate: 2026-08-13
+pubDate: 2026-07-28
 lang: zh
 translationKey: ai-content-workflow
 category: ai-marketing

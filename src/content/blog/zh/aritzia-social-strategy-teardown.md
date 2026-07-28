@@ -1,7 +1,7 @@
 ---
 title: '案例拆解：Aritzia 如何用低調的一致性打造社群影響力'
 description: 'Aritzia 幾乎不大聲吆喝，卻攻佔了時尚 TikTok。我們拆解這家溫哥華品牌的打法，整理出在地企業可以直接借用的四堂課。'
-pubDate: 2026-08-31
+pubDate: 2026-07-28
 lang: zh
 translationKey: aritzia-teardown
 category: case-studies

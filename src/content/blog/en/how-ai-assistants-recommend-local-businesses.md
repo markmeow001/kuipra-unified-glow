@@ -1,7 +1,7 @@
 ---
 title: 'How AI Assistants Decide Which Local Businesses to Recommend'
 description: 'When someone asks ChatGPT for the best dentist in Richmond, only a few businesses get named. Here is how AI picks them — and how to become one of them.'
-pubDate: 2026-08-27
+pubDate: 2026-07-28
 lang: en
 translationKey: ai-local-recommendations
 category: ai-marketing

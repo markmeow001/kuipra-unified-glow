@@ -1,7 +1,7 @@
 ---
 title: 'Local SEO for Vancouver Small Businesses: Where to Actually Start'
 description: 'Map pack vs. organic, the three local ranking pillars, and the exact priority order a Vancouver small business should follow — plus the money-wasters to skip.'
-pubDate: 2026-08-20
+pubDate: 2026-07-28
 lang: en
 translationKey: local-seo-vancouver
 category: local-marketing

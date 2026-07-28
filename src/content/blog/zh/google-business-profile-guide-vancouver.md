@@ -1,7 +1,7 @@
 ---
 title: '溫哥華商家的 Google 商家檔案完全指南'
 description: '客人搜尋你的那一刻，先看到的是 Google 商家檔案，不是官網。從設定、照片、評論到 Google Posts，一份實戰清單，外加最常見的致命錯誤。'
-pubDate: 2026-08-06
+pubDate: 2026-07-28
 lang: zh
 translationKey: gbp-guide-vancouver
 category: local-marketing

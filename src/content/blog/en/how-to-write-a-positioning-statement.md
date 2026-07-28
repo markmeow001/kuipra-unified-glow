@@ -1,7 +1,7 @@
 ---
 title: 'How to Write a Positioning Statement (With Examples)'
 description: 'A practical guide to writing a positioning statement: the fill-in formula, the mistakes that ruin most drafts, and worked examples for Vancouver businesses.'
-pubDate: 2026-08-03
+pubDate: 2026-07-28
 lang: en
 translationKey: positioning-statement
 category: brand-strategy

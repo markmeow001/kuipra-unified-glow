@@ -1,7 +1,7 @@
 ---
 title: '品牌定位宣言怎麼寫（含範例）'
 description: '一句話說清楚你憑什麼贏。實戰教學：定位宣言的填空公式、最常見的三種寫壞法，以及溫哥華在地商家的示範寫法。'
-pubDate: 2026-08-03
+pubDate: 2026-07-28
 lang: zh
 translationKey: positioning-statement
 category: brand-strategy

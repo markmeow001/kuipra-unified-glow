@@ -1,7 +1,7 @@
 ---
 title: 'AI 助理怎麼決定推薦哪家本地商家？'
 description: '有人問 ChatGPT「列治文最好的牙醫」，只有少數幾家會被點名。這篇拆解 AI 挑選本地商家的邏輯，以及怎麼讓自己成為被推薦的那一家。'
-pubDate: 2026-08-27
+pubDate: 2026-07-28
 lang: zh
 translationKey: ai-local-recommendations
 category: ai-marketing

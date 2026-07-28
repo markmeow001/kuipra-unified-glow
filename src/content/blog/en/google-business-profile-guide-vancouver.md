@@ -1,7 +1,7 @@
 ---
 title: 'The Google Business Profile Guide for Vancouver Businesses'
 description: 'Your Google Business Profile is often the first thing customers see. A practical checklist for setup, photos, reviews, Posts, and the mistakes that quietly cost you local customers.'
-pubDate: 2026-08-06
+pubDate: 2026-07-28
 lang: en
 translationKey: gbp-guide-vancouver
 category: local-marketing

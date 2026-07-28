@@ -1,7 +1,7 @@
 ---
 title: '案例拆解：lululemon 的社群行銷為什麼有效'
 description: '從 Kitsilano 一間小店到全球品牌，lululemon 早期幾乎不投廣告。我們拆解它的社群打法，整理出溫哥華在地企業能直接借用的五堂課。'
-pubDate: 2026-08-10
+pubDate: 2026-07-28
 lang: zh
 translationKey: lululemon-teardown
 category: case-studies

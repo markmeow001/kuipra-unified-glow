@@ -1,7 +1,7 @@
 ---
 title: '溫哥華小商家的本地 SEO：到底該從哪裡開始'
 description: '拆解地圖包與自然排名的差別、三大本地排名支柱，以及小商家該照著做的優先順序——還有最常見的兩種冤枉錢。'
-pubDate: 2026-08-20
+pubDate: 2026-07-28
 lang: zh
 translationKey: local-seo-vancouver
 category: local-marketing

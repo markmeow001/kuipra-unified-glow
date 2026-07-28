@@ -1,7 +1,7 @@
 ---
 title: 'Teardown: How Aritzia Turned Quiet Consistency into Social Power'
 description: 'Aritzia rarely shouts, yet it dominates fashion TikTok. We break down the Vancouver retailer''s playbook — and the lessons local businesses can steal.'
-pubDate: 2026-08-31
+pubDate: 2026-07-28
 lang: en
 translationKey: aritzia-teardown
 category: case-studies
