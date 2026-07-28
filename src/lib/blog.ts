@@ -13,9 +13,14 @@ export function postPath(post: Post): string {
 }
 
 export async function getPosts(lang: 'en' | 'zh'): Promise<Post[]> {
+  // Future-dated posts are excluded at build time; a daily scheduled
+  // rebuild (GitHub Actions → Vercel deploy hook) publishes them when
+  // their pubDate arrives.
+  const now = Date.now();
   const posts = await getCollection(
     'blog',
-    (p) => p.data.lang === lang && !p.data.draft,
+    (p) =>
+      p.data.lang === lang && !p.data.draft && p.data.pubDate.valueOf() <= now,
   );
   return posts.sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
