@@ -6,7 +6,11 @@
     { "source": "/home.html", "destination": "/", "permanent": true },
     { "source": "/redesign.html", "destination": "/", "permanent": true },
     { "source": "/v:version(\\d+).html", "destination": "/", "permanent": true },
-    { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true }
+    { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true },
+    { "source": "/case-funtasy", "destination": "/", "permanent": true },
+    { "source": "/case-funtasy-zh", "destination": "/", "permanent": true },
+    { "source": "/case-funtasy.html", "destination": "/", "permanent": true },
+    { "source": "/case-funtasy-zh.html", "destination": "/", "permanent": true }
   ],
   "headers": [
     {
