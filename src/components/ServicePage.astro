@@ -1,0 +1,330 @@
+---
+import BlogLayout from '../layouts/BlogLayout.astro';
+import ContactForm from './ContactForm.astro';
+import { getPosts, postPath, type Post } from '../lib/blog';
+import type { Service } from '../data/services';
+
+interface Props {
+  service: Service;
+  lang: 'en' | 'zh';
+}
+
+const { service, lang } = Astro.props;
+const s = service[lang];
+const base = lang === 'zh' ? '/zh/services/' : '/services/';
+const altBase = lang === 'zh' ? '/services/' : '/zh/services/';
+const path = `${base}${service.slug}/`;
+const altPath = `${altBase}${service.slug}/`;
+const SITE = 'https://www.kuipra.ca';
+
+const posts = await getPosts(lang);
+const related = service.related
+  .map((slug) => posts.find((p) => p.id === `${lang}/${slug}`))
+  .filter((p): p is Post => Boolean(p));
+
+const serviceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: s.name,
+  description: s.metaDescription,
+  url: SITE + path,
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: 'Greater Vancouver, British Columbia',
+  },
+  availableLanguage: ['en', 'zh-Hant'],
+  provider: {
+    '@type': 'ProfessionalService',
+    name: 'Kuipra Communications',
+    url: SITE,
+    email: 'charlene.ling@kuipra.ca',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Vancouver',
+      addressRegion: 'BC',
+      addressCountry: 'CA',
+    },
+  },
+};
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: s.faq.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: lang === 'zh' ? '服務' : 'Services',
+      item: SITE + base,
+    },
+    { '@type': 'ListItem', position: 2, name: s.name, item: SITE + path },
+  ],
+};
+
+const t = {
+  pains: lang === 'zh' ? '如果這聽起來像你' : 'Does this sound familiar?',
+  deliverables: lang === 'zh' ? '服務內容' : "What's included",
+  process: lang === 'zh' ? '我們怎麼做' : 'How we work',
+  faq: lang === 'zh' ? '常見問題' : 'Frequently Asked Questions',
+  related: lang === 'zh' ? '相關文章' : 'From the Journal',
+  allServices: lang === 'zh' ? '← 所有服務' : '← All services',
+};
+---
+
+<BlogLayout
+  lang={lang}
+  title={s.metaTitle}
+  description={s.metaDescription}
+  path={path}
+  altPath={altPath}
+  active="services"
+  jsonLd={[serviceLd, faqLd, breadcrumbLd]}
+>
+  <div class="journal-wrap svc">
+    <header class="svc-head">
+      <a href={base} class="svc-back">{t.allServices}</a>
+      <p class="journal-eyebrow">{s.tagline}</p>
+      <h1>{s.name}</h1>
+      <p class="svc-intro">{s.intro}</p>
+      <a href="#contact" class="svc-cta-top">
+        {lang === 'zh' ? '聯繫我們 →' : 'Get in touch →'}
+      </a>
+    </header>
+
+    <section class="svc-pains">
+      <h2>{t.pains}</h2>
+      <ul>
+        {s.pains.map((p) => <li>{p}</li>)}
+      </ul>
+    </section>
+
+    <section>
+      <h2>{t.deliverables}</h2>
+      <ul class="svc-grid">
+        {s.deliverables.map((d) => <li>{d}</li>)}
+      </ul>
+    </section>
+
+    <section>
+      <h2>{t.process}</h2>
+      <ol class="svc-steps">
+        {s.process.map((step, i) => (
+          <li>
+            <span class="svc-step-num">{String(i + 1).padStart(2, '0')}</span>
+            <div>
+              <h3>{step.title}</h3>
+              <p>{step.body}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="svc-faq">
+      <h2>{t.faq}</h2>
+      {s.faq.map(({ q, a }) => (
+        <details>
+          <summary>{q}</summary>
+          <p>{a}</p>
+        </details>
+      ))}
+    </section>
+
+    {related.length > 0 && (
+      <section>
+        <h2>{t.related}</h2>
+        <div class="svc-related">
+          {related.map((post) => (
+            <a href={postPath(post)} class="svc-rel-card">
+              {post.data.heroImage && (
+                <img
+                  src={post.data.heroImage}
+                  alt={post.data.heroImageAlt ?? post.data.title}
+                  loading="lazy"
+                />
+              )}
+              <h3>{post.data.title}</h3>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+
+  <ContactForm lang={lang} service={service.formValue} />
+</BlogLayout>
+
+<style>
+  .svc {
+    max-width: 860px;
+  }
+  .svc-head {
+    padding-top: 80px;
+  }
+  .svc-back {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-faint);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+  .svc-back:hover {
+    color: var(--orange);
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 700;
+    line-height: 1.12;
+    margin-top: 16px;
+  }
+  .svc-intro {
+    margin-top: 24px;
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    font-weight: 300;
+  }
+  .svc-cta-top {
+    display: inline-block;
+    margin-top: 28px;
+    border: 1px solid var(--ink);
+    border-radius: 100px;
+    padding: 12px 28px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.2s;
+  }
+  .svc-cta-top:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--paper);
+  }
+  section {
+    margin-top: 72px;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: 30px;
+    margin-bottom: 28px;
+  }
+  .svc-pains ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .svc-pains li {
+    padding: 18px 24px;
+    background: var(--paper-pure);
+    border-left: 3px solid var(--orange);
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  .svc-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .svc-grid li {
+    padding: 16px 20px;
+    border: 1px solid var(--rule);
+    background: var(--paper-pure);
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .svc-grid li::before {
+    content: '— ';
+    color: var(--orange);
+  }
+  .svc-steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .svc-steps li {
+    display: flex;
+    gap: 24px;
+    align-items: baseline;
+  }
+  .svc-step-num {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--orange);
+    min-width: 32px;
+  }
+  .svc-steps h3 {
+    font-family: var(--serif);
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .svc-steps p {
+    color: var(--ink-soft);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+  .svc-faq details {
+    border-bottom: 1px solid var(--rule);
+    padding: 18px 0;
+  }
+  .svc-faq summary {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .svc-faq p {
+    margin-top: 12px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  .svc-related {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  .svc-rel-card {
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-pure);
+    border: 1px solid var(--rule);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .svc-rel-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(13, 13, 13, 0.08);
+  }
+  .svc-rel-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+  }
+  .svc-rel-card h3 {
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.35;
+    padding: 16px;
+  }
+  @media (max-width: 640px) {
+    .svc-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

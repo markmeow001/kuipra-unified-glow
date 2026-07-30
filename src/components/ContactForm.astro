@@ -1,0 +1,188 @@
+---
+interface Props {
+  lang: 'en' | 'zh';
+  /** Pre-selected value for the service field. */
+  service?: string;
+}
+
+const { lang, service = '' } = Astro.props;
+
+const t = {
+  heading:
+    lang === 'zh' ? '讓我們聊聊你的品牌' : "Let's talk about your brand",
+  name: lang === 'zh' ? '您的姓名' : 'YOUR NAME',
+  email: lang === 'zh' ? '電子郵件' : 'EMAIL ADDRESS',
+  company: lang === 'zh' ? '公司／品牌（選填）' : 'COMPANY / BRAND (OPTIONAL)',
+  message: lang === 'zh' ? '訊息內容' : 'MESSAGE',
+  messagePh:
+    lang === 'zh'
+      ? '簡單說說你的品牌和目標...'
+      : 'Tell us about your brand and goals...',
+  send: lang === 'zh' ? '送出訊息 →' : 'SEND MESSAGE →',
+  sending: lang === 'zh' ? '送出中...' : 'SENDING...',
+  success:
+    lang === 'zh'
+      ? '訊息已送出！我們將在 24 小時內與您聯絡。'
+      : "Message sent! We'll be in touch within 24 hours.",
+  error:
+    lang === 'zh'
+      ? '送出失敗，請直接來信 Charlene.Ling@Kuipra.Ca'
+      : 'Something went wrong — please email Charlene.Ling@Kuipra.Ca directly.',
+};
+---
+
+<section class="cform" id="contact">
+  <p class="journal-eyebrow">
+    {lang === 'zh' ? '聯繫我們' : 'Get in touch'}
+  </p>
+  <h2>{t.heading}</h2>
+  <form class="cform-form" data-success={t.success} data-error={t.error} data-sending={t.sending}>
+    <input type="hidden" name="service" value={service} />
+    <div class="cform-row">
+      <label>
+        <span>{t.name}</span>
+        <input type="text" name="name" required placeholder="Jane Smith" />
+      </label>
+      <label>
+        <span>{t.email}</span>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="hello@company.com"
+        />
+      </label>
+    </div>
+    <label>
+      <span>{t.company}</span>
+      <input type="text" name="company" placeholder="Company name" />
+    </label>
+    <label>
+      <span>{t.message}</span>
+      <textarea name="message" required placeholder={t.messagePh}></textarea>
+    </label>
+    <button type="submit">{t.send}</button>
+    <p class="cform-status" role="status"></p>
+  </form>
+</section>
+
+<script>
+  for (const form of document.querySelectorAll<HTMLFormElement>('.cform-form')) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button')!;
+      const status = form.querySelector('.cform-status')!;
+      const original = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = form.dataset.sending ?? '...';
+      try {
+        const res = await fetch('https://formspree.io/f/xvzwlenq', {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(form),
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.reset();
+        status.textContent = form.dataset.success ?? 'Sent.';
+        status.classList.add('ok');
+      } catch {
+        status.textContent = form.dataset.error ?? 'Error.';
+        status.classList.remove('ok');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = original;
+      }
+    });
+  }
+</script>
+
+<style>
+  .cform {
+    background: var(--deep);
+    color: var(--paper);
+    padding: 64px 48px;
+    margin-top: 96px;
+  }
+  .cform h2 {
+    font-family: var(--serif);
+    font-size: 32px;
+    margin: 14px 0 32px;
+  }
+  .cform-form {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cform-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  label span {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    opacity: 0.7;
+  }
+  input,
+  textarea {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--rule-light);
+    color: var(--paper);
+    padding: 12px 14px;
+    font-family: var(--sans);
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--orange);
+  }
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  button {
+    align-self: flex-start;
+    background: var(--orange);
+    color: var(--paper);
+    border: none;
+    border-radius: 100px;
+    padding: 14px 36px;
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  button:hover {
+    opacity: 0.85;
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
+  .cform-status {
+    font-size: 14px;
+    min-height: 20px;
+    color: #ffb4a0;
+  }
+  .cform-status.ok {
+    color: #9fe3b0;
+  }
+  @media (max-width: 640px) {
+    .cform {
+      padding: 48px 24px;
+    }
+    .cform-row {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

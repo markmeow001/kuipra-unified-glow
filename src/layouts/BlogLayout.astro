@@ -10,6 +10,8 @@ interface Props {
   ogImage?: string;
   ogType?: 'website' | 'article';
   jsonLd?: object[];
+  /** Which nav item is highlighted. */
+  active?: 'journal' | 'services';
 }
 
 const {
@@ -21,6 +23,7 @@ const {
   ogImage = '/og-image.jpg',
   ogType = 'website',
   jsonLd = [],
+  active = 'journal',
 } = Astro.props;
 
 const SITE = 'https://www.kuipra.ca';
@@ -28,6 +31,7 @@ const canonical = SITE + path;
 const enUrl = lang === 'en' ? canonical : altPath ? SITE + altPath : undefined;
 const zhUrl = lang === 'zh' ? canonical : altPath ? SITE + altPath : undefined;
 const blogHome = lang === 'zh' ? '/zh/blog/' : '/blog/';
+const servicesHome = lang === 'zh' ? '/zh/services/' : '/services/';
 
 const orgLd = {
   '@context': 'https://schema.org',
@@ -112,6 +116,7 @@ const t = {
     {jsonLd.map((ld) => (
       <script type="application/ld+json" set:html={JSON.stringify(ld)} />
     ))}
+    <script defer src="/_vercel/insights/script.js" is:inline></script>
   </head>
   <body>
     <nav>
@@ -119,10 +124,14 @@ const t = {
         ><img src="/kuipra-logo.png" alt="Kuipra Communications" /></a
       >
       <div class="nav-links">
-        <a href="/#services">{t.services}</a>
+        <a href={servicesHome} class={active === 'services' ? 'nav-active' : ''}
+          >{t.services}</a
+        >
         <a href="/#about">{t.about}</a>
         <a href="/#projects">{t.work}</a>
-        <a href={blogHome} class="nav-active">{t.journal}</a>
+        <a href={blogHome} class={active === 'journal' ? 'nav-active' : ''}
+          >{t.journal}</a
+        >
         {altPath && <a href={altPath} class="nav-lang">{t.langLabel}</a>}
         <a
           href="mailto:Charlene.Ling@Kuipra.Ca?subject=Hello%20Kuipra"

@@ -1,0 +1,147 @@
+---
+import BlogLayout from '../layouts/BlogLayout.astro';
+import ContactForm from './ContactForm.astro';
+import { SERVICES } from '../data/services';
+
+interface Props {
+  lang: 'en' | 'zh';
+}
+
+const { lang } = Astro.props;
+const base = lang === 'zh' ? '/zh/services/' : '/services/';
+const altBase = lang === 'zh' ? '/services/' : '/zh/services/';
+
+const title =
+  lang === 'zh'
+    ? '服務項目｜溫哥華社群行銷公司 Kuipra'
+    : 'Services | Social Media & Marketing Agency Vancouver | Kuipra';
+const intro =
+  lang === 'zh'
+    ? '從社群經營、內容創作、品牌策略到公關與網站——中英雙語、一個團隊，為大溫企業打造完整的品牌成長引擎。'
+    : 'Social media, content, brand strategy, PR and web — one bilingual team building complete growth engines for Vancouver businesses.';
+
+const ldServices = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Kuipra Communications',
+  url: 'https://www.kuipra.ca',
+  description: intro,
+  areaServed: 'Greater Vancouver, BC',
+  makesOffer: SERVICES.map((s) => ({
+    '@type': 'Offer',
+    itemOffered: {
+      '@type': 'Service',
+      name: s[lang].name,
+      url: `https://www.kuipra.ca${base}${s.slug}/`,
+    },
+  })),
+};
+---
+
+<BlogLayout
+  lang={lang}
+  title={title}
+  description={intro}
+  path={base}
+  altPath={altBase}
+  active="services"
+  jsonLd={[ldServices]}
+>
+  <div class="journal-wrap">
+    <header class="sv-head">
+      <p class="journal-eyebrow">
+        {lang === 'zh' ? '服務 · 溫哥華' : 'Services · Vancouver'}
+      </p>
+      <h1>{lang === 'zh' ? '我們能幫你做什麼' : 'What we do'}</h1>
+      <p class="sv-intro">{intro}</p>
+    </header>
+
+    <div class="sv-list">
+      {SERVICES.map((s, i) => (
+        <a href={`${base}${s.slug}/`} class="sv-card">
+          <span class="sv-num">{String(i + 1).padStart(2, '0')}</span>
+          <div>
+            <h2>{s[lang].name}</h2>
+            <p>{s[lang].intro}</p>
+            <span class="sv-more">
+              {lang === 'zh' ? '了解更多 →' : 'Learn more →'}
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <ContactForm lang={lang} />
+</BlogLayout>
+
+<style>
+  .sv-head {
+    padding-top: 96px;
+    padding-bottom: 56px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 700;
+    margin-top: 16px;
+  }
+  .sv-intro {
+    margin-top: 20px;
+    max-width: 560px;
+    color: var(--ink-soft);
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  .sv-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .sv-card {
+    display: flex;
+    gap: 32px;
+    padding: 40px 24px;
+    border-top: 1px solid var(--rule);
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.2s;
+  }
+  .sv-card:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+  .sv-card:hover {
+    background: rgba(232, 93, 38, 0.06);
+  }
+  .sv-num {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--orange);
+    min-width: 36px;
+    padding-top: 8px;
+  }
+  .sv-card h2 {
+    font-family: var(--serif);
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+  .sv-card p {
+    color: var(--ink-soft);
+    line-height: 1.65;
+    font-weight: 300;
+    max-width: 640px;
+  }
+  .sv-more {
+    display: inline-block;
+    margin-top: 16px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--orange);
+  }
+  @media (max-width: 640px) {
+    .sv-card {
+      gap: 16px;
+      padding: 32px 8px;
+    }
+  }
+</style>
