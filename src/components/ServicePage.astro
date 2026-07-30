@@ -90,15 +90,22 @@ const t = {
   active="services"
   jsonLd={[serviceLd, faqLd, breadcrumbLd]}
 >
-  <div class="journal-wrap svc">
+  <div class="svc">
     <header class="svc-head">
-      <a href={base} class="svc-back">{t.allServices}</a>
-      <p class="journal-eyebrow">{s.tagline}</p>
-      <h1>{s.name}</h1>
-      <p class="svc-intro">{s.intro}</p>
-      <a href="#contact" class="svc-cta-top">
-        {lang === 'zh' ? '聯繫我們 →' : 'Get in touch →'}
-      </a>
+      <div class="svc-head-text">
+        <a href={base} class="svc-back">{t.allServices}</a>
+        <p class="journal-eyebrow">{s.tagline}</p>
+        <h1>{s.name}</h1>
+        <p class="svc-intro">{s.intro}</p>
+        <a href="#contact" class="svc-cta-top">
+          {lang === 'zh' ? '聯繫我們 →' : 'Get in touch →'}
+        </a>
+      </div>
+      <img
+        class="svc-hero-img"
+        src={`/service-images/${service.slug}.jpg`}
+        alt={s.name}
+      />
     </header>
 
     <section class="svc-pains">
@@ -166,10 +173,23 @@ const t = {
 
 <style>
   .svc {
-    max-width: 860px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
   }
   .svc-head {
     padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .svc-hero-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid var(--rule);
+    display: block;
   }
   .svc-back {
     font-family: var(--mono);
@@ -223,21 +243,24 @@ const t = {
   }
   .svc-pains ul {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
   .svc-pains li {
-    padding: 18px 24px;
+    padding: 24px;
     background: var(--paper-pure);
-    border-left: 3px solid var(--orange);
+    border-top: 3px solid var(--orange);
+    border-left: 1px solid var(--rule);
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
     color: var(--ink-soft);
-    line-height: 1.6;
+    line-height: 1.65;
   }
   .svc-grid {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 14px;
   }
   .svc-grid li {
@@ -254,9 +277,9 @@ const t = {
   }
   .svc-steps {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 48px;
   }
   .svc-steps li {
     display: flex;
@@ -322,7 +345,25 @@ const t = {
     line-height: 1.35;
     padding: 16px;
   }
+  @media (max-width: 960px) {
+    .svc-head {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .svc-pains ul {
+      grid-template-columns: 1fr;
+    }
+    .svc-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .svc-steps {
+      grid-template-columns: 1fr;
+    }
+  }
   @media (max-width: 640px) {
+    .svc {
+      padding: 0 24px;
+    }
     .svc-grid {
       grid-template-columns: 1fr;
     }

@@ -47,7 +47,7 @@ const ldServices = {
   active="services"
   jsonLd={[ldServices]}
 >
-  <div class="journal-wrap">
+  <div class="sv-wrap">
     <header class="sv-head">
       <p class="journal-eyebrow">
         {lang === 'zh' ? '服務 · 溫哥華' : 'Services · Vancouver'}
@@ -60,13 +60,18 @@ const ldServices = {
       {SERVICES.map((s, i) => (
         <a href={`${base}${s.slug}/`} class="sv-card">
           <span class="sv-num">{String(i + 1).padStart(2, '0')}</span>
-          <div>
+          <div class="sv-card-body">
             <h2>{s[lang].name}</h2>
             <p>{s[lang].intro}</p>
             <span class="sv-more">
               {lang === 'zh' ? '了解更多 →' : 'Learn more →'}
             </span>
           </div>
+          <img
+            src={`/service-images/${s.slug}.jpg`}
+            alt={s[lang].name}
+            loading="lazy"
+          />
         </a>
       ))}
     </div>
@@ -98,14 +103,28 @@ const ldServices = {
     display: flex;
     flex-direction: column;
   }
+  .sv-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
   .sv-card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 36px 1fr 300px;
     gap: 32px;
+    align-items: center;
     padding: 40px 24px;
     border-top: 1px solid var(--rule);
     text-decoration: none;
     color: var(--ink);
     transition: background 0.2s;
+  }
+  .sv-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid var(--rule);
+    display: block;
   }
   .sv-card:last-child {
     border-bottom: 1px solid var(--rule);
@@ -138,7 +157,18 @@ const ldServices = {
     font-size: 13px;
     color: var(--orange);
   }
+  @media (max-width: 860px) {
+    .sv-card {
+      grid-template-columns: 36px 1fr;
+    }
+    .sv-card img {
+      grid-column: 2;
+    }
+  }
   @media (max-width: 640px) {
+    .sv-wrap {
+      padding: 0 24px;
+    }
     .sv-card {
       gap: 16px;
       padding: 32px 8px;
