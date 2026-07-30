@@ -191,7 +191,6 @@ const jsonLd = [articleLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
 
 <style>
   .article {
-    max-width: 760px;
     padding-top: 80px;
   }
   .crumbs {
@@ -210,10 +209,11 @@ const jsonLd = [articleLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
   }
   h1 {
     font-family: var(--serif);
-    font-size: clamp(32px, 5vw, 52px);
+    font-size: clamp(34px, 5vw, 58px);
     font-weight: 700;
     line-height: 1.15;
     margin-top: 20px;
+    max-width: 20em;
   }
   .article-meta {
     display: flex;
@@ -234,8 +234,8 @@ const jsonLd = [articleLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
   }
   .prose {
     margin-top: 48px;
-    font-size: 17px;
-    line-height: 1.75;
+    font-size: 18px;
+    line-height: 1.85;
     color: var(--ink-soft);
     font-weight: 300;
   }
