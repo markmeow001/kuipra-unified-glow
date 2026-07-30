@@ -1,7 +1,7 @@
 ---
 title: 'The Vancouver Seasonal Marketing Calendar: Planning a Full Year of Moments'
 description: 'From Lunar New Year to the PNE to Christmas markets — how Vancouver businesses plan a full year of seasonal moments without burning out or blending in.'
-pubDate: 2026-09-03
+pubDate: 2026-07-29
 lang: en
 translationKey: vancouver-seasonal-calendar
 category: brand-strategy

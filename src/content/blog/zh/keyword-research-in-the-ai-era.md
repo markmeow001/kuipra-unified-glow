@@ -1,7 +1,7 @@
 ---
 title: 'AI 時代的關鍵字研究：搜尋意圖比搜尋量重要'
 description: 'AI Overview 和 AI 助理正在吸走泛用型搜尋。小企業的關鍵字研究該怎麼做：挖掘真實問題、鎖定意圖、贏在長尾。'
-pubDate: 2026-08-20
+pubDate: 2026-07-29
 lang: zh
 translationKey: keyword-research-ai-era
 category: ai-marketing

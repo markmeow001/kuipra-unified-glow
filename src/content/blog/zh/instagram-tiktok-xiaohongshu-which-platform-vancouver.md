@@ -1,7 +1,7 @@
 ---
 title: 'Instagram、TikTok、小紅書：溫哥華商家該把力氣放哪？'
 description: '大多數商家根本養不起三個平台。這篇給你一套決策框架：找出你的客人在哪裡發現你，然後把那一個平台做好。'
-pubDate: 2026-08-03
+pubDate: 2026-07-29
 lang: zh
 translationKey: platform-choice-vancouver
 category: local-marketing

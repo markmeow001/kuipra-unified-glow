@@ -1,7 +1,7 @@
 ---
 title: '活動行銷三階段框架：事前、現場、事後'
 description: '多數企業只為活動當天做行銷。這是我們把一場活動變成好幾週品牌曝光的實戰打法：事前造勢、現場拍攝、事後放大。'
-pubDate: 2026-08-06
+pubDate: 2026-07-29
 lang: zh
 translationKey: event-marketing-framework
 category: brand-strategy

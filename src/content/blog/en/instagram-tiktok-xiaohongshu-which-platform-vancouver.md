@@ -1,7 +1,7 @@
 ---
 title: 'Instagram vs. TikTok vs. Xiaohongshu: Where Should a Vancouver Business Focus?'
 description: 'Most Vancouver businesses can''t sustain three platforms. Here''s a decision framework for picking the one that matches your customer — and doing it well.'
-pubDate: 2026-08-03
+pubDate: 2026-07-29
 lang: en
 translationKey: platform-choice-vancouver
 category: local-marketing

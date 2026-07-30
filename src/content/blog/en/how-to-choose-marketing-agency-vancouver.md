@@ -1,7 +1,7 @@
 ---
 title: 'How to Choose a Marketing Agency in Vancouver: The Questions That Actually Matter'
 description: 'An honest buyer''s guide from an agency: what to define before you shop, the questions worth asking, and the red flags that should end the conversation.'
-pubDate: 2026-09-24
+pubDate: 2026-07-29
 lang: en
 translationKey: choose-agency-vancouver
 category: brand-strategy

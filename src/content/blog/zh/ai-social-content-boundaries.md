@@ -1,7 +1,7 @@
 ---
 title: '用 AI 做社群素材的邊界：什麼能自動化、什麼絕對不能'
 description: '一份實用的 AI 社群內容邊界指南：可以放心自動化的綠區、需要揭露和條件的黃區，以及一旦踩到就賠掉全部信任的紅線。'
-pubDate: 2026-08-31
+pubDate: 2026-07-29
 lang: zh
 translationKey: ai-content-boundaries
 category: ai-marketing

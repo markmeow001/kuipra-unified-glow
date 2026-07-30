@@ -1,7 +1,7 @@
 ---
 title: 'Competitor Research with AI: A Workflow That Beats an Afternoon of Googling'
 description: 'AI research assistants can compress a week of competitor analysis into hours — if you know what they get wrong. Our five-step workflow, from decision to verified moves.'
-pubDate: 2026-09-17
+pubDate: 2026-07-29
 lang: en
 translationKey: ai-competitor-research
 category: ai-marketing

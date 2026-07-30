@@ -1,7 +1,7 @@
 ---
 title: 'The Three-Phase Event Marketing Framework: Before, During, After'
 description: 'Most businesses market an event for one day. Here is our three-phase playbook for turning a single event into weeks of brand visibility.'
-pubDate: 2026-08-06
+pubDate: 2026-07-29
 lang: en
 translationKey: event-marketing-framework
 category: brand-strategy

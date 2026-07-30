@@ -1,7 +1,7 @@
 ---
 title: '案例拆解：Tim Hortons「Roll Up the Rim」的遊戲化忠誠度課'
 description: '從 1986 年印在杯緣上的即開獎，到搬進 App 的數位轉型——我們拆解這場加拿大全民儀式，整理出在地企業能直接借用的四堂遊戲化忠誠度課。'
-pubDate: 2026-08-10
+pubDate: 2026-07-29
 lang: zh
 translationKey: roll-up-the-rim-teardown
 category: case-studies

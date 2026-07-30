@@ -1,7 +1,7 @@
 ---
 title: 'Bilingual Brands: One Social Account or Two?'
 description: 'Every bilingual Vancouver business faces the same fork: mix English and Chinese in one account, or run separate accounts per language? Here is how to decide.'
-pubDate: 2026-08-27
+pubDate: 2026-07-29
 lang: en
 translationKey: bilingual-account-strategy
 category: local-marketing

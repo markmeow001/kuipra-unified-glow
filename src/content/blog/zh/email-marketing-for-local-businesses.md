@@ -1,7 +1,7 @@
 ---
 title: '本地商家的 Email 行銷：唯一真正屬於你的渠道'
 description: '社群平台只是把觀眾租給你，Email 名單才是你的資產。從正確建立名單、寄什麼、多久寄一次，到哪些數據才算數，一次講清楚。'
-pubDate: 2026-09-21
+pubDate: 2026-07-29
 lang: zh
 translationKey: email-marketing-local
 category: local-marketing

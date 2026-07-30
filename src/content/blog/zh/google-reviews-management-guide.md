@@ -1,7 +1,7 @@
 ---
 title: 'Google 評論經營：合法累積好評、正確回應負評'
 description: '新鮮、有內容的評論比星等總數更有分量。怎麼開口邀評不踩 Google 紅線、好評怎麼回不像機器人、負評怎麼處理不失分——一套每週十五分鐘的實戰流程。'
-pubDate: 2026-08-17
+pubDate: 2026-07-29
 lang: zh
 translationKey: google-reviews-guide
 category: local-marketing

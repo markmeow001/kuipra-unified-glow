@@ -1,7 +1,7 @@
 ---
 title: '雙語品牌的社群帳號策略：一個帳號還是兩個？'
 description: '中英夾雜經營一個帳號，還是中英文各開一個？這是每個溫哥華雙語品牌都躲不掉的選擇題。我們把判斷框架拆給你看。'
-pubDate: 2026-08-27
+pubDate: 2026-07-29
 lang: zh
 translationKey: bilingual-account-strategy
 category: local-marketing

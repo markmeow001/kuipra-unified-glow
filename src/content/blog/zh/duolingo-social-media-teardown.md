@@ -1,7 +1,7 @@
 ---
 title: '案例拆解：Duolingo 的「發瘋式」社群語氣——什麼時候該學、什麼時候千萬別學'
 description: '那隻綠色貓頭鷹是全網被模仿最多的品牌語氣，但九成模仿者都翻車。我們拆解瘋癲表象下的紀律，以及溫哥華在地企業真正能借用的三件事。'
-pubDate: 2026-09-07
+pubDate: 2026-07-29
 lang: zh
 translationKey: duolingo-teardown
 category: case-studies

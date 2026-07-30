@@ -1,7 +1,7 @@
 ---
 title: '溫哥華節慶行銷日曆：把一整年的檔期排好'
 description: '從農曆新年、櫻花季到 PNE 和聖誕市集——溫哥華品牌如何提前規劃全年檔期，不趕工、不撞款、不缺席。'
-pubDate: 2026-09-03
+pubDate: 2026-07-29
 lang: zh
 translationKey: vancouver-seasonal-calendar
 category: brand-strategy

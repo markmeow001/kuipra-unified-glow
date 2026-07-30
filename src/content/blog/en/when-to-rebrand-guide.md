@@ -1,7 +1,7 @@
 ---
 title: 'When to Rebrand — and How to Do It Without Losing the Customers You Have'
 description: 'Not every brand problem needs a new name. How to tell a refresh from a full rebrand, audit your equity, and switch over without confusing loyal customers.'
-pubDate: 2026-09-14
+pubDate: 2026-07-29
 lang: en
 translationKey: when-to-rebrand
 category: brand-strategy

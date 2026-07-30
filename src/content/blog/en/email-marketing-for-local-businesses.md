@@ -1,7 +1,7 @@
 ---
 title: 'Email Marketing for Local Businesses: The Channel You Actually Own'
 description: 'Social platforms rent you an audience; your email list is yours. How local businesses build a list the right way, what to send, how often, and which metrics actually mean anything.'
-pubDate: 2026-09-21
+pubDate: 2026-07-29
 lang: en
 translationKey: email-marketing-local
 category: local-marketing

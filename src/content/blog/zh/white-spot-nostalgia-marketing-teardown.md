@@ -1,7 +1,7 @@
 ---
 title: '案例拆解：White Spot 如何把懷舊變成護城河'
 description: '從 1928 年的路邊餐車到 BC 省的家庭傳奇：我們拆解 White Spot 如何用海盜船餐盒、秘製醬料和九十多年的一致性，築起對手抄不走的護城河。'
-pubDate: 2026-08-24
+pubDate: 2026-07-29
 lang: zh
 translationKey: white-spot-teardown
 category: case-studies

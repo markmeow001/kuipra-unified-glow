@@ -1,7 +1,7 @@
 ---
 title: 'Teardown: What Roll Up the Rim Teaches About Gamified Loyalty'
 description: "An outside teardown of Tim Hortons' Roll Up the Rim: how a printed rim turned coffee into a national ritual, and four lessons for local businesses on gamified loyalty."
-pubDate: 2026-08-10
+pubDate: 2026-07-29
 lang: en
 translationKey: roll-up-the-rim-teardown
 category: case-studies

@@ -1,7 +1,7 @@
 ---
 title: '什麼時候該 Rebrand？以及怎麼改才不會把老客人改丟'
 description: '不是每個品牌問題都需要換名字。教你分辨 refresh 與全面 rebrand、盤點品牌資產，並安排過渡期，讓熟客一路跟著你走。'
-pubDate: 2026-09-14
+pubDate: 2026-07-29
 lang: zh
 translationKey: when-to-rebrand
 category: brand-strategy

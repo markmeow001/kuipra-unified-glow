@@ -1,7 +1,7 @@
 ---
 title: 'Influencer Marketing in Vancouver: How to Pick, Brief and Pay Micro-Creators'
 description: 'For most local Vancouver businesses, micro-creators beat celebrities. How to vet them, write a brief that works, choose a payment model, and spot the fakes.'
-pubDate: 2026-09-10
+pubDate: 2026-07-29
 lang: en
 translationKey: vancouver-influencer-guide
 category: local-marketing

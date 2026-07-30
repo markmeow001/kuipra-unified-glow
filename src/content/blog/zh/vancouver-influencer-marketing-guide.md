@@ -1,7 +1,7 @@
 ---
 title: '溫哥華 KOL 行銷實戰：微網紅怎麼挑、怎麼談、怎麼付'
 description: '對本地生意來說，微網紅通常勝過大咖。拆解怎麼驗證創作者、brief 怎麼寫、三種付費模式，以及哪些紅旗要直接掉頭走。'
-pubDate: 2026-09-10
+pubDate: 2026-07-29
 lang: zh
 translationKey: vancouver-influencer-guide
 category: local-marketing

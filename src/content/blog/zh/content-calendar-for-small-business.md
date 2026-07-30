@@ -1,7 +1,7 @@
 ---
 title: '小團隊真的撐得住的內容日曆'
 description: '大多數內容日曆撐不過第二個月。教小團隊從真實產能出發，用內容支柱、批量產製和 70/20/10 配比，打造一份能持續運轉的日曆。'
-pubDate: 2026-08-13
+pubDate: 2026-07-29
 lang: zh
 translationKey: content-calendar
 category: brand-strategy

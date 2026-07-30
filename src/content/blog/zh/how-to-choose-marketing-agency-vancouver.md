@@ -1,7 +1,7 @@
 ---
 title: '怎麼挑溫哥華的行銷公司：真正該問的問題'
 description: '由行銷公司親自寫的誠實選商指南：簽約前該先想清楚什麼、該問哪些問題、哪些紅旗一出現就該轉身離開。'
-pubDate: 2026-09-24
+pubDate: 2026-07-29
 lang: zh
 translationKey: choose-agency-vancouver
 category: brand-strategy

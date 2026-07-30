@@ -1,7 +1,7 @@
 ---
 title: 'AI-Generated Social Content: What to Automate, What to Never Automate'
 description: 'A practical boundaries guide for AI in social media: the green zone worth automating, the yellow zone that needs disclosure, and the red lines that destroy trust when crossed.'
-pubDate: 2026-08-31
+pubDate: 2026-07-29
 lang: en
 translationKey: ai-content-boundaries
 category: ai-marketing

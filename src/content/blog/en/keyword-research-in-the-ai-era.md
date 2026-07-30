@@ -1,7 +1,7 @@
 ---
 title: 'Keyword Research in the AI Era: Intent Beats Volume'
 description: 'AI Overviews and assistants are absorbing generic searches. Here is how small businesses should do keyword research now — mine real questions, target intent, win the long tail.'
-pubDate: 2026-08-20
+pubDate: 2026-07-29
 lang: en
 translationKey: keyword-research-ai-era
 category: ai-marketing

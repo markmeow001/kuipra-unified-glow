@@ -1,7 +1,7 @@
 ---
 title: '用 AI 做競品調研：比你 Google 一下午更有效的工作流'
 description: 'AI 能把一週的競品分析壓縮成幾小時——前提是你知道它會在哪裡出錯。我們的五步工作流：從定義決策到查證後落地。'
-pubDate: 2026-09-17
+pubDate: 2026-07-29
 lang: zh
 translationKey: ai-competitor-research
 category: ai-marketing

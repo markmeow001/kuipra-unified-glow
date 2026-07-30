@@ -1,7 +1,7 @@
 ---
 title: 'Teardown: How White Spot Turned Nostalgia into a Moat'
 description: "An outside teardown of BC's oldest restaurant chain: how White Spot turned pirate ships, secret sauce, and 90+ years of consistency into a moat competitors can't copy."
-pubDate: 2026-08-24
+pubDate: 2026-07-29
 lang: en
 translationKey: white-spot-teardown
 category: case-studies

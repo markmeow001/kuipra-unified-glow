@@ -1,7 +1,7 @@
 ---
 title: "Teardown: Duolingo's Unhinged Social Voice — and When You Should (and Shouldn't) Copy It"
 description: "How Duolingo's chaotic owl became the most-copied brand voice on social — and why most imitators fail. What a Vancouver business can actually borrow."
-pubDate: 2026-09-07
+pubDate: 2026-07-29
 lang: en
 translationKey: duolingo-teardown
 category: case-studies

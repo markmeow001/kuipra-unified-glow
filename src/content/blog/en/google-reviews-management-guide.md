@@ -1,7 +1,7 @@
 ---
 title: 'Google Reviews: How to Earn Them Legitimately and Answer the Bad Ones'
 description: 'Fresh, detailed Google reviews beat a big star count. How to ask without breaking Google policy, reply to praise like a human, and handle negative reviews with a calm playbook.'
-pubDate: 2026-08-17
+pubDate: 2026-07-29
 lang: en
 translationKey: google-reviews-guide
 category: local-marketing

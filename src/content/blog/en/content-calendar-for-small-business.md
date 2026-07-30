@@ -1,7 +1,7 @@
 ---
 title: 'A Content Calendar Small Teams Can Actually Sustain'
 description: 'Most content calendars collapse by month two. Here is how small teams build one around real capacity — pillars, batching, and a 70/20/10 mix that lasts.'
-pubDate: 2026-08-13
+pubDate: 2026-07-29
 lang: en
 translationKey: content-calendar
 category: brand-strategy
