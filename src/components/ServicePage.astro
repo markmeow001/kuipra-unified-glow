@@ -18,9 +18,12 @@ const altPath = `${altBase}${service.slug}/`;
 const SITE = 'https://www.kuipra.ca';
 
 const posts = await getPosts(lang);
-const related = service.related
+const designated = service.related
   .map((slug) => posts.find((p) => p.id === `${lang}/${slug}`))
   .filter((p): p is Post => Boolean(p));
+// Keep the row full: pad with the latest other live posts up to 4 cards.
+const fill = posts.filter((p) => !designated.includes(p));
+const related = [...designated, ...fill].slice(0, 4);
 
 const serviceLd = {
   '@context': 'https://schema.org',
@@ -319,8 +322,18 @@ const t = {
   }
   .svc-related {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+  }
+  @media (max-width: 960px) {
+    .svc-related {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 560px) {
+    .svc-related {
+      grid-template-columns: 1fr;
+    }
   }
   .svc-rel-card {
     text-decoration: none;
