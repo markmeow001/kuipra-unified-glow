@@ -1,0 +1,68 @@
+---
+import BlogLayout from '../layouts/BlogLayout.astro';
+---
+
+<BlogLayout
+  lang="en"
+  title="Page Not Found | Kuipra Communications"
+  description="This page doesn't exist. Head back to the Kuipra Communications homepage."
+  path="/404"
+>
+  <div class="journal-wrap nf">
+    <p class="journal-eyebrow">404</p>
+    <h1>This page drifted off&nbsp;orbit.</h1>
+    <p class="nf-sub">
+      找不到這個頁面。它可能被移動或已下架。<br />
+      The page you're looking for doesn't exist or has moved.
+    </p>
+    <div class="nf-links">
+      <a href="/" class="nf-btn">Home 首頁</a>
+      <a href="/blog/" class="nf-btn nf-ghost">Journal 專欄</a>
+      <a href="/services/" class="nf-btn nf-ghost">Services 服務</a>
+    </div>
+  </div>
+</BlogLayout>
+
+<style>
+  .nf {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  .nf-sub {
+    margin-top: 24px;
+    color: var(--ink-soft);
+    line-height: 1.8;
+    font-weight: 300;
+  }
+  .nf-links {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nf-btn {
+    border: 1px solid var(--ink);
+    border-radius: 100px;
+    padding: 12px 28px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.2s;
+  }
+  .nf-btn:hover {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--paper);
+  }
+  .nf-ghost {
+    opacity: 0.75;
+  }
+</style>
