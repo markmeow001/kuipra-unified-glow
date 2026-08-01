@@ -16,3 +16,21 @@ jobs:
         run: curl -sf -X POST "$DEPLOY_HOOK" > /dev/null
         env:
           DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+      - name: Wait for deploy to propagate
+        run: sleep 120
+      - name: Ping IndexNow with current sitemap URLs
+        run: |
+          python3 - <<'EOF'
+          import json, re, urllib.request
+          urls = re.findall(r'<loc>(.*?)</loc>', urllib.request.urlopen(
+              'https://www.kuipra.ca/sitemap-0.xml').read().decode())
+          body = json.dumps({
+              "host": "www.kuipra.ca",
+              "key": "024ff10d9fc2f015db0a18a17089de45",
+              "keyLocation": "https://www.kuipra.ca/024ff10d9fc2f015db0a18a17089de45.txt",
+              "urlList": urls,
+          }).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow",
+              data=body, headers={"Content-Type": "application/json; charset=utf-8"})
+          print("IndexNow:", urllib.request.urlopen(req, timeout=30).status)
+          EOF
