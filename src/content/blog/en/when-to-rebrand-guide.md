@@ -1,11 +1,13 @@
 ---
-title: 'When to Rebrand — and How to Do It Without Losing the Customers You Have'
-description: 'Not every brand problem needs a new name. How to tell a refresh from a full rebrand, audit your equity, and switch over without confusing loyal customers.'
+title: 'When to Rebrand a Company: 4 Real Triggers and a Safe Switch'
+description: 'Wondering when to rebrand your company? The four triggers that actually justify it, the reasons that don''t, and how to switch without losing the customers you have.'
 pubDate: 2026-07-29
 lang: en
 translationKey: when-to-rebrand
 category: brand-strategy
 keywords:
+  - when to rebrand a company
+  - when to rebrand your business
   - when to rebrand
   - rebranding small business Vancouver
   - brand refresh vs rebrand
@@ -14,6 +16,8 @@ keywords:
 heroImage: /blog-images/when-to-rebrand-guide.jpg
 heroImageAlt: 'Old and new brand signage side by side during a business transition'
 faq:
+  - q: 'When should a company rebrand?'
+    a: 'A company should rebrand when the current brand blocks the business: the name no longer describes what you sell, an acquisition or pivot merged two audiences, a genuine reputation reset follows real operational change, or a repositioning contradicts the old identity. Boredom, a new decision-maker''s taste, or trend-chasing are not valid triggers — those call for a refresh at most.'
   - q: 'How do I know if my business actually needs a rebrand?'
     a: 'A rebrand is justified when the current brand actively blocks where the business is going — the name no longer describes what you sell, you serve a merged or different audience, or a repositioning is underway that the old identity cannot carry. If the brand still works and you are simply tired of it, that is a refresh problem, not a rebrand problem.'
   - q: 'Will rebranding hurt my SEO and Google reviews?'
@@ -26,7 +30,7 @@ The most expensive sentence in branding is "let's just start fresh." The second 
 
 We meet businesses at both extremes: owners who want to torch a brand that customers still love, and owners clinging to a name that stopped describing the business years ago. The real skill isn't deciding *whether* rebranding is good or bad — it's diagnosing whether *your* situation calls for it, and if so, how to switch without losing the people who already buy from you.
 
-## The triggers that actually justify a rebrand
+## When to rebrand a company: the triggers that actually justify it
 
 In our experience, legitimate rebrands come from a short list of causes:
 
