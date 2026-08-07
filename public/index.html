@@ -66,7 +66,7 @@
   "alternateName": "Kuipra",
   "url": "https://www.kuipra.ca",
   "logo": "https://www.kuipra.ca/kuipra-logo.png",
-  "image": "https://www.kuipra.ca/kuipra-logo.png",
+  "image": "https://www.kuipra.ca/kuipra-studio.jpg",
   "description": "Vancouver-based brand strategy and digital marketing agency specializing in social media management, content creation, public relations, and personal branding for businesses in Greater Vancouver and the Pacific Northwest.",
   "foundingDate": "2022",
   "areaServed": [
@@ -437,6 +437,16 @@
     width: 100%;
     max-width: 100%;
     position: relative;
+  }
+  .studio-band {
+    background: var(--deep);
+    line-height: 0;
+  }
+  .studio-band img {
+    display: block;
+    width: 100%;
+    height: clamp(320px, 62vh, 640px);
+    object-fit: cover;
   }
   .marquee-track {
     display: flex; gap: 0;
@@ -1570,6 +1580,11 @@
     <span class="marquee-item">Visual Storytelling <span>×</span></span>
     <span class="marquee-item">Personal Branding <span>×</span></span>
   </div>
+</div>
+
+<!-- STUDIO BAND -->
+<div class="studio-band">
+  <img src="/kuipra-studio.jpg" alt="Kuipra Communications studio — brand strategy and content production for Vancouver businesses" width="1920" height="1071" fetchpriority="high">
 </div>
 
 <!-- SERVICES -->
