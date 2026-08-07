@@ -62,4 +62,4 @@ If your analytics show traffic but your phone doesn't ring, run this audit. Twel
 
 Count your passes. **10–12**: your site is doing its job — go work on traffic. **7–9**: fix the failures in order of group (clarity first — nothing downstream matters if visitors don't understand you). **Under 7**: your marketing budget is filling a leaking bucket; pause the spend and fix the bucket. This is also the honest line between "fix" and "rebuild" — see the FAQ above before paying for a redesign.
 
-Want a second pair of eyes on your audit — or failed enough checks that it's rebuild territory? Our [web design service](/services/web-design/) starts every project with exactly this diagnosis, or email [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca) with your URL and we'll tell you what we see.
+Want a second pair of eyes on your audit — or failed enough checks that it's rebuild territory? Our [web design service](/services/web-design/) starts every project with exactly this diagnosis, or email [info@kuipra.ca](mailto:info@kuipra.ca) with your URL and we'll tell you what we see.

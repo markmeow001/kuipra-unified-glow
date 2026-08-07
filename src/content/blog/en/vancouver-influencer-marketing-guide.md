@@ -79,4 +79,4 @@ Likes tell you the content performed; they don't tell you it worked. Build in tr
 
 Walk away from creators with sudden follower spikes and mismatched engagement (bought followers), comment sections full of the same recurring accounts (engagement pods), or a feed of brand collaborations with no disclosure anywhere. That last one isn't just a compliance risk you'd inherit — it tells you how they'll treat your partnership too.
 
-Want a creator program built for how Vancouver actually buys — in both languages? [Get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Want a creator program built for how Vancouver actually buys — in both languages? [Get in touch](mailto:info@kuipra.ca).

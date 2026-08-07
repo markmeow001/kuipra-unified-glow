@@ -71,4 +71,4 @@ RED can fill your dining room faster than your kitchen can adapt. Hype without o
 
 ## Where we fit
 
-Kuipra runs natively bilingual campaigns for Metro Vancouver businesses, and restaurant discovery on RED is one of the clearest cases we know where cultural fluency beats budget. If you want your restaurant found by this market on purpose instead of by accident, [get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Kuipra runs natively bilingual campaigns for Metro Vancouver businesses, and restaurant discovery on RED is one of the clearest cases we know where cultural fluency beats budget. If you want your restaurant found by this market on purpose instead of by accident, [get in touch](mailto:info@kuipra.ca).

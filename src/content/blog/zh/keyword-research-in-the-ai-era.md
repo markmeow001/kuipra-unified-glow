@@ -83,4 +83,4 @@ faq:
 
 以上所有工作，同時就是在為 AI 搜尋做準備。問題形狀的頁面、乾淨自足的答案，正是 AI 助理檢索和引用的內容——具體機制我們在 [GEO 完全指南](/zh/blog/generative-engine-optimization-guide/)和 [AI 助理如何推薦本地商家](/zh/blog/how-ai-assistants-recommend-local-businesses/)裡拆解過。以意圖為先的關鍵字研究不是 GEO 之外的另一門學問，而是 GEO 的前半場。
 
-想知道你的生意該「擁有」哪些問題？[來信聊聊](mailto:Charlene.Ling@Kuipra.Ca)，我們幫你看一眼。
+想知道你的生意該「擁有」哪些問題？[來信聊聊](mailto:info@kuipra.ca)，我們幫你看一眼。

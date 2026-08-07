@@ -64,4 +64,4 @@ Where all three answers intersect, that's your platform. If two platforms surviv
 
 An abandoned account is worse than no account: it's public evidence of neglect, sitting exactly where potential customers go to evaluate you. Commit to one platform for six months. Add a second only when the first runs on routine, drives measurable enquiries, and you've identified an audience it structurally can't reach — that's when a RED-first restaurant adds Instagram for its English-speaking crowd, or an Instagram-first brand adds TikTok to get in front of Gen Z.
 
-Not sure which side of the decision your business lands on? That's a conversation we have with Vancouver businesses every week — [get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Not sure which side of the decision your business lands on? That's a conversation we have with Vancouver businesses every week — [get in touch](mailto:info@kuipra.ca).

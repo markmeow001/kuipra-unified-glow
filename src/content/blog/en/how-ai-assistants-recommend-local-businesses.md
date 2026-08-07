@@ -81,4 +81,4 @@ Once a month, ask ChatGPT, Claude, Gemini, and Perplexity your money questions â
 
 This is the new rank tracking, and most of your competitors aren't doing it yet.
 
-If you'd like us to run an AI-visibility audit for your business and build the fix list, [email Charlene](mailto:Charlene.Ling@Kuipra.Ca).
+If you'd like us to run an AI-visibility audit for your business and build the fix list, [email Charlene](mailto:info@kuipra.ca).

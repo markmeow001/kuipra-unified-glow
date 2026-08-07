@@ -83,4 +83,4 @@ You don't need a legal department. You need one page:
 
 Write it down, share it with everyone who touches the accounts, and revisit it quarterly — the tools will keep moving; the line shouldn't drift with them.
 
-Want help building an AI content program your audience never has to forgive you for? [Get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Want help building an AI content program your audience never has to forgive you for? [Get in touch](mailto:info@kuipra.ca).

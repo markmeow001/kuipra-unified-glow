@@ -79,4 +79,4 @@ Here's the part most local businesses haven't clocked yet: when someone asks Cha
 
 And if a meaningful share of your customers searches in Chinese, your review base and profile content should reflect that — we've written about how to reach that audience properly in our [guide to marketing to Metro Vancouver's Chinese community](/blog/marketing-to-vancouver-chinese-community/).
 
-If you'd rather have your local presence run by people who do this daily, [get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+If you'd rather have your local presence run by people who do this daily, [get in touch](mailto:info@kuipra.ca).

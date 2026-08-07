@@ -63,4 +63,4 @@ Roots 賣棉褲。但走進 Roots 門市的人沒有一個是在買棉褲——�
 
 海狸從來沒變過。這就是全部的秘訣。
 
-想搞清楚你品牌裡哪些資產是那隻海狸、哪些可以放心進化？寫信給 [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca)，我們幫你分。
+想搞清楚你品牌裡哪些資產是那隻海狸、哪些可以放心進化？寫信給 [info@kuipra.ca](mailto:info@kuipra.ca)，我們幫你分。

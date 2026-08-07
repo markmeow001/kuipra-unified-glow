@@ -57,4 +57,4 @@ faq:
 
 Kuipra 團隊的 campaign 原生雙語操作——不是外包翻譯，而是從策略到創意，一開始就為兩種受眾分別開發。這也是為什麼這個專欄[每篇文章都有中英兩版](/blog/)：我們對自己的標準和對客戶的一樣。
 
-如果你的品牌還在讓華人市場「隨緣」，我們該聊聊——[聯繫我們](mailto:Charlene.Ling@Kuipra.Ca)。至於該先打好的策略地基，從[《品牌策略 vs. 行銷戰術》](/zh/blog/brand-strategy-vs-marketing-tactics/)開始。
+如果你的品牌還在讓華人市場「隨緣」，我們該聊聊——[聯繫我們](mailto:info@kuipra.ca)。至於該先打好的策略地基，從[《品牌策略 vs. 行銷戰術》](/zh/blog/brand-strategy-vs-marketing-tactics/)開始。

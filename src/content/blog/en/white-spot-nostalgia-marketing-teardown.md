@@ -70,4 +70,4 @@ Trend-chasing does the opposite: it quietly tells your loyal customers that the 
 
 White Spot's moat wasn't bought with media spend. It was built by giving kids a paper pirate ship, refusing to become something else every five years, and letting time do the compounding. Any business — a bakery, a barbershop, a dental clinic — can start building the same asset today. The only ingredient you can't rush is the years, which is exactly why the best time to start designing your rituals is now.
 
-Want help finding the ritual your own brand should build? [Email Charlene at Kuipra](mailto:Charlene.Ling@Kuipra.Ca) and let's talk.
+Want help finding the ritual your own brand should build? [Email Charlene at Kuipra](mailto:info@kuipra.ca) and let's talk.

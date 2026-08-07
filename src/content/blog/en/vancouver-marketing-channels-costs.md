@@ -81,4 +81,4 @@ Our default advice for a Vancouver business with under ~$1,500/month total:
 
 The businesses that waste the most money aren't the ones choosing the "wrong" channel — they're the ones running six channels at starvation budgets, learning nothing from any of them.
 
-Want a channel plan priced for your actual situation instead of a generic package? Email us at [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca) — we'll tell you honestly which channels are worth your budget, including the ones we don't sell.
+Want a channel plan priced for your actual situation instead of a generic package? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) — we'll tell you honestly which channels are worth your budget, including the ones we don't sell.

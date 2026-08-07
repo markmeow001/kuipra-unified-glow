@@ -79,4 +79,4 @@ Google 的本地排名看三個因素：**相關性**（你的檔案和搜尋詞
 
 另外，如果你的客群有相當比例用中文搜尋，你的評論結構和檔案內容也該反映這一點——怎麼正確經營這群受眾，我們寫在[《大溫華人市場行銷實戰指南》](/zh/blog/marketing-to-vancouver-chinese-community/)。
 
-如果你想把本地曝光交給每天在做這件事的人，[聯繫我們](mailto:Charlene.Ling@Kuipra.Ca)。
+如果你想把本地曝光交給每天在做這件事的人，[聯繫我們](mailto:info@kuipra.ca)。

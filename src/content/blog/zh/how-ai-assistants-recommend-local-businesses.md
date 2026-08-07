@@ -81,4 +81,4 @@ AI 隱形和 Google 排名低有一個關鍵差別：**完全沒有回饋訊號�
 
 這就是新時代的排名追蹤，而你的多數競爭對手還沒開始做。
 
-想讓我們幫你的商家做一次 AI 能見度稽核、列出修正清單，[來信找 Charlene](mailto:Charlene.Ling@Kuipra.Ca)。
+想讓我們幫你的商家做一次 AI 能見度稽核、列出修正清單，[來信找 Charlene](mailto:info@kuipra.ca)。

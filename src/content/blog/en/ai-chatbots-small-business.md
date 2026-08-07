@@ -78,4 +78,4 @@ Here's the honest part vendors won't tell you: a genuinely good FAQ page plus qu
 
 And a strong FAQ page pays a second dividend: it's exactly the kind of structured, factual content that search engines rank and AI assistants quote. When someone asks a chatbot to recommend a business like yours, [being quotable is what gets you recommended](/blog/how-ai-assistants-recommend-local-businesses/). Build that foundation first — if enquiry volume still overwhelms you afterwards, you now have the grounding content a chatbot needs anyway, and you can add one from strength.
 
-Not sure which side of the framework your business lands on? [Get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Not sure which side of the framework your business lands on? [Get in touch](mailto:info@kuipra.ca).

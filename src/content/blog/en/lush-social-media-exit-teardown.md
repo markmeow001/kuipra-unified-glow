@@ -68,4 +68,4 @@ The transferable lesson is about *dependency*, not absence:
 
 Lush's exit isn't an argument that social media is worthless — it's proof of what becomes possible when a brand refuses to let rented channels hold the whole relationship. Build the list, design the experience worth filming, and make your values expensive enough to believe. Then social media becomes a choice, not a life-support system.
 
-Wondering how dependent your business actually is on rented reach? Email us at [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca) and we'll map it with you.
+Wondering how dependent your business actually is on rented reach? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) and we'll map it with you.

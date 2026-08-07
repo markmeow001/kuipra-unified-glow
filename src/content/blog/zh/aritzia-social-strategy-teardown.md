@@ -70,4 +70,4 @@ Aritzia 的兩個字策略——「Everyday Luxury」（日常奢華）——是
 
 這四件事沒有一件需要 Aritzia 的規模，需要的是一個清晰的定位，加上長期跟它口徑一致的紀律——而這恰恰是多數企業跳過的功課。
 
-想找個外部視角，檢查你的品牌接觸點是否真的口徑一致？寫信到 [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca)，我們幫你看看。
+想找個外部視角，檢查你的品牌接觸點是否真的口徑一致？寫信到 [info@kuipra.ca](mailto:info@kuipra.ca)，我們幫你看看。

@@ -63,4 +63,4 @@ Foreign-ness became the premium, and local operation made it wearable. Most busi
 
 The beaver never changed. That's the whole trick.
 
-Trying to figure out which of your brand's assets are the beaver — and which are safe to evolve? Email us at [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca) and we'll help you sort them.
+Trying to figure out which of your brand's assets are the beaver — and which are safe to evolve? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) and we'll help you sort them.

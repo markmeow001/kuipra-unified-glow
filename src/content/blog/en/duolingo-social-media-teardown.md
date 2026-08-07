@@ -64,4 +64,4 @@ The clearest proof this is strategy, not luck: in early 2025, Duolingo announced
 
 Copy the discipline, not the costume. That's the whole teardown.
 
-Want help defining a voice your brand can actually sustain? [Email Charlene at Kuipra](mailto:Charlene.Ling@Kuipra.Ca) and let's talk.
+Want help defining a voice your brand can actually sustain? [Email Charlene at Kuipra](mailto:info@kuipra.ca) and let's talk.

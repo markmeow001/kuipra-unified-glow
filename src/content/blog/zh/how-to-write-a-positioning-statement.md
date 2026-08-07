@@ -86,4 +86,4 @@ faq:
 
 四關全過的那句話，會成為下游一切的濾網：內容支柱、廣告文案、甚至該婉拒哪些案子。這正是重點所在——一句話，決定一次，天天使用。
 
-想找人幫你的初稿把關？寫信到 [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca)，我們會誠實告訴你它站不站得住。
+想找人幫你的初稿把關？寫信到 [info@kuipra.ca](mailto:info@kuipra.ca)，我們會誠實告訴你它站不站得住。

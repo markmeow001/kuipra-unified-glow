@@ -65,4 +65,4 @@ The theatrics sit on a real position: "Death to Plastic." Aluminum cans are infi
 
 One warning before you sprint off to redesign your logo with flames: this playbook only works at full volume. A half-heavy-metal water brand — skulls on the can, corporate-speak on Instagram — would just be confusing. Liquid Death commits everywhere: packaging, content, merch, hiring, tone of every reply. Consistency is what turns a gimmick into a position. If you're not prepared to commit completely, a quieter but equally consistent position will beat a loud but wobbly one every time.
 
-Want help finding the convention your category is begging you to break? [Email Charlene at Kuipra](mailto:Charlene.Ling@Kuipra.Ca) and let's talk.
+Want help finding the convention your category is begging you to break? [Email Charlene at Kuipra](mailto:info@kuipra.ca) and let's talk.

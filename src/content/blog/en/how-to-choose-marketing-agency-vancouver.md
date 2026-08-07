@@ -69,4 +69,4 @@ None of these is inherently right. What matters is that the agency can explain t
 
 You don't have to decide everything on day one. A scoped four-to-eight-week engagement — a strategy sprint, one campaign, a single-channel audit — shows you how an agency thinks, communicates, and reports, at a fraction of a retainer's commitment. Agencies confident in their work welcome this. The ones that push hard for the annual contract before proving anything are answering your most important question for you.
 
-Choosing well is mostly about asking better questions than the pitch deck was built to answer. If you'd like to see how we answer them, [email Charlene](mailto:Charlene.Ling@Kuipra.Ca) — trial projects welcome.
+Choosing well is mostly about asking better questions than the pitch deck was built to answer. If you'd like to see how we answer them, [email Charlene](mailto:info@kuipra.ca) — trial projects welcome.

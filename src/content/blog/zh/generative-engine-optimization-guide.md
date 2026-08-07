@@ -69,4 +69,4 @@ AI 模型會交叉比對。你的官網、Google 商家檔案、LinkedIn、Insta
 
 GEO 獎勵那些清楚知道「自己要以什麼被記住」的品牌——這在成為技術問題之前，先是一個[品牌策略問題](/zh/blog/brand-strategy-vs-marketing-tactics/)。模糊的定位，只會換來模糊的引用。
 
-Kuipra 的每個內容專案都內建 GEO——包括你正在讀的這個專欄。想知道 AI 現在怎麼描述你的品牌、以及怎麼改變它，[歡迎聯繫](mailto:Charlene.Ling@Kuipra.Ca)。
+Kuipra 的每個內容專案都內建 GEO——包括你正在讀的這個專欄。想知道 AI 現在怎麼描述你的品牌、以及怎麼改變它，[歡迎聯繫](mailto:info@kuipra.ca)。

@@ -62,4 +62,4 @@ WeChat and Xiaohongshu (RED) are not competitors in your plan; they are stages o
 
 One honest note to end on: WeChat cannot be run by an intern with a translation app. It needs a native-fluent operator who understands group culture, can write natural Chinese in your brand's voice, and can hold real conversations with customers — because on WeChat, the conversation *is* the marketing.
 
-That operator does not have to be an in-house hire. If you want a team that runs WeChat the way the platform actually works, [get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+That operator does not have to be an in-house hire. If you want a team that runs WeChat the way the platform actually works, [get in touch](mailto:info@kuipra.ca).

@@ -85,4 +85,4 @@ This takes fifteen minutes a week:
 
 Small, boring, consistent. That's what a durable review base is built on.
 
-If you'd rather have your reviews and local presence managed by people who do this every day, [get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+If you'd rather have your reviews and local presence managed by people who do this every day, [get in touch](mailto:info@kuipra.ca).

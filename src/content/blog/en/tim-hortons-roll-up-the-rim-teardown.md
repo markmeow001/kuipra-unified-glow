@@ -71,4 +71,4 @@ The takeaway isn't "don't go digital." It's that **delight and data sit on a see
 
 Roll Up the Rim endured because it respected the customer's time: one purchase, one gesture, one instant answer, and a story to tell either way. Any café, bakery, or clinic can build that loop at neighbourhood scale — the hard part is the discipline to keep it simple and the patience to let scarcity do its work.
 
-Want help designing a loyalty mechanic your customers actually talk about? [Email Charlene at Kuipra](mailto:Charlene.Ling@Kuipra.Ca) and let's talk.
+Want help designing a loyalty mechanic your customers actually talk about? [Email Charlene at Kuipra](mailto:info@kuipra.ca) and let's talk.

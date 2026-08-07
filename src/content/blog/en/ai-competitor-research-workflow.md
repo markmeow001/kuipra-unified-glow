@@ -85,4 +85,4 @@ The real return comes from making this a living document rather than an annual p
 
 All of the above runs on public information: websites, published pricing, public reviews, public social content. We don't scrape private or gated data, misrepresent ourselves to extract information, or fake mystery-shop a competitor's sales process. Beyond being the right call, it's the practical one — small-market reputations are built on how you compete, and shortcuts have a way of becoming the story.
 
-Want competitor research that ends in decisions instead of tabs? [Get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Want competitor research that ends in decisions instead of tabs? [Get in touch](mailto:info@kuipra.ca).

@@ -83,4 +83,4 @@ Open rates have been unreliable since privacy changes led mail clients to pre-lo
 
 Every article you publish is a newsletter section you don't have to write from scratch: two sentences of summary plus a link. The blog builds long-term search visibility — including [your presence on Google](/blog/google-business-profile-guide-vancouver/) and, increasingly, in AI recommendations — while the newsletter puts each piece in front of the people most likely to act on it. One effort, two channels.
 
-Want a list that's an asset instead of an afterthought? [Get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Want a list that's an asset instead of an afterthought? [Get in touch](mailto:info@kuipra.ca).

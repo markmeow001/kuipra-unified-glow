@@ -87,4 +87,4 @@ Review quarterly. Double down on the two partnerships that produce; politely win
 
 Here's the bonus most businesses miss. Every sponsorship listing, partner blog mention, festival program, and BIA member page is a local backlink and a third-party mention — precisely the signals that strengthen your [local SEO](/blog/local-seo-guide-vancouver-small-business/) and, increasingly, your visibility in AI-powered search. When someone asks an AI assistant for "a good physio in Mount Pleasant," systems lean on independent corroboration across the local web. Partnerships build that corroboration as a by-product of doing good work in your community. Ads stop the moment you stop paying; this keeps compounding.
 
-If you want help turning community goodwill into a real marketing channel, [get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+If you want help turning community goodwill into a real marketing channel, [get in touch](mailto:info@kuipra.ca).

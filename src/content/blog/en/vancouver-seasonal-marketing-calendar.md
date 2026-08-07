@@ -58,4 +58,4 @@ Notice what a Metro Vancouver calendar looks like when you build it honestly: Lu
 
 **Keep the evergreen base running.** Seasonal spikes should sit on top of consistent weekly content, not replace it. Roughly two-thirds evergreen, one-third seasonal keeps you visible between peaks — our guide to [building a content calendar](/blog/content-calendar-for-small-business/) covers the system side.
 
-Map the next twelve months once, this month, and January stops being a scramble. If you'd rather have a team that already knows this city's rhythm build it with you, [get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Map the next twelve months once, this month, and January stops being a scramble. If you'd rather have a team that already knows this city's rhythm build it with you, [get in touch](mailto:info@kuipra.ca).

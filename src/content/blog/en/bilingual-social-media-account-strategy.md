@@ -70,4 +70,4 @@ Whatever structure you choose, the rule that holds everything together: define y
 
 This is exactly how we run bilingual accounts at Kuipra: one strategy, two native executions.
 
-Wrestling with this decision for your own brand? [Talk to us](mailto:Charlene.Ling@Kuipra.Ca) — we'll help you map the structure before you sink another year into the wrong one.
+Wrestling with this decision for your own brand? [Talk to us](mailto:info@kuipra.ca) — we'll help you map the structure before you sink another year into the wrong one.

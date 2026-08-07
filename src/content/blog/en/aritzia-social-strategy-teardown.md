@@ -70,4 +70,4 @@ Discounting is a tactic that quietly rewrites your positioning. Aritzia's restra
 
 None of these require Aritzia's footprint. They require a clear position and the discipline to keep agreeing with it — which is exactly the work most businesses skip.
 
-Want an outside eye on whether your brand's touchpoints actually agree with each other? Email us at [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca) and we'll take a look.
+Want an outside eye on whether your brand's touchpoints actually agree with each other? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) and we'll take a look.

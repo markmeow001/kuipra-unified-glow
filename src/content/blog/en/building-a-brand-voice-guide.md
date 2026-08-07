@@ -83,4 +83,4 @@ A voice guide is a tool, not [a strategy deck](/blog/brand-strategy-vs-marketing
 
 Then run the only test that matters: hand it to a writer who has never touched your brand and have them draft three posts. If the drafts sound like you, the guide works. If they don't, the gap between their copy and your expectations is a precise map of what the guide failed to say. Fix the guide, not the writer.
 
-Want a voice guide your team will still be using next year? [Email Charlene](mailto:Charlene.Ling@Kuipra.Ca) and we'll build it with you.
+Want a voice guide your team will still be using next year? [Email Charlene](mailto:info@kuipra.ca) and we'll build it with you.

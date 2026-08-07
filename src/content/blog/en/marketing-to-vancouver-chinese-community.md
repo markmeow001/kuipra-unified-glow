@@ -57,4 +57,4 @@ A campaign built for one of these segments will simply not reach the other two.
 
 Our team at Kuipra runs campaigns natively in both English and Chinese — not through a translation vendor, but with strategy and creative developed for each audience from the start. That's also why this journal publishes [every article in both languages](/zh/blog/): it's the same standard we hold client work to.
 
-If your brand is leaving the Chinese-Canadian market to chance, we should talk — [get in touch](mailto:Charlene.Ling@Kuipra.Ca). For the strategic groundwork that should come first, start with [Brand Strategy vs. Marketing Tactics](/blog/brand-strategy-vs-marketing-tactics/).
+If your brand is leaving the Chinese-Canadian market to chance, we should talk — [get in touch](mailto:info@kuipra.ca). For the strategic groundwork that should come first, start with [Brand Strategy vs. Marketing Tactics](/blog/brand-strategy-vs-marketing-tactics/).

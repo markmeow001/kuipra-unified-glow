@@ -82,4 +82,4 @@ Rebrand 不是一個「上線日」，而是一段被管理的重疊期。必做
 
 該 rebrand 的時機，是品牌擋住生意的時候——不是你看膩的時候。選能解決診斷結果的最小手術，保住客人真正認得的資產，然後把切換當成一場為期數月、跟客人之間的對話來經營，而不是一場「揭幕儀式」。
 
-正在考慮 rebrand、又不確定該動多深？[寫信給 Kuipra 的 Charlene](mailto:Charlene.Ling@Kuipra.Ca)，在你花任何一塊設計費之前，我們先幫你把診斷做對。
+正在考慮 rebrand、又不確定該動多深？[寫信給 Kuipra 的 Charlene](mailto:info@kuipra.ca)，在你花任何一塊設計費之前，我們先幫你把診斷做對。

@@ -74,4 +74,4 @@ A calendar is a default, not a contract. When something genuinely relevant happe
 
 The discipline is knowing the difference between a reactive moment worth taking and a shiny distraction. If it touches your positioning and your audience cares about it today, break the calendar. If it's just noise, the calendar exists precisely to protect you from it.
 
-Want a calendar built around your team's real capacity — not an imaginary one? [Email Charlene](mailto:Charlene.Ling@Kuipra.Ca) and we'll map it with you.
+Want a calendar built around your team's real capacity — not an imaginary one? [Email Charlene](mailto:info@kuipra.ca) and we'll map it with you.

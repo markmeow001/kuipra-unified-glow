@@ -64,4 +64,4 @@ Duolingo 從來不是以「公司」的身分發文，而是以 **Duo** 這個�
 
 學它的紀律，別學它的戲服。這就是整篇拆解的結論。
 
-想定義一套你的品牌真的撐得起來的語氣？[來信 Kuipra 的 Charlene](mailto:Charlene.Ling@Kuipra.Ca)，聊聊你的下一步。
+想定義一套你的品牌真的撐得起來的語氣？[來信 Kuipra 的 Charlene](mailto:info@kuipra.ca)，聊聊你的下一步。

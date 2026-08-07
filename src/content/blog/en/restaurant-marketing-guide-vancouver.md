@@ -66,4 +66,4 @@ Restaurants obsess over new customers while their revenue actually lives in the 
 
 Broad brand-awareness ads before the map is won. Discount platforms that train bargain hunters who never return at full price. And chasing every platform at once — a restaurant with a killer GBP, one strong short-video channel and a working list beats one with six half-dead accounts.
 
-Running a restaurant and want a plan sequenced for your actual capacity? Email [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca) — we work with Vancouver restaurants in both English and Chinese-speaking markets.
+Running a restaurant and want a plan sequenced for your actual capacity? Email [info@kuipra.ca](mailto:info@kuipra.ca) — we work with Vancouver restaurants in both English and Chinese-speaking markets.

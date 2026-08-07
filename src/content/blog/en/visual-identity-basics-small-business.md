@@ -68,4 +68,4 @@ Colours with hex codes. Both typefaces and their roles. Three or four photo do/d
 
 For many Vancouver businesses, the identity has to work in English and Chinese — and this is where DIY systems quietly break. Your Latin typeface has no Chinese companion by default; choose a pairing that matches its weight and mood, or the two languages will look like two brands. And Chinese is denser: the same message takes fewer characters carrying more visual weight each, so a layout sized for an English sentence can feel empty or cramped in translation. Test every template with both languages before you lock it.
 
-Want an identity kit your whole team can actually follow? [Email Charlene](mailto:Charlene.Ling@Kuipra.Ca) and we'll build the one-pager with you.
+Want an identity kit your whole team can actually follow? [Email Charlene](mailto:info@kuipra.ca) and we'll build the one-pager with you.

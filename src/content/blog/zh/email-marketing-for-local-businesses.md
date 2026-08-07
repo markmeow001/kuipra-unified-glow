@@ -83,4 +83,4 @@ Email 不是用來取代社群，而是把社群幫你認識的人接住、留�
 
 你發的每一篇文章，都是一段不用從零寫起的電子報內容：兩句摘要加一個連結。部落格累積長期的搜尋能見度——包括[你在 Google 上的存在感](/zh/blog/google-business-profile-guide-vancouver/)，以及越來越重要的 AI 推薦——電子報則把每篇文章送到最可能行動的人眼前。一份力氣，兩個渠道。
 
-想讓名單成為資產、而不是待辦事項？[聯繫我們](mailto:Charlene.Ling@Kuipra.Ca)。
+想讓名單成為資產、而不是待辦事項？[聯繫我們](mailto:info@kuipra.ca)。

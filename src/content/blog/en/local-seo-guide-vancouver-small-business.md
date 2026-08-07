@@ -71,4 +71,4 @@ Two purchases we see over and over:
 - **Bulk directory submissions.** "500 citations for $99" mostly means low-quality directories no human visits — and a cleanup bill later when the duplicated, inconsistent listings need fixing. Citations matter; volume doesn't.
 - **Generic high-volume keywords.** Ranking a small business for "SEO" or "lawyer" is a multi-year, big-budget fight for clicks that mostly aren't local anyway. The neighbourhood query you can actually win this quarter is worth more than the vanity keyword you can't.
 
-Local SEO isn't mysterious — it's unglamorous work in the correct order. If you'd rather hand that work to a team that does it natively for Vancouver's bilingual market, [get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Local SEO isn't mysterious — it's unglamorous work in the correct order. If you'd rather hand that work to a team that does it natively for Vancouver's bilingual market, [get in touch](mailto:info@kuipra.ca).

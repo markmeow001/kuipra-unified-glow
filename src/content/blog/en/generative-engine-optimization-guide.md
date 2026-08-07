@@ -69,4 +69,4 @@ Monthly, ask each major assistant your money questions and log the answers. Whic
 
 GEO rewards brands that know precisely what they want to be known for — which is a [brand strategy question](/blog/brand-strategy-vs-marketing-tactics/) before it's a technical one. A fuzzy positioning produces fuzzy citations.
 
-We build GEO into every content program at Kuipra, including this journal. If you want to know what AI currently says about your brand — and how to change it — [get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+We build GEO into every content program at Kuipra, including this journal. If you want to know what AI currently says about your brand — and how to change it — [get in touch](mailto:info@kuipra.ca).

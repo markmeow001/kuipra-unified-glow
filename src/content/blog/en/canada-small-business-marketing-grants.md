@@ -62,4 +62,4 @@ The honest 2026 picture: **direct subsidies for websites, ads and everyday marke
 2. **Date-check everything you read**, including this article. If a guide doesn't show the closure of CDAP, it predates 2024 — assume the rest is stale too.
 3. **Applications cost real hours.** An afternoon for a training-grant claim is fine; weeks chasing a long-shot program is marketing time better spent marketing.
 
-Weighing whether to upskill in-house (grant-eligible) or outsource (not, but faster)? That trade-off is half of [choosing a marketing partner wisely](/blog/how-to-choose-marketing-agency-vancouver/) — or email [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca) and we'll give you a straight read on which side of it your situation falls.
+Weighing whether to upskill in-house (grant-eligible) or outsource (not, but faster)? That trade-off is half of [choosing a marketing partner wisely](/blog/how-to-choose-marketing-agency-vancouver/) — or email [info@kuipra.ca](mailto:info@kuipra.ca) and we'll give you a straight read on which side of it your situation falls.

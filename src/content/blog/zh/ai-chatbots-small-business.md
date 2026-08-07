@@ -77,4 +77,4 @@ faq:
 
 而一頁強的 FAQ 還有第二層紅利：它正是搜尋引擎愛排名、AI 助理愛引用的那種結構清楚的事實內容。當有人問 AI 助理「幫我推薦一家這樣的店」，[能被引用，才會被推薦](/zh/blog/how-ai-assistants-recommend-local-businesses/)。先把這個地基打好——之後如果詢問量還是接不完，你手上已經有機器人需要的真實內容，可以從優勢位置再加裝。
 
-不確定你的店落在框架的哪一邊？[歡迎聯繫](mailto:Charlene.Ling@Kuipra.Ca)。
+不確定你的店落在框架的哪一邊？[歡迎聯繫](mailto:info@kuipra.ca)。

@@ -86,4 +86,4 @@ A draft isn't done until it survives four questions:
 
 A statement that passes all four becomes the filter for everything downstream: content pillars, ad copy, even which opportunities to decline. That's the whole point — one sentence, decided once, used daily.
 
-Want a second set of eyes on your draft? Email us at [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca) and we'll tell you honestly whether it holds up.
+Want a second set of eyes on your draft? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) and we'll tell you honestly whether it holds up.

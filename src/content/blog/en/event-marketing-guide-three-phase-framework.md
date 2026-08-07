@@ -82,4 +82,4 @@ Most businesses go silent the day after an event. That silence wastes the phase 
 
 An event is one of the few marketing investments that naturally produces weeks of authentic content — but only if you plan all three phases before the doors open. And as with everything we do, the phases work best when they express a clear brand position; if that foundation is fuzzy, start with our guide to [brand strategy vs. marketing tactics](/blog/brand-strategy-vs-marketing-tactics/) first.
 
-Planning an event and want the coverage to actually work? [Email Charlene](mailto:Charlene.Ling@Kuipra.Ca) and we'll map your three phases together.
+Planning an event and want the coverage to actually work? [Email Charlene](mailto:info@kuipra.ca) and we'll map your three phases together.

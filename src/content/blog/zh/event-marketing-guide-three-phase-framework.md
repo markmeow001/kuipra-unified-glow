@@ -82,4 +82,4 @@ faq:
 
 活動是少數能自然產出好幾週真實內容的行銷投資——前提是三個階段都在開場前就規劃好。而且跟我們做的所有事情一樣，這套框架要發揮，背後得先有清晰的品牌定位；如果那層地基還是模糊的，建議先讀我們的[品牌策略 vs. 行銷戰術](/zh/blog/brand-strategy-vs-marketing-tactics/)。
 
-正在籌備活動、希望這次的內容真的有用？[來信給 Charlene](mailto:Charlene.Ling@Kuipra.Ca)，我們一起把你的三個階段排出來。
+正在籌備活動、希望這次的內容真的有用？[來信給 Charlene](mailto:info@kuipra.ca)，我們一起把你的三個階段排出來。

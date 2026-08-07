@@ -69,4 +69,4 @@ Most small businesses discount at the first slow month — and teach their best 
 
 None of this required a big media budget — early lululemon largely built evangelists instead of buying ads. It required clarity about who the customer was, and the patience to build trust in rooms of thirty people at a time. That playbook is fully available to a bakery on Main Street or a clinic in Burnaby. The barrier isn't money; it's the discipline to invest in community for months before demanding a return.
 
-Want help designing a community-first strategy for your own brand? [Email Charlene at Kuipra](mailto:Charlene.Ling@Kuipra.Ca) and let's talk.
+Want help designing a community-first strategy for your own brand? [Email Charlene at Kuipra](mailto:info@kuipra.ca) and let's talk.

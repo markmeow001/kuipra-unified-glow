@@ -84,4 +84,4 @@ And whatever you do, don't go silent. The most common failure we see is the **si
 
 Rebrand when the brand blocks the business — not when you're bored of it. Choose the smallest intervention that solves the diagnosis, protect the assets people actually recognize, and manage the switch as a months-long conversation with your customers, not a reveal.
 
-Thinking about a rebrand and not sure how deep to cut? [Email Charlene at Kuipra](mailto:Charlene.Ling@Kuipra.Ca) and we'll help you diagnose it before you spend a dollar on design.
+Thinking about a rebrand and not sure how deep to cut? [Email Charlene at Kuipra](mailto:info@kuipra.ca) and we'll help you diagnose it before you spend a dollar on design.

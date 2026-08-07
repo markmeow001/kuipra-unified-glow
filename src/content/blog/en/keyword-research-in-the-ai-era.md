@@ -83,4 +83,4 @@ You can do all of the above without a subscription:
 
 Everything above doubles as preparation for AI search. Question-shaped pages with clean, self-contained answers are precisely what assistants retrieve and cite — the mechanics we cover in our [GEO guide](/blog/generative-engine-optimization-guide/) and in [how AI assistants recommend local businesses](/blog/how-ai-assistants-recommend-local-businesses/). Intent-first keyword research isn't a separate discipline from GEO; it's the front half of it.
 
-Want a second pair of eyes on which questions your business should own? [Email us](mailto:Charlene.Ling@Kuipra.Ca) and we'll take a look.
+Want a second pair of eyes on which questions your business should own? [Email us](mailto:info@kuipra.ca) and we'll take a look.

@@ -87,4 +87,4 @@ The second cost is search. Google's helpful content signals reward first-hand ex
 
 AI made drafting cheap. That makes judgment, facts, and voice the scarce assets — and they're still yours to supply.
 
-Want a content program that uses AI without sounding like it? [Get in touch](mailto:Charlene.Ling@Kuipra.Ca).
+Want a content program that uses AI without sounding like it? [Get in touch](mailto:info@kuipra.ca).

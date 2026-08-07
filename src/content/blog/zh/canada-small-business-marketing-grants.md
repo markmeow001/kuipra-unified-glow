@@ -62,4 +62,4 @@ faq:
 2. **看到的每篇文章都先查日期**，包括這一篇。一份攻略如果沒寫到 CDAP 關閉，就是 2024 年以前的——其餘內容也一併當過期處理。
 3. **申請本身要花真實工時。**訓練補助的申請花一個下午值得；花好幾週追一個機率渺茫的計畫，那些時間拿去做行銷更划算。
 
-在猶豫該內部培養人才（補助沾得到邊）還是外包（沾不到，但快）？這個取捨正是[聰明挑選行銷夥伴](/zh/blog/how-to-choose-marketing-agency-vancouver/)的一半——或直接寫信給 [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca)，我們老實告訴你你的情況落在哪一邊。
+在猶豫該內部培養人才（補助沾得到邊）還是外包（沾不到，但快）？這個取捨正是[聰明挑選行銷夥伴](/zh/blog/how-to-choose-marketing-agency-vancouver/)的一半——或直接寫信給 [info@kuipra.ca](mailto:info@kuipra.ca)，我們老實告訴你你的情況落在哪一邊。

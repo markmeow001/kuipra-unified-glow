@@ -99,4 +99,4 @@ Notice the clinic's equipment, credentials, and history appear nowhere in the ar
 
 Open your homepage and read the first screen. If the subject of most sentences is "we," you're telling a hero story about yourself. Recast the customer as the hero, take the guide's seat, and every channel downstream gets easier to write.
 
-Want a second set of eyes on your brand story? Email us at [Charlene.Ling@Kuipra.Ca](mailto:Charlene.Ling@Kuipra.Ca) and we'll tell you honestly who the hero of your current website is.
+Want a second set of eyes on your brand story? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) and we'll tell you honestly who the hero of your current website is.
