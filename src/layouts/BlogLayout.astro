@@ -1,4 +1,6 @@
 ---
+import ContactForm from '../components/ContactForm.astro';
+
 interface Props {
   lang: 'en' | 'zh';
   title: string;
@@ -149,10 +151,88 @@ const t = {
         <span class="footer-copy">kuipra.ca</span>
       </div>
     </footer>
+
+    <div class="contact-modal" id="navContactModal">
+      <div class="contact-modal-panel">
+        <button class="contact-modal-close" aria-label={lang === 'zh' ? '關閉' : 'Close'}>&times;</button>
+        <ContactForm lang={lang} service="nav" sectionId="" />
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById('navContactModal');
+      if (modal) {
+        const close = () => {
+          modal.classList.remove('open');
+          document.body.style.overflow = '';
+        };
+        for (const el of document.querySelectorAll('.nav-cta')) {
+          el.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+          });
+        }
+        modal.querySelector('.contact-modal-close')?.addEventListener('click', close);
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) close();
+        });
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') close();
+        });
+      }
+    </script>
   </body>
 </html>
 
 <style is:global>
+  .contact-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 12, 24, 0.72);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    padding: 24px;
+  }
+  .contact-modal.open {
+    display: flex;
+  }
+  .contact-modal-panel {
+    position: relative;
+    width: min(720px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  .contact-modal-panel .cform {
+    margin-top: 0;
+    padding: 56px 48px;
+  }
+  .contact-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    z-index: 1;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .contact-modal-close:hover {
+    color: #fff;
+  }
+  @media (max-width: 720px) {
+    .contact-modal {
+      padding: 12px;
+    }
+    .contact-modal-panel .cform {
+      padding: 48px 24px;
+    }
+  }
   *,
   *::before,
   *::after {

@@ -3,9 +3,11 @@ interface Props {
   lang: 'en' | 'zh';
   /** Pre-selected value for the service field. */
   service?: string;
+  /** Anchor id for the section; pass '' to omit (e.g. inside a modal). */
+  sectionId?: string;
 }
 
-const { lang, service = '' } = Astro.props;
+const { lang, service = '', sectionId = 'contact' } = Astro.props;
 
 const t = {
   heading:
@@ -31,7 +33,8 @@ const t = {
 };
 ---
 
-<section class="cform" id="contact">
+<section class="cform" id={sectionId || undefined}>
+  <div class="cform-inner">
   <p class="journal-eyebrow">
     {lang === 'zh' ? '聯繫我們' : 'Get in touch'}
   </p>
@@ -64,6 +67,7 @@ const t = {
     <button type="submit">{t.send}</button>
     <p class="cform-status" role="status"></p>
   </form>
+  </div>
 </section>
 
 <script>
@@ -102,6 +106,10 @@ const t = {
     color: var(--paper);
     padding: 64px 48px;
     margin-top: 96px;
+  }
+  .cform-inner {
+    max-width: 640px;
+    margin: 0 auto;
   }
   .cform h2 {
     font-family: var(--serif);
