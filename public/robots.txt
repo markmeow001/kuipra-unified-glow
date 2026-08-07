@@ -20,6 +20,10 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
+# Keep team headshots out of Google Images / result thumbnails
+User-agent: Googlebot-Image
+Disallow: /team/
+
 User-agent: Bingbot
 Allow: /
 
