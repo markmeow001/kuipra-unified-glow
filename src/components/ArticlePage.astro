@@ -1,6 +1,7 @@
 ---
 import { render } from 'astro:content';
 import BlogLayout from '../layouts/BlogLayout.astro';
+import ContactForm from './ContactForm.astro';
 import { CATEGORIES } from '../data/categories';
 import {
   getPosts,
@@ -186,6 +187,8 @@ const jsonLd = [articleLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
         </a>
       </div>
     </aside>
+
+    <ContactForm lang={lang} service={`article: ${post.id}`} />
   </article>
 </BlogLayout>
 
