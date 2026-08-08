@@ -21,6 +21,21 @@
       ? '暫時連不上，請稍後再試，或直接來信 info@kuipra.ca'
       : 'Connection hiccup — try again shortly, or email info@kuipra.ca',
     disclosure: zh ? 'AI 助理・回覆僅供參考' : 'AI assistant · answers are informational',
+    suggestions: zh
+      ? [
+          '你們提供哪些服務？',
+          '我想做小紅書行銷，怎麼開始？',
+          '我是餐廳老闆，該從哪裡開始？',
+          '做一個網站大概怎麼收費？',
+          '你們跟其他行銷公司差在哪？',
+        ]
+      : [
+          'What services do you offer?',
+          'How do I reach Vancouver’s Chinese community?',
+          'I run a restaurant — where do I start?',
+          'What does a website project cost?',
+          'How are you different from other agencies?',
+        ],
   };
 
   var css =
@@ -52,6 +67,10 @@
     '.akw-form input:focus{border-color:#e8853d}' +
     '.akw-form button{background:#e8853d;color:#141414;border:none;border-radius:8px;padding:0 16px;font-size:14px;cursor:pointer}' +
     '.akw-form button:disabled{opacity:.5;cursor:default}' +
+    '.akw-sugs{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 8px;align-self:flex-start}' +
+    '.akw-sug{background:none;border:1px solid rgba(245,241,232,.28);color:rgba(245,241,232,.85);' +
+    'border-radius:999px;padding:7px 13px;font-size:12.5px;cursor:pointer;text-align:left;transition:border-color .15s,color .15s}' +
+    '.akw-sug:hover{border-color:#e8853d;color:#e8853d}' +
     '@media (max-width:480px){.akw-btn{right:14px;bottom:14px}.akw-panel{right:8px;bottom:72px}}';
 
   var style = document.createElement('style');
@@ -92,6 +111,26 @@
 
   add('bot', t.greeting);
 
+  // Suggested-question chips, shown until the first message is sent.
+  var sugs = document.createElement('div');
+  sugs.className = 'akw-sugs';
+  t.suggestions.forEach(function (q) {
+    var chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'akw-sug';
+    chip.textContent = q;
+    chip.addEventListener('click', function () {
+      input.value = q;
+      form.dispatchEvent(new Event('submit'));
+    });
+    sugs.appendChild(chip);
+  });
+  msgs.appendChild(sugs);
+
+  function clearSugs() {
+    if (sugs.parentNode) sugs.remove();
+  }
+
   btn.addEventListener('click', function () {
     panel.classList.toggle('open');
     if (panel.classList.contains('open')) input.focus();
@@ -105,6 +144,7 @@
     var text = input.value.trim();
     if (!text || sendBtn.disabled) return;
     input.value = '';
+    clearSugs();
     add('user', text);
     history.push({ role: 'user', content: text });
 
