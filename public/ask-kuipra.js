@@ -80,10 +80,14 @@
   var btn = document.createElement('button');
   btn.className = 'akw-btn';
   btn.setAttribute('aria-label', t.button);
+  btn.setAttribute('aria-expanded', 'false');
   btn.innerHTML = '<span class="akw-dot"></span>' + t.button;
 
   var panel = document.createElement('div');
   panel.className = 'akw-panel';
+  panel.setAttribute('role', 'dialog');
+  panel.setAttribute('aria-modal', 'false');
+  panel.setAttribute('aria-label', t.title);
   panel.innerHTML =
     '<div class="akw-head"><div><b>' + t.title + '</b><small>' + t.disclosure + '</small></div>' +
     '<button class="akw-close" aria-label="close">&times;</button></div>' +
@@ -131,12 +135,19 @@
     if (sugs.parentNode) sugs.remove();
   }
 
+  function setOpen(open) {
+    panel.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    if (open) input.focus();
+  }
   btn.addEventListener('click', function () {
-    panel.classList.toggle('open');
-    if (panel.classList.contains('open')) input.focus();
+    setOpen(!panel.classList.contains('open'));
   });
   panel.querySelector('.akw-close').addEventListener('click', function () {
-    panel.classList.remove('open');
+    setOpen(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && panel.classList.contains('open')) setOpen(false);
   });
 
   form.addEventListener('submit', async function (e) {

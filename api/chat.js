@@ -24,9 +24,26 @@ Rules:
 
 const MODEL = 'claude-haiku-4-5-20251001';
 
+// Browsers always send Origin on cross-/same-origin POST; requests without a
+// matching Origin (curl, third-party sites) are rejected. Spoofable by a
+// determined attacker, but blocks all browser-based cross-site use and casual
+// scripting against the paid upstream.
+const ALLOWED_ORIGIN = /^https:\/\/(www\.)?kuipra\.ca$|^https:\/\/[a-z0-9-]+\.vercel\.app$/;
+
+// Hard cap on total prompt characters per request (~2.5K tokens) so a single
+// call can't be stuffed to the per-message limits.
+const MAX_TOTAL_CHARS = 8000;
+
+const UPSTREAM_TIMEOUT_MS = 9000;
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
+    return;
+  }
+
+  if (!ALLOWED_ORIGIN.test(req.headers.origin || '')) {
+    res.status(403).json({ error: 'forbidden' });
     return;
   }
 
@@ -56,9 +73,19 @@ export default async function handler(req, res) {
     return;
   }
 
+  const totalChars = messages.reduce((n, m) => n + m.content.length, 0);
+  if (totalChars > MAX_TOTAL_CHARS) {
+    res.status(413).json({ error: 'too_large' });
+    return;
+  }
+
+  const abort = new AbortController();
+  const timer = setTimeout(() => abort.abort(), UPSTREAM_TIMEOUT_MS);
+
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
+      signal: abort.signal,
       headers: {
         'content-type': 'application/json',
         'x-api-key': apiKey,
@@ -87,7 +114,13 @@ export default async function handler(req, res) {
 
     res.status(200).json({ reply });
   } catch (err) {
+    if (err && err.name === 'AbortError') {
+      res.status(504).json({ error: 'timeout' });
+      return;
+    }
     console.error('chat_handler_error', err);
     res.status(500).json({ error: 'internal' });
+  } finally {
+    clearTimeout(timer);
   }
 }
