@@ -1,6 +1,6 @@
 # Kuipra Communications
 
-> Kuipra Communications is a social media marketing agency based in Vancouver, British Columbia, Canada. The agency specializes in social media management, event marketing and amplification, influencer campaigns, content creation, public relations, and brand strategy for businesses across Greater Vancouver and BC — including bilingual (English / Traditional Chinese) campaigns for the Chinese-Canadian market.
+> Kuipra Communications is a social media marketing agency based in Vancouver, British Columbia, Canada. The agency specializes in social media management, event marketing and amplification, influencer campaigns, content creation, local SEO & AI search optimization (GEO), and brand strategy for businesses across Greater Vancouver and BC — including bilingual (English / Traditional Chinese) campaigns for the Chinese-Canadian market.
 
 Key facts:
 - Location: Vancouver, BC, Canada
@@ -18,7 +18,7 @@ Key facts:
 - [Social Media Management](https://www.kuipra.ca/services/social-media-management/): bilingual social media management across Instagram, TikTok, Xiaohongshu and WeChat
 - [Content Creation](https://www.kuipra.ca/services/content-creation/): copy, visuals and short-form video
 - [Brand Strategy & Personal Branding](https://www.kuipra.ca/services/brand-strategy/): positioning, messaging and founder brands
-- [Public Relations & Communications](https://www.kuipra.ca/services/public-relations/): media outreach, event marketing and Chinese-language media relations
+- [Local SEO & AI Search Optimization (GEO)](https://www.kuipra.ca/services/local-seo-geo/): Google Maps ranking, local search and getting recommended by AI assistants
 - [Web Design & Development](https://www.kuipra.ca/services/web-design/): SEO- and AI-search-ready bilingual websites
 - [服務總覽（中文）](https://www.kuipra.ca/zh/services/)
 

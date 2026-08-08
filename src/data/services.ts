@@ -373,123 +373,6 @@ export const SERVICES: Service[] = [
     },
   },
   {
-    slug: 'public-relations',
-    formValue: 'Public Relations',
-    related: [
-      'event-marketing-guide-three-phase-framework',
-      'google-reviews-management-guide',
-      'brand-strategy-vs-marketing-tactics',
-    ],
-    en: {
-      name: 'Public Relations & Communications',
-      metaTitle: 'PR & Communications Vancouver | Media & Events | Kuipra',
-      metaDescription:
-        'Strategic media outreach, event amplification and communications for Vancouver brands — including Chinese-language media.',
-      tagline: 'PR · Vancouver',
-      intro:
-        'Strategic outreach and communications that shape how Vancouver sees your brand: media relations, event marketing and amplification, influencer partnerships, and reputation care — across English and Chinese-language media landscapes.',
-      pains: [
-        'Your events fill rooms but leave no digital trace — no coverage, no content, no lasting reach.',
-        'Competitors keep appearing in local media and roundups while you stay invisible.',
-        'Your brand story only exists in English, missing the entire Chinese-language media ecosystem in Metro Vancouver.',
-      ],
-      deliverables: [
-        'Media strategy and press outreach',
-        'Event marketing: pre-event buzz, live coverage, post-event amplification',
-        'Influencer and community partnership programs',
-        'Chinese-language media and KOL relations',
-        'Crisis and reputation communications support',
-        'Press materials, briefing docs and spokesperson prep',
-      ],
-      process: [
-        {
-          title: 'Narrative',
-          body: 'We define the stories your brand can credibly own and the outlets and voices that matter for them.',
-        },
-        {
-          title: 'Outreach',
-          body: 'Targeted pitching and partnership building — quality relationships over spray-and-pray press releases.',
-        },
-        {
-          title: 'Amplification',
-          body: 'Every placement, event and collaboration gets repurposed across your owned channels for maximum mileage.',
-        },
-        {
-          title: 'Measurement',
-          body: 'Coverage quality, audience reach and referral signals — reported plainly, without PR-speak.',
-        },
-      ],
-      faq: [
-        {
-          q: 'Do you handle event marketing?',
-          a: 'Yes — it is one of our core specialties. We run a three-phase framework covering pre-event anticipation, strategic live coverage and post-event amplification, so a one-day event generates weeks of visibility instead of disappearing overnight.',
-        },
-        {
-          q: 'Can you get us into Chinese-language media in Vancouver?',
-          a: 'Yes. Metro Vancouver has a substantial Chinese-language media and KOL ecosystem that most agencies cannot access. We operate natively in it — outreach, materials and relationships are handled in Chinese, not through translation.',
-        },
-        {
-          q: 'How do you measure PR results?',
-          a: 'We track placements and their quality, audience reach, branded-search movement and referral traffic where measurable. We are upfront that PR compounds over quarters — anyone promising instant front-page results is selling something else.',
-        },
-      ],
-    },
-    zh: {
-      name: '公共關係與企業傳播',
-      metaTitle: '溫哥華公關與企業傳播｜媒體與活動行銷｜Kuipra',
-      metaDescription:
-        '策略性媒體公關、活動行銷放大與企業傳播——同時深耕大溫的英文與中文媒體生態。',
-      tagline: '公關傳播 · 溫哥華',
-      intro:
-        '用策略性的媒體公關與傳播，塑造溫哥華看待你品牌的方式：媒體關係、活動行銷與放大、KOL 合作、聲譽管理——橫跨英文與中文兩個媒體生態。',
-      pains: [
-        '活動場場爆滿，數位足跡卻是零——沒報導、沒內容、沒有延續的觸及。',
-        '競爭對手不斷出現在本地媒體和推薦清單上，你卻始終隱形。',
-        '品牌故事只有英文版，大溫整個中文媒體生態圈完全缺席。',
-      ],
-      deliverables: [
-        '媒體策略與新聞公關',
-        '活動行銷：事前造勢、現場報導、事後放大',
-        'KOL 與社群合作計畫',
-        '中文媒體與 KOL 關係經營',
-        '危機與聲譽傳播支援',
-        '新聞資料、簡報文件與發言人培訓',
-      ],
-      process: [
-        {
-          title: '敘事',
-          body: '定義你的品牌能可信地擁有的故事，以及對這些故事真正重要的媒體與聲音。',
-        },
-        {
-          title: '公關觸達',
-          body: '精準提案與關係建立——重質的關係，不是亂槍打鳥的新聞稿。',
-        },
-        {
-          title: '放大',
-          body: '每一次曝光、活動與合作，都在你的自有渠道重製再利用，效益吃好吃滿。',
-        },
-        {
-          title: '衡量',
-          body: '報導品質、受眾觸及、referral 訊號——用白話報告，不講公關黑話。',
-        },
-      ],
-      faq: [
-        {
-          q: '你們做活動行銷嗎？',
-          a: '做——這是我們的核心強項之一。我們用三階段框架：事前造勢、有策略的現場報導、事後放大，讓一天的活動創造數週的能見度，而不是隔天就蒸發。',
-        },
-        {
-          q: '可以幫我們上溫哥華的中文媒體嗎？',
-          a: '可以。大溫有一個規模可觀、多數代理商進不去的中文媒體與 KOL 生態。我們原生在裡面運作——提案、資料、關係全部用中文直接經營，不經翻譯。',
-        },
-        {
-          q: '公關成效怎麼衡量？',
-          a: '我們追蹤曝光數量與品質、受眾觸及、品牌搜尋量變化、可歸因的 referral 流量。我們也坦白說：公關是以季為單位複利的，承諾你「馬上上頭版」的人是在賣別的東西。',
-        },
-      ],
-    },
-  },
-  {
     slug: 'web-design',
     formValue: 'Web Design',
     related: [
@@ -602,6 +485,122 @@ export const SERVICES: Service[] = [
         {
           q: '可以做中英雙語網站嗎？',
           a: '可以——雙語架構是我們的專長：兩種語言都是原生內容，搭配正確的 hreflang 實作，讓每個受眾和每個搜尋引擎都拿到對的版本。',
+        },
+      ],
+    },
+  },
+  {
+    slug: 'local-seo-geo',
+    formValue: 'Local SEO & GEO',
+    related: [
+      'local-seo-guide-vancouver-small-business',
+      'generative-engine-optimization-guide',
+      'how-ai-assistants-recommend-local-businesses',
+      'google-reviews-management-guide',
+    ],
+    en: {
+      name: 'Local SEO & AI Search (GEO)',
+      metaTitle: 'Local SEO & AI Search Optimization (GEO) Vancouver | Kuipra',
+      metaDescription:
+        'Get found on Google Maps and recommended by AI assistants. Local SEO plus generative engine optimization (GEO) for Vancouver businesses — bilingual, measurable.',
+      tagline: 'Local SEO · GEO · Vancouver',
+      intro:
+        'Customers now find businesses two ways: they search Google, or they ask an AI assistant. We optimize for both — local SEO so you win the map pack and "near me" searches, and generative engine optimization (GEO) so ChatGPT, Gemini and AI search actually recommend you. One system, in English and Chinese.',
+      pains: [
+        'Competitors with worse work outrank you on Google Maps because their profile and reviews are engineered and yours are left to luck.',
+        'Your website gets visits but ranks for nothing — no structure, no answers, nothing for Google or AI to cite.',
+        'Ask ChatGPT for "best [your industry] in Vancouver" and you are nowhere — AI assistants recommend competitors because your business is invisible to them.',
+      ],
+      deliverables: [
+        'Google Business Profile optimization and review-growth system',
+        'Local SEO: site structure, on-page optimization, citations and consistency',
+        'GEO: structured answer content, schema markup and llms.txt so AI engines can cite you',
+        'Bilingual keyword and content strategy (English + Chinese search)',
+        'Monthly visibility reporting: rankings, map pack, and AI-assistant checks',
+      ],
+      process: [
+        {
+          title: 'Audit',
+          body: 'We map where you actually stand: Google rankings, map pack position, profile health, and what AI assistants currently say when asked about your category in Vancouver.',
+        },
+        {
+          title: 'Fix the foundation',
+          body: 'Profile, citations, site structure and schema get corrected first — the unglamorous layer that every ranking and AI citation sits on.',
+        },
+        {
+          title: 'Build the answers',
+          body: 'We produce the structured, factual content that ranks for local searches and gets cited by AI engines — in both languages where your market needs it.',
+        },
+        {
+          title: 'Measure and compound',
+          body: 'Monthly reporting on rankings, map visibility and AI-assistant mentions, with the next round of content aimed at what the data shows.',
+        },
+      ],
+      faq: [
+        {
+          q: 'What is GEO and how is it different from SEO?',
+          a: 'SEO earns visibility in Google search results; GEO (generative engine optimization) earns citations and recommendations inside AI assistants like ChatGPT and Gemini. They overlap — both reward clear, factual, well-structured content — but GEO adds specific work: answer-formatted content, schema, llms.txt, and consistent business facts across the web. We build both in one system because your customers already use both.',
+        },
+        {
+          q: 'How long does local SEO take to show results?',
+          a: 'Typical Vancouver timelines: profile and map-pack improvements in 4–8 weeks, meaningful organic movement in 3–6 months, compounding after that. Anyone promising page one in 30 days is selling something else. We report monthly so you see the trajectory, not just the destination.',
+        },
+        {
+          q: 'Does this include Chinese-language search?',
+          a: 'Yes — this is our edge. We optimize your visibility for English and Chinese searches, which matters in Metro Vancouver where a large share of your customers search and ask AI in Chinese. Most local SEO vendors only see half your market.',
+        },
+      ],
+    },
+    zh: {
+      name: '在地 SEO 與 AI 搜尋優化（GEO）',
+      metaTitle: '溫哥華在地 SEO 與 AI 搜尋優化（GEO）｜Kuipra',
+      metaDescription:
+        '讓 Google 地圖找得到你、讓 AI 助理推薦你。溫哥華企業的在地 SEO＋生成式引擎優化（GEO）——中英雙語、可量測。',
+      tagline: '在地 SEO · GEO · 溫哥華',
+      intro:
+        '現在的客人用兩種方式找商家：搜 Google，或問 AI 助理。我們兩邊都幫你優化——在地 SEO 讓你贏下地圖前三名和「附近」搜尋；生成式引擎優化（GEO）讓 ChatGPT、Gemini 和 AI 搜尋真的推薦你。一套系統，中英雙語。',
+      pains: [
+        '做得比你差的同行在 Google 地圖上排你前面——因為他們的檔案和評論是經營出來的，你的是碰運氣的。',
+        '網站有流量卻什麼字都排不上——沒有結構、沒有答案，Google 和 AI 都沒有東西可以引用。',
+        '問 ChatGPT「溫哥華最好的〔你的行業〕」，你完全不在名單上——AI 助理推薦的是同行,因為你的生意對它們是隱形的。',
+      ],
+      deliverables: [
+        'Google 商家檔案優化＋評論成長系統',
+        '在地 SEO：網站結構、頁面優化、目錄登錄與資料一致性',
+        'GEO：結構化問答內容、schema 標記與 llms.txt，讓 AI 引擎能引用你',
+        '中英雙語關鍵字與內容策略',
+        '每月能見度報告：排名、地圖前三、AI 助理推薦檢測',
+      ],
+      process: [
+        {
+          title: '體檢',
+          body: '先量出你的真實位置：Google 排名、地圖名次、檔案健康度，以及現在問 AI 助理你這個行業時，它到底說了誰。',
+        },
+        {
+          title: '修地基',
+          body: '檔案、目錄、網站結構和 schema 先修好——每個排名和每次 AI 引用都蓋在這層不性感的地基上。',
+        },
+        {
+          title: '蓋答案',
+          body: '生產能排上在地搜尋、也能被 AI 引擎引用的結構化事實內容——你的市場需要的語言,我們就用哪種寫。',
+        },
+        {
+          title: '量測與複利',
+          body: '每月報告排名、地圖能見度和 AI 助理提及狀況,下一輪內容照數據指的方向打。',
+        },
+      ],
+      faq: [
+        {
+          q: 'GEO 是什麼？跟 SEO 有什麼不同？',
+          a: 'SEO 賺的是 Google 搜尋結果的能見度；GEO（生成式引擎優化）賺的是 ChatGPT、Gemini 這類 AI 助理裡的引用與推薦。兩者有重疊——都獎勵清楚、事實、結構好的內容——但 GEO 有專屬的工作：問答格式內容、schema、llms.txt、全網一致的商家資訊。我們把兩者做成一套系統,因為你的客人已經兩邊都在用。',
+        },
+        {
+          q: '在地 SEO 多久見效？',
+          a: '溫哥華的常見時程：商家檔案和地圖名次 4-8 週有感、自然排名 3-6 個月有明顯起色、之後開始複利。保證 30 天上首頁的人賣的是別的東西。我們每月報告,讓你看到軌跡,不是只等終點。',
+        },
+        {
+          q: '有包含中文搜尋的優化嗎？',
+          a: '有——這正是我們的優勢。我們同時優化你在英文和中文搜尋的能見度;在大溫,你有一大塊客人是用中文搜尋、用中文問 AI 的。多數在地 SEO 廠商只看得見你市場的一半。',
         },
       ],
     },

@@ -10,7 +10,9 @@
     { "source": "/case-funtasy", "destination": "/", "permanent": true },
     { "source": "/case-funtasy-zh", "destination": "/", "permanent": true },
     { "source": "/case-funtasy.html", "destination": "/", "permanent": true },
-    { "source": "/case-funtasy-zh.html", "destination": "/", "permanent": true }
+    { "source": "/case-funtasy-zh.html", "destination": "/", "permanent": true },
+    { "source": "/services/public-relations/", "destination": "/services/", "permanent": true },
+    { "source": "/zh/services/public-relations/", "destination": "/zh/services/", "permanent": true }
   ],
   "headers": [
     {
