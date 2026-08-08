@@ -605,4 +605,120 @@ export const SERVICES: Service[] = [
       ],
     },
   },
+  {
+    slug: 'chinese-marketing',
+    formValue: 'Bilingual / Chinese Marketing',
+    related: [
+      'marketing-to-vancouver-chinese-community',
+      'wechat-marketing-canadian-business',
+      'bilingual-social-media-account-strategy',
+      'instagram-tiktok-xiaohongshu-which-platform-vancouver',
+    ],
+    en: {
+      name: 'Bilingual & Chinese-Market Marketing',
+      metaTitle: 'Chinese Marketing Agency Vancouver | Bilingual EN/ZH | Kuipra',
+      metaDescription:
+        'Reach the 500,000+ Chinese-speaking customers of Metro Vancouver natively — Xiaohongshu, WeChat and bilingual campaigns run by a team that lives in both languages.',
+      tagline: 'Bilingual Marketing · Vancouver',
+      intro:
+        'Half a million Metro Vancouver customers research, discuss and decide in Chinese — on Xiaohongshu, on WeChat, in group chats your English marketing never reaches. We build campaigns natively in both languages: not translated captions, but platform-native strategy for each audience, under one consistent brand.',
+      pains: [
+        'Your English marketing is invisible to the Chinese-speaking half of your market — they research on Xiaohongshu and WeChat, not on your Instagram.',
+        'You tried translating your posts and it shows: machine-translated captions read as carelessness to native speakers, and the platforms where they decide never see you at all.',
+        'Bilingual vendors you have met do translation, not marketing — same content, two languages, zero understanding of how the platforms, occasions and trust signals differ.',
+      ],
+      deliverables: [
+        'Chinese-market strategy: audience, platforms, occasions and offers',
+        'Xiaohongshu (RED) account operation and content production',
+        'WeChat presence: official account content and community approach',
+        'Bilingual campaigns with one brand voice, natively written in each language',
+        'Chinese-language search and AI visibility (Chinese GEO) for your business',
+      ],
+      process: [
+        {
+          title: 'Market read',
+          body: 'We map where your Chinese-speaking customers actually are — which platforms, which occasions, which trust signals — and what competitors are doing there, if anything.',
+        },
+        {
+          title: 'Position once, express twice',
+          body: 'One brand strategy, expressed natively in each language. We define what stays fixed (identity, promise) and what flexes (platform, tone, occasions).',
+        },
+        {
+          title: 'Run the channels',
+          body: 'Content production and account operation on both sides — Instagram and Google for the English market, Xiaohongshu and WeChat for the Chinese market — with a publishing rhythm your budget sustains.',
+        },
+        {
+          title: 'Report in one language: results',
+          body: 'Monthly reporting across both markets — reach, saves, enquiries and which audience they came from — so you see which half of your market each dollar is working.',
+        },
+      ],
+      faq: [
+        {
+          q: 'Why is translated content not enough for the Chinese market?',
+          a: 'Because the platforms, formats and trust mechanics are different, not just the language. Chinese-speaking customers in Vancouver decide on Xiaohongshu notes, WeChat group recommendations and community word-of-mouth — channels where a translated Instagram caption never appears. Localized marketing means native strategy per platform; translation is just the last step.',
+        },
+        {
+          q: 'Which languages and platforms do you actually work in?',
+          a: 'Mandarin and Cantonese, Traditional and Simplified Chinese writing, and English — across Xiaohongshu, WeChat, Instagram, TikTok, Google and AI search. We are a bilingual team, not an agency with a translator on call.',
+        },
+        {
+          q: 'My business is not Chinese-owned — does this still work for me?',
+          a: 'Yes — some of the biggest wins are non-Chinese businesses entering the market: restaurants, clinics, beauty, real estate and retail that Chinese-speaking customers already buy from, just via competitors who show up in their language. If your product serves this audience, the channel gap is your opportunity.',
+        },
+      ],
+    },
+    zh: {
+      name: '雙語與華人市場行銷',
+      metaTitle: '溫哥華華人行銷公司｜中英雙語行銷｜Kuipra',
+      metaDescription:
+        '用母語觸及大溫 50 萬華語客群——小紅書、微信與中英雙語行銷，由真正活在兩種語言裡的團隊操盤。',
+      tagline: '雙語行銷 · 溫哥華',
+      intro:
+        '大溫有五十萬客人用中文做功課、討論、下決定——在小紅書、在微信、在你的英文行銷永遠到不了的群組裡。我們用兩種語言原生地做行銷：不是翻譯文案，而是為每個受眾做平台原生的策略，同一個品牌，兩個市場。',
+      pains: [
+        '你的英文行銷對市場的華語那一半是隱形的——他們在小紅書和微信做決定，不在你的 Instagram。',
+        '你試過翻譯貼文，效果看得出來：機翻文案在母語者眼裡就是敷衍，而他們真正做決定的平台上根本沒有你。',
+        '你遇過的「雙語」廠商做的是翻譯不是行銷——同樣的內容、兩種語言，對平台、檔期和信任機制的差異零理解。',
+      ],
+      deliverables: [
+        '華人市場策略：受眾、平台、檔期與產品切角',
+        '小紅書帳號代營運與內容製作',
+        '微信經營：公眾號內容與私域社群方法',
+        '中英雙語 campaign：一個品牌聲音，各自母語原生撰寫',
+        '中文搜尋與 AI 能見度（中文 GEO）',
+      ],
+      process: [
+        {
+          title: '讀市場',
+          body: '先摸清你的華語客群實際在哪裡——哪些平台、哪些檔期、哪些信任訊號——以及同行在那裡做了什麼（或什麼都沒做）。',
+        },
+        {
+          title: '定位一次，表達兩次',
+          body: '一套品牌策略，用兩種語言原生表達。我們定義什麼固定不動（識別、承諾）、什麼因地制宜（平台、語氣、檔期）。',
+        },
+        {
+          title: '跑渠道',
+          body: '兩邊的內容製作與帳號營運——英文市場的 Instagram 和 Google、華語市場的小紅書和微信——用你的預算撐得起的發布節奏。',
+        },
+        {
+          title: '用同一種語言報告：成果',
+          body: '每月跨市場報告——觸及、收藏、詢問、以及每筆詢問來自哪個受眾——讓你看見每塊錢在市場的哪一半做工。',
+        },
+      ],
+      faq: [
+        {
+          q: '為什麼翻譯內容對華人市場不夠？',
+          a: '因為不同的不只是語言，是平台、格式和信任機制。大溫的華語客人靠小紅書筆記、微信群推薦和社區口碑做決定——這些渠道上，翻譯過的 Instagram 文案永遠不會出現。在地化行銷是每個平台的原生策略；翻譯只是最後一步。',
+        },
+        {
+          q: '你們實際支援哪些語言和平台？',
+          a: '國語和粵語、繁體與簡體書寫、加上英文——涵蓋小紅書、微信、Instagram、TikTok、Google 與 AI 搜尋。我們是雙語團隊，不是「有配合譯者」的公司。',
+        },
+        {
+          q: '我的生意不是華人開的，這對我有用嗎？',
+          a: '有——最大的贏面常常來自進入這個市場的非華人生意：餐飲、診所、美業、地產、零售，華語客人本來就在消費這些品類，只是買的是「用他們的語言出現」的同行。只要你的產品服務得到這群人，這個渠道落差就是你的機會。',
+        },
+      ],
+    },
+  },
 ];
