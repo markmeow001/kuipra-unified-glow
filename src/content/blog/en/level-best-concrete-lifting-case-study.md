@@ -48,6 +48,18 @@ The operating system is deliberately simple, because trades businesses don't hav
 
 The positioning outcome we're building toward is specific: when a homeowner — English- or Chinese-speaking — starts researching a sunken slab in Metro Vancouver, Level Best should be the name that keeps showing up with honest, expert answers. Trust accumulated before the first phone call.
 
+## The first month, in numbers
+
+The July foundation sprint, from our monthly report to the client:
+
+- **Structured data: 0 → 5 Google-verified schema items.** The site's paid SEO plugin had its structured-data engine switched off — AI engines literally could not read who the business was. Now they can.
+- **24 / 24 service areas fully mapped**, each city page carrying its own coordinates, hours and service radius — including four pages (Richmond head office among them) whose business data had been silently wiped in an earlier rebuild.
+- **62 articles organized into 5 topic categories**, with 11 groups of overlapping posts consolidated into 8 authority articles and 53 redirects — years of content that had been competing with itself now concentrates instead of splitting.
+- **12 of 24 city shortcut links repaired** — half of the site's city links had been sending visitors to the homepage instead of the right page.
+- **First 2 real project stories live**, the Surrey walkway among them, with a repeatable pipeline behind them so every future job can become one.
+
+None of these are vanity metrics — they're the readable-to-AI, organized, provable foundation that rankings and AI citations get built on. The measurement layer comes next; the foundation no longer moves.
+
 ## What a trades business can steal from this
 
 1. **Your process is your portfolio.** If your work is technical, showing it beats describing it — the mess and the machines are the authenticity.
