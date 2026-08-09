@@ -325,8 +325,7 @@
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0 48px;
-    height: 72px;
+    padding: 20px 48px;
     background: rgba(247,245,240,0.92);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--rule);
@@ -1500,7 +1499,7 @@
     <a href="#services" data-en="Services" data-zh="服務">Services</a>
     <a href="#about" data-en="About" data-zh="關於">About</a>
     <a href="#projects" data-en="Work" data-zh="案例">Work</a>
-    <a href="#team" data-en="Team" data-zh="我們的團隊">Team</a>
+    <a href="#team" data-en="Team" data-zh="團隊">Team</a>
     <a href="/blog/" data-zh-href="/zh/blog/" data-en-href="/blog/" data-en="Journal" data-zh="專欄">Journal</a>
     <button class="lang-toggle-desktop" onclick="toggleLang(this)" style="font-family:'DM Mono',monospace;font-size:14px;letter-spacing:0.08em;color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:0;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">中文</button>
     <a href="#" onclick="openModal();return false;" class="nav-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
@@ -1517,7 +1516,7 @@
   <a href="#services" onclick="closeMenu()" data-en="Services" data-zh="服務">Services</a>
   <a href="#about" onclick="closeMenu()" data-en="About" data-zh="關於">About</a>
   <a href="#projects" onclick="closeMenu()" data-en="Work" data-zh="案例">Work</a>
-  <a href="#team" onclick="closeMenu()" data-en="Team" data-zh="我們的團隊">Team</a>
+  <a href="#team" onclick="closeMenu()" data-en="Team" data-zh="團隊">Team</a>
   <a href="/blog/" data-zh-href="/zh/blog/" data-en-href="/blog/" data-en="Journal" data-zh="專欄">Journal</a>
   <a href="#" onclick="openModal();return false;" class="nav-mobile-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
 </div>
@@ -1819,7 +1818,7 @@
         <li><a href="#services" data-en="Services" data-zh="服務">Services</a></li>
         <li><a href="#about" data-en="About" data-zh="關於">About</a></li>
         <li><a href="#projects" data-en="Work" data-zh="案例">Work</a></li>
-        <li><a href="#team" data-en="Team" data-zh="我們的團隊">Team</a></li>
+        <li><a href="#team" data-en="Team" data-zh="團隊">Team</a></li>
         <li><a href="/blog/" data-zh-href="/zh/blog/" data-en-href="/blog/" data-en="Journal" data-zh="專欄">Journal</a></li>
       </ul>
     </div>
@@ -1916,7 +1915,7 @@
 
     // Update lang toggle buttons
     document.querySelectorAll('.nav-lang-toggle, .lang-toggle-desktop').forEach(btn => {
-      btn.textContent = lang === 'zh' ? 'ENG' : '中文';
+      btn.textContent = lang === 'zh' ? 'EN' : '中文';
     });
 
     // Update html lang attribute
