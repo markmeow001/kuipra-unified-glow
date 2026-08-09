@@ -51,10 +51,13 @@ const orgLd = {
   sameAs: ['https://www.instagram.com/kuipra_communications/'],
 };
 
+const homeBase = lang === 'zh' ? '/?lang=zh' : '/';
+
 const t = {
   services: lang === 'zh' ? '服務' : 'Services',
   about: lang === 'zh' ? '關於' : 'About',
   work: lang === 'zh' ? '案例' : 'Work',
+  team: lang === 'zh' ? '團隊' : 'Team',
   journal: lang === 'zh' ? '專欄' : 'Journal',
   contact: lang === 'zh' ? '聯繫我們' : 'Get in touch',
   langLabel: lang === 'zh' ? 'EN' : '中文',
@@ -129,8 +132,9 @@ const t = {
         <a href={servicesHome} class={active === 'services' ? 'nav-active' : ''}
           >{t.services}</a
         >
-        <a href="/#about">{t.about}</a>
-        <a href="/#projects">{t.work}</a>
+        <a href={`${homeBase}#about`}>{t.about}</a>
+        <a href={`${homeBase}#projects`}>{t.work}</a>
+        <a href={`${homeBase}#team`}>{t.team}</a>
         <a href={blogHome} class={active === 'journal' ? 'nav-active' : ''}
           >{t.journal}</a
         >

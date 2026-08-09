@@ -648,7 +648,9 @@
   .team-photo {
     display: block;
     width: 100%;
-    height: 320px;
+    max-width: 340px;
+    height: auto;
+    aspect-ratio: 318 / 350;
     object-fit: cover;
     object-position: top;
     border-radius: 2px;
@@ -1080,7 +1082,7 @@
     }
     .team-card:nth-child(2n) { border-right: none; }
     .team-card:nth-child(n+3) { border-bottom: none; }
-    .team-photo { height: 320px; }
+    .team-photo { height: auto; }
     .team-name { font-size: 16px; }
     .team-role { font-size: 12px; }
     .team-bio-preview,
@@ -1127,7 +1129,7 @@
     .team-grid { grid-template-columns: 1fr; }
     .team-card:nth-child(n) { border-right: none; }
     .team-card:last-child { border-bottom: none; }
-    .team-photo { height: 320px; }
+    .team-photo { height: auto; }
     .footer-top { grid-template-columns: 1fr 1fr; }
     .footer-top > div:first-child { grid-column: 1 / -1; }
   }
@@ -1271,7 +1273,7 @@
     }
     .team-card:nth-child(2n) { border-right: none; }
     .team-card:nth-child(n+3) { border-top: none; }
-    .team-photo { height: 320px; }
+    .team-photo { height: auto; }
     .team-name { font-size: 16px; }
     .team-role { font-size: 12px; }
     .team-bio-preview { font-size: 13px; }
@@ -1313,7 +1315,7 @@
     .stat-item:last-child { grid-column: 1 / -1; padding-top: 16px; border-top: 1px solid var(--rule); }
     .team-grid { grid-template-columns: 1fr; }
     .team-card:nth-child(2n) { border-right: 1px solid var(--rule-light); }
-    .team-photo { height: 320px; }
+    .team-photo { height: auto; }
     .project-img-card { }
   }
 
@@ -1497,7 +1499,7 @@
     <a href="#about" data-en="About" data-zh="關於">About</a>
     <a href="#projects" data-en="Work" data-zh="案例">Work</a>
     <a href="#team" data-en="Team" data-zh="我們的團隊">Team</a>
-    <a href="/blog/" data-en="Journal" data-zh="專欄">Journal</a>
+    <a href="/blog/" data-zh-href="/zh/blog/" data-en-href="/blog/" data-en="Journal" data-zh="專欄">Journal</a>
     <button class="lang-toggle-desktop" onclick="toggleLang(this)" style="font-family:'DM Mono',monospace;font-size:13px;letter-spacing:0.08em;color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:0;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">中文</button>
     <a href="#" onclick="openModal();return false;" class="nav-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
   </div>
@@ -1514,7 +1516,7 @@
   <a href="#about" onclick="closeMenu()" data-en="About" data-zh="關於">About</a>
   <a href="#projects" onclick="closeMenu()" data-en="Work" data-zh="案例">Work</a>
   <a href="#team" onclick="closeMenu()" data-en="Team" data-zh="我們的團隊">Team</a>
-  <a href="/blog/" data-en="Journal" data-zh="專欄">Journal</a>
+  <a href="/blog/" data-zh-href="/zh/blog/" data-en-href="/blog/" data-en="Journal" data-zh="專欄">Journal</a>
   <a href="#" onclick="openModal();return false;" class="nav-mobile-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
 </div>
 
@@ -1579,7 +1581,7 @@
       <div class="service-content">
         <h3 class="service-title" data-en="Social Media Management" data-zh="社群經營管理">Social Media Management</h3>
         <p class="service-desc" data-en="Strategic content and community management that builds consistent, impactful brand presence across all platforms." data-zh="全面的社群媒體策略與內容管理，涵蓋所有平台。">Strategic content and community management that builds consistent, impactful brand presence across all platforms.</p>
-        <a href="/services/social-media-management/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
+        <a href="/services/social-media-management/" data-zh-href="/zh/services/social-media-management/" data-en-href="/services/social-media-management/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
       </div>
     </div>
     <div class="service-item reveal">
@@ -1587,7 +1589,7 @@
       <div class="service-content">
         <h3 class="service-title" data-en="Content Creation" data-zh="傳達內容創作">Content Creation</h3>
         <p class="service-desc" data-en="Original written, visual, and video content — blending creativity with strategic intent to connect your brand with its audience." data-zh="高品質內容產出，包含文案撰寫、設計及多媒體製作。">Original written, visual, and video content — blending creativity with strategic intent to connect your brand with its audience.</p>
-        <a href="/services/content-creation/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
+        <a href="/services/content-creation/" data-zh-href="/zh/services/content-creation/" data-en-href="/services/content-creation/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
       </div>
     </div>
     <div class="service-item reveal">
@@ -1595,7 +1597,7 @@
       <div class="service-content">
         <h3 class="service-title" data-en="Brand Strategy & Personal Branding" data-zh="品牌策略及個人品牌塑造">Brand Strategy & Personal Branding</h3>
         <p class="service-desc" data-en="Define your identity, refine your message, and stand out with clarity and authority in a crowded digital landscape." data-zh="策略性品牌定位與企業高階主管個人品牌建立。">Define your identity, refine your message, and stand out with clarity and authority in a crowded digital landscape.</p>
-        <a href="/services/brand-strategy/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
+        <a href="/services/brand-strategy/" data-zh-href="/zh/services/brand-strategy/" data-en-href="/services/brand-strategy/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
       </div>
     </div>
     <div class="service-item reveal">
@@ -1603,7 +1605,7 @@
       <div class="service-content">
         <h3 class="service-title" data-en="Local SEO & AI Search (GEO)" data-zh="在地 SEO 與 AI 搜尋優化（GEO）">Local SEO & AI Search (GEO)</h3>
         <p class="service-desc" data-en="Win the Google map pack — and get recommended when customers ask ChatGPT. Local search and generative engine optimization, in both languages." data-zh="贏下 Google 地圖前三名，也讓客人問 ChatGPT 時被推薦。中英雙語的在地搜尋與生成式引擎優化。">Win the Google map pack — and get recommended when customers ask ChatGPT. Local search and generative engine optimization, in both languages.</p>
-        <a href="/services/local-seo-geo/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
+        <a href="/services/local-seo-geo/" data-zh-href="/zh/services/local-seo-geo/" data-en-href="/services/local-seo-geo/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
       </div>
     </div>
     <div class="service-item reveal">
@@ -1611,7 +1613,7 @@
       <div class="service-content">
         <h3 class="service-title" data-en="Web Design & Development" data-zh="網頁設計與開發">Web Design & Development</h3>
         <p class="service-desc" data-en="Elegant, high-performance websites that reflect your brand identity — designed to convert visitors into clients and built to grow with your business." data-zh="打造反映品牌個性的高質感網站，兼顧美感與轉換效率，為您的業務持續創造價值。">Elegant, high-performance websites that reflect your brand identity — designed to convert visitors into clients and built to grow with your business.</p>
-        <a href="/services/web-design/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
+        <a href="/services/web-design/" data-zh-href="/zh/services/web-design/" data-en-href="/services/web-design/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
       </div>
     </div>
     <div class="service-item reveal">
@@ -1619,7 +1621,7 @@
       <div class="service-content">
         <h3 class="service-title" data-en="Bilingual & Chinese-Market Marketing" data-zh="雙語與華人市場行銷">Bilingual & Chinese-Market Marketing</h3>
         <p class="service-desc" data-en="Reach Metro Vancouver's 500,000+ Chinese-speaking customers natively — Xiaohongshu, WeChat and bilingual campaigns under one brand voice." data-zh="用母語觸及大溫 50 萬華語客群——小紅書、微信與中英雙語行銷，同一個品牌聲音。">Reach Metro Vancouver's 500,000+ Chinese-speaking customers natively — Xiaohongshu, WeChat and bilingual campaigns under one brand voice.</p>
-        <a href="/services/chinese-marketing/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
+        <a href="/services/chinese-marketing/" data-zh-href="/zh/services/chinese-marketing/" data-en-href="/services/chinese-marketing/" class="service-more" data-en="Learn more →" data-zh="了解更多 →" style="display:inline-block;margin-top:14px;font-family:'DM Mono',monospace;font-size:13px;color:var(--orange);text-decoration:none;">Learn more →</a>
       </div>
     </div>
   </div>
@@ -1685,7 +1687,7 @@
 <section id="projects">
   <div class="projects-header reveal">
     <h2 class="projects-headline" data-en="Selected Work" data-zh="成功案例">Selected Work</h2>
-    <div class="section-label" style="margin-bottom:0;">Three case studies</div>
+    <div class="section-label" style="margin-bottom:0;" data-en="Client case study" data-zh="客戶案例">Client case study</div>
   </div>
   <!-- Project 1: Level Best -->
   <div class="project-img-card reveal" style="width:100%;max-width:100%;box-sizing:border-box;">
@@ -1699,7 +1701,7 @@
           <span class="tag">RedNote</span>
         </div>
         <p class="project-body"><span data-en="Translated complex engineering processes into compelling digital narratives — establishing deep professional trust while expanding brand visibility across platforms." data-zh="將複雜的技術流程轉譯為清晰、引人入勝的敘事，建立深厚的專業信任並拓展品牌能見度。">Translated complex engineering processes into compelling digital narratives — establishing deep professional trust while expanding brand visibility across platforms.</span></p>
-        <span class="project-link">View on RedNote ↗</span>
+        <a class="project-link" href="/blog/level-best-concrete-lifting-case-study/" data-zh-href="/zh/blog/level-best-concrete-lifting-case-study/" data-en-href="/blog/level-best-concrete-lifting-case-study/" data-en="Read the case study →" data-zh="閱讀完整案例 →" style="text-decoration:none;">Read the case study →</a>
       </div>
     </div>
   </div>
@@ -1816,7 +1818,7 @@
         <li><a href="#about" data-en="About" data-zh="關於">About</a></li>
         <li><a href="#projects" data-en="Work" data-zh="案例">Work</a></li>
         <li><a href="#team" data-en="Team" data-zh="我們的團隊">Team</a></li>
-        <li><a href="/blog/" data-en="Journal" data-zh="專欄">Journal</a></li>
+        <li><a href="/blog/" data-zh-href="/zh/blog/" data-en-href="/blog/" data-en="Journal" data-zh="專欄">Journal</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -1883,8 +1885,22 @@
   // ── Language toggle ────────────────────────────────────────────
   let currentLang = 'en';
 
+  (function () {
+    let want = null;
+    try { want = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+    if (!want) { try { want = localStorage.getItem('kuipraLang'); } catch (e) {} }
+    if (want === 'zh') document.addEventListener('DOMContentLoaded', () => setLang('zh'));
+  })();
+
   function setLang(lang) {
     currentLang = lang;
+    try { localStorage.setItem('kuipraLang', lang); } catch (e) {}
+
+    // Swap language-specific link targets
+    document.querySelectorAll('[data-zh-href]').forEach(el => {
+      const href = lang === 'zh' ? el.getAttribute('data-zh-href') : el.getAttribute('data-en-href');
+      if (href) el.setAttribute('href', href);
+    });
 
     // Update all data-en/data-zh elements
     document.querySelectorAll('[data-en]').forEach(el => {
