@@ -12,25 +12,35 @@ jobs:
   trigger-rebuild:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out IndexNow automation
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Capture currently published pages
+        run: |
+          if ! curl -fsS \
+            "https://www.kuipra.ca/indexnow-manifest.json?before=${GITHUB_RUN_ID}" \
+            -o "$RUNNER_TEMP/indexnow-before.json"; then
+            printf '{"pages":{}}\n' > "$RUNNER_TEMP/indexnow-before.json"
+          fi
+
       - name: Trigger Vercel production rebuild
         run: curl -sf -X POST "$DEPLOY_HOOK" > /dev/null
         env:
           DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
-      - name: Wait for deploy to propagate
-        run: sleep 120
-      - name: Ping IndexNow with current sitemap URLs
+
+      - name: Wait for the scheduled deploy
         run: |
-          python3 - <<'EOF'
-          import json, re, urllib.request
-          urls = re.findall(r'<loc>(.*?)</loc>', urllib.request.urlopen(
-              'https://www.kuipra.ca/sitemap-0.xml').read().decode())
-          body = json.dumps({
-              "host": "www.kuipra.ca",
-              "key": "024ff10d9fc2f015db0a18a17089de45",
-              "keyLocation": "https://www.kuipra.ca/024ff10d9fc2f015db0a18a17089de45.txt",
-              "urlList": urls,
-          }).encode()
-          req = urllib.request.Request("https://api.indexnow.org/indexnow",
-              data=body, headers={"Content-Type": "application/json; charset=utf-8"})
-          print("IndexNow:", urllib.request.urlopen(req, timeout=30).status)
-          EOF
+          node scripts/wait-for-indexnow-manifest.mjs \
+            --after "$RUNNER_TEMP/indexnow-before.json" \
+            --output "$RUNNER_TEMP/indexnow-after.json"
+
+      - name: Notify IndexNow about newly published pages
+        run: |
+          node scripts/submit-indexnow.mjs \
+            --before "$RUNNER_TEMP/indexnow-before.json" \
+            --after "$RUNNER_TEMP/indexnow-after.json"

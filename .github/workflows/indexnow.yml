@@ -1,0 +1,67 @@
+name: IndexNow after production deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: false
+
+jobs:
+  submit-changed-urls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the production revision
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Build the previous production revision
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          cp scripts/generate-indexnow-manifest.mjs "$RUNNER_TEMP/generate-indexnow-manifest.mjs"
+          if [ -z "$BEFORE_SHA" ] || [ "$BEFORE_SHA" = "0000000000000000000000000000000000000000" ]; then
+            BEFORE_SHA="$(git rev-parse "$CURRENT_SHA^")"
+          fi
+          git checkout --detach "$BEFORE_SHA"
+          npm ci
+          npm run build
+          node "$RUNNER_TEMP/generate-indexnow-manifest.mjs" \
+            --dist dist \
+            --output "$RUNNER_TEMP/indexnow-before.json"
+
+      - name: Build the new production revision
+        env:
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          git checkout --detach "$CURRENT_SHA"
+          npm ci
+          npm run build
+
+      - name: Wait for the matching Vercel production deploy
+        env:
+          CURRENT_SHA: ${{ github.sha }}
+        run: |
+          node scripts/wait-for-indexnow-manifest.mjs \
+            --revision "$CURRENT_SHA" \
+            --output "$RUNNER_TEMP/indexnow-live.json"
+
+      - name: Notify IndexNow about changed canonical pages
+        run: |
+          node scripts/submit-indexnow.mjs \
+            --before "$RUNNER_TEMP/indexnow-before.json" \
+            --after "$RUNNER_TEMP/indexnow-live.json"
