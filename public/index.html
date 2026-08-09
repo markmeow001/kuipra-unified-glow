@@ -342,23 +342,25 @@
     width: auto;
     display: block;
   }
-  .nav-links { display: flex; align-items: center; gap: 36px; }
+  .nav-links { display: flex; align-items: center; gap: 32px; }
   .nav-links a {
-    font-size: 17px; font-weight: 400; letter-spacing: 0.03em;
+    font-size: 16px; font-weight: 400; letter-spacing: 0.02em;
     color: var(--ink-soft); text-decoration: none;
     transition: color 0.2s;
   }
-  .nav-links a:hover { color: var(--ink); }
+  .nav-links a:hover { color: var(--orange); }
   .nav-cta {
-    font-size: 16px; font-weight: 500;
-    letter-spacing: 0.07em; text-transform: uppercase;
-    color: var(--paper) !important;
-    background: var(--ink);
-    padding: 10px 24px; border-radius: 2px;
+    font-size: 16px; font-weight: 400;
+    letter-spacing: 0.02em;
+    border: 1px solid var(--ink);
+    color: var(--ink) !important;
+    background: none;
+    padding: 10px 22px; border-radius: 100px;
     text-decoration: none;
-    transition: background 0.2s !important;
+    text-transform: none;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
   }
-  .nav-cta:hover { background: var(--orange) !important; color: var(--paper) !important; }
+  .nav-cta:hover { background: var(--orange) !important; border-color: var(--orange); color: var(--paper) !important; }
 
   /* ── HERO ────────────────────────────────────── */
   #hero {
@@ -1500,7 +1502,7 @@
     <a href="#projects" data-en="Work" data-zh="案例">Work</a>
     <a href="#team" data-en="Team" data-zh="我們的團隊">Team</a>
     <a href="/blog/" data-zh-href="/zh/blog/" data-en-href="/blog/" data-en="Journal" data-zh="專欄">Journal</a>
-    <button class="lang-toggle-desktop" onclick="toggleLang(this)" style="font-family:'DM Mono',monospace;font-size:13px;letter-spacing:0.08em;color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:0;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">中文</button>
+    <button class="lang-toggle-desktop" onclick="toggleLang(this)" style="font-family:'DM Mono',monospace;font-size:14px;letter-spacing:0.08em;color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:0;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">中文</button>
     <a href="#" onclick="openModal();return false;" class="nav-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
   </div>
   <div class="nav-mobile-right">
