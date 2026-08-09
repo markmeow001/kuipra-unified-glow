@@ -1,6 +1,6 @@
 ---
 title: 'Case Study: Level Best Concrete Lifting — Making Technical Work Impossible to Ignore'
-description: 'How we turned a concrete-lifting company''s complex, unglamorous craft into a content system that builds professional trust — including a RedNote presence its competitors don''t have.'
+description: 'Local SEO and GEO for a concrete-lifting company: city-by-city job stories that rank, structured answers AI can cite, and a RedNote presence competitors don''t have.'
 pubDate: 2026-08-08
 lang: en
 translationKey: level-best-case-study
@@ -34,16 +34,17 @@ Level Best's craft was strong; its visibility wasn't. The expertise lived in the
 
 ## The approach: show the process, win the trust
 
-Our strategy was built on one conviction: **for technical trades, the process is the content.** Nothing sells a concrete-lifting company like watching concrete get lifted.
+Our strategy was built on one conviction: **for technical trades, the process is the content.** Nothing sells a concrete-lifting company like watching concrete get lifted. The engagement runs on three engines:
 
-- **Document real jobs, not staged shoots.** Crews at work, the level and the laser, the polyurethane injection, the slab coming back to grade — the photography in this article's hero is that material. Real sites read as proof; stock reads as decoration.
-- **Translate engineering into homeowner language.** Every piece answers the questions people actually type: why slabs sink, lifting versus replacement, what the small drilled holes are, how long it takes. The complexity becomes clarity, and clarity becomes credibility.
-- **Build the bilingual layer competitors skip.** We took the same process stories to RedNote in Chinese — where Metro Vancouver homeowners genuinely research home services, and where the concrete category was close to empty. First-mover presence in an uncontested channel.
-- **One narrative across platforms.** Same brand voice, same visual standard, adapted per platform rather than copy-pasted — the [translated-is-not-localized principle](/blog/marketing-to-vancouver-chinese-community/) applied to a trades business.
+**1. Local SEO: every job becomes a city-ranked asset.** We document real projects as detailed job stories on Level Best's own site — the sunken Surrey walkway with its 4-inch drop, the injection process, the levelled result — each one targeting the exact search a homeowner in that city makes: "sunken concrete repair in Surrey." Real measurements, real photos, real streets. One job serviced once; one page that keeps answering that city's searches for years. It's the [local SEO playbook](/blog/local-seo-guide-vancouver-small-business/) executed at the job level.
+
+**2. GEO: structured answers AI can cite.** The same job stories are built to be quotable — clear problem/method/outcome structure, plain-language FAQs, consistent business facts — so when a homeowner asks an AI assistant about sunken concrete in Metro Vancouver, Level Best is the kind of source [assistants can actually cite](/blog/how-ai-assistants-recommend-local-businesses/). This is our [Local SEO & GEO service](/services/local-seo-geo/) running on a real trades business.
+
+**3. RedNote: the bilingual layer competitors skip.** We take the same process stories to RedNote in Chinese — where a large share of Metro Vancouver homeowners genuinely research home services, and where the concrete category was close to empty. First-mover presence in an uncontested channel, run natively per the [translated-is-not-localized principle](/blog/marketing-to-vancouver-chinese-community/).
 
 ## What this looks like in practice
 
-The operating system is deliberately simple, because trades businesses don't have spare hours: a steady rhythm of job-site content captured without disrupting the work, edited and published by our team in both languages, with each piece doing double duty — social proof today, searchable answer forever. It's the same capture-habit logic from our [restaurant visual guide](/blog/restaurant-food-visual-content-guide/), pointed at concrete instead of food.
+The operating system is deliberately simple, because trades businesses don't have spare hours: each completed job flows into the same pipeline — site photos captured without disrupting the crew, written up by our team as a city-targeted job story in homeowner language, structured for search and AI citation, then adapted into Chinese content for RedNote. Every project does triple duty: proof for this customer, a ranking page for that city, and a note in the channel where Chinese-speaking homeowners look.
 
 The positioning outcome we're building toward is specific: when a homeowner — English- or Chinese-speaking — starts researching a sunken slab in Metro Vancouver, Level Best should be the name that keeps showing up with honest, expert answers. Trust accumulated before the first phone call.
 
