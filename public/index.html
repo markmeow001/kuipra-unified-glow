@@ -348,6 +348,11 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--orange); }
+  .nav-links a.nav-active {
+    color: var(--ink);
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 2px;
+  }
   .nav-cta {
     font-size: 16px; font-weight: 400;
     letter-spacing: 0.02em;
@@ -1885,6 +1890,21 @@
 
   // ── Language toggle ────────────────────────────────────────────
   let currentLang = 'en';
+
+  // Scrollspy: highlight the nav item for the section in view
+  document.addEventListener('DOMContentLoaded', () => {
+    const spyLinks = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)');
+    const setActiveNav = (id) => {
+      spyLinks.forEach((a) => a.classList.toggle('nav-active', a.getAttribute('href') === '#' + id));
+    };
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) setActiveNav(e.target.id); });
+    }, { rootMargin: '-25% 0px -65% 0px' });
+    ['services', 'about', 'projects', 'team'].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) spy.observe(el);
+    });
+  });
 
   (function () {
     let want = null;
