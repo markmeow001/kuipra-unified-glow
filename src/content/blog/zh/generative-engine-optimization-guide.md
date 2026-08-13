@@ -2,6 +2,7 @@
 title: 'GEO 完全指南：讓 ChatGPT、Claude 和 AI 搜尋主動推薦你的品牌'
 description: 'AI 助理正在成為搜尋的新首頁。生成式引擎優化（GEO）就是讓品牌被 AI 引用的方法——這是一份可以直接照做的實戰手冊。'
 pubDate: 2026-07-27
+updatedDate: 2026-08-12
 lang: zh
 translationKey: geo-guide
 category: ai-marketing
@@ -13,6 +14,7 @@ keywords:
   - ChatGPT 推薦品牌
 heroImage: /blog-images/geo-guide.jpg
 heroImageAlt: 'AI 回答搜尋問題並引用來源的抽象視覺'
+quickAnswer: 'GEO（生成式引擎優化）就是讓你的品牌成為 AI 助理給出的答案：內容直接回答真實問題、論點附上有來源的數據和專家引語、結構化資料與 FAQ 標記到位，並讓你的商家資訊在 AI 爬蟲看得到的每個地方保持一致。傳統 SEO 依然是地基——AI 引擎只引用它找得到、也信得過的來源。'
 faq:
   - q: '什麼是生成式引擎優化（GEO）？'
     a: 'GEO 是優化你的內容與網路足跡，讓 AI 助理（ChatGPT、Claude、Gemini、Perplexity）在用戶問到相關問題時引用或推薦你的品牌。它和 SEO 有重疊，但更看重清晰的事實句、結構化資料與權威來源，而不只是關鍵字佈局。'

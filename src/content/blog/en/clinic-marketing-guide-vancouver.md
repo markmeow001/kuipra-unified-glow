@@ -13,6 +13,7 @@ keywords:
   - healthcare advertising rules BC
 heroImage: /blog-images/clinic-marketing-guide-vancouver.jpg
 heroImageAlt: 'Calm modern clinic reception with warm wood tones and soft natural light'
+quickAnswer: 'Clinics in BC grow fastest by dominating Google Maps, publishing patient-education content, and building bilingual trust — not by running testimonial ads, which are largely prohibited for regulated health professionals in Canada. Get the compliance basics right first, then invest in the channels patients actually use to choose a provider.'
 faq:
   - q: 'What marketing rules apply to clinics in BC?'
     a: 'Regulated health professionals in BC are governed by their college''s advertising standards — and several colleges restrict or prohibit patient testimonials, comparative claims ("best dentist in Vancouver"), and unverifiable outcome promises. The rules differ by profession, so before running any campaign, check your own college''s current marketing standards. The safe pattern across professions: educational, factual, verifiable.'

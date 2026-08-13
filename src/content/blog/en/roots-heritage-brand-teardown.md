@@ -14,6 +14,7 @@ keywords:
   - marketing teardown
 heroImage: /blog-images/roots-heritage-brand-teardown.jpg
 heroImageAlt: 'Cozy lakeside wooden cabin porch with knit sweaters and warm autumn light'
+quickAnswer: 'Roots turned a national identity into a product system: a beaver logo, cabin-and-campfire storytelling, and salt-and-pepper sweats that make ''Canadian-ness'' wearable. It''s a bigger phenomenon in Taiwan than at home because heritage branding travels — abroad, the myth is the product. Sell the story your customers want to belong to, not just the goods.'
 faq:
   - q: 'Why is Roots so popular in Taiwan?'
     a: 'Roots entered Taiwan in the 1990s through a local partnership and now counts the market among its largest outside Canada, with a store network that rivals its home country''s. In Taiwan the brand sits noticeably more premium than at home: it sells an idealized Canada — cabins, lakes, clean air, campus comfort — as an aspirational lifestyle, and the local team localizes fits, seasonal drops and gifting occasions while keeping the Canadian symbols untouched.'

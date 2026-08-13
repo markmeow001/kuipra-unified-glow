@@ -13,6 +13,7 @@ keywords:
   - ad campaign measurement
 heroImage: /blog-images/landing-page-conversion-tracking-guide.jpg
 heroImageAlt: 'Laptop showing an analytics funnel chart beside a notebook with conversion sketches'
+quickAnswer: 'Most ad budgets die between the click and the sale: traffic lands on a generic homepage and nobody measures what happens next. Send every campaign to a dedicated landing page with one offer and one action, wire up GA4 plus the ad platform''s conversion tracking, and you''ll finally know your true cost per lead — usually within a week of data.'
 faq:
   - q: 'Do I need a separate landing page for ads, or can I send clicks to my homepage?'
     a: 'For any campaign with a specific offer or search intent, a dedicated landing page nearly always outperforms the homepage. A homepage serves every possible visitor; a landing page continues one specific conversation — same promise as the ad, one action, no navigation to wander off through. Message match is also a Google Ads quality factor: mismatched pages literally raise your cost per click.'

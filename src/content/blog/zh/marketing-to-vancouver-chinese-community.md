@@ -2,6 +2,7 @@
 title: '大溫華人市場行銷實戰指南：品牌如何真正走進華人社群'
 description: '大溫地區約每五人就有一位華裔，列治文更接近一半。拆解平台選擇、簡繁體策略，以及品牌最常犯的錯。'
 pubDate: 2026-07-24
+updatedDate: 2026-08-12
 lang: zh
 translationKey: vancouver-chinese-marketing
 category: local-marketing
@@ -13,6 +14,7 @@ keywords:
   - 列治文行銷
 heroImage: /blog-images/vancouver-chinese-marketing.jpg
 heroImageAlt: '列治文熱鬧的商店街，雙語店面招牌林立'
+quickAnswer: '大溫約每五人就有一位華裔，列治文更接近一半；要觸及他們，就要走進他們已經在用的渠道——微信、小紅書、華語媒體，而且簡繁體的選擇有講究。品牌最常犯的錯，是把英文行銷活動直接翻譯，而不是做一個文化上原生的版本。'
 faq:
   - q: '大溫華人實際上在用哪些社群平台？'
     a: '看族群。新移民與留學生活在微信和小紅書上；資深移民通常微信混用 Instagram、Facebook；在加拿大出生的華裔（CBC）則和本地受眾用一樣的平台。有效的 campaign 通常至少要同時經營其中兩個生態系。'

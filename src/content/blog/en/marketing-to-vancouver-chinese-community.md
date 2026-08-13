@@ -2,6 +2,7 @@
 title: 'Marketing to Metro Vancouver''s Chinese Community: A Practical Guide'
 description: 'Roughly one in five Metro Vancouver residents has Chinese heritage. Here is how brands reach them well — platforms, language, and the mistakes to avoid.'
 pubDate: 2026-07-24
+updatedDate: 2026-08-12
 lang: en
 translationKey: vancouver-chinese-marketing
 category: local-marketing
@@ -13,6 +14,7 @@ keywords:
   - Richmond BC marketing
 heroImage: /blog-images/vancouver-chinese-marketing.jpg
 heroImageAlt: 'A bustling shopping street in Richmond BC with bilingual storefront signs'
+quickAnswer: 'Roughly one in five Metro Vancouver residents has Chinese heritage — closer to half in Richmond — and reaching them means going where they already are: WeChat, Xiaohongshu and Chinese-language media, in the right script (traditional vs. simplified matters). The biggest mistake brands make is translating an English campaign instead of building a culturally native one.'
 faq:
   - q: 'Which social platforms do Chinese Canadians in Vancouver actually use?'
     a: 'It depends on the segment. Recent immigrants and international students live on WeChat and Xiaohongshu (RED); established immigrants typically mix WeChat with Instagram and Facebook; Canadian-born Chinese are mostly on the same platforms as other local audiences. Effective campaigns usually need at least two of these ecosystems.'

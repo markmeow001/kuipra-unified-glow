@@ -14,6 +14,7 @@ keywords:
   - email list vs social media
 heroImage: /blog-images/lush-social-media-exit-teardown.jpg
 heroImageAlt: 'Colourful handmade bath bombs stacked in a bright cosmetics shop display'
+quickAnswer: 'Lush quit its main social platforms in 2021 and kept selling — because two decades of brand equity, a strong email list, distinctive products and physical stores did the work Instagram was credited with. The lesson for local businesses isn''t ''quit social''; it''s that owned channels — your list, your site, your regulars — are the asset, and rented reach should feed them.'
 faq:
   - q: 'Why did Lush quit social media?'
     a: 'In November 2021 Lush deactivated its Instagram, Facebook, TikTok and Snapchat accounts globally, citing evidence that the platforms'' design harms the wellbeing of young users — the exact customers Lush serves. The company framed staying on those platforms as a contradiction of its self-care mission, and publicly accepted an estimated hit of millions in annual sales to resolve it.'

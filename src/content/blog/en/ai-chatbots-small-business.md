@@ -14,6 +14,7 @@ keywords:
   - FAQ page SEO
 heroImage: /blog-images/ai-chatbots-small-business.jpg
 heroImageAlt: 'A small business owner weighing an AI chat widget on a laptop against a simple FAQ page'
+quickAnswer: 'Install a chatbot only if you get a high volume of repetitive questions and a meaningful share arrive after hours — that''s where a bot genuinely pays for itself. If enquiries are few or mostly need judgment, a well-built FAQ page and inbox reply templates solve the same problem for free, without the risk of a bot inventing policies you never had.'
 faq:
   - q: 'Is an AI chatbot worth it for a small business?'
     a: 'It depends on three numbers: how many repetitive questions you get, what share arrive after hours, and what answering them costs in staff time versus the cost of setting up and monitoring a bot. High volume of routine questions plus significant after-hours enquiries is a genuine fit. Low volume or mostly complex questions means a good FAQ page will serve you better for free.'

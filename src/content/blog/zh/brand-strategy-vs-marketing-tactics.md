@@ -2,6 +2,7 @@
 title: '品牌策略 vs. 行銷戰術：為什麼成長中的企業總是把兩者搞混'
 description: '發更多貼文不等於策略。教你分辨品牌策略與行銷戰術的差別，以及為什麼順序錯了，預算就白燒。'
 pubDate: 2026-07-20
+updatedDate: 2026-08-12
 lang: zh
 translationKey: brand-strategy-vs-tactics
 category: brand-strategy
@@ -12,6 +13,7 @@ keywords:
   - 中小企業行銷
 heroImage: /blog-images/brand-strategy-vs-tactics.jpg
 heroImageAlt: '策略師在紙上繪製品牌定位圖'
+quickAnswer: '品牌策略是一組決策：你服務誰、代表什麼、憑什麼贏；行銷戰術是表達這些決策的活動——貼文、廣告、促銷。成長中的企業卡住，多半是沒有策略地狂做戰術：產出更多，方向沒有。先把策略定下來，再讓它決定哪些戰術值得花錢。'
 faq:
   - q: '品牌策略和行銷戰術到底差在哪？'
     a: '品牌策略回答「你是誰、服務誰、憑什麼贏」——也就是定位、受眾與核心訊息。戰術則是表達這套策略的具體活動（貼文、廣告、活動）。策略決定說什麼，戰術決定在哪裡、用什麼形式說。'

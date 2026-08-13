@@ -13,6 +13,7 @@ keywords:
   - delivery app commissions
 heroImage: /blog-images/restaurant-marketing-guide-vancouver.jpg
 heroImageAlt: 'Warmly lit restaurant table with beautifully plated dishes being photographed on a phone'
+quickAnswer: 'For a Vancouver restaurant the order of operations matters more than any single tactic: first make Google Maps and your review flow flawless, then get menu photos and short video working on social — including Xiaohongshu if you want Chinese-speaking diners — then fix your delivery-app economics, and only then spend on promotion. A regulars list you own beats another month of ads.'
 faq:
   - q: 'What is the most important marketing channel for a restaurant?'
     a: 'Google Maps, by a wide margin. When someone searches "ramen near me" or checks a restaurant name before booking, your Google Business Profile — its photos, rating, review count and recency — decides whether they come. Most restaurants should fix that foundation completely before spending a dollar on ads.'

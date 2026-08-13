@@ -13,6 +13,7 @@ keywords:
   - cafe Instagram strategy
 heroImage: /blog-images/cafe-marketing-guide-vancouver.jpg
 heroImageAlt: 'Cozy sunlit café corner with latte art on a wooden table and plants by the window'
+quickAnswer: 'Vancouver cafés and bubble tea shops win by engineering the check-in: an interior corner worth photographing, one signature drink people order by name, and a Google and Instagram presence that keeps every customer photo working for you. Discoverability compounds — each shared photo is unpaid distribution, so design the shop and menu to make sharing effortless.'
 faq:
   - q: 'How do cafés get discovered by new customers?'
     a: 'Three engines: Google Maps for "café near me" searches (profile quality and reviews decide this), social discovery where drink and interior photos travel — Instagram for the broad local audience, Xiaohongshu for Chinese-speaking customers who actively search it for café recommendations — and the check-in flywheel: a photogenic corner, a distinctive cup, a drink worth posting, so every customer''s photo recruits the next one.'

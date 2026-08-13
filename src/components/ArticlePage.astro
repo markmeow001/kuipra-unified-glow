@@ -118,9 +118,24 @@ const jsonLd = [articleLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
           {CATEGORIES[post.data.category][lang]}
         </span>
         <span>{formatDate(post.data.pubDate, lang)}</span>
+        {post.data.updatedDate && (
+          <span>
+            {lang === 'zh' ? '更新於 ' : 'Updated '}
+            {formatDate(post.data.updatedDate, lang)}
+          </span>
+        )}
         <span>Kuipra Communications</span>
       </p>
     </header>
+
+    {post.data.quickAnswer && (
+      <aside class="quick-answer">
+        <p class="journal-eyebrow">
+          {lang === 'zh' ? '快速答案' : 'The short answer'}
+        </p>
+        <p>{post.data.quickAnswer}</p>
+      </aside>
+    )}
 
     {post.data.heroImage && (
       <img
@@ -229,6 +244,17 @@ const jsonLd = [articleLd, breadcrumbLd, ...(faqLd ? [faqLd] : [])];
     font-size: 13px;
     color: var(--ink-faint);
     align-items: baseline;
+  }
+  .quick-answer {
+    margin-top: 36px;
+    border-left: 3px solid var(--orange);
+    padding: 6px 0 6px 24px;
+  }
+  .quick-answer p:last-child {
+    margin-top: 10px;
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.6;
   }
   .hero-img {
     width: 100%;

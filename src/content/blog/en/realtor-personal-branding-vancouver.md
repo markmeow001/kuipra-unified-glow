@@ -13,6 +13,7 @@ keywords:
   - real estate content marketing
 heroImage: /blog-images/realtor-personal-branding-vancouver.jpg
 heroImageAlt: 'Real estate agent photographing a bright Vancouver condo living room with city view'
+quickAnswer: 'In a market with 15,000 licensed agents, generic ''trusted advisor'' branding disappears. The realtors who win referrals pick a narrow niche — a neighbourhood, a property type, a community — publish consistent content that proves local knowledge, show up in the channels their audience actually uses (including Chinese platforms), and keep every claim compliant with BCFSA advertising rules.'
 faq:
   - q: 'Why do realtors need a personal brand instead of just ads?'
     a: 'Because real estate is a referral-and-trust business with a years-long purchase cycle. Ads rent attention for a week; a personal brand keeps you rememberable during the 2-5 years between someone meeting you and someone transacting. When most agents look identical, the question a brand answers is: why would a stranger — or a past client''s group chat — think of YOU first?'

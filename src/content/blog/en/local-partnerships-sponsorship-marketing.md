@@ -14,6 +14,7 @@ keywords:
   - local business collaboration
 heroImage: /blog-images/local-partnerships-sponsorship-marketing.jpg
 heroImageAlt: 'Two Vancouver small business owners shaking hands in front of their neighbouring storefronts'
+quickAnswer: 'Local partnerships work because they transfer trust: another business or community organization vouching for you reaches people ads can''t convince. Pick partners who share your customers but not your offer, structure the deal around what each side measurably contributes, and activate the sponsorship — a logo on a banner does nothing by itself.'
 faq:
   - q: 'Are local sponsorships worth it for a small business with a limited budget?'
     a: 'Often more than ads, because you are buying association rather than impressions. A few hundred dollars behind a youth team or community festival puts your name inside a group that already trusts each other — a context no ad placement can replicate. The catch is activation: a logo alone does little, so budget time to show up, not just money.'

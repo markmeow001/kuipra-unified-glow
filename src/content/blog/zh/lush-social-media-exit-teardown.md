@@ -14,6 +14,7 @@ keywords:
   - email 名單 vs 社群
 heroImage: /blog-images/lush-social-media-exit-teardown.jpg
 heroImageAlt: '明亮的美妝店陳列架上堆疊著色彩繽紛的手工汽泡彈'
+quickAnswer: 'Lush 在 2021 年退出主要社群平台，生意照做——因為二十年的品牌資產、強大的 email 名單、有辨識度的產品和實體店，做了原本被歸功給 Instagram 的事。給在地商家的教訓不是「退出社群」，而是自有渠道——你的名單、你的網站、你的熟客——才是資產，租來的流量應該回頭餵養它們。'
 faq:
   - q: 'Lush 為什麼退出社群媒體？'
     a: '2021 年 11 月，Lush 在全球停用 Instagram、Facebook、TikTok 和 Snapchat 帳號，理由是有證據顯示這些平台的設計會傷害年輕用戶的身心——而那正是 Lush 的核心客群。公司把「繼續留在平台上」視為與自家身心療癒使命的矛盾，並公開承擔每年估計數百萬的營收損失來解決這個矛盾。'

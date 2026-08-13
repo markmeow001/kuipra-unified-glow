@@ -13,6 +13,7 @@ keywords:
   - CanExport SMEs
 heroImage: /blog-images/canada-small-business-marketing-grants.jpg
 heroImageAlt: 'Canadian flag on a desk beside paperwork, a calculator and a laptop with application forms'
+quickAnswer: 'The famous federal digital-marketing grants — CDAP, Grow Your Business Online, Launch Online — are all closed. What''s genuinely still open to BC small businesses in 2026: the B.C. Employer Training Grant, which can cover marketing-skills training, and CanExport for businesses selling outside Canada, plus some sector and municipal programs. Don''t build a marketing plan around money that no longer exists.'
 faq:
   - q: 'Is there still a government grant for building a website or e-commerce store?'
     a: 'As of late 2026, no — the programs that funded this directly (CDAP''s Grow Your Business Online micro-grant of $2,400, the $15,000 Boost Your Business Technology stream, and BC''s Launch Online grant) have all closed to new applicants, and no federal successor has been announced. Treat any page still advertising them as outdated. Website costs today are a normal business investment, sometimes supported indirectly through training funding.'

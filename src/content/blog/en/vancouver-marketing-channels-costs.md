@@ -13,6 +13,7 @@ keywords:
   - Vancouver advertising options
 heroImage: /blog-images/vancouver-marketing-channels-costs.jpg
 heroImageAlt: 'Desk with a laptop showing an advertising dashboard, calculator and notebook beside it'
+quickAnswer: 'In Vancouver right now, budget roughly $500–1,500/month in Google Ads spend plus $300–1,000 for management, $500–2,000+/month for outsourced social media, $100–500 per micro-influencer post, and $750–3,000/month for full local SEO. Below about $500–1,000/month total, paid channels can''t gather enough data to optimize — so fund one channel properly instead of spreading across three.'
 faq:
   - q: 'How much should a small business budget for marketing?'
     a: 'A common benchmark is 5–10% of revenue — toward the lower end for established businesses maintaining position, higher for new businesses or aggressive growth. More useful than the percentage is the floor: below roughly $500–1,000/month total (including your own time), most paid channels can''t gather enough data to optimize, so concentrate on one channel rather than spreading thin.'

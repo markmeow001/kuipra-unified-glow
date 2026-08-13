@@ -13,6 +13,7 @@ keywords:
   - restaurant content strategy
 heroImage: /blog-images/restaurant-food-visual-content-guide.jpg
 heroImageAlt: 'Overhead shot of colourful dishes being arranged and photographed with a phone near a window'
+quickAnswer: 'Your food is the ad: diners decide from photos before they read a word. Shoot in natural light near a window, get close enough to show texture, keep plates and backgrounds simple, and refresh your Google Business Profile photos as often as your social feed — that''s where hungry searchers actually look. Outsource the hero menu shoot; handle the daily short video yourself.'
 faq:
   - q: 'Do restaurant photos really affect sales?'
     a: 'Directly. Diners scroll Google Maps and delivery-app photos like a menu before choosing, and listings with appetizing, current photos convert measurably more searches into visits. On delivery platforms, items with photos consistently outsell identical items without them. For a restaurant, photography isn''t decoration — it''s the storefront.'

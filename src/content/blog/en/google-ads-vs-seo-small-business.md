@@ -13,6 +13,7 @@ keywords:
   - marketing budget allocation
 heroImage: /blog-images/google-ads-vs-seo-small-business.jpg
 heroImageAlt: 'Two paths diverging on a desk illustration — one with coins, one with a growing plant'
+quickAnswer: 'Google Ads buys visibility instantly and stops the moment you stop paying; SEO compounds slowly and keeps working after the invoices stop. For most Vancouver small businesses the right answer is a sequence, not a choice: start with a small ads budget to learn which keywords convert, then reinvest into SEO on the proven winners.'
 faq:
   - q: 'Is Google Ads or SEO better for a small business?'
     a: 'They solve different problems on different clocks. Google Ads buys visibility this week and stops the day you stop paying; SEO builds visibility over months and keeps working after the investment. The practical answer for most local businesses is a sequence: fix the free local-SEO foundation first, use a small tightly-targeted ads budget for immediate leads, and reinvest into SEO and content as the durable base.'

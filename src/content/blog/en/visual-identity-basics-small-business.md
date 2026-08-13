@@ -14,6 +14,7 @@ keywords:
   - small business branding Vancouver
 heroImage: /blog-images/visual-identity-basics-small-business.jpg
 heroImageAlt: 'A one-page visual cheat sheet showing a brand''s two colour swatches, two typefaces, and logo variations at different sizes'
+quickAnswer: 'A small business doesn''t need a brand book — it needs four things used consistently everywhere: one primary colour plus an accent, at most two typefaces, one recognisable photo style, and a logo that''s still legible at 40 pixels. Consistency across those four beats a beautiful identity applied haphazardly.'
 faq:
   - q: 'Does a small business need a full brand guideline document?'
     a: 'No. A one-page visual cheat sheet — colours with hex codes, two typefaces with assigned roles, a few photo do/don''t examples, and logo files by placement — covers what a small business actually publishes. Full brand books are for organizations with many hands producing content; for a small team, a page that gets used beats a book that gets admired.'

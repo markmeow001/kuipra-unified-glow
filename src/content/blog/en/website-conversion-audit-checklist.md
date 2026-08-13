@@ -13,6 +13,7 @@ keywords:
   - landing page optimization
 heroImage: /blog-images/website-conversion-audit-checklist.jpg
 heroImageAlt: 'Person reviewing a website wireframe printout with a magnifying glass and checklist on a desk'
+quickAnswer: 'If your site gets visitors but no enquiries, the leak is almost always one of four things: visitors can''t tell within seconds what you do and for whom, nothing on the page earns their trust, contacting you takes too much effort, or you''re not measuring where people drop off. Run the 12-point audit in this guide — most fixes take an afternoon, not a redesign.'
 faq:
   - q: 'What is a good conversion rate for a local business website?'
     a: 'For local service businesses, somewhere around 2–5% of visitors taking a meaningful action (call, form, booking) is a common healthy range — higher for tightly targeted traffic like paid search on "near me" terms. If you''re getting hundreds of visits a month and near-zero inquiries, the problem is almost never the traffic; it''s the site.'

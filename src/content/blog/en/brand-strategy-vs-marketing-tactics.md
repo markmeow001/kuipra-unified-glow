@@ -2,6 +2,7 @@
 title: 'Brand Strategy vs. Marketing Tactics: Why Growing Businesses Confuse the Two'
 description: 'Posting more is not a strategy. Here is how Vancouver businesses can tell brand strategy apart from tactics — and why the order matters.'
 pubDate: 2026-07-20
+updatedDate: 2026-08-12
 lang: en
 translationKey: brand-strategy-vs-tactics
 category: brand-strategy
@@ -12,6 +13,7 @@ keywords:
   - small business marketing Vancouver
 heroImage: /blog-images/brand-strategy-vs-tactics.jpg
 heroImageAlt: 'A strategist sketching a brand positioning map on paper'
+quickAnswer: 'Brand strategy is the set of decisions about who you serve, what you stand for and why you win; tactics are the activities — posts, ads, promos — that express those decisions. Growing businesses stall when they run tactics without strategy: more output, no direction. Decide the strategy first, then let it dictate which tactics deserve budget.'
 faq:
   - q: 'What is the difference between brand strategy and marketing tactics?'
     a: 'Brand strategy defines who you are, who you serve, and why you win — your positioning, audience, and message. Tactics are the individual activities (posts, ads, events) that express that strategy. Strategy decides what to say; tactics decide where and how to say it.'

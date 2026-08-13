@@ -13,6 +13,7 @@ keywords:
   - Reels vs TikTok
 heroImage: /blog-images/short-form-video-guide-vancouver.jpg
 heroImageAlt: 'Phone on a small tripod filming a workbench scene with soft lighting'
+quickAnswer: 'You don''t need a studio — you need a repeatable system: two or three formats you can film on a phone (a making-of, a talking tip, a before-and-after), a sustainable cadence of two to three posts a week, and a hook in the first two seconds. On Reels, TikTok and Xiaohongshu, consistency and format repetition drive reach far more than production value.'
 faq:
   - q: 'How often should a small business post short videos?'
     a: 'Two to three per week, sustained, beats daily-for-two-weeks-then-silence. Reach compounds through consistency because every video is a fresh lottery ticket shown to non-followers — the algorithm rewards accounts that keep showing up. Set the frequency your busiest week can survive, then batch-film to protect it.'

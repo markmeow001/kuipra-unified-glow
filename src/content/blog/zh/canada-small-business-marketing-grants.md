@@ -13,6 +13,7 @@ keywords:
   - CanExport 中小企業
 heroImage: /blog-images/canada-small-business-marketing-grants.jpg
 heroImageAlt: '書桌上的加拿大國旗旁放著文件、計算機和顯示申請表格的筆電'
+quickAnswer: '那些有名的聯邦數位行銷補助——CDAP、Grow Your Business Online、Launch Online——已經全數關閉。2026 年 BC 小生意真正還申請得到的，是可涵蓋行銷技能培訓的 B.C. Employer Training Grant、給外銷企業的 CanExport，加上部分產業別和市政計畫。別把行銷計畫建立在已經不存在的錢上。'
 faq:
   - q: '現在還有政府補助可以做網站或電商嗎？'
     a: '截至 2026 年底：沒有——直接補助這類支出的計畫（CDAP 的 $2,400 Grow Your Business Online 微型補助、$15,000 的 Boost Your Business Technology、BC 省的 Launch Online）全部停收新申請，聯邦也還沒宣布接替計畫。任何還在宣傳這些補助的頁面都是過時資訊。今天的網站費用是正常的營運投資，最多只能透過訓練類補助間接支援。'
