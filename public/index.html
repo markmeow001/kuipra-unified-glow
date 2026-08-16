@@ -25,6 +25,9 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0a1628">
 <link rel="canonical" href="https://www.kuipra.ca/">
+<link rel="alternate" hreflang="en" href="https://www.kuipra.ca/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.kuipra.ca/zh/">
+<link rel="alternate" hreflang="x-default" href="https://www.kuipra.ca/">
 
 <!-- ═══════════════════════════════════════════════════
      GEO / LOCAL SEO
@@ -1506,11 +1509,11 @@
     <a href="#projects" data-en="Work" data-zh="案例">Work</a>
     <a href="#team" data-en="Team" data-zh="團隊">Team</a>
     <a href="/blog/" data-zh-href="/zh/blog/" data-en-href="/blog/" data-en="Journal" data-zh="專欄">Journal</a>
-    <button class="lang-toggle-desktop" onclick="toggleLang(this)" style="font-family:'DM Mono',monospace;font-size:14px;letter-spacing:0.08em;color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:0;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">中文</button>
+    <button class="lang-toggle-desktop" onclick="location.href='/zh/'" style="font-family:'DM Mono',monospace;font-size:14px;letter-spacing:0.08em;color:var(--ink-soft);background:none;border:none;cursor:pointer;padding:0;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">中文</button>
     <a href="#" onclick="openModal();return false;" class="nav-cta" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
   </div>
   <div class="nav-mobile-right">
-    <span class="nav-lang-toggle" onclick="toggleLang(this)" style="cursor:pointer;">中文</span>
+    <span class="nav-lang-toggle" onclick="location.href='/zh/'" style="cursor:pointer;">中文</span>
     <a href="#" onclick="openModal();closeMenu();return false;" class="nav-mobile-cta-inline" data-en="Get in touch" data-zh="聯繫我們">Get in touch</a>
   </div>
   <button class="nav-hamburger" onclick="toggleMenu(this)" aria-label="Menu">
@@ -1910,7 +1913,7 @@
     let want = null;
     try { want = new URLSearchParams(location.search).get('lang'); } catch (e) {}
     if (!want) { try { want = localStorage.getItem('kuipraLang'); } catch (e) {} }
-    if (want === 'zh') document.addEventListener('DOMContentLoaded', () => setLang('zh'));
+    if (want === 'zh') location.replace('/zh/' + location.hash);
   })();
 
   function setLang(lang) {

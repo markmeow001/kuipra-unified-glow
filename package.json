@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/generate-indexnow-manifest.mjs",
+    "build": "node scripts/generate-zh-homepage.mjs && astro build && node scripts/generate-indexnow-manifest.mjs",
     "preview": "astro preview",
     "check": "astro check"
   },
@@ -13,5 +13,8 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.4.1",
     "astro": "^5.12.0"
+  },
+  "devDependencies": {
+    "node-html-parser": "^9.0.1"
   }
 }

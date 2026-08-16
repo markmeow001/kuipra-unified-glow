@@ -9,7 +9,7 @@ export default defineConfig({
     sitemap({
       // Static pages served from public/ are invisible to Astro's route
       // graph, so they must be listed by hand here.
-      customPages: ['https://www.kuipra.ca/'],
+      customPages: ['https://www.kuipra.ca/', 'https://www.kuipra.ca/zh/'],
     }),
   ],
   build: {
