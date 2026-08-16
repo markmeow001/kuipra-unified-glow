@@ -1,28 +1,96 @@
 {
+  "trailingSlash": true,
   "redirects": [
-    { "source": "/login", "destination": "/", "permanent": false },
-    { "source": "/reset-password", "destination": "/", "permanent": false },
-    { "source": "/admin", "destination": "/", "permanent": false },
-    { "source": "/home.html", "destination": "/", "permanent": true },
-    { "source": "/redesign.html", "destination": "/", "permanent": true },
-    { "source": "/v:version(\\d+).html", "destination": "/", "permanent": true },
-    { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true },
-    { "source": "/case-funtasy", "destination": "/", "permanent": true },
-    { "source": "/case-funtasy-zh", "destination": "/", "permanent": true },
-    { "source": "/case-funtasy.html", "destination": "/", "permanent": true },
-    { "source": "/case-funtasy-zh.html", "destination": "/", "permanent": true },
-    { "source": "/services/public-relations/", "destination": "/services/", "permanent": true },
-    { "source": "/zh/services/public-relations/", "destination": "/zh/services/", "permanent": true }
+    {
+      "source": "/login",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/reset-password",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/admin",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/home.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/redesign.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/v:version(\\d+).html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "permanent": true
+    },
+    {
+      "source": "/case-funtasy",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/case-funtasy-zh",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/case-funtasy.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/case-funtasy-zh.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services/public-relations/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/zh/services/public-relations/",
+      "destination": "/zh/services/",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
-        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
         {
           "key": "Content-Security-Policy",
           "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://formspree.io https://api.anthropic.com; frame-ancestors 'none';"
@@ -32,13 +100,25 @@
     {
       "source": "/indexnow-manifest.json",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
       ]
     }
   ],
   "rewrites": [
-    { "source": "/case-funtasy", "destination": "/case-funtasy.html" },
-    { "source": "/case-funtasy-zh", "destination": "/case-funtasy-zh.html" }
+    {
+      "source": "/case-funtasy",
+      "destination": "/case-funtasy.html"
+    },
+    {
+      "source": "/case-funtasy-zh",
+      "destination": "/case-funtasy-zh.html"
+    }
   ]
 }

@@ -132,7 +132,7 @@ const t = {
         <a href={servicesHome} class={active === 'services' ? 'nav-active' : ''}
           >{t.services}</a
         >
-        <a href={`${homeBase}#about`}>{t.about}</a>
+        <a href={lang === 'zh' ? '/zh/about/' : '/about/'}>{t.about}</a>
         <a href={`${homeBase}#projects`}>{t.work}</a>
         <a href={`${homeBase}#team`}>{t.team}</a>
         <a href={blogHome} class={active === 'journal' ? 'nav-active' : ''}
@@ -152,7 +152,11 @@ const t = {
     <footer>
       <div class="footer-bottom">
         <span class="footer-copy">{t.copy}</span>
-        <span class="footer-copy">kuipra.ca</span>
+        <span class="footer-links">
+          <a href={lang === 'zh' ? '/zh/about/' : '/about/'}>{t.about}</a>
+          <a href={lang === 'zh' ? '/zh/contact/' : '/contact/'}>{t.contact}</a>
+          <span class="footer-copy">kuipra.ca</span>
+        </span>
       </div>
     </footer>
 
@@ -355,6 +359,19 @@ const t = {
   .footer-copy {
     font-size: 13px;
     color: var(--ink-faint);
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+  }
+  .footer-links a {
+    font-size: 13px;
+    color: var(--ink-faint);
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    color: var(--orange);
   }
 
   @media (max-width: 768px) {

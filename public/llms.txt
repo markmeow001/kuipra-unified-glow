@@ -12,6 +12,9 @@ Key facts:
 ## Main pages
 
 - [Home](https://www.kuipra.ca/): services, team, and selected work
+- [中文首頁](https://www.kuipra.ca/zh/): Traditional-Chinese homepage
+- [About](https://www.kuipra.ca/about/): who we are, team, service area · [關於我們](https://www.kuipra.ca/zh/about/)
+- [Contact](https://www.kuipra.ca/contact/): email, form, service area · [聯絡我們](https://www.kuipra.ca/zh/contact/)
 
 ## Services
 

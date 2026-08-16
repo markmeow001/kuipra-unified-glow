@@ -73,10 +73,10 @@ for (const opt of root.querySelectorAll('#cf-service option[data-zh]')) {
 const submitBtn = root.querySelector('#submitBtn');
 if (submitBtn) submitBtn.set_content('送出訊息 →');
 
-// --- Language toggle buttons become real navigation back to the EN page.
+// --- Language links point back to the EN page.
 for (const btn of root.querySelectorAll('.nav-lang-toggle, .lang-toggle-desktop')) {
   btn.set_content('EN');
-  btn.setAttribute('onclick', "location.href='/'");
+  btn.setAttribute('href', '/');
 }
 
 // --- <html lang>.

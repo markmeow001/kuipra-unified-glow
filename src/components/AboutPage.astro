@@ -1,0 +1,303 @@
+---
+import BlogLayout from '../layouts/BlogLayout.astro';
+
+interface Props {
+  lang: 'en' | 'zh';
+}
+const { lang } = Astro.props;
+const zh = lang === 'zh';
+
+const SITE = 'https://www.kuipra.ca';
+const path = zh ? '/zh/about/' : '/about/';
+const altPath = zh ? '/about/' : '/zh/about/';
+
+const title = zh
+  ? '關於我們｜溫哥華中英雙語行銷公司 - Kuipra Communications'
+  : 'About Us | Bilingual Marketing Agency in Vancouver - Kuipra Communications';
+const description = zh
+  ? 'Kuipra Communications 是大溫哥華在地的中英雙語行銷公司：社群經營、內容創作、品牌策略、在地 SEO 與 AI 搜尋優化（GEO）。認識我們的團隊、服務範圍與做事方式。'
+  : 'Kuipra Communications is a bilingual marketing agency in Greater Vancouver, BC: social media, content, brand strategy, and local SEO & AI search optimization (GEO). Meet the team and how we work.';
+
+const TEAM = [
+  { name: 'Charlene Ling', roleEn: 'Principal Consultant', roleZh: '首席顧問' },
+  { name: 'Robert Chu', roleEn: 'Principal Creative Strategist', roleZh: '首席創意策略師' },
+  { name: 'Josh Hung', roleEn: 'Visual Lead & Creative Producer', roleZh: '視覺總監 / 創意製片' },
+];
+
+const SERVICES = [
+  { slug: 'social-media-management', en: 'Social Media Management', zh: '社群經營管理' },
+  { slug: 'content-creation', en: 'Content Creation', zh: '內容創作' },
+  { slug: 'brand-strategy', en: 'Brand Strategy & Personal Branding', zh: '品牌策略與個人品牌' },
+  { slug: 'local-seo-geo', en: 'Local SEO & AI Search Optimization (GEO)', zh: '在地 SEO 與 AI 搜尋優化（GEO）' },
+  { slug: 'chinese-marketing', en: 'Bilingual & Chinese-Market Marketing', zh: '雙語與華人市場行銷' },
+  { slug: 'web-design', en: 'Web Design & Development', zh: '網站設計與開發' },
+];
+const servicesBase = zh ? '/zh/services/' : '/services/';
+
+const orgLd = {
+  '@context': 'https://schema.org',
+  '@type': 'MarketingAgency',
+  name: 'Kuipra Communications',
+  url: SITE + '/',
+  email: 'info@kuipra.ca',
+  description: zh
+    ? 'Kuipra Communications 是位於大溫哥華地區的品牌策略與數位行銷公司，專精社群經營、內容創作、品牌策略、個人品牌與在地 SEO／AI 搜尋優化（GEO），提供中英雙語服務。'
+    : 'Kuipra Communications is a brand strategy and digital marketing agency in Greater Vancouver, BC, specializing in social media management, content creation, brand strategy, personal branding, and local SEO & AI search optimization (GEO) — in English and Chinese.',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Vancouver',
+    addressRegion: 'BC',
+    addressCountry: 'CA',
+  },
+  areaServed: ['Vancouver', 'Burnaby', 'Richmond', 'Surrey', 'British Columbia'].map(
+    (name) => ({ '@type': 'AdministrativeArea', name }),
+  ),
+  knowsLanguage: ['en', 'zh-Hant', 'zh-Hans'],
+  sameAs: [
+    'https://www.instagram.com/kuipra_communications/',
+    'https://www.facebook.com/kuipra',
+  ],
+  employee: TEAM.map((m) => ({
+    '@type': 'Person',
+    name: m.name,
+    jobTitle: zh ? m.roleZh : m.roleEn,
+  })),
+};
+
+const aboutLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  url: SITE + path,
+  name: title,
+  mainEntity: { '@id': SITE + '/' },
+};
+---
+
+<BlogLayout
+  lang={lang}
+  title={title}
+  description={description}
+  path={path}
+  altPath={altPath}
+  jsonLd={[orgLd, aboutLd]}
+>
+  <div class="journal-wrap about">
+    <header>
+      <p class="journal-eyebrow">{zh ? '關於我們' : 'About us'}</p>
+      <h1>
+        {zh
+          ? '品牌故事的探索者與放大者'
+          : 'Explorers and amplifiers of brand stories'}
+      </h1>
+      <p class="lede">
+        {zh
+          ? 'Kuipra Communications 是大溫哥華在地的中英雙語行銷公司。我們相信每個品牌都有還沒被看見的光芒——我們的工作，是用策略和敘事把它放大，讓對的客群在 Google、社群平台和 AI 助理上都找得到你。'
+          : "Kuipra Communications is a bilingual marketing agency based in Greater Vancouver, BC. We believe every brand has brilliance waiting to be discovered — our job is to amplify it with strategy and storytelling, so the right customers find you on Google, on social platforms, and increasingly, when they ask an AI."}
+      </p>
+    </header>
+
+    <section class="facts">
+      <h2>{zh ? '基本資料' : 'At a glance'}</h2>
+      <dl>
+        <div>
+          <dt>{zh ? '所在地' : 'Based in'}</dt>
+          <dd>{zh ? '大溫哥華地區，BC 省，加拿大' : 'Greater Vancouver, British Columbia, Canada'}</dd>
+        </div>
+        <div>
+          <dt>{zh ? '服務區域' : 'Service area'}</dt>
+          <dd>
+            {zh
+              ? '溫哥華、本拿比、列治文、素里與 BC 省各地；支援全加拿大遠端合作'
+              : 'Vancouver, Burnaby, Richmond, Surrey and across BC — with remote collaboration Canada-wide'}
+          </dd>
+        </div>
+        <div>
+          <dt>{zh ? '工作語言' : 'Languages'}</dt>
+          <dd>{zh ? '英文、繁體中文、簡體中文' : 'English, Traditional and Simplified Chinese'}</dd>
+        </div>
+        <div>
+          <dt>{zh ? '聯絡方式' : 'Contact'}</dt>
+          <dd>
+            <a href="mailto:info@kuipra.ca">info@kuipra.ca</a> ·
+            <a href={zh ? '/zh/contact/' : '/contact/'}>{zh ? '聯絡頁' : 'Contact page'}</a>
+          </dd>
+        </div>
+        <div>
+          <dt>{zh ? '社群' : 'Social'}</dt>
+          <dd>
+            <a href="https://www.instagram.com/kuipra_communications/" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+            <a href="https://www.facebook.com/kuipra" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>{zh ? '我們做什麼' : 'What we do'}</h2>
+      <p>
+        {zh
+          ? '我們專注在六件事上，而且中英文都以原生內容操作——不是把一種語言翻譯成另一種：'
+          : 'We focus on six things, and we run them natively in both English and Chinese — never one language translated into the other:'}
+      </p>
+      <ul class="services-list">
+        {SERVICES.map((s) => (
+          <li>
+            <a href={`${servicesBase}${s.slug}/`}>{zh ? s.zh : s.en}</a>
+          </li>
+        ))}
+      </ul>
+      <p>
+        {zh
+          ? '從小紅書、微信到 Instagram 與 TikTok，我們讓同一個品牌在兩個語言世界都有原生的樣子。這也是我們與多數溫哥華行銷公司最大的差異：雙語不是附加服務，是我們的核心。'
+          : 'From Xiaohongshu and WeChat to Instagram and TikTok, we give one brand a native presence in both language worlds. That is our biggest difference from most Vancouver agencies: bilingual is not an add-on service here — it is the core.'}
+      </p>
+    </section>
+
+    <section>
+      <h2>{zh ? '團隊' : 'The team'}</h2>
+      <ul class="team-list">
+        {TEAM.map((m) => (
+          <li>
+            <strong>{m.name}</strong> — {zh ? m.roleZh : m.roleEn}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2>{zh ? '為什麼叫 Kuipra' : 'Why "Kuipra"'}</h2>
+      <p>
+        {zh
+          ? '名字來自古柏帶（Kuiper Belt）——太陽系邊緣一片充滿未知天體與無限可能的區域。我們相信好品牌就像那些還沒被發現的星體：光芒本來就在，只是需要有人找到它、放大它。'
+          : 'The name comes from the Kuiper Belt — the region at the edge of our solar system full of hidden worlds and endless possibility. We think good brands are like those undiscovered objects: the brilliance is already there. Someone just needs to find it and amplify it.'}
+      </p>
+    </section>
+
+    <aside class="cta">
+      <p class="journal-eyebrow">{zh ? '與我們合作' : 'Work with us'}</p>
+      <h2>{zh ? '想聊聊你的品牌？' : 'Want to talk about your brand?'}</h2>
+      <div class="cta-actions">
+        <a href={zh ? '/zh/contact/' : '/contact/'} class="cta-btn">
+          {zh ? '聯絡我們' : 'Get in touch'}
+        </a>
+        <a href={servicesBase} class="cta-btn cta-ghost">
+          {zh ? '看看我們的服務' : 'Explore our services'}
+        </a>
+      </div>
+    </aside>
+  </div>
+</BlogLayout>
+
+<style>
+  .about {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    max-width: 880px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4.5vw, 52px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: 16px;
+  }
+  .lede {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--ink-soft);
+    max-width: 42em;
+  }
+  section {
+    margin-top: 64px;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  p {
+    line-height: 1.8;
+    color: var(--ink-soft);
+    max-width: 46em;
+  }
+  section p + p {
+    margin-top: 16px;
+  }
+  .facts dl {
+    border-top: 1px solid var(--rule);
+  }
+  .facts dl > div {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .facts dt {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-faint);
+    padding-top: 2px;
+  }
+  .facts dd,
+  .facts dd a {
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  .facts dd a,
+  .services-list a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .facts dd a:hover,
+  .services-list a:hover {
+    color: var(--orange);
+  }
+  .services-list,
+  .team-list {
+    margin: 20px 0;
+    padding-left: 22px;
+    line-height: 2;
+    color: var(--ink-soft);
+  }
+  .cta {
+    margin-top: 80px;
+    background: var(--deep);
+    color: var(--paper);
+    padding: 56px 48px;
+    text-align: center;
+  }
+  .cta h2 {
+    font-family: var(--serif);
+    font-size: 30px;
+    margin: 16px 0 28px;
+  }
+  .cta-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cta-btn {
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    padding: 14px 28px;
+    background: var(--orange);
+    color: var(--deep);
+    text-decoration: none;
+  }
+  .cta-btn.cta-ghost {
+    background: transparent;
+    color: var(--paper);
+    border: 1px solid var(--paper);
+  }
+  @media (max-width: 640px) {
+    .facts dl > div {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+  }
+</style>

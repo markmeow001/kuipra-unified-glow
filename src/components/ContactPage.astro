@@ -1,0 +1,157 @@
+---
+import BlogLayout from '../layouts/BlogLayout.astro';
+import ContactForm from './ContactForm.astro';
+
+interface Props {
+  lang: 'en' | 'zh';
+}
+const { lang } = Astro.props;
+const zh = lang === 'zh';
+
+const SITE = 'https://www.kuipra.ca';
+const path = zh ? '/zh/contact/' : '/contact/';
+const altPath = zh ? '/contact/' : '/zh/contact/';
+
+const title = zh
+  ? '聯絡我們｜溫哥華行銷公司 Kuipra Communications'
+  : 'Contact Us | Kuipra Communications, Vancouver Marketing Agency';
+const description = zh
+  ? '聯絡 Kuipra Communications：info@kuipra.ca。大溫哥華中英雙語行銷團隊，服務溫哥華、本拿比、列治文、素里商家，一至兩個工作天內回覆。'
+  : 'Contact Kuipra Communications: info@kuipra.ca. A bilingual marketing team serving Vancouver, Burnaby, Richmond and Surrey businesses — we reply within one to two business days.';
+
+const contactLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  url: SITE + path,
+  name: title,
+  mainEntity: {
+    '@type': 'MarketingAgency',
+    name: 'Kuipra Communications',
+    url: SITE + '/',
+    email: 'info@kuipra.ca',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Vancouver',
+      addressRegion: 'BC',
+      addressCountry: 'CA',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      email: 'info@kuipra.ca',
+      availableLanguage: ['en', 'zh-Hant', 'zh-Hans'],
+      areaServed: 'CA-BC',
+    },
+  },
+};
+---
+
+<BlogLayout
+  lang={lang}
+  title={title}
+  description={description}
+  path={path}
+  altPath={altPath}
+  jsonLd={[contactLd]}
+>
+  <div class="journal-wrap contact">
+    <header>
+      <p class="journal-eyebrow">{zh ? '聯絡我們' : 'Contact'}</p>
+      <h1>{zh ? '跟我們聊聊你的品牌' : "Let's talk about your brand"}</h1>
+      <p class="lede">
+        {zh
+          ? '不論是想開始經營社群、需要雙語內容、還是想讓 Google 和 AI 找得到你——寫信或填表單都可以，我們會在一至兩個工作天內回覆。'
+          : "Whether you want to get serious about social media, need bilingual content, or want Google and AI assistants to find you — email us or use the form below. We reply within one to two business days."}
+      </p>
+    </header>
+
+    <section class="channels">
+      <dl>
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:info@kuipra.ca">info@kuipra.ca</a></dd>
+        </div>
+        <div>
+          <dt>{zh ? '服務區域' : 'Service area'}</dt>
+          <dd>
+            {zh
+              ? '溫哥華、本拿比、列治文、素里與 BC 省各地；全加拿大可遠端合作'
+              : 'Vancouver, Burnaby, Richmond, Surrey and across BC; remote collaboration available Canada-wide'}
+          </dd>
+        </div>
+        <div>
+          <dt>{zh ? '工作語言' : 'Languages'}</dt>
+          <dd>{zh ? '英文、繁體中文、簡體中文' : 'English, Traditional and Simplified Chinese'}</dd>
+        </div>
+        <div>
+          <dt>{zh ? '社群' : 'Social'}</dt>
+          <dd>
+            <a href="https://www.instagram.com/kuipra_communications/" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+            <a href="https://www.facebook.com/kuipra" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+    <ContactForm lang={lang} service="contact-page" />
+  </div>
+</BlogLayout>
+
+<style>
+  .contact {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    max-width: 880px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: clamp(32px, 4.5vw, 52px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-top: 16px;
+  }
+  .lede {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--ink-soft);
+    max-width: 42em;
+  }
+  .channels {
+    margin-top: 56px;
+  }
+  .channels dl {
+    border-top: 1px solid var(--rule);
+  }
+  .channels dl > div {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .channels dt {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-faint);
+    padding-top: 2px;
+  }
+  .channels dd,
+  .channels dd a {
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  .channels dd a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .channels dd a:hover {
+    color: var(--orange);
+  }
+  @media (max-width: 640px) {
+    .channels dl > div {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+  }
+</style>
