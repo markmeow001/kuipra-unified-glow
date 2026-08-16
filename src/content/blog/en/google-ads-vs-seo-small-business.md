@@ -51,7 +51,7 @@ Neither is morally superior. They're different financial instruments: ads are op
 
 ## The trap in each
 
-**The ads trap:** paying for clicks into a weak website. Google literally charges worse landing pages more per click, and a site that fails the [conversion basics](/blog/website-conversion-audit-checklist/) turns ad budget into a leak. Fix the bucket before filling it.
+**The ads trap:** paying for clicks into a weak website. Google literally charges worse landing pages more per click, and a site that fails the conversion basics turns ad budget into a leak. Fix the bucket before filling it.
 
 **The SEO trap:** paying a retainer for "activity" — reports, meta tweaks, thin blog posts — without strategy. Six months of invoices, nothing compounding. The [filter questions for choosing an agency](/blog/how-to-choose-marketing-agency-vancouver/) apply doubly here.
 

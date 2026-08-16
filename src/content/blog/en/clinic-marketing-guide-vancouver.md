@@ -44,7 +44,7 @@ Patients pick clinics like this: search "dentist near me" or a symptom, scan the
 
 - **Google Business Profile, complete and precise** — exact category, services listed, insurance/direct-billing noted, booking link live, real photos of the space (patients are checking whether it looks clean and modern). Full setup in our [GBP guide](/blog/google-business-profile-guide-vancouver/).
 - **Reviews, handled conservatively** — easy to leave, never incentivized, every response privacy-safe ("Thank you — we're glad to hear this" beats anything that confirms someone was a patient).
-- **A website that answers the deciding questions** on the homepage: services, languages spoken, direct billing, parking, how to book. If patients call to ask it, it belongs on the page — that's the core of our [12-point conversion audit](/blog/website-conversion-audit-checklist/).
+- **A website that answers the deciding questions** on the homepage: services, languages spoken, direct billing, parking, how to book. If patients call to ask it, it belongs on the page — that's the core of our 12-point conversion audit.
 
 ## Education content: the compliant growth engine
 

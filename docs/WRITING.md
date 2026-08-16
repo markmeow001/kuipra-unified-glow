@@ -31,6 +31,11 @@
 - 每次排程批次上線時,順手挑 2–3 組最舊的已發布文章做更新。
 - 已完成:2026-08-12 更新 brand-strategy、chinese-community、GEO guide 三組(加 quickAnswer + updatedDate)。
 
+## 內鏈紅線
+
+- **不可向前引用發布日晚於自己的文章**——早發布的那篇會掛著 404 連結直到對方上線。要引用就先確認對方的 pubDate 早於（或等於）自己。
+- 待辦：**9/7 轉換體檢文上線後**，把 clinic-marketing 和 google-ads-vs-seo 兩組（雙語共 4 檔）被拆掉的連結補回。
+
 ## 不用做的事
 
 - llms.txt 已存在,維持現狀即可;Google 官方明言 Search(含 AI 功能)不讀取它。

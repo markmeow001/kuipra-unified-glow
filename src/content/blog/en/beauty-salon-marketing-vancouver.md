@@ -2,6 +2,7 @@
 title: 'Beauty Salon Marketing in Vancouver: The Booked-Solid Playbook'
 description: 'Hair, nails, lashes, skin — how Vancouver beauty businesses fill their calendars: Google Maps, before-and-afters, Xiaohongshu, rebooking systems and no-show defence.'
 pubDate: 2026-08-12
+updatedDate: 2026-08-15
 lang: en
 translationKey: beauty-salon-marketing
 category: local-marketing
@@ -34,6 +35,14 @@ Beauty searches are overwhelmingly local and time-pressed: "nails near me," "bal
 - **Photos are the menu.** Load real work (not stock), interior shots, and refresh monthly. Beauty is one of the few industries where customers *scroll GBP photos like a portfolio* before booking.
 - **Reviews with service names in them.** A review that says "best gel-X in Richmond" is ranking fuel for that exact search. Ask happy clients at checkout, QR on the front desk. The full system is in our [reviews guide](/blog/google-reviews-management-guide/).
 - **Booking link wired in** so a searcher can go from Maps to a booked slot in two taps.
+
+## Think in neighbourhoods, not "Vancouver"
+
+Metro Vancouver beauty clients rarely search city-wide — they search where they live and work: "lash extensions Kitsilano," "nail salon Metrotown," "balayage Mount Pleasant." A site that only ever says "Vancouver" is invisible to most of those searches:
+
+- **Name your neighbourhood everywhere it counts** — in your GBP description, your homepage title ("— Nail Studio in Mount Pleasant"), and naturally inside service pages.
+- **Anchor yourself to landmarks people actually use.** "Two minutes from Metrotown Station" helps clients find you and matches how locals phrase searches and reviews.
+- **If you genuinely serve several areas, give each its own home** — a short neighbourhood section or page each beats cramming ten area names into one sentence, which reads as spam to both customers and Google.
 
 ## Before-and-after is your entire content strategy
 
