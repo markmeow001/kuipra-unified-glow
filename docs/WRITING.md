@@ -55,6 +55,35 @@
 案例：2026-09-09 原訂寫「小紅書代操怎麼選」，發現 08-15 的 xiaohongshu-marketing-vancouver 已對準同一查詢，
 改為從三篇相關文章補 6 處內鏈（它原本入站內鏈掛零）。
 
+## 內容檢查（pre-commit）
+
+`npm run check:content` — 也會在 commit 動到 `src/content/blog/`、`public/blog-images/`
+或 `src/content.config.ts` 時自動跑（hook 在 `.githooks/pre-commit`）。
+
+擋下的錯誤（exit 1）：
+
+1. `description` 超過 200 字元 —— **schema 硬上限，超了 astro build 直接紅**
+2. 缺必填欄位（title / description / pubDate / lang / translationKey / category）
+3. `lang` 欄位與所在目錄不符
+4. 只有 en 或只有 zh —— 少一邊 hreflang 與語言切換都會壞
+5. 兩語版本的 `translationKey` 不一致
+6. `heroImage` 指向 `public/` 裡不存在的檔案
+7. 內鏈指向不存在的 slug
+8. 內鏈跨語言（zh 文章連到 en 網址）
+9. **向前引用**：連到「發布日晚於自己、且尚未發布」的文章 —— 中間那段時間會 404。
+   兩篇都已發布時不算違規（順序就不重要了）。
+
+警告（不擋，exit 0）：`description` 超過 190，離硬上限太近。
+
+**注意：`core.hooksPath` 是本機 git 設定，不會跟著 clone 走。**
+新環境（含另一台機器上的 Codex）要跑一次：
+
+```
+git config core.hooksPath .githooks
+```
+
+要跳過檢查：`git commit --no-verify`。
+
 ## 不用做的事
 
 - llms.txt 已存在,維持現狀即可;Google 官方明言 Search(含 AI 功能)不讀取它。

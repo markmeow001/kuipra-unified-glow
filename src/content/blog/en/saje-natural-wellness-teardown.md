@@ -1,6 +1,6 @@
 ---
 title: 'Teardown: Saje Sells a Symptom, Not a Category — and That''s Why You Can Name Its Products'
-description: 'Saje started with eight products at a market stall in 1992 and now runs 52 Canadian and 19 US stores. The mechanism: name the remedy after the problem, then let customers recommend it out loud.'
+description: 'Saje started with eight products at a market stall in 1992 and now runs 71 stores. The mechanism: name the remedy after the problem, then let customers recommend it out loud.'
 pubDate: 2026-09-09
 lang: en
 translationKey: saje-teardown

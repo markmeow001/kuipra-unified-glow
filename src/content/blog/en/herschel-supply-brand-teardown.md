@@ -1,6 +1,6 @@
 ---
 title: 'Teardown: Herschel Named Itself After a Saskatchewan Hamlet — and That Specificity Is the Whole Brand'
-description: 'Two Vancouver brothers entered the most commoditized category imaginable in 2009 and won on design instead of features. The mechanism: one borrowed name, one signature detail, zero invented heritage.'
+description: 'Two Vancouver brothers entered the most commoditized category imaginable in 2009 and won on design, not features: one borrowed name, one signature detail, zero invented heritage.'
 pubDate: 2026-09-09
 lang: en
 translationKey: herschel-teardown

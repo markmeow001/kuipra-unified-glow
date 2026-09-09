@@ -1,0 +1,9 @@
+#!/bin/sh
+# Runs the blog content lint when content or blog images are staged.
+# Bypass with: git commit --no-verify
+
+if git diff --cached --name-only --diff-filter=ACM \
+   | grep -qE '^(src/content/blog/|public/blog-images/|src/content\.config\.ts$)'; then
+  echo "Running content check..."
+  node scripts/check-content.mjs || exit 1
+fi
