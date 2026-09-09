@@ -1,6 +1,6 @@
 ---
 title: 'Teardown: Liquid Death — Selling Water Like a Rock Band'
-description: 'An outside teardown of Liquid Death: how a canned-water brand used heavy-metal branding and entertainment-first content to build a moat out of pure brand — and what local businesses can steal.'
+description: 'How a canned-water brand used heavy-metal branding and entertainment-first content to build a moat out of pure brand — and what local businesses can steal from it.'
 pubDate: 2026-08-10
 lang: en
 translationKey: liquid-death-teardown

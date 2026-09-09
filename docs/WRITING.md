@@ -75,8 +75,11 @@
 
 警告（不擋，exit 0）：`description` 超過 190，離硬上限太近。
 
-**注意：`core.hooksPath` 是本機 git 設定，不會跟著 clone 走。**
-新環境（含另一台機器上的 Codex）要跑一次：
+`core.hooksPath` 是本機 git 設定、不會跟著 clone 走，所以 `package.json` 的
+`prepare` script 會在 `npm install` 時自動設好。新環境（含另一台機器上的 Codex）
+只要跑過 `npm install` 就有 hook，不需要額外動作。
+
+真的沒生效時手動補一次：
 
 ```
 git config core.hooksPath .githooks
