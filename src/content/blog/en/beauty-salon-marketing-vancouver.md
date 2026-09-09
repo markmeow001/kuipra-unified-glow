@@ -54,7 +54,7 @@ You don't need content ideas; you produce content with every appointment. What y
 
 ## The Xiaohongshu advantage (Vancouver-specific)
 
-If any of your clientele is Chinese-speaking, Xiaohongshu is the highest-leverage channel you're probably not on. Beauty is one of XHS's biggest verticals; users search it like Google before choosing a salon, and Richmond/Vancouver beauty notes routinely outperform what the same effort earns on Instagram. Style notes, nail-art close-ups, honest process shots — authentic beats polished. Our [platform comparison](/blog/instagram-tiktok-xiaohongshu-which-platform-vancouver/) and [Chinese community marketing guide](/blog/marketing-to-vancouver-chinese-community/) cover how to run it natively rather than reposting translated captions.
+If any of your clientele is Chinese-speaking, Xiaohongshu is the highest-leverage channel you're probably not on. Beauty is one of XHS's biggest verticals; users search it like Google before choosing a salon, and Richmond/Vancouver beauty notes routinely outperform what the same effort earns on Instagram. Style notes, nail-art close-ups, honest process shots — authentic beats polished. Our [platform comparison](/blog/instagram-tiktok-xiaohongshu-which-platform-vancouver/) and [Chinese community marketing guide](/blog/marketing-to-vancouver-chinese-community/) cover how to run it natively rather than reposting translated captions, and the [full Xiaohongshu guide](/blog/xiaohongshu-marketing-vancouver/) walks through running it yourself versus hiring an agency.
 
 ## Rebooking is the real revenue engine
 

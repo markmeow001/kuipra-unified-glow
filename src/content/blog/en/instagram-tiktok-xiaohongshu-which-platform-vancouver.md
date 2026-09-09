@@ -44,7 +44,7 @@ TikTok doesn't care what your grid looks like. It cares whether the first two se
 
 ### Xiaohongshu (RED): authenticity for Chinese-speaking Vancouver
 
-RED is where Chinese-speaking Metro Vancouver — a market we've written about [in depth](/blog/marketing-to-vancouver-chinese-community/) — researches almost every local purchase. Its mechanics reward the opposite of advertising: detailed, honest, review-style notes that read like a friend's recommendation. Polished brand content underperforms; genuine customer experiences travel. If a meaningful share of your customers speak Chinese, RED isn't optional — restaurants especially, as we covered in our [Xiaohongshu restaurant guide](/blog/xiaohongshu-restaurant-marketing-vancouver/), but the same logic applies to beauty, retail, real estate, and education.
+RED is where Chinese-speaking Metro Vancouver — a market we've written about [in depth](/blog/marketing-to-vancouver-chinese-community/) — researches almost every local purchase. Its mechanics reward the opposite of advertising: detailed, honest, review-style notes that read like a friend's recommendation. Polished brand content underperforms; genuine customer experiences travel. If a meaningful share of your customers speak Chinese, RED isn't optional — restaurants especially, as we covered in our [Xiaohongshu restaurant guide](/blog/xiaohongshu-restaurant-marketing-vancouver/), but the same logic applies to beauty, retail, real estate, and education. If you're weighing whether to run it in-house or hire help, our [full Vancouver Xiaohongshu guide](/blog/xiaohongshu-marketing-vancouver/) breaks down what each path actually costs.
 
 ## Match the platform to your business type
 

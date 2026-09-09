@@ -45,7 +45,7 @@ faq:
 
 ## 第三層：華語平台紅利
 
-只要你的菜對華語食客有吸引力，小紅書就是溫哥華目前最被低估的餐廳渠道——可搜尋、靠推薦驅動、而且大量華人社區真的用它決定吃哪家。它的邏輯跟 Instagram 不同（搜尋和收藏勝過追蹤、真實筆記勝過廣告），我們寫過一篇[專門給溫哥華餐廳的小紅書攻略](/zh/blog/xiaohongshu-restaurant-marketing-vancouver/)，怎麼操作講得很細。
+只要你的菜對華語食客有吸引力，小紅書就是溫哥華目前最被低估的餐廳渠道——可搜尋、靠推薦驅動、而且大量華人社區真的用它決定吃哪家。它的邏輯跟 Instagram 不同（搜尋和收藏勝過追蹤、真實筆記勝過廣告），我們寫過一篇[專門給溫哥華餐廳的小紅書攻略](/zh/blog/xiaohongshu-restaurant-marketing-vancouver/)，怎麼操作講得很細；如果你在猶豫自己經營還是找代操，看[小紅書全指南](/zh/blog/xiaohongshu-marketing-vancouver/)。
 
 [大溫華人社群行銷指南](/zh/blog/marketing-to-vancouver-chinese-community/)裡的大原則在這裡同樣適用：翻譯過的文案不等於在地化的經營。贏下這群客人的餐廳，都是用平台原生的方式在跑——對的格式、對的檔期、對的菜色打頭陣。
 

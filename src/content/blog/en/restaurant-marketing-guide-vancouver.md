@@ -45,7 +45,7 @@ Restaurants have the single greatest content advantage of any business: the prod
 
 ## Layer 3: The Chinese-platform advantage
 
-If your food appeals to Chinese-speaking diners at all, Xiaohongshu (RedNote) is Vancouver's most underpriced restaurant channel — searchable, recommendation-driven, and where a large share of the community actually decides where to eat. It behaves differently from Instagram (search and saves beat follows; authentic notes beat ads), and we wrote a [dedicated Xiaohongshu playbook for Vancouver restaurants](/blog/xiaohongshu-restaurant-marketing-vancouver/) covering exactly how to work it.
+If your food appeals to Chinese-speaking diners at all, Xiaohongshu (RedNote) is Vancouver's most underpriced restaurant channel — searchable, recommendation-driven, and where a large share of the community actually decides where to eat. It behaves differently from Instagram (search and saves beat follows; authentic notes beat ads), and we wrote a [dedicated Xiaohongshu playbook for Vancouver restaurants](/blog/xiaohongshu-restaurant-marketing-vancouver/) covering exactly how to work it — plus a [broader Xiaohongshu guide](/blog/xiaohongshu-marketing-vancouver/) if you're deciding between doing it in-house and hiring an agency.
 
 The broader principle from our [Chinese community marketing guide](/blog/marketing-to-vancouver-chinese-community/) applies here too: a translated caption is not a localized presence. The restaurants that win this audience run the platform natively — right format, right occasions, right dishes forward.
 

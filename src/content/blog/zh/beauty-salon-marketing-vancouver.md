@@ -54,7 +54,7 @@ faq:
 
 ## 小紅書紅利（溫哥華限定）
 
-只要你的客群有華語人口，小紅書就是你大概還沒上、槓桿卻最高的渠道。美業是小紅書最大的垂直類目之一；用戶把它當 Google 用——選沙龍前先搜筆記，而 Richmond/溫哥華的美業筆記，同樣的功夫在小紅書的回報常常超過 Instagram。造型筆記、美甲特寫、誠實的過程記錄——真實感勝過精修。怎麼原生地經營而不是翻譯轉貼，我們的[平台比較](/zh/blog/instagram-tiktok-xiaohongshu-which-platform-vancouver/)和[大溫華人社群行銷指南](/zh/blog/marketing-to-vancouver-chinese-community/)講得很細。
+只要你的客群有華語人口，小紅書就是你大概還沒上、槓桿卻最高的渠道。美業是小紅書最大的垂直類目之一；用戶把它當 Google 用——選沙龍前先搜筆記，而 Richmond/溫哥華的美業筆記，同樣的功夫在小紅書的回報常常超過 Instagram。造型筆記、美甲特寫、誠實的過程記錄——真實感勝過精修。怎麼原生地經營而不是翻譯轉貼，我們的[平台比較](/zh/blog/instagram-tiktok-xiaohongshu-which-platform-vancouver/)和[大溫華人社群行銷指南](/zh/blog/marketing-to-vancouver-chinese-community/)講得很細；[小紅書全指南](/zh/blog/xiaohongshu-marketing-vancouver/)則直接處理「自己做還是找代操」這一題。
 
 ## 回訪才是真正的營收引擎
 
