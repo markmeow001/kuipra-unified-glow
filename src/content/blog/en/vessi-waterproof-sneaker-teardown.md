@@ -1,6 +1,6 @@
 ---
 title: 'Teardown: Vessi Sells a Claim You Can Test Under a Tap'
-description: 'A Vancouver sneaker brand pre-sold a waterproof shoe on Kickstarter, let customers film their own water tests, and grew on paid social. What Vessi shows about provable claims and rented audiences.'
+description: 'A Vancouver sneaker brand pre-sold waterproof shoes on Kickstarter, let customers film their own water tests and grew on paid social. Lessons on provable claims and rented audiences.'
 pubDate: 2026-11-09
 lang: en
 translationKey: vessi-teardown
