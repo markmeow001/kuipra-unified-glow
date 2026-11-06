@@ -2,6 +2,7 @@
 title: 'How to Write a Positioning Statement (With Examples)'
 description: 'A practical guide to writing a positioning statement: the fill-in formula, the mistakes that ruin most drafts, and worked examples for Vancouver businesses.'
 pubDate: 2026-07-28
+updatedDate: 2026-11-06
 lang: en
 translationKey: positioning-statement
 category: brand-strategy
@@ -13,6 +14,7 @@ keywords:
   - small business branding
 heroImage: /blog-images/how-to-write-a-positioning-statement.jpg
 heroImageAlt: 'A hand writing a one-sentence positioning statement on a whiteboard'
+quickAnswer: 'Use the formula: For [audience], [brand] is the [category] that [differentiator] because [proof]. Choose a narrow audience, an honest category, one difference stated as a customer benefit, and proof a skeptical customer could check. Then pressure-test it: if a competitor could sign the same sentence, it is not a position yet.'
 faq:
   - q: 'What is a positioning statement?'
     a: 'A positioning statement is one internal sentence that defines who your brand serves, what category you compete in, how you differ, and why anyone should believe you. It is not a tagline or ad copy — it is the decision-making filter every tagline, campaign, and post gets checked against.'
@@ -20,6 +22,8 @@ faq:
     a: 'The classic fill-in structure is: For [audience], [brand] is the [category] that [differentiator] because [proof]. Each blank forces a real decision — a specific audience, an honest category, one meaningful difference, and evidence you can actually back up.'
   - q: 'How is a positioning statement different from a tagline?'
     a: 'A tagline is external and written to be memorable; a positioning statement is internal and written to be precise. You write the positioning statement first, then creative work like taglines and campaigns gets derived from it. If the tagline changes but the positioning holds, you are doing it right.'
+  - q: 'How often should a positioning statement change?'
+    a: 'Rarely. Taglines, campaigns and channels can change every year, but the positioning should hold until something fundamental shifts: your audience, the category customers put you in, or the proof behind your difference. If you find yourself rewriting it every quarter, it was usually never specific enough to begin with.'
 ---
 
 Ask a room of business owners to describe their positioning and you'll usually get a tagline, a mission statement, or a list of services. None of those are positioning. A positioning statement is one unglamorous internal sentence that answers a single question: **when a specific customer compares you to the alternatives, why do you win?**
@@ -75,6 +79,18 @@ No "gentle, caring team" wallpaper — three concrete operational choices a pare
 
 The category ("heritage event space") is honest — it's a shelf people already shop. The differentiator is a benefit (control), and the proof is policy, not adjectives.
 
+## How real brands fill in the blanks
+
+The archetypes above are invented. Here is the same formula applied to three real brands from our teardown series. None of them publishes an internal positioning statement, so read these as our interpretation of their public choices, not their own words.
+
+**A&W Canada: pick a difference the leader can't easily copy.** A&W could not outsize McDonald's, so it competed on an ingredient claim instead: beef raised without added hormones or steroids. Just as important was the order of operations. It quietly converted its supply for months before announcing Better Beef in 2013, so the proof clause existed before the marketing did. [Read the A&W teardown](/blog/aw-canada-better-beef-teardown/).
+
+**Herschel: proof can be a checkable story, not just a spec.** Herschel took its name from a small Saskatchewan hamlet where the founders' great-grandparents settled in 1906. A real, modest origin that anyone can look up fills the "because" clause better than invented heritage ever could. [Read the Herschel teardown](/blog/herschel-supply-brand-teardown/).
+
+**Fluevog: positioning tells you what to refuse.** John Fluevog has described the business as selling "a feeling, an emotion," not a commodity. When, as his son Adrian put it, the brand "didn't feel special on Amazon," the company walked away from Amazon and other wholesalers. That is a positioning statement doing its real job: deciding which opportunities to decline. [Read the Fluevog teardown](/blog/fluevog-community-teardown/).
+
+The pattern is the same in all three. The difference is narrow, and the proof is something an outsider can verify.
+
 ## Pressure-test before you ship it
 
 A draft isn't done until it survives four questions:
@@ -86,4 +102,4 @@ A draft isn't done until it survives four questions:
 
 A statement that passes all four becomes the filter for everything downstream: content pillars, ad copy, even which opportunities to decline. That's the whole point — one sentence, decided once, used daily.
 
-Want a second set of eyes on your draft? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) and we'll tell you honestly whether it holds up.
+Once the positioning holds, the next step is giving it a consistent voice; our [brand voice guide](/blog/building-a-brand-voice-guide/) shows how. Want a second set of eyes on your draft? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) and we'll tell you honestly whether it holds up, or see how our [brand strategy](/services/brand-strategy/) work starts from exactly this sentence.

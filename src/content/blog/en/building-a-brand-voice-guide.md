@@ -2,6 +2,7 @@
 title: 'How to Build a Brand Voice Guide Your Team Will Actually Use'
 description: 'Most voice guides die in a drive folder. Here is how to build a one-page brand voice guide — with do/don''t examples — that writers actually follow.'
 pubDate: 2026-07-28
+updatedDate: 2026-11-06
 lang: en
 translationKey: brand-voice-guide
 category: brand-strategy
@@ -13,6 +14,7 @@ keywords:
   - brand consistency social media
 heroImage: /blog-images/building-a-brand-voice-guide.jpg
 heroImageAlt: 'A one-page brand voice guide with do and don''t example sentences marked up in pen'
+quickAnswer: 'Keep it to one page: place your brand on three axes (formal or casual, playful or serious, bold or measured) and write down why, then add five to eight do-and-don''t example pairs for the situations you write about most. Voice stays constant while tone adjusts by channel and moment. Bilingual brands should write native examples for each language instead of translating.'
 faq:
   - q: 'What is the difference between brand voice and tone?'
     a: 'Voice is your brand''s personality — it stays constant across everything you publish. Tone is how that personality adjusts to the situation: celebratory in a launch post, calm and direct in a complaint reply. One voice, many tones.'
@@ -20,6 +22,8 @@ faq:
     a: 'One page. A guide nobody reads is worse than no guide, because it creates false confidence that voice is handled. Three axes with positions and reasons, plus five to eight do/don''t example pairs, is enough for a writer to produce on-voice copy on day one.'
   - q: 'Do bilingual brands need a separate voice guide for each language?'
     a: 'Yes — voice should be defined per language, not translated. The personality stays the same, but the devices that express it differ: wordplay that lands in English often falls flat in Chinese, which has its own rhythms and idioms. Write native do/don''t examples for each language.'
+  - q: 'How do we keep the voice consistent when several people (or AI tools) write?'
+    a: 'Give everyone the same one-page guide and do/don''t pairs, and review each new writer''s first few pieces against it. If you use AI for first drafts, always do a dedicated voice pass afterwards: AI defaults to a generic tone, and the guide is what brings it back to yours.'
 ---
 
 Most brand voice guides share the same fate: written once, admired in a kickoff meeting, then buried in a drive folder while everyone goes back to writing captions from instinct. Six months later the Instagram sounds like an intern, the email sounds like a lawyer, and the website sounds like nobody in particular.
@@ -75,7 +79,17 @@ If your voice only works in celebratory posts, it isn't a voice yet — it's a m
 
 This one matters for many of the Vancouver businesses we work with. A voice guide written in English and run through translation produces Chinese copy that is technically correct and personality-free.
 
-The personality should stay consistent — but the *devices* that express it are language-specific. Playfulness in English might lean on wordplay and deadpan understatement; the same playfulness in Chinese may live in rhythm, in a well-chosen idiom, or in a knowing cultural reference that has no English equivalent. Write the axes once, then write native do/don't examples for each language, ideally by a writer who thinks in that language. Anything less and one audience always gets the diluted version of your brand.
+The personality should stay consistent — but the *devices* that express it are language-specific. Playfulness in English might lean on wordplay and deadpan understatement; the same playfulness in Chinese may live in rhythm, in a well-chosen idiom, or in a knowing cultural reference that has no English equivalent. Write the axes once, then write native do/don't examples for each language, ideally by a writer who thinks in that language. Anything less and one audience always gets the diluted version of your brand. If you're also deciding whether to run one social account or two, see our guide to [bilingual social media accounts](/blog/bilingual-social-media-account-strategy/).
+
+## What long-lived voices have in common
+
+Two brands from our teardown series show what a voice looks like after years of use.
+
+Fluevog introduced its Angel soles in the late 1980s with a line that still appears when the shoes are relaunched in 2026: "Resists alkali, water, acid, fatigue and Satan." The company's FAQ is still running the joke decades later. Nobody had to reinvent the voice; each new writer simply kept it going. [Read the Fluevog teardown](/blog/fluevog-community-teardown/).
+
+TELUS shows the same principle at a much bigger scale. Its friendly tone and animals-on-white look have outlasted several agencies, a tagline update and new production technology. As someone from TELUS brand marketing put it in a 2020 Strategy column, when customers already know you, you don't have to keep reintroducing yourself. [Read the TELUS teardown](/blog/telus-critters-brand-teardown/).
+
+The lesson for a small team: you will get bored of your voice years before your customers do. Resist the urge to "refresh" it into something safer. If you want to see how far a bold voice can go, and where it breaks, compare [Duolingo](/blog/duolingo-social-media-teardown/) with [Liquid Death](/blog/liquid-death-branding-teardown/).
 
 ## Keep it to one page, then test it
 
@@ -83,4 +97,6 @@ A voice guide is a tool, not [a strategy deck](/blog/brand-strategy-vs-marketing
 
 Then run the only test that matters: hand it to a writer who has never touched your brand and have them draft three posts. If the drafts sound like you, the guide works. If they don't, the gap between their copy and your expectations is a precise map of what the guide failed to say. Fix the guide, not the writer.
 
-Want a voice guide your team will still be using next year? [Email Charlene](mailto:info@kuipra.ca) and we'll build it with you.
+If AI tools draft some of your content, the guide matters even more, because AI defaults to a generic tone. Our [AI content workflow](/blog/ai-content-workflow-without-sounding-like-ai/) shows where the voice pass fits.
+
+Want a voice guide your team will still be using next year? [Email Charlene](mailto:info@kuipra.ca) or see our [brand strategy](/services/brand-strategy/) service, and we'll build it with you.
