@@ -56,7 +56,7 @@ Three patterns account for most failures we see. Treating WeChat as a broadcast 
 
 ## How WeChat fits with RED
 
-WeChat and Xiaohongshu (RED) are not competitors in your plan; they are stages of the same funnel. RED is where new customers *discover* you — searchable, public, review-driven, as we detail in our [RED restaurant marketing guide](/blog/xiaohongshu-restaurant-marketing-vancouver/). WeChat is where you *close and keep* them: the enquiry, the booking, the order group, the repeat purchase. Businesses that connect the two — RED post to WeChat contact to group to repeat customer — get the full value of both.
+WeChat and Xiaohongshu (RED) are not competitors in your plan; they are stages of the same funnel. RED is where new customers *discover* you — searchable, public, review-driven, as we detail in our [RED restaurant marketing guide](/blog/xiaohongshu-restaurant-marketing-vancouver/). WeChat is where you *close and keep* them: the enquiry, the booking, the order group, the repeat purchase. Businesses that connect the two — RED post to WeChat contact to group to repeat customer — get the full value of both. Our [WeChat private traffic playbook](/blog/wechat-private-traffic-playbook/) walks through that second half step by step, including Canada's consent rules for messaging customers.
 
 ## The staffing reality
 
