@@ -23,6 +23,12 @@ const DESCRIPTION_MAX = 200;
 // fire on most of the corpus and train everyone to ignore the check.
 const DESCRIPTION_WARN_AT = 190;
 
+// docs/WRITING.md: every published article gets a substantive refresh (and a
+// new updatedDate) at least every 8 weeks. Reported as one summary warning,
+// not one per article, so it nudges without drowning the other output.
+const REFRESH_WINDOW_DAYS = 56;
+const DAY_MS = 24 * 60 * 60 * 1000;
+
 const REQUIRED = ['title', 'description', 'pubDate', 'lang', 'translationKey', 'category'];
 
 const errors = [];
@@ -122,6 +128,23 @@ for (const post of posts.values()) {
       );
     }
   }
+}
+
+// Refresh cycle: counted once per article (en side), published posts only.
+const now = Date.now();
+const stale = [...posts.values()]
+  .filter((p) => p.lang === 'en' && !p.data.draft && new Date(p.data.pubDate).getTime() <= now)
+  .map((p) => {
+    const last = new Date(p.data.updatedDate ?? p.data.pubDate).getTime();
+    return { slug: p.slug, days: Math.floor((now - last) / DAY_MS) };
+  })
+  .filter((p) => p.days > REFRESH_WINDOW_DAYS)
+  .sort((a, b) => b.days - a.days);
+if (stale.length) {
+  const oldest = stale.slice(0, 3).map((p) => `${p.slug} (${p.days}d)`).join(', ');
+  warnings.push(
+    `refresh cycle: ${stale.length} published articles not updated in over ${REFRESH_WINDOW_DAYS / 7} weeks (docs/WRITING.md) — oldest: ${oldest}`
+  );
 }
 
 const label = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
