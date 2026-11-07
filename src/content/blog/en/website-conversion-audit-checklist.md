@@ -2,6 +2,7 @@
 title: 'Why Your Website Gets Visitors but No Customers: A 12-Point Conversion Audit'
 description: 'Traffic without inquiries means the website is leaking. A practical 12-point audit — clarity, trust, friction, measurement — you can run on your own site in an afternoon.'
 pubDate: 2026-09-07
+updatedDate: 2026-11-06
 lang: en
 translationKey: website-conversion-audit
 category: local-marketing
@@ -16,11 +17,13 @@ heroImageAlt: 'Person reviewing a website wireframe printout with a magnifying g
 quickAnswer: 'If your site gets visitors but no enquiries, the leak is almost always one of four things: visitors can''t tell within seconds what you do and for whom, nothing on the page earns their trust, contacting you takes too much effort, or you''re not measuring where people drop off. Run the 12-point audit in this guide — most fixes take an afternoon, not a redesign.'
 faq:
   - q: 'What is a good conversion rate for a local business website?'
-    a: 'For local service businesses, somewhere around 2–5% of visitors taking a meaningful action (call, form, booking) is a common healthy range — higher for tightly targeted traffic like paid search on "near me" terms. If you''re getting hundreds of visits a month and near-zero inquiries, the problem is almost never the traffic; it''s the site.'
+    a: 'There is no official benchmark, and published figures swing widely by industry and traffic source. In our experience, for local service businesses somewhere around 2–5% of visitors taking a meaningful action (call, form, booking) is a healthy range — higher for tightly targeted traffic like paid search on "near me" terms. If you''re getting hundreds of visits a month and near-zero inquiries, the problem is almost never the traffic; it''s the site.'
   - q: 'Should I redesign my website or fix the one I have?'
     a: 'Audit first. Most conversion problems — vague headline, hidden phone number, slow mobile load, no proof — are fixable inside the existing site for a fraction of a redesign''s cost. Redesign when the foundation itself blocks you: the platform can''t do what you need, mobile is fundamentally broken, or the brand has genuinely moved on from the design.'
   - q: 'How often should I audit my website?'
     a: 'Run the full checklist twice a year, and after any significant change — new services, price changes, a rebrand, or a new marketing push that will send traffic. Check the measurement layer monthly: broken forms and dead tracking have a habit of failing silently for months.'
+  - q: 'What are Core Web Vitals, and does my site need to pass them?'
+    a: 'They are Google''s three measures of real-world page experience: Largest Contentful Paint (main content visible within 2.5 seconds), Interaction to Next Paint (a response to a tap or click within 200 milliseconds; it replaced First Input Delay in March 2024) and Cumulative Layout Shift (0.1 or less, so the page doesn''t jump around). They are measured on real visits, at the 75th percentile, and Google says good scores align with what its core ranking systems seek to reward. For a local business the bigger payoff is simpler: fewer paid-for visitors giving up before the page works. Check yours free in PageSpeed Insights or Search Console.'
 ---
 
 The most expensive website problem is invisible: the site gets visitors — from ads, from Google, from your Instagram bio — and quietly loses them. No error message, no complaint. People arrive, don't find what they need, and leave.
@@ -43,13 +46,13 @@ If your analytics show traffic but your phone doesn't ring, run this audit. Twel
 
 **6. Proof close to the promise.** Reviews, ratings, client logos, before/afters — placed next to the claims they support, not exiled to a testimonials page nobody visits. Your Google rating belongs on the homepage; so does the review count. (No reviews yet? [Fix that first](/blog/google-reviews-management-guide/) — it lifts every channel, not just the site.)
 
-**7. A visible human and place.** Name, face, address, service area. Local customers buy from people, and "we could be anywhere" reads as "we might be nowhere."
+**7. A visible human and place.** Name, face, address, service area. Local customers buy from people, and "we could be anywhere" reads as "we might be nowhere." Use the same business name, address and phone number your [Google Business Profile](/blog/google-business-profile-guide-vancouver/) and [directory listings](/blog/local-business-citations-guide/) show; a mismatch confuses customers and search engines alike.
 
 ## Group 3: Friction — is anything in the way?
 
-**8. Mobile speed.** Most local traffic is mobile. If the page takes more than ~3 seconds on a phone, you're paying for visitors who leave before seeing it. Compress images, kill decorative scripts, test on a real device — not your office WiFi.
+**8. Mobile speed.** Most local traffic is mobile, and a slow page means paying for visitors who leave before they see it. Google's yardstick is Core Web Vitals, measured on real visits: the main content should appear within 2.5 seconds (Largest Contentful Paint), the page should respond to a tap within 200 milliseconds (Interaction to Next Paint, which replaced First Input Delay as a Core Web Vital in March 2024), and the layout shouldn't jump while it loads (Cumulative Layout Shift of 0.1 or less) ([web.dev](https://web.dev/articles/vitals), [Google Search Central](https://developers.google.com/search/blog/2023/05/introducing-inp)). Run your key pages through PageSpeed Insights, or open Search Console's Core Web Vitals report. Then fix: compress images, kill decorative scripts (in our audits, chat widgets and popups are frequent culprits behind slow taps), and test on a real phone, not your office WiFi.
 
-**9. Contact without hunting.** Phone number tappable in the header. Form fields cut to the minimum (name, contact, message — every extra field costs completions). For Chinese-market customers, offer the channels they actually use — WeChat or text, not just a form that emails a mailbox nobody watches on weekends.
+**9. Contact without hunting.** Phone number tappable in the header. Form fields cut to the minimum (name, contact, message — every extra field costs completions). For Chinese-market customers, offer the channels they actually use — WeChat or text, not just a form that emails a mailbox nobody watches on weekends. (If WeChat becomes a real inquiry channel, our [WeChat private traffic playbook](/blog/wechat-private-traffic-playbook/) covers running it as one.)
 
 **10. The CTA above the fold.** The primary action must be visible without scrolling, on every key page — then repeated after each section that builds the case.
 
@@ -57,10 +60,10 @@ If your analytics show traffic but your phone doesn't ring, run this audit. Twel
 
 **11. Test your own forms.** Submit your contact form right now. Did it arrive? To an inbox someone checks daily? Broken forms fail silently — we've seen businesses lose months of inquiries to a changed email address.
 
-**12. Track the actions, not just the visits.** GA4 with events for calls, form submits and bookings — otherwise you're steering by traffic, which is the vanity number. Bonus: watch a few session recordings; five minutes of real user behaviour beats a month of guessing.
+**12. Track the actions, not just the visits.** GA4 with events for calls, form submits and bookings, marked as key events (GA4's current name for what it used to call conversions) — otherwise you're steering by traffic, which is the vanity number. If you run ads, our [landing page and conversion tracking guide](/blog/landing-page-conversion-tracking-guide/) covers passing those same actions to Google Ads and Meta. Bonus: watch a few session recordings; five minutes of real user behaviour beats a month of guessing.
 
 ## Scoring it
 
-Count your passes. **10–12**: your site is doing its job — go work on traffic. **7–9**: fix the failures in order of group (clarity first — nothing downstream matters if visitors don't understand you). **Under 7**: your marketing budget is filling a leaking bucket; pause the spend and fix the bucket. This is also the honest line between "fix" and "rebuild" — see the FAQ above before paying for a redesign.
+Count your passes. **10–12**: your site is doing its job — go work on traffic, starting with [whether it should come from ads or SEO](/blog/google-ads-vs-seo-small-business/). **7–9**: fix the failures in order of group (clarity first — nothing downstream matters if visitors don't understand you). **Under 7**: your marketing budget is filling a leaking bucket; pause the spend and fix the bucket. This is also the honest line between "fix" and "rebuild" — see the FAQ above before paying for a redesign.
 
 Want a second pair of eyes on your audit — or failed enough checks that it's rebuild territory? Our [web design service](/services/web-design/) starts every project with exactly this diagnosis, or email [info@kuipra.ca](mailto:info@kuipra.ca) with your URL and we'll tell you what we see.

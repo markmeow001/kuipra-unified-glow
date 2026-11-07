@@ -60,13 +60,13 @@ Google 的本地排名看三個因素：**相關性**（你的檔案和搜尋詞
 
 評論是最響亮的知名度訊號，也是客人真正會逐字讀的內容。
 
-**收集**：在客人最滿意的當下開口——工程收尾時、取貨時、售後跟進信裡。用你的評論短連結，或在櫃檯放個 QR code。接著，守住 Google 在 2026 年收緊的規則（[評論政策](https://support.google.com/contributionpolicy/answer/7400114)）：
+**收集**：對每一位客人，在自然的時間點開口——工程收尾時、取貨時、售後跟進信裡。用你的評論短連結，或在櫃檯放個 QR code。接著，守住 Google 在 2026 年收緊的規則（[評論政策](https://support.google.com/contributionpolicy/answer/7400114)）：
 
 - **不給任何好處**：不能用錢、折扣、贈品或免費服務換評論。
 - **不篩選對象**：不能只邀請你覺得會滿意的客人。
 - **不施壓、不給稿**：不要在客人還在店裡時逼他留評論，也不要要求他寫進特定內容。開口邀請就好，怎麼寫交給客人。
 
-Google 會主動執法，處罰包括一段時間內不能再收新評論，以及對客人顯示「已移除假評論」的警示（[Google 說明](https://support.google.com/business/answer/14114287)）。在加拿大還多一層：競爭局（Competition Bureau）警告過，撰寫或放任他人撰寫會造成錯誤或誤導印象的評論，都可能要負責任；員工替自家公司寫評論，也必須揭露彼此的關係（[競爭局公告](https://www.canada.ca/en/competition-bureau/news/2024/01/online-reviews-posted-by-employees-businesses-could-be-liable.html)）。怎麼在這些規則內穩定累積評論，可以看我們的 [Google 評論經營指南](/zh/blog/google-reviews-management-guide/)。
+Google 會主動執法，處罰包括一段時間內不能再收新評論，以及對客人顯示「已移除假評論」的警示（[Google 說明](https://support.google.com/business/answer/14114287)）。在加拿大還多一層：競爭局（Competition Bureau）警告過，撰寫或放任他人撰寫會造成錯誤或誤導印象的評論，都可能要負責任；員工替自家公司寫評論，也必須揭露彼此的關係（[競爭局公告](https://www.canada.ca/en/competition-bureau/news/2024/01/online-reviews-posted-by-employees-businesses-could-be-liable.html)）。怎麼在這些規則內穩定累積評論，可以看我們的 [Google 評論經營指南](/zh/blog/google-reviews-management-guide/)。以上有一個例外：如果你是受監管的醫療專業人員，要先遵守你所屬學院（college）的規定。從 2026 年 4 月 1 日起，BC 省輔助醫療專業學院（CCHPBC，涵蓋脊骨神經、按摩治療、自然療法、中醫與針灸）規定執業者完全不能向病患邀評，連給評論連結都不行（[CCHPBC FAQ](https://cchpbc.ca/wp-content/uploads/2026/05/FAQAdverting.Marketing.V3.FINAL_.pdf)）；細節見我們的[診所行銷指南](/zh/blog/clinic-marketing-guide-vancouver/)。
 
 **回覆**：每一則都回，好評負評一視同仁。好評用兩句有針對性的感謝，勝過複製貼上的模板。負評則是：冷靜、針對具體問題回應、絕不公開吵架、留下真實聯絡方式把處理移到線下。潛在客人評價你的標準，是你怎麼面對批評，而不是批評本身。
 

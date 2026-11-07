@@ -64,7 +64,7 @@ Every tactic worth paying for maps to one of these three. If a proposal can't te
 
 **4. Reviews — steady, not bursty.** Reviews drive prominence and conversion at the same time. Build the ask into your process (after the job, in the follow-up email) rather than begging in occasional panics. Reply to every review, especially the bad ones — replies are read by future customers, not past ones. Google tightened its review rules in 2026 (no incentives, no pressure, no asking for specific content); our [Google reviews guide](/blog/google-reviews-management-guide/) covers how to build reviews within them.
 
-**5. Local backlinks.** Links from Vancouver sources — neighbourhood BIAs, local news, community sponsorships, suppliers — signal prominence in a way generic directories can't. This is slow work. It's also the layer competitors are least likely to bother with. Our [local partnerships guide](/blog/local-partnerships-sponsorship-marketing/) covers where those links tend to come from.
+**5. Local backlinks.** Links from Vancouver sources — neighbourhood BIAs, local news, community sponsorships, suppliers — signal prominence in a way generic directories can't. This is slow work. It's also the layer competitors are least likely to bother with. One caveat: Google's [spam policies](https://developers.google.com/search/docs/essentials/spam-policies) require links you pay for, including sponsorship links, to be marked `rel="sponsored"` or `nofollow`, so a sponsorship's value is the mention and the visitors it sends, not ranking power. Our [local partnerships guide](/blog/local-partnerships-sponsorship-marketing/) covers how to structure those deals.
 
 ## Think in neighbourhoods, not in "Vancouver"
 
