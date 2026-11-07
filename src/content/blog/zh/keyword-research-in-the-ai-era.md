@@ -2,6 +2,7 @@
 title: 'AI 時代的關鍵字研究：搜尋意圖比搜尋量重要'
 description: 'AI Overview 和 AI 助理正在吸走泛用型搜尋。小企業的關鍵字研究該怎麼做：挖掘真實問題、鎖定意圖、贏在長尾。'
 pubDate: 2026-07-29
+updatedDate: 2026-11-06
 lang: zh
 translationKey: keyword-research-ai-era
 category: ai-marketing
@@ -13,6 +14,7 @@ keywords:
   - AI Overview SEO 影響
 heroImage: /blog-images/keyword-research-in-the-ai-era.jpg
 heroImageAlt: '搜尋行為從短關鍵字轉向由 AI 回答完整問題的示意圖'
+quickAnswer: '關鍵字研究現在要研究的是問題和意圖，不是搜尋量。泛用的資訊型搜尋越來越常停在 AI 摘要：皮尤研究中心 2025 年 3 月的瀏覽數據顯示，出現 AI 摘要的 Google 搜尋，使用者只有 8% 會點一般結果，沒有摘要時是 15%。值得爭取的是具體的比較型和交易型查詢，所以每個意圖做一頁，題目從收件匣、評論和 Search Console 裡挖。這些功夫同時也是 AI 搜尋的地基，Google 自己也說，為 AI 搜尋優化本質上還是 SEO。'
 faq:
   - q: '搜尋越來越多被 AI 直接回答，關鍵字研究還有意義嗎？'
     a: '有——但研究的單位已經從「關鍵字」變成「問題與意圖」。AI Overview 吸收的是泛用型資訊查詢，機會轉移到了具體的比較型與交易型問題：這些查詢用戶仍會點進網站，而且小企業真的有機會成為最佳答案。'
@@ -20,6 +22,8 @@ faq:
     a: '資訊型是想搞懂一件事（「什麼是活動行銷」），比較型是在權衡選項（「找代理商還是自己經營社群」），交易型代表準備行動（「溫哥華社群行銷公司 收費」）。對小企業來說，比較型與交易型的長尾查詢轉換率遠高於資訊型大詞，競爭也小得多。'
   - q: '不付費買工具，去哪裡找關鍵字靈感？'
     a: '四個免費來源就能覆蓋大部分需求：搜尋引擎的自動完成建議、People Also Ask（相關問題）區塊、你自己的 Google Search Console 查詢報表，以及客戶在評論、郵件、銷售對話裡的原話。它們共同呈現買家真正在問的問題，以及他們實際使用的措辭。'
+  - q: 'Search Console 看得到哪些關鍵字會觸發 AI Overview 嗎？'
+    a: '看不到關鍵字層級。2026 年 8 月 31 日起，所有網站的 Search Console 都有「生成式 AI 成效報表」，但它只列出你在 AI Overview 和 AI 模式裡的曝光次數，能按網頁、國家、裝置和日期拆，沒有查詢清單。這些 AI 功能帶來的流量，也已經算進一般成效報表的「網頁」搜尋類型裡。所以查詢研究照樣在一般報表做，新報表拿來看哪些網頁被 AI 功能選中。'
 ---
 
 多年來，關鍵字研究只有一套玩法：找出搜尋量高、競爭還能接受的詞，然後圍繞它寫頁面。這套玩法正在失效——不是因為搜尋消失了，而是因為越來越多答案來自 AI Overview 和 AI 助理，而不是藍色連結。
@@ -31,6 +35,8 @@ faq:
 「社群行銷」這種大詞，搜尋量巨大，但對一家小型代理商來說幾乎不可企及：首頁早被全球媒體和軟體公司多年累積的權威佔滿。這在 AI 出現之前就是事實。
 
 新變數是：泛用型的資訊查詢，正是 AI Overview 和聊天助理最擅長直接回答的那種。有人問「什麼是社群行銷？」，答案直接出現在搜尋結果上方——已經合成、附好引用、看完即走。就算你奇蹟般排上去了，那次點擊也越來越不會發生。
+
+獨立數據也指向同一個方向。皮尤研究中心（Pew Research Center）追蹤了 900 位美國成人 2025 年 3 月的瀏覽紀錄：出現 AI 摘要的 Google 搜尋頁，使用者點一般結果的比例是 8%，沒有摘要時是 15%；直接點摘要裡連結的，只有 1%（[Pew Research Center，英文](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/)）。SEO 工具商 Ahrefs 用彙整的 Search Console 數據做了一份廠商研究：到 2025 年 12 月，出現 AI Overview 的關鍵字，排名第一的網頁點閱率平均低了 58%。這是相關性，不是因果，但方向很清楚（[Ahrefs，英文](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/)）。
 
 所以高搜尋量的泛用詞現在是雙重劣勢：你大概排不上，排上了流量也在蒸發。仍然會把訪客——和客戶——送到你網站的，是那些具體的查詢。
 
@@ -46,6 +52,8 @@ faq:
 
 把這些問題持續記成一份清單。它會勝過任何關鍵字工具的匯出結果，因為每一條都自帶證據：真的有買家問過。
 
+但要老實說一件事：問句形式的搜尋，也最容易被 AI 直接回答。皮尤的數據裡，以 who、what、when、why 開頭的搜尋有 60% 出現 AI 摘要，一兩個字的短搜尋只有 8%。所以這份問題清單的用途，是看懂買家需要知道什麼，然後寫出你樂意被引用的答案。真正帶來點擊的，是離「決定要買」最近的那些問題。
+
 ## 意圖的三個層級
 
 每條查詢都落在一道意圖階梯上：
@@ -56,11 +64,13 @@ faq:
 
 ### 比較型——「X 還是 Y」「最適合⋯⋯的⋯⋯」
 
-搜尋者正在權衡選項。「找代理商還是自己養團隊經營社群」「餐廳開幕最適合的行銷方式」。AI 回答這類問題時會點名具體選項——而搜尋者仍會點進去查證。小企業從這一層開始贏。
+搜尋者正在權衡選項。「找代理商還是自己養團隊經營社群」「餐廳開幕最適合的行銷方式」。AI 回答這類問題時會點名具體選項——而搜尋者仍會點進去查證。BrightLocal 2026 年 7 月的美國消費者調查顯示，用 AI 找本地商家的人裡，有 75% 會先看過 Google 或地圖才聯絡店家（[eMarketer，英文](https://www.emarketer.com/content/shoppers-use-ai-find-local-businesses--then-double-check-on-google)）。小企業從這一層開始贏。
 
 ### 交易型——「收費」「附近」「找誰做」
 
 搜尋者準備行動了。搜尋量極小，價值極大。一個乾淨回答「溫哥華社群代營運要多少錢」的頁面永遠不會爆紅——它只會安靜地帶來詢問。
+
+對本地商家來說，這一層也是 AI 改變最少的地方。Whitespark 2025 年在美國三個城市收集了 540 組查詢，有本地意圖的查詢只有 15% 出現 AI Overview，地圖包則出現在 93%（[Whitespark，英文](https://whitespark.ca/blog/case-study-the-prevalence-of-ai-overviews-in-local-search/)）。「附近」和社區名稱這類搜尋，靠的還是 Google 商家檔案，以及[本地 SEO 指南](/zh/blog/local-seo-guide-vancouver-small-business/)裡那些基本功。人點進來之後，頁面還得把他變成詢問，這正是[轉換體檢清單](/zh/blog/website-conversion-audit-checklist/)在檢查的事。
 
 策略不言自明：讓出資訊型大詞，吃下比較型與交易型長尾。在那裡，「真的在地、真的具體」是任何大型媒體都抄不走的優勢。
 
@@ -70,17 +80,23 @@ faq:
 
 正確做法是：每個**查詢意圖**建一個結構良好的頁面——開頭直接給答案，`##` 小標對應自然的後續問題，底部放一組每則答案都自成一體的 FAQ。這一頁就能在整個問題群裡取得排名、獲得引用。殺死頁面的是相反的錯誤：意圖混雜，讓收費頁越寫越像科普文，結果誰都沒服務好。
 
+有了 AI 搜尋，這點更重要。Google 說明，AI Overview 和 AI 模式可能採用「查詢擴展」（query fan-out）的做法，針對不同子題同時跑好幾個相關搜尋，再組成一個答案（[Google 搜尋中心，英文](https://developers.google.com/search/docs/appearance/ai-features)）。我們的解讀是：一頁已經把自然的追問都答好的頁面，在這些搜尋裡比較有東西可以被找到。
+
 ## 免費研究勝過昂貴工具
 
 以上全部不需要任何訂閱：
 
 1. **自動完成**——輸入你的服務加上「怎麼」「還是」「多少錢」，看搜尋框建議什麼。那是真實查詢資料。
 2. **People Also Ask**——展開幾條，區塊會補充更多；它等於免費幫你畫問題群地圖。
-3. **Google Search Console**——那些你「差一點」排上的查詢（第 8–20 名）是成本最低的勝利。
+3. **Google Search Console**——那些你「差一點」排上的查詢（第 8–20 名）是成本最低的勝利。AI Overview 和 AI 模式帶來的流量，也算在同一份成效報表的「網頁」搜尋類型裡。2026 年 8 月 31 日起，每個網站另外多了一份「生成式 AI 成效報表」，看得到哪些網頁出現在這些功能裡，但只有曝光次數，按網頁、國家、裝置、日期拆，沒有查詢清單（[Search Console 說明，英文](https://support.google.com/webmasters/answer/16984139)）。關鍵字研究還是要回到一般報表做。
 4. **評論措辭**——現有客戶用的詞，就是未來客戶搜尋時會打的詞。
+
+那 Google 關鍵字規劃工具（Keyword Planner）呢？Google 說它是免費工具（[Google，英文](https://business.google.com/us/ad-tools/keyword-planner/)），但你得先把 Google Ads 帳戶設定完成，包括填好付款資料，它才會給你關鍵字建議（[Google Ads 說明，英文](https://support.google.com/google-ads/answer/7337243)）。拿來看季節變化、估大方向的需求規模很好用；但它偏偏在小生意最能贏的地方最弱：Google 自己註明，搜尋量非常低的關鍵字在工具裡找不到，而大量在地、問句型的需求就落在那裡。如果你有跑小額廣告測試，「搜尋字詞報表」會列出實際觸發廣告的搜尋，這個順序我們在 [Google 廣告 vs SEO](/zh/blog/google-ads-vs-seo-small-business/) 裡講過。
 
 ## 這一切通往 GEO
 
 以上所有工作，同時就是在為 AI 搜尋做準備。問題形狀的頁面、乾淨自足的答案，正是 AI 助理檢索和引用的內容——具體機制我們在 [GEO 完全指南](/zh/blog/generative-engine-optimization-guide/)和 [AI 助理如何推薦本地商家](/zh/blog/how-ai-assistants-recommend-local-businesses/)裡拆解過。以意圖為先的關鍵字研究不是 GEO 之外的另一門學問，而是 GEO 的前半場。
 
-想知道你的生意該「擁有」哪些問題？[來信聊聊](mailto:info@kuipra.ca)，我們幫你看一眼。
+Google 自己也這麼說。它談 AI 功能的官方指引寫得很直白：為生成式 AI 搜尋做優化，就是為搜尋體驗做優化，所以本質上還是 SEO；不需要額外的特殊檔案或標記（[Google 搜尋中心，英文](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)）。同一份問題清單，兩邊都用得上。
+
+想知道你的生意該「擁有」哪些問題？[來信聊聊](mailto:info@kuipra.ca)，我們幫你看一眼。中英雙語的關鍵字與內容策略，也是我們[在地 SEO 與 AI 搜尋優化](/zh/services/local-seo-geo/)服務的一部分。

@@ -2,6 +2,7 @@
 title: '品牌拆解：Lush 退出社群媒體，反而證明了什麼'
 description: '2021 年 Lush 關掉 Instagram、Facebook、TikTok 和 Snapchat，生意照做。這場退出揭示了自有渠道的真正價值——以及在地小生意能偷學的四件事。'
 pubDate: 2026-08-24
+updatedDate: 2026-11-06
 lang: zh
 translationKey: lush-teardown
 category: case-studies
@@ -14,21 +15,23 @@ keywords:
   - email 名單 vs 社群
 heroImage: /blog-images/lush-social-media-exit-teardown.jpg
 heroImageAlt: '明亮的美妝店陳列架上堆疊著色彩繽紛的手工汽泡彈'
-quickAnswer: 'Lush 在 2021 年退出主要社群平台，生意照做——因為二十年的品牌資產、強大的 email 名單、有辨識度的產品和實體店，做了原本被歸功給 Instagram 的事。給在地商家的教訓不是「退出社群」，而是自有渠道——你的名單、你的網站、你的熟客——才是資產，租來的流量應該回頭餵養它們。'
+quickAnswer: 'Lush 在 2021 年 11 月停掉 Instagram、Facebook、TikTok 和 Snapchat，到 2026 年 11 月都還沒回去；2023 年起它也不再發 X，新加入的只有 Bluesky 和 Substack。生意照做，截至 2025 年 6 月的年度營收達 7.362 億英鎊——因為品牌資產、email 名單、有辨識度的產品和實體店，做了原本被歸功給 Instagram 的事。給在地商家的教訓不是「退出社群」，而是自有渠道才是資產，租來的流量應該回頭餵養它們。'
 faq:
   - q: 'Lush 為什麼退出社群媒體？'
-    a: '2021 年 11 月，Lush 在全球停用 Instagram、Facebook、TikTok 和 Snapchat 帳號，理由是有證據顯示這些平台的設計會傷害年輕用戶的身心——而那正是 Lush 的核心客群。公司把「繼續留在平台上」視為與自家身心療癒使命的矛盾，並公開承擔每年估計數百萬的營收損失來解決這個矛盾。'
+    a: '2021 年 11 月，Lush 在它營運的全部 48 個國家停掉 Instagram、Facebook、TikTok 和 Snapchat 帳號，理由是有證據顯示這些平台的設計會傷害年輕用戶的身心——而那正是 Lush 的核心客群。公司把「繼續留在平台上」視為與自家身心療癒使命的矛盾；共同創辦人 Mark Constantine 更直言，為此少賺 1,000 萬英鎊他也「樂意」。'
   - q: '沒有社群帳號，品牌要怎麼行銷？'
     a: 'Lush 靠的是完全屬於自己的渠道：email 名單、自家 App、官網上的編輯式內容，以及設計成「動手體驗場」的門市。同時，顧客自發的內容從來沒停過——汽泡彈溶解影片、開箱、試用，因為產品本身天生就適合被拍。品牌負責製造值得拍的瞬間，顧客負責觸及。'
   - q: '我的小生意也應該退出社群媒體嗎？'
     a: '對多數在地生意來說，不應該——你沒有 Lush 的知名度、媒體關注度和街邊人流。可以帶走的教訓在於「比重」而非「退出」：把社群平台當成租來的曝光渠道，持續把關係搬到你擁有的地方——email 名單、預約資料庫、會員系統——這樣任何演算法改版都帶不走你的客人。'
+  - q: 'Lush 後來有回到 Instagram 或 TikTok 嗎？'
+    a: '截至 2026 年 11 月，沒有。Lush 從 2021 年起就沒在 Instagram、Facebook、TikTok 發文或投廣告，2023 年也停止在 X 發文。2026 年 6 月它加入了 Bluesky，並表示仍堅持不回 Meta 旗下平台、TikTok、Snapchat 和 X；另外經營 Substack，以及不投廣告的 YouTube 和 Pinterest。'
 ---
 
 多數品牌把社群媒體當氧氣。2021 年 11 月，Lush 把氧氣關了——然後活得好好的。
 
-照例先聲明：**Lush 不是 Kuipra 的客戶。**這是一篇針對公開品牌的外部拆解，依據是它的門市、官方聲明和公開報導。我們挑品牌時盡量找有在地連結的，Lush 符合：它在北美的第一家店就開在溫哥華，這裡至今仍是它重要的製造與零售基地。
+照例先聲明：**Lush 不是 Kuipra 的客戶。**這是一篇針對公開品牌的外部拆解，依據是它的門市、官方聲明和公開報導。我們挑品牌時盡量找有在地連結的，Lush 符合：它在北美的第一家店，1996 年開在溫哥華的 Denman Street（[BCBusiness](https://bcbusiness.ca/business/retail/meet-the-woman-who-made-vancouvers-lush-a-cosmetics-powerhouse/)）；溫哥華也長年是它的製造基地之一，直到 2024 年 Lush 宣布把這裡的生產移往多倫多（[Daily Hive](https://dailyhive.com/vancouver/lush-vancouver-manufacturing-close-layoffs)）。
 
-值得研究的是這個決定：在 Facebook 內部文件揭露平台傷害青少年的風口浪尖，Lush 停用了全球的 Instagram、Facebook、TikTok 和 Snapchat 帳號。不是週末限定的噱頭、不是只關單一市場——全球帳號一起熄燈，公司還公開估算這個決定每年的代價以百萬計。一個產品拍起來像糖果一樣好看的美妝品牌，主動離開了世界上最大的圖片平台。
+值得研究的是這個決定：在 Facebook 內部文件揭露平台傷害青少年的風口浪尖，Lush 在它營運的全部 48 個國家停掉了 Instagram、Facebook、TikTok 和 Snapchat 帳號（[Lush 官方公告](https://weare.lush.com/press-releases/lush-is-taking-fresh-approach-social/)）。不是週末限定的噱頭、不是只關單一市場——全球帳號一起熄燈，共同創辦人 Mark Constantine 還說，為此少賺 1,000 萬英鎊他也「樂意」（[Cosmetics Business](https://cosmeticsbusiness.com/lush-boss-mark-constantine-happy-to-lose-10m-after-quitting-social-media--180904)）。一個產品拍起來像糖果一樣好看的美妝品牌，主動離開了世界上最大的圖片平台。
 
 那麼，一個沒有動態可發的品牌，接下來做什麼？
 
@@ -36,7 +39,7 @@ faq:
 
 先看最諷刺的部分：退出社群媒體帶來的報導量，超過 Lush 在社群上做過的任何一檔活動。全球媒體、評論專欄、案例研究（包括你正在讀的這篇）——一個決定換來好幾年的 earned media，因為這個決定是*有代價的*。
 
-這就是要看懂的機制。任何人都能在貼文裡宣稱價值觀；但一個要花掉數百萬的宣稱，說服力是貼文永遠給不了的。一個沐浴品牌說「我們在乎青少年身心健康」，是壁紙；一個沐浴品牌為此刪掉自己的 TikTok，是新聞。價值觀要在你付出代價的那一刻才變成品牌資產——這也是為什麼多數「使命行銷」毫無效果：因為它什麼都沒賭上。
+這就是要看懂的機制。任何人都能在貼文裡宣稱價值觀；但一個要花掉數百萬的宣稱，說服力是貼文永遠給不了的。一個沐浴品牌說「我們在乎青少年身心健康」，是壁紙；一個沐浴品牌為此離開自己的 TikTok，是新聞。價值觀要在你付出代價的那一刻才變成品牌資產——這也是為什麼多數「使命行銷」毫無效果：因為它什麼都沒賭上。
 
 ## 自有渠道早就扛住了重量
 
@@ -46,13 +49,21 @@ faq:
 - **像雜誌一樣經營的官網**——成分故事、倡議解說、產品教育，全都搜尋得到。
 - **設計成展演現場的門市**——歡迎動手摸的產品、現場試用的水槽、受過訓練會「表演產品」的店員。門市就是內容攝影棚。
 
-注意先後順序：先擁有關係，*再*跟平台重新談判。一個沒有 email 名單就刪掉 Instagram 的生意，不是在表達價值觀，只是消失了。我們寫過為什麼 [email 是在地生意最被忽略的高槓桿渠道](/zh/blog/email-marketing-for-local-businesses/)——Lush 就是那個論點的完整體放大版。
+注意先後順序：先擁有關係，*再*跟平台重新談判。一個沒有 email 名單就刪掉 Instagram 的生意，不是在表達價值觀，只是消失了。我們寫過為什麼 [email 是在地生意最被忽略的高槓桿渠道](/zh/blog/email-marketing-for-local-businesses/)——Lush 就是那個論點的完整體放大版。如果你很多客人活在微信上，對應的自有渠道就是一份掛在你自己帳號底下的聯絡人名單，我們的[微信私域實戰](/zh/blog/wechat-private-traffic-playbook/)有完整步驟。另外，少了動態牆可以依靠，品牌語氣就得在 email、App、官網和門市之間自己站穩，把它寫成一份[品牌語氣指南](/zh/blog/building-a-brand-voice-guide/)會輕鬆很多。
 
 ## 內容繼續流動——不需要品牌帳號
 
-去任何一個 Lush 離開的平台搜尋，它還是無所不在：汽泡彈溶解影片、沐浴凍示範、開箱、成分討論。品牌的帳號熄燈了，品牌的*存在感*沒有——因為產品本身就是為了被拍而設計的。冒泡的色彩、亮片、有名字的角色像 Sex Bomb 和 Intergalactic——每一次購買都是一支自帶高潮的三十秒影片。
+去任何一個 Lush 離開的平台搜尋，它還是無所不在：汽泡彈溶解影片、沐浴凍示範、開箱、成分討論。品牌的帳號熄燈了，品牌的*存在感*沒有——因為產品本身就是為了被拍而設計的。冒泡的色彩、亮片、有名字的角色像 Sex Bomb 和 Intergalactic——每一次購買都是一支自帶高潮的三十秒影片。就像我們在 [TELUS 拆解](/zh/blog/telus-critters-brand-teardown/)裡講的那群小動物，產品本身在 logo 出現之前就認得出來，所以就算是別人拍的影片，看起來還是 Lush。
 
 同樣的設計邏輯我們在 [Aritzia 拆解](/zh/blog/aritzia-social-strategy-teardown/)裡看過：讓產品和空間負責演出，顧客就會變成媒體。Lush 把這個概念推到邏輯的極限——品牌把自己的發射器拔掉之後，顧客的轉播從來沒停。
+
+## 五年後：還是沒回去，而且更挑了
+
+五年過去，最自然的問題是：這場退出撐住了嗎？撐住了。截至 2026 年底，Lush 從 2021 年起就沒在 Instagram、Facebook 或 TikTok 發文或投廣告；2023 年馬斯克接手 X 之後，它也停止在 X 發文；TikTok 帳號上只剩一則貼文，寫著「Be somewhere else」（去別的地方吧）（[Digiday](https://digiday.com/marketing/how-lush-quit-social-media-ads-and-still-drove-growth/)）。唯一新加入的社群平台是 Bluesky：Lush 在 2026 年 6 月經過發言人所說的「詳細評估」後進駐，同時表明仍「堅持不回 Meta 旗下平台、TikTok、Snapchat 和 X」（[BeautyMatter](https://beautymatter.com/articles/lushs-social-media-comeback-has-conditions)）。它也開了 Substack，並維持不投廣告的 YouTube 和 Pinterest。Lush 北美行銷主管 Julia Hamfelt 對 Digiday 說得很乾脆：「有些界線是畫死的。」
+
+2021 年之後的財報，不能拿來當這場退出的乾淨對照組——可可價格飆漲、歐洲與加拿大的製造整併，都在影響數字。但最新財報顯示，少了那些動態牆，生意一樣能成長：截至 2025 年 6 月的年度營收為 7.362 億英鎊，同店營收成長 8%（門市 7%、數位平台 13%）（[Cosmetics Business](https://www.cosmeticsbusiness.com/lush-reports-full-year-2025-results)）。
+
+這次更新讓教訓更清楚：Lush 從來不是退出「社群媒體」這整個類別，而是依照明說的條件退出特定平台，新平台也要符合條件才加入。這是一套公開的渠道政策，不是一時情緒。Fluevog 在 2018 年對 Amazon 做過類似的決定，因為品牌放在那裡「顯得不特別」（[Fluevog 拆解](/zh/blog/fluevog-community-teardown/)）。對照 [Duolingo](/zh/blog/duolingo-social-media-teardown/)：它在 2025 年把尺度大的貼文收了好幾個月，才發現自己的成長很依賴那個被調低音量的動態牆。只有當關係早就住在別處，沉默才算得上策略。
 
 ## 這個案例授權你做什麼、不授權什麼
 
@@ -63,10 +74,10 @@ faq:
 1. **盤點你的顧客關係實際存放在哪裡。**如果誠實的答案是「Meta 的伺服器」，那你離砍掉重練只差一次政策改版。
 2. **持續把租來的觸及轉成自有的觸及。**每一個能搬進 email 名單、預約系統或會員系統的粉絲，都是演算法藏不住的客人。
 3. **先讓價值觀付出代價，再拿它宣傳。**沒有賭上任何東西的立場只是裝飾——因為它確實只是裝飾。
-4. **把產品做到值得拍，平台就沒那麼重要。**顧客替你生產內容，帳號就是選配；帳號替你生產內容，你就在一台永遠下不來的跑步機上。至於哪些平台值得投入，本身就是一門功課——我們的[溫哥華生意平台選擇指南](/zh/blog/instagram-tiktok-xiaohongshu-which-platform-vancouver/)拆過這題。
+4. **把產品做到值得拍，平台就沒那麼重要。**顧客替你生產內容，帳號就是選配；帳號替你生產內容，你就在一台永遠下不來的跑步機上。哪些示範、前後對比會讓產品值得被拍，我們的[短影音實戰指南](/zh/blog/short-form-video-guide-vancouver/)有整理。至於哪些平台值得投入，本身就是一門功課——我們的[溫哥華生意平台選擇指南](/zh/blog/instagram-tiktok-xiaohongshu-which-platform-vancouver/)拆過這題。
 
 ## 帶走的重點
 
 Lush 的退出不是在論證社群媒體沒用——而是證明當品牌拒絕讓租來的渠道掌握全部關係時，會多出什麼選擇。把名單建起來、把值得拍的體驗設計出來、讓你的價值觀貴到讓人相信。到那時，社群媒體是選擇，不是維生系統。
 
-想知道你的生意對租來的流量依賴多深？寫信給 [info@kuipra.ca](mailto:info@kuipra.ca)，我們陪你一起盤。
+想知道你的生意對租來的流量依賴多深？寫信給 [info@kuipra.ca](mailto:info@kuipra.ca)，我們陪你一起盤。決定哪些平台值得投入、再讓每個平台都回頭餵養你的名單，就是我們[社群媒體經營](/zh/services/social-media-management/)服務的做法。

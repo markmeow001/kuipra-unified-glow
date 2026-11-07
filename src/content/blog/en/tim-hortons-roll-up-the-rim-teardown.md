@@ -2,6 +2,7 @@
 title: 'Teardown: What Roll Up the Rim Teaches About Gamified Loyalty'
 description: "An outside teardown of Tim Hortons' Roll Up the Rim: how a printed rim turned coffee into a national ritual, and four lessons for local businesses on gamified loyalty."
 pubDate: 2026-07-29
+updatedDate: 2026-11-06
 lang: en
 translationKey: roll-up-the-rim-teardown
 category: case-studies
@@ -13,6 +14,7 @@ keywords:
   - loyalty app design
 heroImage: /blog-images/tim-hortons-roll-up-the-rim-teardown.jpg
 heroImageAlt: 'A red coffee cup with its rim rolled back, held over a café counter'
+quickAnswer: 'Roll Up the Rim works because the game is printed on the product: one purchase, one roll of the thumb, an instant answer and a story to tell either way. Tim Hortons moved the contest mostly into its app from 2020, then brought rollable cups back in 2025, and in 2026 said they would stay "for years to come" alongside digital rolls in the Tims app. For a local business, the lesson is to keep the mechanic simple, seasonal and physical, and to add digital only where it gives customers something back.'
 faq:
   - q: 'What is Roll Up the Rim and why is it considered great marketing?'
     a: "Roll Up the Rim to Win is Tim Hortons' annual instant-win contest, running since 1986, where prizes were printed under the rolled rim of the coffee cup itself. It's studied because it turned an ordinary purchase into a game, a ritual, and a shared cultural moment across Canada — without requiring customers to do anything extra to play."
@@ -20,13 +22,15 @@ faq:
     a: "No — the original Roll Up the Rim needed nothing but ink on a cup. The core mechanic is instant, low-friction reward attached to a purchase you were already making. A physical scratch card, a stamped card with surprise bonuses, or a prize wheel at checkout can deliver the same loop; an app only makes sense once the paper version has proven people care."
   - q: 'What are the risks of moving a loyalty game into an app?'
     a: 'You gain valuable customer data and repeat-visit tracking, but you add friction — downloads, sign-ups, scanning — and risk losing the tactile delight that made the game beloved. The safe path is to keep the fun mechanic intact, make the digital step feel like an upgrade rather than a toll, and be transparent about what data you collect and why.'
+  - q: 'Is Roll Up the Rim still played on paper cups?'
+    a: 'Yes, again. From 2020 the contest moved mostly into the Tims app under the name Roll Up To Win, and for several years there were no rims to roll. Tim Hortons brought rollable cups back for a limited time in 2025, and for the 40th-anniversary contest (February 23 to March 22, 2026) its president said rolling up the rim would return "not just for this year, but for years to come." Cups come on hot drinks while supplies last, and Tims Rewards members still earn digital rolls in the app.'
 ---
 
 Tim Hortons is not a Kuipra client — this is an outside teardown based entirely on widely known public information about one of the most famous promotions in Canadian marketing history.
 
 Since 1986, Roll Up the Rim to Win has done something most loyalty programs never manage: it made people *excited to buy coffee they were going to buy anyway*. No punch cards, no sign-up forms, no points math. You bought a cup, you rolled the rim, and you either won or you read the most famous four words in Canadian retail: "Please Play Again."
 
-That's four decades of a promotion so embedded in national life that "rolling up the rim" became a verb. Here's why the mechanic works, what changed when it went digital, and what a local business can steal from it.
+That's four decades of a promotion so embedded in national life that "rolling up the rim" became a verb. Here's why the mechanic works, what changed when it went digital, why the cups came back, and what a local business can steal from it.
 
 ## The product is the game board
 
@@ -34,7 +38,7 @@ The genius of Roll Up the Rim is *where* the game lives: printed on the cup itse
 
 Compare that to the typical small-business loyalty scheme — a points system that requires customers to remember it exists, track a balance, and do arithmetic to figure out when a reward arrives. Roll Up the Rim asked for exactly one action, and it was an action people *wanted* to take. Participation was effectively the default.
 
-The lesson: the closer the game sits to the product, the less marketing you need to explain it.
+The lesson: the closer the game sits to the product, the less marketing you need to explain it. It also explains the contest's staying power. Like the [TELUS critters](/blog/telus-critters-brand-teardown/), Roll Up the Rim is a fixed frame that has run for decades while only what goes inside it changes, in this case the prize list.
 
 ## Anticipation, instant gratification, talkability — the loop
 
@@ -50,25 +54,33 @@ Most promotions get one of these three. Getting all of them in a single gesture 
 
 Roll Up the Rim was never year-round. It arrived for a limited window — famously in the late-winter stretch when Canadians need something to look forward to — and then it left. That seasonality did real work. The return of the red cups was an *event*, covered by media and anticipated by customers, in a way that a permanent program could never be. Absence created appetite.
 
-Small businesses tend to run promotions until they stop working, which quietly trains customers to ignore them. A game that shows up for six weeks a year and then disappears stays special for decades.
+The window is short. The 2026 edition ran for four weeks, from February 23 to March 22. Small businesses tend to run promotions until they stop working, which quietly trains customers to ignore them. A game that shows up for a few weeks a year and then disappears stays special for decades. It is the same logic that lets [Purdys build its business around a handful of gifting seasons](/blog/purdys-chocolatier-teardown/): customers learn when to expect you.
 
 ## The digital shift: delight traded for data
 
-In recent years — accelerated around 2020, when handing over reusable cups and rolling rims collided with pandemic-era hygiene concerns — the contest moved substantially into the Tims app, with digital rolls tied to the brand's loyalty program.
+From 2020, when rolling paper rims collided with pandemic-era hygiene concerns, the contest moved into the Tims app, was rebranded Roll Up To Win, and tied every roll to the brand's loyalty program. By 2024, as [Narcity put it](https://www.narcity.com/tim-hortons-roll-up-to-win-vs-roll-up-the-rim-contest-2024), the only rolling left was done in a smartphone app.
 
 The business logic is obvious. A paper rim tells the company nothing; an app play tells it who you are, how often you visit, and what you buy — the foundation of modern loyalty economics. But something real was traded away. Rolling a rim with your thumbs was tactile, universal, and required zero setup. Tapping a screen after signing into an app is a transaction with a toll booth in front of it, and public reaction to the transition was famously mixed.
 
 The takeaway isn't "don't go digital." It's that **delight and data sit on a seesaw**, and every ounce of friction you add must buy back its cost in customer value — not just in dashboard value for you.
 
+## The rim came back
+
+Then Tim Hortons partly reversed course. In February 2025 it brought back "classic Roll Up cups" for a limited time; chief marketing officer Hope Bagozzi said the chain's 60th-anniversary celebrations the year before had inspired the move ([Tim Hortons newsroom](https://news.timhortons.ca/en/articles/roll-up-cups-are-back--starting-today--play-tim-hortons-roll-up-)). A year later, for the contest's 40th anniversary, the company headlined its announcement "We heard you, Canada," and president Axel Schwan said rolling up the rim was coming back "not just for this year, but for years to come" ([Tim Hortons newsroom](https://news.timhortons.ca/en/articles/we-heard-you--canada--the-iconic-tim-hortons---tradition-of-roll)).
+
+The 2026 format runs both games at once. Hot drinks come in rollable cups while supplies last, and Tims Rewards members still earn digital rolls on eligible purchases, with double rolls for mobile orders. The company has not published participation figures. A retail analyst quoted by [BNN Bloomberg](https://www.bnnbloomberg.ca/business/2026/02/18/tim-hortons-says-roll-up-the-rim-is-back-for-good-this-time/) speculated that the digital-only version may have softened and that customers missed the instant gratification of the cup, but that is his view, not company data.
+
+Our reading: this is the seesaw finding its balance. The cup carries the ritual and the delight. The app carries the data and the bonus rolls for people who want them. Nobody has to pass through the toll booth just to play, and that is the design worth copying.
+
 ## Four lessons for a local business
 
 1. **Make the product the game surface.** Put the mechanic on the cup, the box, the receipt, the bag — the thing already in the customer's hand. Zero extra steps, near-total participation.
-2. **Low-friction beats sophisticated.** An instant win a customer understands in one second outperforms a points system that needs a FAQ. Complexity is where loyalty programs go to die.
+2. **Low-friction beats sophisticated.** An instant win a customer understands in one second outperforms a points system that needs a FAQ. Complexity is where loyalty programs go to die. Science World learned the same thing in advertising: [its first big-idea campaign bombed, and two decades of small, true facts did not](/blog/science-world-advertising-teardown/).
 3. **Seasonal scarcity creates ritual.** Run your game for a defined window every year, at the same time every year. Let it end. The comeback becomes your best free publicity.
-4. **If you digitize, charge yourself for the friction.** Collect data honestly, explain the trade, and make the app version *more* fun than the paper one — bigger prizes, streaks, surprises — or your best-loved tradition becomes your most-resented sign-up form.
+4. **If you digitize, charge yourself for the friction.** Collect data honestly, explain the trade, and make the app version *more* fun than the paper one — bigger prizes, streaks, surprises — or your best-loved tradition becomes your most-resented sign-up form. Better still, keep a paper way to play and offer the digital version as a bonus. For most small businesses, an [email list built with clear consent](/blog/email-marketing-for-local-businesses/) gives you the repeat-visit data without forcing an app download.
 
 ## The takeaway
 
-Roll Up the Rim endured because it respected the customer's time: one purchase, one gesture, one instant answer, and a story to tell either way. Any café, bakery, or clinic can build that loop at neighbourhood scale — the hard part is the discipline to keep it simple and the patience to let scarcity do its work.
+Roll Up the Rim endured because it respected the customer's time: one purchase, one gesture, one instant answer, and a story to tell either way. When the company took the gesture away, it eventually gave it back. Any café, bakery, or clinic can build that loop at neighbourhood scale — the hard part is the discipline to keep it simple and the patience to let scarcity do its work. If you run a restaurant or café, our [Vancouver restaurant marketing playbook](/blog/restaurant-marketing-guide-vancouver/) covers how owning your regulars fits alongside Google Maps, food content and delivery apps, and the [seasonal marketing calendar](/blog/vancouver-seasonal-marketing-calendar/) has the 2027 dates for picking your window.
 
-Want help designing a loyalty mechanic your customers actually talk about? [Email Charlene at Kuipra](mailto:info@kuipra.ca) and let's talk.
+Want help designing a loyalty mechanic your customers actually talk about? That is part of our [brand strategy](/services/brand-strategy/) work. Or [email Charlene at Kuipra](mailto:info@kuipra.ca) and let's talk.

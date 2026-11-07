@@ -2,6 +2,7 @@
 title: "Brand Storytelling: A Framework That Isn't About You"
 description: 'Most brand stories fail because the brand plays the hero. Here is the framework that puts your customer at the centre — and where that story should show up.'
 pubDate: 2026-08-03
+updatedDate: 2026-11-06
 lang: en
 translationKey: brand-storytelling
 category: brand-strategy
@@ -13,6 +14,7 @@ keywords:
   - founder story branding
 heroImage: /blog-images/brand-storytelling-framework.jpg
 heroImageAlt: 'A storyboard sketch showing a customer journey with the brand positioned as a guide'
+quickAnswer: 'A brand story works when the customer is the hero and your business is the guide. Build it in five parts: the customer, their external problem and internal frustration, why you are a credible guide (empathy first, then authority), a plan of about three plain steps, and what is at stake. Then tell that one story consistently on your homepage, about page, social bios, sales conversations and review replies, and keep your history as proof rather than plot.'
 faq:
   - q: 'What is the biggest mistake brands make with storytelling?'
     a: 'They cast themselves as the hero — leading with their history, awards, and passion. Effective brand storytelling makes the customer the hero and positions the brand as the guide who understands the problem and has a plan. Customers engage with stories they can see themselves in.'
@@ -20,6 +22,8 @@ faq:
     a: 'Yes, if it earns its place. A founder story works when it explains why you understand the customer''s problem — the frustration you lived through that led you here. It fails when it becomes a celebration of the founder. Test it: does every paragraph make the customer trust you more, or just admire you more?'
   - q: 'How is a brand story different from storytelling content?'
     a: 'The brand story is one core narrative: who the customer is, what they struggle with, and how you guide them to success. Storytelling content is the many expressions of that narrative — posts, bios, sales conversations, review replies. One story, told consistently in different formats, is what builds recognition.'
+  - q: 'What if my business doesn''t have an interesting origin story?'
+    a: 'You don''t need a dramatic one, you need a specific one. Herschel''s origin is a family place name: a Saskatchewan hamlet where the founders'' great-grandparents settled in 1906, which anyone can look up. Use the real year, street, job or customer that started your business, keep it short, and let the story''s weight sit on the customer''s problem rather than your biography.'
 ---
 
 Ask a business owner to tell you their brand story and you'll usually hear a biography: founded in 2012, passionate about quality, award-winning team, we love what we do.
@@ -49,6 +53,8 @@ People buy solutions to external problems, but they choose brands that name the 
 
 The guide needs two credentials, in this order: **empathy** ("we know how this feels") and **authority** ("we've walked hundreds of people through it"). Empathy without authority is sympathy; authority without empathy is arrogance. You need both, and empathy comes first.
 
+Authority lands best as one specific claim a customer could check, not a pile of adjectives. A&W Canada didn't tell people its burgers were "quality." It quietly switched its supply for six to nine months, then announced Better Beef in 2013 with one promise: beef raised without added hormones or steroids. By the time the ads ran, the claim was already true in every restaurant. That is a guide earning trust with proof. Our [A&W teardown](/blog/aw-canada-better-beef-teardown/) walks through the sequence.
+
 ### 4. Plan — what happens next?
 
 Three steps, plainly stated: book a call, get your roadmap, launch. A hero won't follow a guide into fog. The plan doesn't describe everything you do — it makes the first move feel safe.
@@ -75,9 +81,19 @@ Origin stories aren't banned — they're repositioned. The test: does your origi
 
 "I spent ten years watching first-time buyers get rushed through the biggest decision of their lives, and I started this practice to slow that down" — that's a guide's origin story. "We've won twelve industry awards since 2012" — that's a hero's, and it belongs further down the page, as proof, not as plot.
 
+The best origin details are small and checkable. Herschel Supply, founded in Vancouver in 2009 by brothers Lyndon and Jamie Cormack, is named after the Saskatchewan hamlet where their great-grandparents settled after emigrating from Scotland in 1906. You can look it up, which is exactly why it reads as true. "A passion for quality" can't be checked; a town, a year and a family can ([Herschel teardown](/blog/herschel-supply-brand-teardown/)).
+
 ## One story, many expressions
 
 You don't need a new story every month. You need **one core narrative and many expressions** of it. The clinic's story doesn't change between an Instagram reel, a Google review reply, and a consult call — the format does. That consistency is what makes a brand feel coherent instead of busy. A defined [brand voice guide](/blog/building-a-brand-voice-guide/) is what keeps those expressions sounding like one storyteller.
+
+## Two local brands that hand the customer the lead
+
+**Fluevog let customers write parts of the story.** Through Open Source Footwear, launched in 2002, customers submitted shoe designs; chosen ones were produced and named after their designer. From 2009, customers made ads under FluevogCreative and voted on which ones went to print. The brand supplied the shapes, the voice and the stage; customers got the visible role ([Fluevog teardown](/blog/fluevog-community-teardown/)).
+
+**Purdys built its shops around the customer's moment.** In our reading, the box, the ribbon and the staff member asking who it's for all serve the customer's story: being the person who gives something thoughtful. Purdys is the guide that makes that moment land ([Purdys teardown](/blog/purdys-chocolatier-teardown/)).
+
+Both brands have more than half a century of history, but in both cases it is the customer's role, not the company's past, that makes the story work.
 
 ## The bilingual nuance
 
@@ -99,4 +115,4 @@ Notice the clinic's equipment, credentials, and history appear nowhere in the ar
 
 Open your homepage and read the first screen. If the subject of most sentences is "we," you're telling a hero story about yourself. Recast the customer as the hero, take the guide's seat, and every channel downstream gets easier to write.
 
-Want a second set of eyes on your brand story? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) and we'll tell you honestly who the hero of your current website is.
+Want a second set of eyes on your brand story? Email us at [info@kuipra.ca](mailto:info@kuipra.ca) and we'll tell you honestly who the hero of your current website is. Defining that story, alongside positioning and voice, is part of our [brand strategy](/services/brand-strategy/) work.
